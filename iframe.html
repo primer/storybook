@@ -1,25 +1,29 @@
+<!DOCTYPE html>
+<html>
 
-    <!DOCTYPE html>
-    <html>
-      <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <base target="_parent">
-        <script>
-          if (window.parent !== window) {
-            window.__REACT_DEVTOOLS_GLOBAL_HOOK__ = window.parent.__REACT_DEVTOOLS_GLOBAL_HOOK__;
-          }
-        </script>
-        <title>Storybook</title>
-        <link rel="stylesheet" href="https://unpkg.com/octicons@7.0.1/build/build.css">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <base target="_parent">
+    <script>
+        if (window.parent !== window) {
+            try {
+                window.__REACT_DEVTOOLS_GLOBAL_HOOK__ = window.parent.__REACT_DEVTOOLS_GLOBAL_HOOK__;
+            } catch (error) {
+                // The above line can throw if we do not have access to the parent frame -- i.e. cross origin
+            }
+        }
+    </script>
+    <title>Storybook</title>
+    <link rel="stylesheet" href="https://unpkg.com/octicons@7.0.1/build/build.css">
 <script src="https://github.com/site/assets/styleguide.js" async></script>
 
-        
-      </head>
-      <body>
-        <div id="root"></div>
-        <div id="error-display"></div>
-        <script src="static/preview.de201cda84546a791d27.bundle.js"></script>
-      </body>
-    </html>
-  
+</head>
+
+<body>
+    <div id="root"></div>
+    <div id="error-display"></div>
+<script type="text/javascript" src="static/preview.09a92a9c64ebe13e9f00.bundle.js"></script></body>
+
+</html>
