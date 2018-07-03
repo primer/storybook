@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 749);
+/******/ 	return __webpack_require__(__webpack_require__.s = 747);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -856,7 +856,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.linkTo = exports.action = exports.forceReRender = exports.getStorybook = exports.configure = exports.addDecorator = exports.setAddon = exports.storiesOf = undefined;
 
-var _preview = __webpack_require__(752);
+var _preview = __webpack_require__(750);
 
 Object.defineProperty(exports, 'storiesOf', {
   enumerable: true,
@@ -895,13 +895,13 @@ Object.defineProperty(exports, 'forceReRender', {
   }
 });
 
-var _utilDeprecate = __webpack_require__(826);
+var _utilDeprecate = __webpack_require__(824);
 
 var _utilDeprecate2 = _interopRequireDefault(_utilDeprecate);
 
-var _addonActions = __webpack_require__(629);
+var _addonActions = __webpack_require__(627);
 
-var _addonLinks = __webpack_require__(635);
+var _addonLinks = __webpack_require__(633);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1970,7 +1970,7 @@ module.exports = PooledClass;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__TemplateTag__ = __webpack_require__(784);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__TemplateTag__ = __webpack_require__(782);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__TemplateTag__["a"]; });
 
 
@@ -1981,7 +1981,7 @@ module.exports = PooledClass;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__trimResultTransformer__ = __webpack_require__(785);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__trimResultTransformer__ = __webpack_require__(783);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__trimResultTransformer__["a"]; });
 
 
@@ -3202,7 +3202,7 @@ exports.default = function (obj, key, value) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports,'__esModule',{value:!0});var _remark=__webpack_require__(886),_remark2=_interopRequireDefault(_remark),_unistUtilParents=__webpack_require__(992),_unistUtilParents2=_interopRequireDefault(_unistUtilParents),_unistUtilSelect=__webpack_require__(1032),_unistUtilSelect2=_interopRequireDefault(_unistUtilSelect),_unistUtilFindBefore=__webpack_require__(1048),_unistUtilFindBefore2=_interopRequireDefault(_unistUtilFindBefore),_htmlToReact=__webpack_require__(1049),_htmlToReact2=_interopRequireDefault(_htmlToReact),_parsePairs=__webpack_require__(1097),_parsePairs2=_interopRequireDefault(_parsePairs),_react=__webpack_require__(0),_react2=_interopRequireDefault(_react),_server=__webpack_require__(1098),_server2=_interopRequireDefault(_server),_Octicon=__webpack_require__(675);function _interopRequireDefault(a){return a&&a.__esModule?a:{default:a}}var htmlParser=new _htmlToReact2.default.Parser,railsOcticonToReact=function(a){var b=/<%= octicon[\(\s]["']([a-z\-]+)["'][^%]*%>/gi;return a=a.replace(b,function(a,b){return _server2.default.renderToStaticMarkup(_react2.default.createElement(_Octicon.Octicon,{name:b}))}),a},parseBlockAttrs=function(a,b){var c=a.lang.replace(/^html\s*/,''),d=c.length?(0,_parsePairs2.default)(c):{};return d.title=d.title||getPreviousHeading(a)||'story @ '+b+':'+a.position.start.line,a.block=d,a},nodeToStory=function(a,b){var c=railsOcticonToReact(a.value),d=a.block.title;return{title:d,story:function story(){return htmlParser.parse(c)},html:c,file:b,node:a}},getPreviousHeading=function(a){var b=(0,_unistUtilFindBefore2.default)(a.parent,a,'heading');return b&&!b.used?(b.used=!0,b.children.map(function(a){return a.value}).join('')):void 0};exports.default=function(a){return a.keys().filter(function(a){return!a.match(/node_modules/)}).reduce(function(b,c){var d=a(c),e=(0,_unistUtilParents2.default)(_remark2.default.parse(d)),f=c.replace(/^\.\//,'');return b.concat((0,_unistUtilSelect2.default)(e,'code[lang^=html]').map(parseBlockAttrs).filter(function(a){var b=a.block;return'false'!==b.story}).map(function(a){return nodeToStory(a,f)}))},[])};
+Object.defineProperty(exports,'__esModule',{value:!0});var _remark=__webpack_require__(884),_remark2=_interopRequireDefault(_remark),_unistUtilParents=__webpack_require__(990),_unistUtilParents2=_interopRequireDefault(_unistUtilParents),_unistUtilSelect=__webpack_require__(1030),_unistUtilSelect2=_interopRequireDefault(_unistUtilSelect),_unistUtilFindBefore=__webpack_require__(1046),_unistUtilFindBefore2=_interopRequireDefault(_unistUtilFindBefore),_htmlToReact=__webpack_require__(1047),_htmlToReact2=_interopRequireDefault(_htmlToReact),_parsePairs=__webpack_require__(1095),_parsePairs2=_interopRequireDefault(_parsePairs),_react=__webpack_require__(0),_react2=_interopRequireDefault(_react),_server=__webpack_require__(1096),_server2=_interopRequireDefault(_server),_Octicon=__webpack_require__(673);function _interopRequireDefault(a){return a&&a.__esModule?a:{default:a}}var htmlParser=new _htmlToReact2.default.Parser,railsOcticonToReact=function(a){var b=/<%= octicon[\(\s]["']([a-z\-]+)["'][^%]*%>/gi;return a=a.replace(b,function(a,b){return _server2.default.renderToStaticMarkup(_react2.default.createElement(_Octicon.Octicon,{name:b}))}),a},parseBlockAttrs=function(a,b){var c=a.lang.replace(/^html\s*/,''),d=c.length?(0,_parsePairs2.default)(c):{};return d.title=d.title||getPreviousHeading(a)||'story @ '+b+':'+a.position.start.line,a.block=d,a},nodeToStory=function(a,b){var c=railsOcticonToReact(a.value),d=a.block.title;return{title:d,story:function story(){return htmlParser.parse(c)},html:c,file:b,node:a}},getPreviousHeading=function(a){var b=(0,_unistUtilFindBefore2.default)(a.parent,a,'heading');return b&&!b.used?(b.used=!0,b.children.map(function(a){return a.value}).join('')):void 0};exports.default=function(a){return a.keys().filter(function(a){return!a.match(/node_modules/)}).reduce(function(b,c){var d=a(c),e=(0,_unistUtilParents2.default)(_remark2.default.parse(d)),f=c.replace(/^\.\//,'');return b.concat((0,_unistUtilSelect2.default)(e,'code[lang^=html]').map(parseBlockAttrs).filter(function(a){var b=a.block;return'false'!==b.story}).map(function(a){return nodeToStory(a,f)}))},[])};
 
 /***/ }),
 /* 64 */
@@ -3913,7 +3913,7 @@ module.exports = ReactInstanceMap;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__inlineArrayTransformer__ = __webpack_require__(791);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__inlineArrayTransformer__ = __webpack_require__(789);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__inlineArrayTransformer__["a"]; });
 
 
@@ -4377,20 +4377,17 @@ module.exports = false;
 
 var fnToStr = Function.prototype.toString;
 
-var constructorRegex = /^\s*class /;
-var isES6ClassFn = function isES6ClassFn(value) {
+var constructorRegex = /^\s*class\b/;
+var isES6ClassFn = function isES6ClassFunction(value) {
 	try {
 		var fnStr = fnToStr.call(value);
-		var singleStripped = fnStr.replace(/\/\/.*\n/g, '');
-		var multiStripped = singleStripped.replace(/\/\*[.\s\S]*\*\//g, '');
-		var spaceStripped = multiStripped.replace(/\n/mg, ' ').replace(/ {2}/g, ' ');
-		return constructorRegex.test(spaceStripped);
+		return constructorRegex.test(fnStr);
 	} catch (e) {
 		return false; // not a function
 	}
 };
 
-var tryFunctionObject = function tryFunctionObject(value) {
+var tryFunctionObject = function tryFunctionToStr(value) {
 	try {
 		if (isES6ClassFn(value)) { return false; }
 		fnToStr.call(value);
@@ -4407,6 +4404,7 @@ var hasToStringTag = typeof Symbol === 'function' && typeof Symbol.toStringTag =
 module.exports = function isCallable(value) {
 	if (!value) { return false; }
 	if (typeof value !== 'function' && typeof value !== 'object') { return false; }
+	if (typeof value === 'function' && !value.prototype) { return true; }
 	if (hasToStringTag) { return tryFunctionObject(value); }
 	if (isES6ClassFn(value)) { return false; }
 	var strClass = toStr.call(value);
@@ -5450,7 +5448,7 @@ module.exports = ReactBrowserEventEmitter;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__stripIndentTransformer__ = __webpack_require__(786);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__stripIndentTransformer__ = __webpack_require__(784);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__stripIndentTransformer__["a"]; });
 
 
@@ -9021,7 +9019,7 @@ module.exports = getEventCharCode;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__replaceResultTransformer__ = __webpack_require__(787);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__replaceResultTransformer__ = __webpack_require__(785);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__replaceResultTransformer__["a"]; });
 
 
@@ -9034,7 +9032,7 @@ module.exports = getEventCharCode;
 "use strict";
 
 
-module.exports = __webpack_require__(1008)() ? Symbol : __webpack_require__(1009);
+module.exports = __webpack_require__(1006)() ? Symbol : __webpack_require__(1007);
 
 
 /***/ }),
@@ -9350,7 +9348,7 @@ exports.right = function(str){
 "use strict";
 
 
-var _undefined = __webpack_require__(661)(); // Support ES3 engines
+var _undefined = __webpack_require__(659)(); // Support ES3 engines
 
 module.exports = function (val) {
  return (val !== _undefined) && (val !== null);
@@ -13661,9 +13659,9 @@ function decimal(character) {
 
 
 var assign        = __webpack_require__(577)
-  , normalizeOpts = __webpack_require__(662)
-  , isCallable    = __webpack_require__(1004)
-  , contains      = __webpack_require__(663)
+  , normalizeOpts = __webpack_require__(660)
+  , isCallable    = __webpack_require__(1002)
+  , contains      = __webpack_require__(661)
 
   , d;
 
@@ -13728,7 +13726,7 @@ d.gs = function (dscr, get, set/*, options*/) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports,'__esModule',{value:!0});var _react=__webpack_require__(0),_react2=_interopRequireDefault(_react),_Octicon=__webpack_require__(675);function _interopRequireDefault(a){return a&&a.__esModule?a:{default:a}}exports.default=function(){return _react2.default.createElement('div',{className:'input-group'},_react2.default.createElement('input',{className:'form-control',type:'text',placeholder:'Username',"aria-label":'Username'}),_react2.default.createElement('span',{className:'input-group-button'},_react2.default.createElement('button',{className:'btn',type:'button',"aria-label":'Copy to clipboard'},_react2.default.createElement(_Octicon.Octicon,{name:'clippy'}))))};
+Object.defineProperty(exports,'__esModule',{value:!0});var _react=__webpack_require__(0),_react2=_interopRequireDefault(_react),_Octicon=__webpack_require__(673);function _interopRequireDefault(a){return a&&a.__esModule?a:{default:a}}exports.default=function(){return _react2.default.createElement('div',{className:'input-group'},_react2.default.createElement('input',{className:'form-control',type:'text',placeholder:'Username',"aria-label":'Username'}),_react2.default.createElement('span',{className:'input-group-button'},_react2.default.createElement('button',{className:'btn',type:'button',"aria-label":'Copy to clipboard'},_react2.default.createElement(_Octicon.Octicon,{name:'clippy'}))))};
 
 /***/ }),
 /* 259 */,
@@ -15804,35 +15802,35 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.omitProperty = exports.typeReplacer = exports.typeReviver = exports.prepareArguments = exports.muteProperty = exports.isObject = exports.getPropertiesList = exports.canConfigureName = undefined;
 
-var _canConfigureName2 = __webpack_require__(631);
+var _canConfigureName2 = __webpack_require__(629);
 
 var _canConfigureName3 = _interopRequireDefault(_canConfigureName2);
 
-var _getPropertiesList2 = __webpack_require__(834);
+var _getPropertiesList2 = __webpack_require__(832);
 
 var _getPropertiesList3 = _interopRequireDefault(_getPropertiesList2);
 
-var _isObject2 = __webpack_require__(835);
+var _isObject2 = __webpack_require__(833);
 
 var _isObject3 = _interopRequireDefault(_isObject2);
 
-var _muteProperty2 = __webpack_require__(836);
+var _muteProperty2 = __webpack_require__(834);
 
 var _muteProperty3 = _interopRequireDefault(_muteProperty2);
 
-var _prepareArguments2 = __webpack_require__(837);
+var _prepareArguments2 = __webpack_require__(835);
 
 var _prepareArguments3 = _interopRequireDefault(_prepareArguments2);
 
-var _typeReviver2 = __webpack_require__(872);
+var _typeReviver2 = __webpack_require__(870);
 
 var _typeReviver3 = _interopRequireDefault(_typeReviver2);
 
-var _typeReplacer2 = __webpack_require__(873);
+var _typeReplacer2 = __webpack_require__(871);
 
 var _typeReplacer3 = _interopRequireDefault(_typeReplacer2);
 
-var _omitProperty2 = __webpack_require__(874);
+var _omitProperty2 = __webpack_require__(872);
 
 var _omitProperty3 = _interopRequireDefault(_omitProperty2);
 
@@ -15898,7 +15896,7 @@ module.exports = { "default": __webpack_require__(561), __esModule: true };
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {var _react=__webpack_require__(0),_react2=_interopRequireDefault(_react),_react3=__webpack_require__(16),_storiesFromMarkdown=__webpack_require__(63),_storiesFromMarkdown2=_interopRequireDefault(_storiesFromMarkdown);function _interopRequireDefault(a){return a&&a.__esModule?a:{default:a}}var stories=(0,_react3.storiesOf)('Branch Name',module);(0,_storiesFromMarkdown2.default)(__webpack_require__(1104)).forEach(function(a){var b=a.title,c=a.story;stories.add(b,c)});
+/* WEBPACK VAR INJECTION */(function(module) {var _react=__webpack_require__(0),_react2=_interopRequireDefault(_react),_react3=__webpack_require__(16),_storiesFromMarkdown=__webpack_require__(63),_storiesFromMarkdown2=_interopRequireDefault(_storiesFromMarkdown);function _interopRequireDefault(a){return a&&a.__esModule?a:{default:a}}var stories=(0,_react3.storiesOf)('Branch Name',module);(0,_storiesFromMarkdown2.default)(__webpack_require__(1102)).forEach(function(a){var b=a.title,c=a.story;stories.add(b,c)});
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9)(module)))
 
 /***/ }),
@@ -15908,12 +15906,12 @@ module.exports = { "default": __webpack_require__(561), __esModule: true };
 "use strict";
 
 
-var characterEntities = __webpack_require__(904)
-var legacy = __webpack_require__(640)
-var invalid = __webpack_require__(905)
+var characterEntities = __webpack_require__(902)
+var legacy = __webpack_require__(638)
+var invalid = __webpack_require__(903)
 var decimal = __webpack_require__(256)
-var hexadecimal = __webpack_require__(641)
-var alphanumerical = __webpack_require__(642)
+var hexadecimal = __webpack_require__(639)
+var alphanumerical = __webpack_require__(640)
 
 module.exports = parseEntities
 
@@ -16405,7 +16403,7 @@ module.exports = _isPlaceholder;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {var _react=__webpack_require__(0),_react2=_interopRequireDefault(_react),_react3=__webpack_require__(16),_storiesFromMarkdown=__webpack_require__(63),_storiesFromMarkdown2=_interopRequireDefault(_storiesFromMarkdown);function _interopRequireDefault(a){return a&&a.__esModule?a:{default:a}}var stories=(0,_react3.storiesOf)('Breadcrumb',module);(0,_storiesFromMarkdown2.default)(__webpack_require__(1106)).forEach(function(a){var b=a.title,c=a.story;stories.add(b,c)});
+/* WEBPACK VAR INJECTION */(function(module) {var _react=__webpack_require__(0),_react2=_interopRequireDefault(_react),_react3=__webpack_require__(16),_storiesFromMarkdown=__webpack_require__(63),_storiesFromMarkdown2=_interopRequireDefault(_storiesFromMarkdown);function _interopRequireDefault(a){return a&&a.__esModule?a:{default:a}}var stories=(0,_react3.storiesOf)('Breadcrumb',module);(0,_storiesFromMarkdown2.default)(__webpack_require__(1104)).forEach(function(a){var b=a.title,c=a.story;stories.add(b,c)});
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9)(module)))
 
 /***/ }),
@@ -16429,7 +16427,7 @@ module.exports = _isPlaceholder;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {var _react=__webpack_require__(0),_react2=_interopRequireDefault(_react),_react3=__webpack_require__(16),_storiesFromMarkdown=__webpack_require__(63),_storiesFromMarkdown2=_interopRequireDefault(_storiesFromMarkdown);function _interopRequireDefault(a){return a&&a.__esModule?a:{default:a}}var stories=(0,_react3.storiesOf)('Layout',module);(0,_storiesFromMarkdown2.default)(__webpack_require__(1108)).forEach(function(a){var b=a.title,c=a.story;stories.add(b,c)});
+/* WEBPACK VAR INJECTION */(function(module) {var _react=__webpack_require__(0),_react2=_interopRequireDefault(_react),_react3=__webpack_require__(16),_storiesFromMarkdown=__webpack_require__(63),_storiesFromMarkdown2=_interopRequireDefault(_storiesFromMarkdown);function _interopRequireDefault(a){return a&&a.__esModule?a:{default:a}}var stories=(0,_react3.storiesOf)('Layout',module);(0,_storiesFromMarkdown2.default)(__webpack_require__(1106)).forEach(function(a){var b=a.title,c=a.story;stories.add(b,c)});
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9)(module)))
 
 /***/ }),
@@ -16437,7 +16435,7 @@ module.exports = _isPlaceholder;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {var _react=__webpack_require__(0),_react2=_interopRequireDefault(_react),_react3=__webpack_require__(16),_storiesFromMarkdown=__webpack_require__(63),_storiesFromMarkdown2=_interopRequireDefault(_storiesFromMarkdown);function _interopRequireDefault(a){return a&&a.__esModule?a:{default:a}}var stories=(0,_react3.storiesOf)('Navigation',module);(0,_storiesFromMarkdown2.default)(__webpack_require__(1111)).forEach(function(a){var b=a.title,c=a.story;stories.add(b,c)});
+/* WEBPACK VAR INJECTION */(function(module) {var _react=__webpack_require__(0),_react2=_interopRequireDefault(_react),_react3=__webpack_require__(16),_storiesFromMarkdown=__webpack_require__(63),_storiesFromMarkdown2=_interopRequireDefault(_storiesFromMarkdown);function _interopRequireDefault(a){return a&&a.__esModule?a:{default:a}}var stories=(0,_react3.storiesOf)('Navigation',module);(0,_storiesFromMarkdown2.default)(__webpack_require__(1109)).forEach(function(a){var b=a.title,c=a.story;stories.add(b,c)});
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9)(module)))
 
 /***/ }),
@@ -16445,7 +16443,7 @@ module.exports = _isPlaceholder;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {var _react=__webpack_require__(0),_react2=_interopRequireDefault(_react),_react3=__webpack_require__(16),_storiesFromMarkdown=__webpack_require__(63),_storiesFromMarkdown2=_interopRequireDefault(_storiesFromMarkdown);function _interopRequireDefault(a){return a&&a.__esModule?a:{default:a}}var stories=(0,_react3.storiesOf)('Pagination',module);(0,_storiesFromMarkdown2.default)(__webpack_require__(1113)).forEach(function(a){var b=a.title,c=a.story;stories.add(b,c)});
+/* WEBPACK VAR INJECTION */(function(module) {var _react=__webpack_require__(0),_react2=_interopRequireDefault(_react),_react3=__webpack_require__(16),_storiesFromMarkdown=__webpack_require__(63),_storiesFromMarkdown2=_interopRequireDefault(_storiesFromMarkdown);function _interopRequireDefault(a){return a&&a.__esModule?a:{default:a}}var stories=(0,_react3.storiesOf)('Pagination',module);(0,_storiesFromMarkdown2.default)(__webpack_require__(1111)).forEach(function(a){var b=a.title,c=a.story;stories.add(b,c)});
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9)(module)))
 
 /***/ }),
@@ -16453,7 +16451,7 @@ module.exports = _isPlaceholder;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {var _react=__webpack_require__(0),_react2=_interopRequireDefault(_react),_react3=__webpack_require__(16),_storiesFromMarkdown=__webpack_require__(63),_storiesFromMarkdown2=_interopRequireDefault(_storiesFromMarkdown);function _interopRequireDefault(a){return a&&a.__esModule?a:{default:a}}var stories=(0,_react3.storiesOf)('TableObject',module);(0,_storiesFromMarkdown2.default)(__webpack_require__(1115)).forEach(function(a){var b=a.title,c=a.story;stories.add(b,c)});
+/* WEBPACK VAR INJECTION */(function(module) {var _react=__webpack_require__(0),_react2=_interopRequireDefault(_react),_react3=__webpack_require__(16),_storiesFromMarkdown=__webpack_require__(63),_storiesFromMarkdown2=_interopRequireDefault(_storiesFromMarkdown);function _interopRequireDefault(a){return a&&a.__esModule?a:{default:a}}var stories=(0,_react3.storiesOf)('TableObject',module);(0,_storiesFromMarkdown2.default)(__webpack_require__(1113)).forEach(function(a){var b=a.title,c=a.story;stories.add(b,c)});
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9)(module)))
 
 /***/ }),
@@ -16469,7 +16467,7 @@ module.exports = _isPlaceholder;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {var _react=__webpack_require__(0),_react2=_interopRequireDefault(_react),_react3=__webpack_require__(16),_storiesFromMarkdown=__webpack_require__(63),_storiesFromMarkdown2=_interopRequireDefault(_storiesFromMarkdown);function _interopRequireDefault(a){return a&&a.__esModule?a:{default:a}}var stories=(0,_react3.storiesOf)('Truncate',module);(0,_storiesFromMarkdown2.default)(__webpack_require__(1117)).forEach(function(a){var b=a.title,c=a.story;stories.add(b,c)});
+/* WEBPACK VAR INJECTION */(function(module) {var _react=__webpack_require__(0),_react2=_interopRequireDefault(_react),_react3=__webpack_require__(16),_storiesFromMarkdown=__webpack_require__(63),_storiesFromMarkdown2=_interopRequireDefault(_storiesFromMarkdown);function _interopRequireDefault(a){return a&&a.__esModule?a:{default:a}}var stories=(0,_react3.storiesOf)('Truncate',module);(0,_storiesFromMarkdown2.default)(__webpack_require__(1115)).forEach(function(a){var b=a.title,c=a.story;stories.add(b,c)});
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9)(module)))
 
 /***/ }),
@@ -16509,7 +16507,7 @@ module.exports = _isPlaceholder;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {var _react=__webpack_require__(0),_react2=_interopRequireDefault(_react),_react3=__webpack_require__(16),_storiesFromMarkdown=__webpack_require__(63),_storiesFromMarkdown2=_interopRequireDefault(_storiesFromMarkdown);function _interopRequireDefault(a){return a&&a.__esModule?a:{default:a}}var stories=(0,_react3.storiesOf)('Labels',module);(0,_storiesFromMarkdown2.default)(__webpack_require__(1119)).forEach(function(a){var b=a.title,c=a.story;stories.add(b,c)});
+/* WEBPACK VAR INJECTION */(function(module) {var _react=__webpack_require__(0),_react2=_interopRequireDefault(_react),_react3=__webpack_require__(16),_storiesFromMarkdown=__webpack_require__(63),_storiesFromMarkdown2=_interopRequireDefault(_storiesFromMarkdown);function _interopRequireDefault(a){return a&&a.__esModule?a:{default:a}}var stories=(0,_react3.storiesOf)('Labels',module);(0,_storiesFromMarkdown2.default)(__webpack_require__(1117)).forEach(function(a){var b=a.title,c=a.story;stories.add(b,c)});
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9)(module)))
 
 /***/ }),
@@ -16533,7 +16531,7 @@ module.exports = _isPlaceholder;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {var _react=__webpack_require__(0),_react2=_interopRequireDefault(_react),_react3=__webpack_require__(16),_storiesFromMarkdown=__webpack_require__(63),_storiesFromMarkdown2=_interopRequireDefault(_storiesFromMarkdown);function _interopRequireDefault(a){return a&&a.__esModule?a:{default:a}}var stories=(0,_react3.storiesOf)('Marketing type',module);(0,_storiesFromMarkdown2.default)(__webpack_require__(1121)).forEach(function(a){var b=a.title,c=a.story;stories.add(b,c)});
+/* WEBPACK VAR INJECTION */(function(module) {var _react=__webpack_require__(0),_react2=_interopRequireDefault(_react),_react3=__webpack_require__(16),_storiesFromMarkdown=__webpack_require__(63),_storiesFromMarkdown2=_interopRequireDefault(_storiesFromMarkdown);function _interopRequireDefault(a){return a&&a.__esModule?a:{default:a}}var stories=(0,_react3.storiesOf)('Marketing type',module);(0,_storiesFromMarkdown2.default)(__webpack_require__(1119)).forEach(function(a){var b=a.title,c=a.story;stories.add(b,c)});
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9)(module)))
 
 /***/ }),
@@ -16549,7 +16547,7 @@ module.exports = _isPlaceholder;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {var _react=__webpack_require__(0),_react2=_interopRequireDefault(_react),_react3=__webpack_require__(16),_storiesFromMarkdown=__webpack_require__(63),_storiesFromMarkdown2=_interopRequireDefault(_storiesFromMarkdown);function _interopRequireDefault(a){return a&&a.__esModule?a:{default:a}}var stories=(0,_react3.storiesOf)('Tables',module);(0,_storiesFromMarkdown2.default)(__webpack_require__(1123)).forEach(function(a){var b=a.title,c=a.story;stories.add(b,c)});
+/* WEBPACK VAR INJECTION */(function(module) {var _react=__webpack_require__(0),_react2=_interopRequireDefault(_react),_react3=__webpack_require__(16),_storiesFromMarkdown=__webpack_require__(63),_storiesFromMarkdown2=_interopRequireDefault(_storiesFromMarkdown);function _interopRequireDefault(a){return a&&a.__esModule?a:{default:a}}var stories=(0,_react3.storiesOf)('Tables',module);(0,_storiesFromMarkdown2.default)(__webpack_require__(1121)).forEach(function(a){var b=a.title,c=a.story;stories.add(b,c)});
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9)(module)))
 
 /***/ }),
@@ -16557,7 +16555,7 @@ module.exports = _isPlaceholder;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {var _react=__webpack_require__(0),_react2=_interopRequireDefault(_react),_react3=__webpack_require__(16),_storiesFromMarkdown=__webpack_require__(63),_storiesFromMarkdown2=_interopRequireDefault(_storiesFromMarkdown);function _interopRequireDefault(a){return a&&a.__esModule?a:{default:a}}var stories=(0,_react3.storiesOf)('Popover',module);(0,_storiesFromMarkdown2.default)(__webpack_require__(1125)).forEach(function(a){var b=a.title,c=a.story;stories.add(b,c)});
+/* WEBPACK VAR INJECTION */(function(module) {var _react=__webpack_require__(0),_react2=_interopRequireDefault(_react),_react3=__webpack_require__(16),_storiesFromMarkdown=__webpack_require__(63),_storiesFromMarkdown2=_interopRequireDefault(_storiesFromMarkdown);function _interopRequireDefault(a){return a&&a.__esModule?a:{default:a}}var stories=(0,_react3.storiesOf)('Popover',module);(0,_storiesFromMarkdown2.default)(__webpack_require__(1123)).forEach(function(a){var b=a.title,c=a.story;stories.add(b,c)});
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9)(module)))
 
 /***/ }),
@@ -16565,7 +16563,7 @@ module.exports = _isPlaceholder;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {var _react=__webpack_require__(0),_react2=_interopRequireDefault(_react),_react3=__webpack_require__(16),_storiesFromMarkdown=__webpack_require__(63),_storiesFromMarkdown2=_interopRequireDefault(_storiesFromMarkdown);function _interopRequireDefault(a){return a&&a.__esModule?a:{default:a}}var stories=(0,_react3.storiesOf)('Subhead',module);(0,_storiesFromMarkdown2.default)(__webpack_require__(1127)).forEach(function(a){var b=a.title,c=a.story;stories.add(b,c)});
+/* WEBPACK VAR INJECTION */(function(module) {var _react=__webpack_require__(0),_react2=_interopRequireDefault(_react),_react3=__webpack_require__(16),_storiesFromMarkdown=__webpack_require__(63),_storiesFromMarkdown2=_interopRequireDefault(_storiesFromMarkdown);function _interopRequireDefault(a){return a&&a.__esModule?a:{default:a}}var stories=(0,_react3.storiesOf)('Subhead',module);(0,_storiesFromMarkdown2.default)(__webpack_require__(1125)).forEach(function(a){var b=a.title,c=a.story;stories.add(b,c)});
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9)(module)))
 
 /***/ }),
@@ -38363,7 +38361,7 @@ module.exports = ReactMount.renderSubtreeIntoContainer;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__splitStringTransformer__ = __webpack_require__(792);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__splitStringTransformer__ = __webpack_require__(790);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__splitStringTransformer__["a"]; });
 
 
@@ -38374,7 +38372,7 @@ module.exports = ReactMount.renderSubtreeIntoContainer;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__html__ = __webpack_require__(800);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__html__ = __webpack_require__(798);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__html__["a"]; });
 
 
@@ -38469,15 +38467,15 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.reviver = exports.retrocycle = exports.decycle = exports.CYCLIC_KEY = undefined;
 
-var _decycle2 = __webpack_require__(838);
+var _decycle2 = __webpack_require__(836);
 
 var _decycle3 = _interopRequireDefault(_decycle2);
 
-var _retrocycle2 = __webpack_require__(871);
+var _retrocycle2 = __webpack_require__(869);
 
 var _retrocycle3 = _interopRequireDefault(_retrocycle2);
 
-var _reviver2 = __webpack_require__(633);
+var _reviver2 = __webpack_require__(631);
 
 var _reviver3 = _interopRequireDefault(_reviver2);
 
@@ -38654,35 +38652,35 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.types = exports.undefinedType = exports.symbolType = exports.regexpType = exports.nanType = exports.infinityType = exports.functionType = exports.dateType = exports.objectType = undefined;
 
-var _object = __webpack_require__(848);
+var _object = __webpack_require__(846);
 
 var _object2 = _interopRequireDefault(_object);
 
-var _date = __webpack_require__(855);
+var _date = __webpack_require__(853);
 
 var _date2 = _interopRequireDefault(_date);
 
-var _function = __webpack_require__(856);
+var _function = __webpack_require__(854);
 
 var _function2 = _interopRequireDefault(_function);
 
-var _infinity = __webpack_require__(858);
+var _infinity = __webpack_require__(856);
 
 var _infinity2 = _interopRequireDefault(_infinity);
 
-var _nan = __webpack_require__(862);
+var _nan = __webpack_require__(860);
 
 var _nan2 = _interopRequireDefault(_nan);
 
-var _regexp = __webpack_require__(866);
+var _regexp = __webpack_require__(864);
 
 var _regexp2 = _interopRequireDefault(_regexp);
 
-var _symbol = __webpack_require__(868);
+var _symbol = __webpack_require__(866);
 
 var _symbol2 = _interopRequireDefault(_symbol);
 
-var _undefined = __webpack_require__(870);
+var _undefined = __webpack_require__(868);
 
 var _undefined2 = _interopRequireDefault(_undefined);
 
@@ -38710,11 +38708,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = createFunction;
 
-var _canConfigureName = __webpack_require__(631);
+var _canConfigureName = __webpack_require__(629);
 
 var _canConfigureName2 = _interopRequireDefault(_canConfigureName);
 
-var _createFunctionEval = __webpack_require__(850);
+var _createFunctionEval = __webpack_require__(848);
 
 var _createFunctionEval2 = _interopRequireDefault(_createFunctionEval);
 
@@ -38829,7 +38827,7 @@ function interrupt(interruptors, tokenizers, ctx, params) {
 "use strict";
 
 
-var collapseWhiteSpace = __webpack_require__(922);
+var collapseWhiteSpace = __webpack_require__(920);
 
 module.exports = normalize;
 
@@ -38847,7 +38845,7 @@ function normalize(value) {
 "use strict";
 
 
-var count = __webpack_require__(980);
+var count = __webpack_require__(978);
 
 module.exports = enclose;
 
@@ -38898,9 +38896,9 @@ function enclose(title) {
 "use strict";
 
 
-module.exports = __webpack_require__(658)()
+module.exports = __webpack_require__(656)()
 	? Object.setPrototypeOf
-	: __webpack_require__(659);
+	: __webpack_require__(657);
 
 
 /***/ }),
@@ -38910,18 +38908,18 @@ module.exports = __webpack_require__(658)()
 "use strict";
 
 
-module.exports = __webpack_require__(999)()
+module.exports = __webpack_require__(997)()
 	? Object.assign
-	: __webpack_require__(1000);
+	: __webpack_require__(998);
 
 
 /***/ }),
 /* 578 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var _isArray = /*#__PURE__*/__webpack_require__(666);
+var _isArray = /*#__PURE__*/__webpack_require__(664);
 
-var _isTransformer = /*#__PURE__*/__webpack_require__(1052);
+var _isTransformer = /*#__PURE__*/__webpack_require__(1050);
 
 /**
  * Returns a function that dispatches with different strategies based on the
@@ -38981,11 +38979,11 @@ module.exports = {
 /* 580 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var _isArrayLike = /*#__PURE__*/__webpack_require__(1060);
+var _isArrayLike = /*#__PURE__*/__webpack_require__(1058);
 
-var _xwrap = /*#__PURE__*/__webpack_require__(1062);
+var _xwrap = /*#__PURE__*/__webpack_require__(1060);
 
-var bind = /*#__PURE__*/__webpack_require__(1063);
+var bind = /*#__PURE__*/__webpack_require__(1061);
 
 function _arrayReduce(xf, acc, list) {
   var idx = 0;
@@ -39158,16 +39156,14 @@ module.exports = function makeString(object) {
 /* 615 */,
 /* 616 */,
 /* 617 */,
-/* 618 */,
-/* 619 */,
-/* 620 */
+/* 618 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ActionTypes; });
 /* harmony export (immutable) */ __webpack_exports__["b"] = createStore;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash_es_isPlainObject__ = __webpack_require__(621);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_symbol_observable__ = __webpack_require__(762);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash_es_isPlainObject__ = __webpack_require__(619);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_symbol_observable__ = __webpack_require__(760);
 
 
 
@@ -39418,13 +39414,13 @@ var ActionTypes = {
 }
 
 /***/ }),
-/* 621 */
+/* 619 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__baseGetTag_js__ = __webpack_require__(754);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getPrototype_js__ = __webpack_require__(759);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__isObjectLike_js__ = __webpack_require__(761);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__baseGetTag_js__ = __webpack_require__(752);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getPrototype_js__ = __webpack_require__(757);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__isObjectLike_js__ = __webpack_require__(759);
 
 
 
@@ -39490,11 +39486,11 @@ function isPlainObject(value) {
 
 
 /***/ }),
-/* 622 */
+/* 620 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__root_js__ = __webpack_require__(755);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__root_js__ = __webpack_require__(753);
 
 
 /** Built-in value references. */
@@ -39504,7 +39500,7 @@ var Symbol = __WEBPACK_IMPORTED_MODULE_0__root_js__["a" /* default */].Symbol;
 
 
 /***/ }),
-/* 623 */
+/* 621 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -39532,7 +39528,7 @@ function warning(message) {
 }
 
 /***/ }),
-/* 624 */
+/* 622 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -39571,7 +39567,7 @@ function compose() {
 }
 
 /***/ }),
-/* 625 */
+/* 623 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39596,7 +39592,7 @@ var logger = exports.logger = {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(28)))
 
 /***/ }),
-/* 626 */
+/* 624 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39794,29 +39790,29 @@ var StoryStore = function (_EventEmitter) {
 exports.default = StoryStore;
 
 /***/ }),
-/* 627 */
+/* 625 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__replaceSubstitutionTransformer__ = __webpack_require__(788);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__replaceSubstitutionTransformer__ = __webpack_require__(786);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__replaceSubstitutionTransformer__["a"]; });
 
 
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9yZXBsYWNlU3Vic3RpdHV0aW9uVHJhbnNmb3JtZXIvaW5kZXguanMiXSwibmFtZXMiOlsiZGVmYXVsdCJdLCJtYXBwaW5ncyI6InFCQUFvQixrQztxQkFBYkEsTyIsImZpbGUiOiJpbmRleC5qcyIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBkZWZhdWx0IGZyb20gJy4vcmVwbGFjZVN1YnN0aXR1dGlvblRyYW5zZm9ybWVyJztcbiJdfQ==
 
 /***/ }),
-/* 628 */
+/* 626 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__removeNonPrintingValuesTransformer__ = __webpack_require__(793);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__removeNonPrintingValuesTransformer__ = __webpack_require__(791);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__removeNonPrintingValuesTransformer__["a"]; });
 
 
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9yZW1vdmVOb25QcmludGluZ1ZhbHVlc1RyYW5zZm9ybWVyL2luZGV4LmpzIl0sIm5hbWVzIjpbImRlZmF1bHQiXSwibWFwcGluZ3MiOiJxQkFBb0Isc0M7cUJBQWJBLE8iLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgZGVmYXVsdCBmcm9tICcuL3JlbW92ZU5vblByaW50aW5nVmFsdWVzVHJhbnNmb3JtZXInO1xuIl19
 
 /***/ }),
-/* 629 */
+/* 627 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39827,7 +39823,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.decorateAction = exports.configureActions = exports.action = exports.EVENT_ID = exports.PANEL_ID = exports.ADDON_ID = undefined;
 
-var _preview = __webpack_require__(630);
+var _preview = __webpack_require__(628);
 
 // addons, panels and events get unique names using a prefix
 var ADDON_ID = exports.ADDON_ID = 'storybook/actions';
@@ -39839,7 +39835,7 @@ exports.configureActions = _preview.configureActions;
 exports.decorateAction = _preview.decorateAction;
 
 /***/ }),
-/* 630 */
+/* 628 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39849,7 +39845,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _action = __webpack_require__(827);
+var _action = __webpack_require__(825);
 
 Object.defineProperty(exports, 'action', {
   enumerable: true,
@@ -39858,7 +39854,7 @@ Object.defineProperty(exports, 'action', {
   }
 });
 
-var _configureActions = __webpack_require__(634);
+var _configureActions = __webpack_require__(632);
 
 Object.defineProperty(exports, 'configureActions', {
   enumerable: true,
@@ -39867,7 +39863,7 @@ Object.defineProperty(exports, 'configureActions', {
   }
 });
 
-var _decorateAction = __webpack_require__(875);
+var _decorateAction = __webpack_require__(873);
 
 Object.defineProperty(exports, 'decorateAction', {
   enumerable: true,
@@ -39879,7 +39875,7 @@ Object.defineProperty(exports, 'decorateAction', {
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
-/* 631 */
+/* 629 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39889,7 +39885,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _getOwnPropertyDescriptor = __webpack_require__(831);
+var _getOwnPropertyDescriptor = __webpack_require__(829);
 
 var _getOwnPropertyDescriptor2 = _interopRequireDefault(_getOwnPropertyDescriptor);
 
@@ -39904,7 +39900,7 @@ var canConfigureName = !nameDescriptor || nameDescriptor.configurable;
 exports.default = canConfigureName;
 
 /***/ }),
-/* 632 */
+/* 630 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39925,7 +39921,7 @@ function configureDepth(obj) {
 }
 
 /***/ }),
-/* 633 */
+/* 631 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39952,7 +39948,7 @@ function reviver(key, value) {
 exports.default = reviver;
 
 /***/ }),
-/* 634 */
+/* 632 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39982,7 +39978,7 @@ function configureActions() {
 }
 
 /***/ }),
-/* 635 */
+/* 633 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39992,7 +39988,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _preview = __webpack_require__(876);
+var _preview = __webpack_require__(874);
 
 Object.defineProperty(exports, 'linkTo', {
   enumerable: true,
@@ -40024,7 +40020,7 @@ function LinkTo() {
 }
 
 /***/ }),
-/* 636 */
+/* 634 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(process) {// Copyright Joyent, Inc. and other Node contributors.
@@ -40255,14 +40251,14 @@ var substr = 'ab'.substr(-1) === 'b'
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(85)))
 
 /***/ }),
-/* 637 */
+/* 635 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var xtend = __webpack_require__(118)
-var inherits = __webpack_require__(638)
+var inherits = __webpack_require__(636)
 
 module.exports = unherit
 
@@ -40307,7 +40303,7 @@ function unherit(Super) {
 
 
 /***/ }),
-/* 638 */
+/* 636 */
 /***/ (function(module, exports) {
 
 if (typeof Object.create === 'function') {
@@ -40336,7 +40332,7 @@ if (typeof Object.create === 'function') {
 
 
 /***/ }),
-/* 639 */
+/* 637 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40366,13 +40362,13 @@ function factory(key, state, ctx) {
 
 
 /***/ }),
-/* 640 */
+/* 638 */
 /***/ (function(module, exports) {
 
 module.exports = {"AElig":"Æ","AMP":"&","Aacute":"Á","Acirc":"Â","Agrave":"À","Aring":"Å","Atilde":"Ã","Auml":"Ä","COPY":"©","Ccedil":"Ç","ETH":"Ð","Eacute":"É","Ecirc":"Ê","Egrave":"È","Euml":"Ë","GT":">","Iacute":"Í","Icirc":"Î","Igrave":"Ì","Iuml":"Ï","LT":"<","Ntilde":"Ñ","Oacute":"Ó","Ocirc":"Ô","Ograve":"Ò","Oslash":"Ø","Otilde":"Õ","Ouml":"Ö","QUOT":"\"","REG":"®","THORN":"Þ","Uacute":"Ú","Ucirc":"Û","Ugrave":"Ù","Uuml":"Ü","Yacute":"Ý","aacute":"á","acirc":"â","acute":"´","aelig":"æ","agrave":"à","amp":"&","aring":"å","atilde":"ã","auml":"ä","brvbar":"¦","ccedil":"ç","cedil":"¸","cent":"¢","copy":"©","curren":"¤","deg":"°","divide":"÷","eacute":"é","ecirc":"ê","egrave":"è","eth":"ð","euml":"ë","frac12":"½","frac14":"¼","frac34":"¾","gt":">","iacute":"í","icirc":"î","iexcl":"¡","igrave":"ì","iquest":"¿","iuml":"ï","laquo":"«","lt":"<","macr":"¯","micro":"µ","middot":"·","nbsp":" ","not":"¬","ntilde":"ñ","oacute":"ó","ocirc":"ô","ograve":"ò","ordf":"ª","ordm":"º","oslash":"ø","otilde":"õ","ouml":"ö","para":"¶","plusmn":"±","pound":"£","quot":"\"","raquo":"»","reg":"®","sect":"§","shy":"­","sup1":"¹","sup2":"²","sup3":"³","szlig":"ß","thorn":"þ","times":"×","uacute":"ú","ucirc":"û","ugrave":"ù","uml":"¨","uuml":"ü","yacute":"ý","yen":"¥","yuml":"ÿ"}
 
 /***/ }),
-/* 641 */
+/* 639 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40394,13 +40390,13 @@ function hexadecimal(character) {
 
 
 /***/ }),
-/* 642 */
+/* 640 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var alphabetical = __webpack_require__(643)
+var alphabetical = __webpack_require__(641)
 var decimal = __webpack_require__(256)
 
 module.exports = alphanumerical
@@ -40413,7 +40409,7 @@ function alphanumerical(character) {
 
 
 /***/ }),
-/* 643 */
+/* 641 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40434,7 +40430,7 @@ function alphabetical(character) {
 
 
 /***/ }),
-/* 644 */
+/* 642 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40498,7 +40494,7 @@ function escapes(options) {
 
 
 /***/ }),
-/* 645 */
+/* 643 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40510,12 +40506,12 @@ module.exports = {
   commonmark: false,
   footnotes: false,
   pedantic: false,
-  blocks: __webpack_require__(908)
+  blocks: __webpack_require__(906)
 };
 
 
 /***/ }),
-/* 646 */
+/* 644 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40523,7 +40519,7 @@ module.exports = {
 
 module.exports = visit
 
-var is = __webpack_require__(647)
+var is = __webpack_require__(645)
 
 var CONTINUE = true
 var SKIP = 'skip'
@@ -40587,7 +40583,7 @@ function visit(tree, test, visitor, reverse) {
 
 
 /***/ }),
-/* 647 */
+/* 645 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40713,7 +40709,7 @@ function ok() {
 
 
 /***/ }),
-/* 648 */
+/* 646 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40752,7 +40748,7 @@ function indentation(value) {
 
 
 /***/ }),
-/* 649 */
+/* 647 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40784,7 +40780,7 @@ exports.tag = new RegExp('^(?:' +
 
 
 /***/ }),
-/* 650 */
+/* 648 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40798,7 +40794,7 @@ function locate(value, fromIndex) {
 
 
 /***/ }),
-/* 651 */
+/* 649 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40821,7 +40817,7 @@ function locate(value, fromIndex) {
 
 
 /***/ }),
-/* 652 */
+/* 650 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40835,7 +40831,7 @@ function returner(value) {
 
 
 /***/ }),
-/* 653 */
+/* 651 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40870,7 +40866,7 @@ function stringLength(value) {
 
 
 /***/ }),
-/* 654 */
+/* 652 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40900,7 +40896,7 @@ function length(value) {
 
 
 /***/ }),
-/* 655 */
+/* 653 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40934,7 +40930,7 @@ function pad(value, level) {
 
 
 /***/ }),
-/* 656 */
+/* 654 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40979,7 +40975,7 @@ function longestStreak(value, character) {
 
 
 /***/ }),
-/* 657 */
+/* 655 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41002,7 +40998,7 @@ function label(node) {
 
 
 /***/ }),
-/* 658 */
+/* 656 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41018,7 +41014,7 @@ module.exports = function (/* CustomCreate*/) {
 
 
 /***/ }),
-/* 659 */
+/* 657 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41029,7 +41025,7 @@ module.exports = function (/* CustomCreate*/) {
 
 
 
-var isObject        = __webpack_require__(660)
+var isObject        = __webpack_require__(658)
   , value           = __webpack_require__(110)
   , objIsPrototypeOf = Object.prototype.isPrototypeOf
   , defineProperty  = Object.defineProperty
@@ -41107,11 +41103,11 @@ module.exports = (function (status) {
 	})()
 ));
 
-__webpack_require__(996);
+__webpack_require__(994);
 
 
 /***/ }),
-/* 660 */
+/* 658 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41127,7 +41123,7 @@ module.exports = function (value) {
 
 
 /***/ }),
-/* 661 */
+/* 659 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41138,7 +41134,7 @@ module.exports = function () {};
 
 
 /***/ }),
-/* 662 */
+/* 660 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41165,19 +41161,19 @@ module.exports = function (opts1 /*, …options*/) {
 
 
 /***/ }),
-/* 663 */
+/* 661 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-module.exports = __webpack_require__(1005)()
+module.exports = __webpack_require__(1003)()
 	? String.prototype.contains
-	: __webpack_require__(1006);
+	: __webpack_require__(1004);
 
 
 /***/ }),
-/* 664 */
+/* 662 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41185,9 +41181,9 @@ module.exports = __webpack_require__(1005)()
 
 var isArguments    = __webpack_require__(297)
   , isString       = __webpack_require__(298)
-  , ArrayIterator  = __webpack_require__(1007)
-  , StringIterator = __webpack_require__(1027)
-  , iterable       = __webpack_require__(1028)
+  , ArrayIterator  = __webpack_require__(1005)
+  , StringIterator = __webpack_require__(1025)
+  , iterable       = __webpack_require__(1026)
   , iteratorSymbol = __webpack_require__(170).iterator;
 
 module.exports = function (obj) {
@@ -41199,18 +41195,18 @@ module.exports = function (obj) {
 
 
 /***/ }),
-/* 665 */
+/* 663 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var clear    = __webpack_require__(1012)
+var clear    = __webpack_require__(1010)
   , assign   = __webpack_require__(577)
   , callable = __webpack_require__(171)
   , value    = __webpack_require__(110)
   , d        = __webpack_require__(257)
-  , autoBind = __webpack_require__(1013)
+  , autoBind = __webpack_require__(1011)
   , Symbol   = __webpack_require__(170);
 
 var defineProperty = Object.defineProperty, defineProperties = Object.defineProperties, Iterator;
@@ -41312,7 +41308,7 @@ defineProperty(
 
 
 /***/ }),
-/* 666 */
+/* 664 */
 /***/ (function(module, exports) {
 
 /**
@@ -41332,14 +41328,14 @@ module.exports = Array.isArray || function _isArray(val) {
 };
 
 /***/ }),
-/* 667 */
+/* 665 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var _curry1 = /*#__PURE__*/__webpack_require__(172);
 
 var _has = /*#__PURE__*/__webpack_require__(582);
 
-var _isArguments = /*#__PURE__*/__webpack_require__(1065);
+var _isArguments = /*#__PURE__*/__webpack_require__(1063);
 
 // cover IE < 9 keys issues
 
@@ -41412,7 +41408,7 @@ var keys = /*#__PURE__*/_curry1(_keys);
 module.exports = keys;
 
 /***/ }),
-/* 668 */
+/* 666 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var _arity = /*#__PURE__*/__webpack_require__(581);
@@ -41421,7 +41417,7 @@ var _curry1 = /*#__PURE__*/__webpack_require__(172);
 
 var _curry2 = /*#__PURE__*/__webpack_require__(89);
 
-var _curryN = /*#__PURE__*/__webpack_require__(1068);
+var _curryN = /*#__PURE__*/__webpack_require__(1066);
 
 /**
  * Returns a curried equivalent of the provided function, with the specified
@@ -41476,7 +41472,7 @@ var curryN = /*#__PURE__*/_curry2(function curryN(length, fn) {
 module.exports = curryN;
 
 /***/ }),
-/* 669 */
+/* 667 */
 /***/ (function(module, exports) {
 
 // This object will be used as the prototype for Nodes when creating a
@@ -41526,13 +41522,13 @@ Object.keys(domLvl1).forEach(function(key) {
 
 
 /***/ }),
-/* 670 */
+/* 668 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var ShouldProcessNodeDefinitions = __webpack_require__(1082);
-var ProcessNodeDefinitions = __webpack_require__(671);
+var ShouldProcessNodeDefinitions = __webpack_require__(1080);
+var ProcessNodeDefinitions = __webpack_require__(669);
 
 function ProcessingInstructions() {
   var processNodeDefinitions = new ProcessNodeDefinitions();
@@ -41549,12 +41545,12 @@ module.exports = ProcessingInstructions;
 
 
 /***/ }),
-/* 671 */
+/* 669 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var utils = __webpack_require__(672);
+var utils = __webpack_require__(670);
 
 // eslint-disable-next-line max-len
 // https://github.com/facebook/react/blob/15.0-stable/src/renderers/dom/shared/ReactDOMComponent.js#L457
@@ -41590,16 +41586,16 @@ module.exports = ProcessNodeDefinitions;
 
 
 /***/ }),
-/* 672 */
+/* 670 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var camelize = __webpack_require__(1083);
-var toPairs = __webpack_require__(1093);
-var reduce = __webpack_require__(1094);
+var camelize = __webpack_require__(1081);
+var toPairs = __webpack_require__(1091);
+var reduce = __webpack_require__(1092);
 var React = __webpack_require__(0);
-var camelCaseAttrMap = __webpack_require__(1096);
+var camelCaseAttrMap = __webpack_require__(1094);
 
 function createStyleJsonFromString(styleString) {
   styleString = styleString || '';
@@ -41661,7 +41657,7 @@ module.exports = {
 
 
 /***/ }),
-/* 673 */
+/* 671 */
 /***/ (function(module, exports) {
 
 module.exports = function forEach(arr, fn) {
@@ -41672,7 +41668,7 @@ module.exports = function forEach(arr, fn) {
 
 
 /***/ }),
-/* 674 */
+/* 672 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41687,20 +41683,22 @@ module.exports = {
 
 
 /***/ }),
-/* 675 */
+/* 673 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {Object.defineProperty(exports,'__esModule',{value:!0}),exports.Octicon=void 0;var _react=__webpack_require__(0),_react2=_interopRequireDefault(_react),_react3=__webpack_require__(16),_octicons=__webpack_require__(1102),_octicons2=_interopRequireDefault(_octicons);function _interopRequireDefault(a){return a&&a.__esModule?a:{default:a}}var Octicon=exports.Octicon=function(a){var b=a.name;if(b in _octicons2.default){var c=_octicons2.default[b].toSVG(a);return _react2.default.createElement('span',{dangerouslySetInnerHTML:{__html:c}})}throw new Error('No such octicon: "'+b+'"!')},story=(0,_react3.storiesOf)('Octicons',module);Object.keys(_octicons2.default).forEach(function(a){story.add(a,function(){return _react2.default.createElement('div',null,_react2.default.createElement(Octicon,{name:a,height:'64'}),_react2.default.createElement(Octicon,{name:a,height:'32'}),_react2.default.createElement(Octicon,{name:a,height:'16'}))})});
+/* WEBPACK VAR INJECTION */(function(module) {Object.defineProperty(exports,'__esModule',{value:!0}),exports.Octicon=void 0;var _react=__webpack_require__(0),_react2=_interopRequireDefault(_react),_react3=__webpack_require__(16),_octicons=__webpack_require__(1100),_octicons2=_interopRequireDefault(_octicons);function _interopRequireDefault(a){return a&&a.__esModule?a:{default:a}}var Octicon=exports.Octicon=function(a){var b=a.name;if(b in _octicons2.default){var c=_octicons2.default[b].toSVG(a);return _react2.default.createElement('span',{dangerouslySetInnerHTML:{__html:c}})}throw new Error('No such octicon: "'+b+'"!')},story=(0,_react3.storiesOf)('Octicons',module);Object.keys(_octicons2.default).forEach(function(a){story.add(a,function(){return _react2.default.createElement('div',null,_react2.default.createElement(Octicon,{name:a,height:'64'}),_react2.default.createElement(Octicon,{name:a,height:'32'}),_react2.default.createElement(Octicon,{name:a,height:'16'}))})});
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9)(module)))
 
 /***/ }),
-/* 676 */
+/* 674 */
 /***/ (function(module, exports) {
 
 module.exports = "# Primer Marketing Support\n\n[![npm version](https://img.shields.io/npm/v/primer-marketing-support.svg)](https://www.npmjs.org/package/primer-marketing-support)\n[![Build Status](https://travis-ci.org/primer/primer.svg?branch=master)](https://travis-ci.org/primer/primer)\n\n> Support files are Sass variables, mixins, and functions that we import into different bases for use across components, objects, and utilities. Sharing these common properties across GitHub sites helps us to keep our styles more consistent.\n>\n> Most of the time to include these you'll only need to add `@import \"./primer-marketing-support\";` to the top of your bundle. If you want only a specific partial you can import them separately.\n\nThis repository is a module of the full [primer][primer] repository.\n\n## Install\n\nThis repository is distributed with [npm][npm]. After [installing npm][install-npm], you can install `support` with this command.\n\n```\n$ npm install --save support\n```\n\n## Usage\n\nThe source files included are written in [Sass][sass] (`scss`) You can simply point your sass `include-path` at your `node_modules` directory and import it like this.\n\n```scss\n@import \"primer-marketing-support/index.scss\";\n```\n\nYou can also import specific portions of the module by importing those partials from the `/lib/` folder. _Make sure you import any requirements along with the modules._\n\n## Documentation\n\n<!-- %docs\ntitle: Marketing support\nstatus: new release\n-->\n\n### Extended spacing scale\nThis module extends the `primer-core` spacing scale for marketing site needs. These are useful for achieving bigger vertical spacing between sections on marketing sites.\n\nStarting where the `primer-core` spacing scale ends at spacer 6, the marketing scale first steps up with `8px` for spacer 7 then steps in increments of `16px` from spacer 8 up to 12.\n\n| Scale | Value |\n|-------|-------|\n| 7     | 48    |\n| 8     | 64    |\n| 9     | 80    |\n| 10    | 96    |\n| 11    | 112   |\n| 12    | 128   |\n\nSee [primer-marketing-support](../../support/marketing-variables/) for the extended spacing scale used for marketing needs and the related y-axis spacing utilities for [margin](../../utilities/marketing-margin) and [padding](../../utilities/marketing-padding).\n\n<!-- %enddocs -->\n\n## License\n\nMIT &copy; [GitHub](https://github.com/)\n\n[primer]: https://github.com/primer/primer\n[docs]: http://primer.github.io/\n[npm]: https://www.npmjs.com/\n[install-npm]: https://docs.npmjs.com/getting-started/installing-node\n[sass]: http://sass-lang.com/\n"
 
 /***/ }),
+/* 675 */,
+/* 676 */,
 /* 677 */,
 /* 678 */,
 /* 679 */,
@@ -41771,18 +41769,16 @@ module.exports = "# Primer Marketing Support\n\n[![npm version](https://img.shie
 /* 744 */,
 /* 745 */,
 /* 746 */,
-/* 747 */,
-/* 748 */,
-/* 749 */
+/* 747 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(330);
-__webpack_require__(750);
-module.exports = __webpack_require__(751);
+__webpack_require__(748);
+module.exports = __webpack_require__(749);
 
 
 /***/ }),
-/* 750 */
+/* 748 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41794,15 +41790,15 @@ window.STORYBOOK_REACT_CLASSES = {};
 window.STORYBOOK_ENV = 'react';
 
 /***/ }),
-/* 751 */
+/* 749 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {var _react=__webpack_require__(0),_react2=_interopRequireDefault(_react),_react3=__webpack_require__(16),_addonOptions=__webpack_require__(877);__webpack_require__(879);var _package=__webpack_require__(884);function _interopRequireDefault(a){return a&&a.__esModule?a:{default:a}}(0,_addonOptions.setOptions)({name:'Primer v'+_package.version,url:'http://primer.github.io/',showDownPanel:!1}),(0,_react3.addDecorator)(function(a){return _react2.default.createElement('div',{className:'p-4'},a())});var contexts=[__webpack_require__(885)];(0,_react3.configure)(function(){contexts.forEach(function(a){a.keys().filter(function(a){return!a.includes('node_modules')}).forEach(a)})},module);
+/* WEBPACK VAR INJECTION */(function(module) {var _react=__webpack_require__(0),_react2=_interopRequireDefault(_react),_react3=__webpack_require__(16),_addonOptions=__webpack_require__(875);__webpack_require__(877);var _package=__webpack_require__(882);function _interopRequireDefault(a){return a&&a.__esModule?a:{default:a}}(0,_addonOptions.setOptions)({name:'Primer v'+_package.version,url:'http://primer.github.io/',showDownPanel:!1}),(0,_react3.addDecorator)(function(a){return _react2.default.createElement('div',{className:'p-4'},a())});var contexts=[__webpack_require__(883)];(0,_react3.configure)(function(){contexts.forEach(function(a){a.keys().filter(function(a){return!a.includes('node_modules')}).forEach(a)})},module);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9)(module)))
 
 /***/ }),
-/* 752 */
+/* 750 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41821,7 +41817,7 @@ var _assign = __webpack_require__(100);
 
 var _assign2 = _interopRequireDefault(_assign);
 
-var _redux = __webpack_require__(753);
+var _redux = __webpack_require__(751);
 
 var _addons = __webpack_require__(143);
 
@@ -41835,9 +41831,9 @@ var _channelPostmessage2 = _interopRequireDefault(_channelPostmessage);
 
 var _key_events = __webpack_require__(272);
 
-var _client = __webpack_require__(768);
+var _client = __webpack_require__(766);
 
-var _render = __webpack_require__(775);
+var _render = __webpack_require__(773);
 
 var _render2 = _interopRequireDefault(_render);
 
@@ -41905,17 +41901,17 @@ var forceReRender = exports.forceReRender = function forceReRender() {
 };
 
 /***/ }),
-/* 753 */
+/* 751 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createStore__ = __webpack_require__(620);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__combineReducers__ = __webpack_require__(765);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bindActionCreators__ = __webpack_require__(766);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__applyMiddleware__ = __webpack_require__(767);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__compose__ = __webpack_require__(624);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_warning__ = __webpack_require__(623);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createStore__ = __webpack_require__(618);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__combineReducers__ = __webpack_require__(763);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bindActionCreators__ = __webpack_require__(764);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__applyMiddleware__ = __webpack_require__(765);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__compose__ = __webpack_require__(622);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_warning__ = __webpack_require__(621);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "createStore", function() { return __WEBPACK_IMPORTED_MODULE_0__createStore__["b"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "combineReducers", function() { return __WEBPACK_IMPORTED_MODULE_1__combineReducers__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "bindActionCreators", function() { return __WEBPACK_IMPORTED_MODULE_2__bindActionCreators__["a"]; });
@@ -41941,13 +41937,13 @@ if (false) {
 
 
 /***/ }),
-/* 754 */
+/* 752 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Symbol_js__ = __webpack_require__(622);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getRawTag_js__ = __webpack_require__(757);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__objectToString_js__ = __webpack_require__(758);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Symbol_js__ = __webpack_require__(620);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getRawTag_js__ = __webpack_require__(755);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__objectToString_js__ = __webpack_require__(756);
 
 
 
@@ -41979,11 +41975,11 @@ function baseGetTag(value) {
 
 
 /***/ }),
-/* 755 */
+/* 753 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__freeGlobal_js__ = __webpack_require__(756);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__freeGlobal_js__ = __webpack_require__(754);
 
 
 /** Detect free variable `self`. */
@@ -41996,7 +41992,7 @@ var root = __WEBPACK_IMPORTED_MODULE_0__freeGlobal_js__["a" /* default */] || fr
 
 
 /***/ }),
-/* 756 */
+/* 754 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -42008,11 +42004,11 @@ var freeGlobal = typeof global == 'object' && global && global.Object === Object
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(28)))
 
 /***/ }),
-/* 757 */
+/* 755 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Symbol_js__ = __webpack_require__(622);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Symbol_js__ = __webpack_require__(620);
 
 
 /** Used for built-in method references. */
@@ -42062,7 +42058,7 @@ function getRawTag(value) {
 
 
 /***/ }),
-/* 758 */
+/* 756 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -42091,11 +42087,11 @@ function objectToString(value) {
 
 
 /***/ }),
-/* 759 */
+/* 757 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__overArg_js__ = __webpack_require__(760);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__overArg_js__ = __webpack_require__(758);
 
 
 /** Built-in value references. */
@@ -42105,7 +42101,7 @@ var getPrototype = Object(__WEBPACK_IMPORTED_MODULE_0__overArg_js__["a" /* defau
 
 
 /***/ }),
-/* 760 */
+/* 758 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -42127,7 +42123,7 @@ function overArg(func, transform) {
 
 
 /***/ }),
-/* 761 */
+/* 759 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -42163,11 +42159,11 @@ function isObjectLike(value) {
 
 
 /***/ }),
-/* 762 */
+/* 760 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(global, module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ponyfill_js__ = __webpack_require__(764);
+/* WEBPACK VAR INJECTION */(function(global, module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ponyfill_js__ = __webpack_require__(762);
 /* global window */
 
 
@@ -42188,10 +42184,10 @@ if (typeof self !== 'undefined') {
 var result = Object(__WEBPACK_IMPORTED_MODULE_0__ponyfill_js__["a" /* default */])(root);
 /* harmony default export */ __webpack_exports__["a"] = (result);
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(28), __webpack_require__(763)(module)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(28), __webpack_require__(761)(module)))
 
 /***/ }),
-/* 763 */
+/* 761 */
 /***/ (function(module, exports) {
 
 module.exports = function(originalModule) {
@@ -42221,7 +42217,7 @@ module.exports = function(originalModule) {
 
 
 /***/ }),
-/* 764 */
+/* 762 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -42246,14 +42242,14 @@ function symbolObservablePonyfill(root) {
 
 
 /***/ }),
-/* 765 */
+/* 763 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = combineReducers;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createStore__ = __webpack_require__(620);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_lodash_es_isPlainObject__ = __webpack_require__(621);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_warning__ = __webpack_require__(623);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createStore__ = __webpack_require__(618);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_lodash_es_isPlainObject__ = __webpack_require__(619);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_warning__ = __webpack_require__(621);
 
 
 
@@ -42386,7 +42382,7 @@ function combineReducers(reducers) {
 }
 
 /***/ }),
-/* 766 */
+/* 764 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -42440,12 +42436,12 @@ function bindActionCreators(actionCreators, dispatch) {
 }
 
 /***/ }),
-/* 767 */
+/* 765 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = applyMiddleware;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compose__ = __webpack_require__(624);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compose__ = __webpack_require__(622);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 
@@ -42496,14 +42492,14 @@ function applyMiddleware() {
 }
 
 /***/ }),
-/* 768 */
+/* 766 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(769).default;
+module.exports = __webpack_require__(767).default;
 
 
 /***/ }),
-/* 769 */
+/* 767 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42513,7 +42509,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _preview = __webpack_require__(770);
+var _preview = __webpack_require__(768);
 
 var _preview2 = _interopRequireDefault(_preview);
 
@@ -42522,7 +42518,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _preview2.default;
 
 /***/ }),
-/* 770 */
+/* 768 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42536,23 +42532,23 @@ var _actions = __webpack_require__(273);
 
 var Actions = _interopRequireWildcard(_actions);
 
-var _client_api = __webpack_require__(771);
+var _client_api = __webpack_require__(769);
 
 var _client_api2 = _interopRequireDefault(_client_api);
 
-var _config_api = __webpack_require__(772);
+var _config_api = __webpack_require__(770);
 
 var _config_api2 = _interopRequireDefault(_config_api);
 
-var _story_store = __webpack_require__(626);
+var _story_store = __webpack_require__(624);
 
 var _story_store2 = _interopRequireDefault(_story_store);
 
-var _reducer = __webpack_require__(773);
+var _reducer = __webpack_require__(771);
 
 var _reducer2 = _interopRequireDefault(_reducer);
 
-var _syncUrlWithStore = __webpack_require__(774);
+var _syncUrlWithStore = __webpack_require__(772);
 
 var _syncUrlWithStore2 = _interopRequireDefault(_syncUrlWithStore);
 
@@ -42563,7 +42559,7 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 exports.default = { Actions: Actions, ClientApi: _client_api2.default, ConfigApi: _config_api2.default, StoryStore: _story_store2.default, reducer: _reducer2.default, syncUrlWithStore: _syncUrlWithStore2.default };
 
 /***/ }),
-/* 771 */
+/* 769 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42589,9 +42585,9 @@ var _classCallCheck2 = __webpack_require__(12);
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _clientLogger = __webpack_require__(625);
+var _clientLogger = __webpack_require__(623);
 
-var _story_store = __webpack_require__(626);
+var _story_store = __webpack_require__(624);
 
 var _story_store2 = _interopRequireDefault(_story_store);
 
@@ -42717,7 +42713,7 @@ var ClientApi = function ClientApi() {
 exports.default = ClientApi;
 
 /***/ }),
-/* 772 */
+/* 770 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42824,7 +42820,7 @@ var ConfigApi = function () {
 exports.default = ConfigApi;
 
 /***/ }),
-/* 773 */
+/* 771 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42896,7 +42892,7 @@ function reducer() {
 }
 
 /***/ }),
-/* 774 */
+/* 772 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42947,7 +42943,7 @@ function syncUrlToStore(reduxStore) {
 }
 
 /***/ }),
-/* 775 */
+/* 773 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42957,7 +42953,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _taggedTemplateLiteral2 = __webpack_require__(776);
+var _taggedTemplateLiteral2 = __webpack_require__(774);
 
 var _taggedTemplateLiteral3 = _interopRequireDefault(_taggedTemplateLiteral2);
 
@@ -42977,15 +42973,15 @@ var _reactDom = __webpack_require__(117);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _commonTags = __webpack_require__(783);
+var _commonTags = __webpack_require__(781);
 
-var _clientLogger = __webpack_require__(625);
+var _clientLogger = __webpack_require__(623);
 
-var _element_check = __webpack_require__(823);
+var _element_check = __webpack_require__(821);
 
 var _element_check2 = _interopRequireDefault(_element_check);
 
-var _error_display = __webpack_require__(825);
+var _error_display = __webpack_require__(823);
 
 var _error_display2 = _interopRequireDefault(_error_display);
 
@@ -43109,7 +43105,7 @@ function renderPreview(_ref) {
 }
 
 /***/ }),
-/* 776 */
+/* 774 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43117,11 +43113,11 @@ function renderPreview(_ref) {
 
 exports.__esModule = true;
 
-var _defineProperties = __webpack_require__(777);
+var _defineProperties = __webpack_require__(775);
 
 var _defineProperties2 = _interopRequireDefault(_defineProperties);
 
-var _freeze = __webpack_require__(780);
+var _freeze = __webpack_require__(778);
 
 var _freeze2 = _interopRequireDefault(_freeze);
 
@@ -43136,16 +43132,16 @@ exports.default = function (strings, raw) {
 };
 
 /***/ }),
-/* 777 */
+/* 775 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = { "default": __webpack_require__(778), __esModule: true };
+module.exports = { "default": __webpack_require__(776), __esModule: true };
 
 /***/ }),
-/* 778 */
+/* 776 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(779);
+__webpack_require__(777);
 var $Object = __webpack_require__(5).Object;
 module.exports = function defineProperties(T, D) {
   return $Object.defineProperties(T, D);
@@ -43153,7 +43149,7 @@ module.exports = function defineProperties(T, D) {
 
 
 /***/ }),
-/* 779 */
+/* 777 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var $export = __webpack_require__(10);
@@ -43162,21 +43158,21 @@ $export($export.S + $export.F * !__webpack_require__(27), 'Object', { defineProp
 
 
 /***/ }),
-/* 780 */
+/* 778 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = { "default": __webpack_require__(781), __esModule: true };
+module.exports = { "default": __webpack_require__(779), __esModule: true };
 
 /***/ }),
-/* 781 */
+/* 779 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(782);
+__webpack_require__(780);
 module.exports = __webpack_require__(5).Object.freeze;
 
 
 /***/ }),
-/* 782 */
+/* 780 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.5 Object.freeze(O)
@@ -43191,7 +43187,7 @@ __webpack_require__(144)('freeze', function ($freeze) {
 
 
 /***/ }),
-/* 783 */
+/* 781 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -43204,47 +43200,47 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "stripIndentTransformer", function() { return __WEBPACK_IMPORTED_MODULE_2__stripIndentTransformer__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__replaceResultTransformer__ = __webpack_require__(169);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "replaceResultTransformer", function() { return __WEBPACK_IMPORTED_MODULE_3__replaceResultTransformer__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__replaceSubstitutionTransformer__ = __webpack_require__(627);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__replaceSubstitutionTransformer__ = __webpack_require__(625);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "replaceSubstitutionTransformer", function() { return __WEBPACK_IMPORTED_MODULE_4__replaceSubstitutionTransformer__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__replaceStringTransformer__ = __webpack_require__(789);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__replaceStringTransformer__ = __webpack_require__(787);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "replaceStringTransformer", function() { return __WEBPACK_IMPORTED_MODULE_5__replaceStringTransformer__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__inlineArrayTransformer__ = __webpack_require__(83);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "inlineArrayTransformer", function() { return __WEBPACK_IMPORTED_MODULE_6__inlineArrayTransformer__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__splitStringTransformer__ = __webpack_require__(558);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "splitStringTransformer", function() { return __WEBPACK_IMPORTED_MODULE_7__splitStringTransformer__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__removeNonPrintingValuesTransformer__ = __webpack_require__(628);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__removeNonPrintingValuesTransformer__ = __webpack_require__(626);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "removeNonPrintingValuesTransformer", function() { return __WEBPACK_IMPORTED_MODULE_8__removeNonPrintingValuesTransformer__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__commaLists__ = __webpack_require__(794);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__commaLists__ = __webpack_require__(792);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "commaLists", function() { return __WEBPACK_IMPORTED_MODULE_9__commaLists__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__commaListsAnd__ = __webpack_require__(796);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__commaListsAnd__ = __webpack_require__(794);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "commaListsAnd", function() { return __WEBPACK_IMPORTED_MODULE_10__commaListsAnd__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__commaListsOr__ = __webpack_require__(798);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__commaListsOr__ = __webpack_require__(796);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "commaListsOr", function() { return __WEBPACK_IMPORTED_MODULE_11__commaListsOr__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__html__ = __webpack_require__(559);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "html", function() { return __WEBPACK_IMPORTED_MODULE_12__html__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__codeBlock__ = __webpack_require__(801);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__codeBlock__ = __webpack_require__(799);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "codeBlock", function() { return __WEBPACK_IMPORTED_MODULE_13__codeBlock__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__source__ = __webpack_require__(802);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__source__ = __webpack_require__(800);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "source", function() { return __WEBPACK_IMPORTED_MODULE_14__source__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__safeHtml__ = __webpack_require__(803);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__safeHtml__ = __webpack_require__(801);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "safeHtml", function() { return __WEBPACK_IMPORTED_MODULE_15__safeHtml__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__oneLine__ = __webpack_require__(805);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__oneLine__ = __webpack_require__(803);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "oneLine", function() { return __WEBPACK_IMPORTED_MODULE_16__oneLine__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__oneLineTrim__ = __webpack_require__(807);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__oneLineTrim__ = __webpack_require__(805);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "oneLineTrim", function() { return __WEBPACK_IMPORTED_MODULE_17__oneLineTrim__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__oneLineCommaLists__ = __webpack_require__(809);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__oneLineCommaLists__ = __webpack_require__(807);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "oneLineCommaLists", function() { return __WEBPACK_IMPORTED_MODULE_18__oneLineCommaLists__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__oneLineCommaListsOr__ = __webpack_require__(811);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__oneLineCommaListsOr__ = __webpack_require__(809);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "oneLineCommaListsOr", function() { return __WEBPACK_IMPORTED_MODULE_19__oneLineCommaListsOr__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__oneLineCommaListsAnd__ = __webpack_require__(813);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__oneLineCommaListsAnd__ = __webpack_require__(811);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "oneLineCommaListsAnd", function() { return __WEBPACK_IMPORTED_MODULE_20__oneLineCommaListsAnd__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__inlineLists__ = __webpack_require__(815);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__inlineLists__ = __webpack_require__(813);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "inlineLists", function() { return __WEBPACK_IMPORTED_MODULE_21__inlineLists__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__oneLineInlineLists__ = __webpack_require__(817);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__oneLineInlineLists__ = __webpack_require__(815);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "oneLineInlineLists", function() { return __WEBPACK_IMPORTED_MODULE_22__oneLineInlineLists__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__stripIndent__ = __webpack_require__(819);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__stripIndent__ = __webpack_require__(817);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "stripIndent", function() { return __WEBPACK_IMPORTED_MODULE_23__stripIndent__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__stripIndents__ = __webpack_require__(821);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__stripIndents__ = __webpack_require__(819);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "stripIndents", function() { return __WEBPACK_IMPORTED_MODULE_24__stripIndents__["a"]; });
 // core
 
@@ -43306,7 +43302,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3NyYy9pbmRleC5qcyJdLCJuYW1lcyI6WyJUZW1wbGF0ZVRhZyIsInRyaW1SZXN1bHRUcmFuc2Zvcm1lciIsInN0cmlwSW5kZW50VHJhbnNmb3JtZXIiLCJyZXBsYWNlUmVzdWx0VHJhbnNmb3JtZXIiLCJyZXBsYWNlU3Vic3RpdHV0aW9uVHJhbnNmb3JtZXIiLCJyZXBsYWNlU3RyaW5nVHJhbnNmb3JtZXIiLCJpbmxpbmVBcnJheVRyYW5zZm9ybWVyIiwic3BsaXRTdHJpbmdUcmFuc2Zvcm1lciIsInJlbW92ZU5vblByaW50aW5nVmFsdWVzVHJhbnNmb3JtZXIiLCJjb21tYUxpc3RzIiwiY29tbWFMaXN0c0FuZCIsImNvbW1hTGlzdHNPciIsImh0bWwiLCJjb2RlQmxvY2siLCJzb3VyY2UiLCJzYWZlSHRtbCIsIm9uZUxpbmUiLCJvbmVMaW5lVHJpbSIsIm9uZUxpbmVDb21tYUxpc3RzIiwib25lTGluZUNvbW1hTGlzdHNPciIsIm9uZUxpbmVDb21tYUxpc3RzQW5kIiwiaW5saW5lTGlzdHMiLCJvbmVMaW5lSW5saW5lTGlzdHMiLCJzdHJpcEluZGVudCIsInN0cmlwSW5kZW50cyJdLCJtYXBwaW5ncyI6IkFBQUE7eUJBQ3dCLGU7eUJBQWpCQSxXOztBQUVQOzttQ0FDa0MseUI7bUNBQTNCQyxxQjtvQ0FDNEIsMEI7b0NBQTVCQyxzQjtzQ0FDOEIsNEI7c0NBQTlCQyx3Qjs0Q0FDb0Msa0M7NENBQXBDQyw4QjtzQ0FDOEIsNEI7c0NBQTlCQyx3QjtvQ0FDNEIsMEI7b0NBQTVCQyxzQjtvQ0FDNEIsMEI7b0NBQTVCQyxzQjtnREFDd0Msc0M7Z0RBQXhDQyxrQzs7QUFFUDs7d0JBQ3VCLGM7d0JBQWhCQyxVOzJCQUNtQixpQjsyQkFBbkJDLGE7MEJBQ2tCLGdCOzBCQUFsQkMsWTtrQkFDVSxRO2tCQUFWQyxJO3VCQUNlLGE7dUJBQWZDLFM7b0JBQ1ksVTtvQkFBWkMsTTtzQkFDYyxZO3NCQUFkQyxRO3FCQUNhLFc7cUJBQWJDLE87eUJBQ2lCLGU7eUJBQWpCQyxXOytCQUN1QixxQjsrQkFBdkJDLGlCO2lDQUN5Qix1QjtpQ0FBekJDLG1CO2tDQUMwQix3QjtrQ0FBMUJDLG9CO3lCQUNpQixlO3lCQUFqQkMsVztnQ0FDd0Isc0I7Z0NBQXhCQyxrQjt5QkFDaUIsZTt5QkFBakJDLFc7MEJBQ2tCLGdCOzBCQUFsQkMsWSIsImZpbGUiOiJpbmRleC5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8vIGNvcmVcbmV4cG9ydCBUZW1wbGF0ZVRhZyBmcm9tICcuL1RlbXBsYXRlVGFnJztcblxuLy8gdHJhbnNmb3JtZXJzXG5leHBvcnQgdHJpbVJlc3VsdFRyYW5zZm9ybWVyIGZyb20gJy4vdHJpbVJlc3VsdFRyYW5zZm9ybWVyJztcbmV4cG9ydCBzdHJpcEluZGVudFRyYW5zZm9ybWVyIGZyb20gJy4vc3RyaXBJbmRlbnRUcmFuc2Zvcm1lcic7XG5leHBvcnQgcmVwbGFjZVJlc3VsdFRyYW5zZm9ybWVyIGZyb20gJy4vcmVwbGFjZVJlc3VsdFRyYW5zZm9ybWVyJztcbmV4cG9ydCByZXBsYWNlU3Vic3RpdHV0aW9uVHJhbnNmb3JtZXIgZnJvbSAnLi9yZXBsYWNlU3Vic3RpdHV0aW9uVHJhbnNmb3JtZXInO1xuZXhwb3J0IHJlcGxhY2VTdHJpbmdUcmFuc2Zvcm1lciBmcm9tICcuL3JlcGxhY2VTdHJpbmdUcmFuc2Zvcm1lcic7XG5leHBvcnQgaW5saW5lQXJyYXlUcmFuc2Zvcm1lciBmcm9tICcuL2lubGluZUFycmF5VHJhbnNmb3JtZXInO1xuZXhwb3J0IHNwbGl0U3RyaW5nVHJhbnNmb3JtZXIgZnJvbSAnLi9zcGxpdFN0cmluZ1RyYW5zZm9ybWVyJztcbmV4cG9ydCByZW1vdmVOb25QcmludGluZ1ZhbHVlc1RyYW5zZm9ybWVyIGZyb20gJy4vcmVtb3ZlTm9uUHJpbnRpbmdWYWx1ZXNUcmFuc2Zvcm1lcic7XG5cbi8vIHRhZ3NcbmV4cG9ydCBjb21tYUxpc3RzIGZyb20gJy4vY29tbWFMaXN0cyc7XG5leHBvcnQgY29tbWFMaXN0c0FuZCBmcm9tICcuL2NvbW1hTGlzdHNBbmQnO1xuZXhwb3J0IGNvbW1hTGlzdHNPciBmcm9tICcuL2NvbW1hTGlzdHNPcic7XG5leHBvcnQgaHRtbCBmcm9tICcuL2h0bWwnO1xuZXhwb3J0IGNvZGVCbG9jayBmcm9tICcuL2NvZGVCbG9jayc7XG5leHBvcnQgc291cmNlIGZyb20gJy4vc291cmNlJztcbmV4cG9ydCBzYWZlSHRtbCBmcm9tICcuL3NhZmVIdG1sJztcbmV4cG9ydCBvbmVMaW5lIGZyb20gJy4vb25lTGluZSc7XG5leHBvcnQgb25lTGluZVRyaW0gZnJvbSAnLi9vbmVMaW5lVHJpbSc7XG5leHBvcnQgb25lTGluZUNvbW1hTGlzdHMgZnJvbSAnLi9vbmVMaW5lQ29tbWFMaXN0cyc7XG5leHBvcnQgb25lTGluZUNvbW1hTGlzdHNPciBmcm9tICcuL29uZUxpbmVDb21tYUxpc3RzT3InO1xuZXhwb3J0IG9uZUxpbmVDb21tYUxpc3RzQW5kIGZyb20gJy4vb25lTGluZUNvbW1hTGlzdHNBbmQnO1xuZXhwb3J0IGlubGluZUxpc3RzIGZyb20gJy4vaW5saW5lTGlzdHMnO1xuZXhwb3J0IG9uZUxpbmVJbmxpbmVMaXN0cyBmcm9tICcuL29uZUxpbmVJbmxpbmVMaXN0cyc7XG5leHBvcnQgc3RyaXBJbmRlbnQgZnJvbSAnLi9zdHJpcEluZGVudCc7XG5leHBvcnQgc3RyaXBJbmRlbnRzIGZyb20gJy4vc3RyaXBJbmRlbnRzJztcbiJdfQ==
 
 /***/ }),
-/* 784 */
+/* 782 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -43477,7 +43473,7 @@ var TemplateTag = function () {
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9UZW1wbGF0ZVRhZy9UZW1wbGF0ZVRhZy5qcyJdLCJuYW1lcyI6WyJUZW1wbGF0ZVRhZyIsInRyYW5zZm9ybWVycyIsInRhZyIsInN0cmluZ3MiLCJleHByZXNzaW9ucyIsImludGVyaW1UYWciLCJiaW5kIiwidHJhbnNmb3JtRW5kUmVzdWx0IiwibWFwIiwidHJhbnNmb3JtU3RyaW5nIiwicmVkdWNlIiwicHJvY2Vzc1N1YnN0aXR1dGlvbnMiLCJsZW5ndGgiLCJBcnJheSIsImlzQXJyYXkiLCJ0cmFuc2Zvcm1lciIsInByZXZpb3VzVGFnIiwidGVtcGxhdGUiLCJzdWJzdGl0dXRpb25zIiwicmVzdWx0U29GYXIiLCJyZW1haW5pbmdQYXJ0Iiwic3Vic3RpdHV0aW9uIiwidHJhbnNmb3JtU3Vic3RpdHV0aW9uIiwic2hpZnQiLCJjb25jYXQiLCJzdHIiLCJjYiIsInJlcyIsInRyYW5zZm9ybSIsIm9uU3RyaW5nIiwib25TdWJzdGl0dXRpb24iLCJlbmRSZXN1bHQiLCJvbkVuZFJlc3VsdCJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7QUFBQTs7OztJQUlxQkEsVztBQUNuQjs7Ozs7O0FBTUEseUJBQTZCO0FBQUE7O0FBQUEsc0NBQWRDLFlBQWM7QUFBZEEsa0JBQWM7QUFBQTs7QUFBQTs7QUFBQSxTQXVCN0JDLEdBdkI2QixHQXVCdkIsVUFBQ0MsT0FBRCxFQUE2QjtBQUFBLHlDQUFoQkMsV0FBZ0I7QUFBaEJBLG1CQUFnQjtBQUFBOztBQUNqQyxVQUFJLE9BQU9ELE9BQVAsS0FBbUIsVUFBdkIsRUFBbUM7QUFDakM7QUFDQTtBQUNBO0FBQ0EsZUFBTyxNQUFLRSxVQUFMLENBQWdCQyxJQUFoQixRQUEyQkgsT0FBM0IsQ0FBUDtBQUNEOztBQUVELFVBQUksT0FBT0EsT0FBUCxLQUFtQixRQUF2QixFQUFpQztBQUMvQjtBQUNBLGVBQU8sTUFBS0ksa0JBQUwsQ0FBd0JKLE9BQXhCLENBQVA7QUFDRDs7QUFFRDtBQUNBQSxnQkFBVUEsUUFBUUssR0FBUixDQUFZLE1BQUtDLGVBQUwsQ0FBcUJILElBQXJCLE9BQVosQ0FBVjtBQUNBLGFBQU8sTUFBS0Msa0JBQUwsQ0FDTEosUUFBUU8sTUFBUixDQUFlLE1BQUtDLG9CQUFMLENBQTBCTCxJQUExQixRQUFxQ0YsV0FBckMsQ0FBZixDQURLLENBQVA7QUFHRCxLQXpDNEI7O0FBQzNCO0FBQ0EsUUFBSUgsYUFBYVcsTUFBYixHQUFzQixDQUF0QixJQUEyQkMsTUFBTUMsT0FBTixDQUFjYixhQUFhLENBQWIsQ0FBZCxDQUEvQixFQUErRDtBQUM3REEscUJBQWVBLGFBQWEsQ0FBYixDQUFmO0FBQ0Q7O0FBRUQ7QUFDQSxTQUFLQSxZQUFMLEdBQW9CQSxhQUFhTyxHQUFiLENBQWlCLHVCQUFlO0FBQ2xELGFBQU8sT0FBT08sV0FBUCxLQUF1QixVQUF2QixHQUFvQ0EsYUFBcEMsR0FBb0RBLFdBQTNEO0FBQ0QsS0FGbUIsQ0FBcEI7O0FBSUE7QUFDQSxXQUFPLEtBQUtiLEdBQVo7QUFDRDs7QUFFRDs7Ozs7Ozs7Ozs7Ozs7QUE0QkE7Ozs7Ozs7OytCQVFXYyxXLEVBQWFDLFEsRUFBNEI7QUFBQSx5Q0FBZkMsYUFBZTtBQUFmQSxxQkFBZTtBQUFBOztBQUNsRCxhQUFPLEtBQUtoQixHQUFaLGtCQUFrQmMsOEJBQVlDLFFBQVosU0FBeUJDLGFBQXpCLEVBQWxCO0FBQ0Q7O0FBRUQ7Ozs7Ozs7Ozs7O3lDQVFxQkEsYSxFQUFlQyxXLEVBQWFDLGEsRUFBZTtBQUM5RCxVQUFNQyxlQUFlLEtBQUtDLHFCQUFMLENBQ25CSixjQUFjSyxLQUFkLEVBRG1CLEVBRW5CSixXQUZtQixDQUFyQjtBQUlBLGFBQU8sR0FBR0ssTUFBSCxDQUFVTCxXQUFWLEVBQXVCRSxZQUF2QixFQUFxQ0QsYUFBckMsQ0FBUDtBQUNEOztBQUVEOzs7Ozs7Ozs7b0NBTWdCSyxHLEVBQUs7QUFDbkIsVUFBTUMsS0FBSyxTQUFMQSxFQUFLLENBQUNDLEdBQUQsRUFBTUMsU0FBTjtBQUFBLGVBQ1RBLFVBQVVDLFFBQVYsR0FBcUJELFVBQVVDLFFBQVYsQ0FBbUJGLEdBQW5CLENBQXJCLEdBQStDQSxHQUR0QztBQUFBLE9BQVg7QUFFQSxhQUFPLEtBQUsxQixZQUFMLENBQWtCUyxNQUFsQixDQUF5QmdCLEVBQXpCLEVBQTZCRCxHQUE3QixDQUFQO0FBQ0Q7O0FBRUQ7Ozs7Ozs7Ozs7MENBT3NCSixZLEVBQWNGLFcsRUFBYTtBQUMvQyxVQUFNTyxLQUFLLFNBQUxBLEVBQUssQ0FBQ0MsR0FBRCxFQUFNQyxTQUFOO0FBQUEsZUFDVEEsVUFBVUUsY0FBVixHQUNJRixVQUFVRSxjQUFWLENBQXlCSCxHQUF6QixFQUE4QlIsV0FBOUIsQ0FESixHQUVJUSxHQUhLO0FBQUEsT0FBWDtBQUlBLGFBQU8sS0FBSzFCLFlBQUwsQ0FBa0JTLE1BQWxCLENBQXlCZ0IsRUFBekIsRUFBNkJMLFlBQTdCLENBQVA7QUFDRDs7QUFFRDs7Ozs7Ozs7O3VDQU1tQlUsUyxFQUFXO0FBQzVCLFVBQU1MLEtBQUssU0FBTEEsRUFBSyxDQUFDQyxHQUFELEVBQU1DLFNBQU47QUFBQSxlQUNUQSxVQUFVSSxXQUFWLEdBQXdCSixVQUFVSSxXQUFWLENBQXNCTCxHQUF0QixDQUF4QixHQUFxREEsR0FENUM7QUFBQSxPQUFYO0FBRUEsYUFBTyxLQUFLMUIsWUFBTCxDQUFrQlMsTUFBbEIsQ0FBeUJnQixFQUF6QixFQUE2QkssU0FBN0IsQ0FBUDtBQUNEOzs7Ozs7ZUFuSGtCL0IsVyIsImZpbGUiOiJUZW1wbGF0ZVRhZy5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogQGNsYXNzIFRlbXBsYXRlVGFnXG4gKiBAY2xhc3NkZXNjIENvbnN1bWVzIGEgcGlwZWxpbmUgb2YgY29tcG9zYWJsZSB0cmFuc2Zvcm1lciBwbHVnaW5zIGFuZCBwcm9kdWNlcyBhIHRlbXBsYXRlIHRhZy5cbiAqL1xuZXhwb3J0IGRlZmF1bHQgY2xhc3MgVGVtcGxhdGVUYWcge1xuICAvKipcbiAgICogY29uc3RydWN0cyBhIHRlbXBsYXRlIHRhZ1xuICAgKiBAY29uc3RydWN0cyBUZW1wbGF0ZVRhZ1xuICAgKiBAcGFyYW0gIHsuLi5PYmplY3R9IFsuLi50cmFuc2Zvcm1lcnNdIC0gYW4gYXJyYXkgb3IgYXJndW1lbnRzIGxpc3Qgb2YgdHJhbnNmb3JtZXJzXG4gICAqIEByZXR1cm4ge0Z1bmN0aW9ufSAgICAgICAgICAgICAgICAgICAgLSBhIHRlbXBsYXRlIHRhZ1xuICAgKi9cbiAgY29uc3RydWN0b3IoLi4udHJhbnNmb3JtZXJzKSB7XG4gICAgLy8gaWYgZmlyc3QgYXJndW1lbnQgaXMgYW4gYXJyYXksIGV4dHJ1ZGUgaXQgYXMgYSBsaXN0IG9mIHRyYW5zZm9ybWVyc1xuICAgIGlmICh0cmFuc2Zvcm1lcnMubGVuZ3RoID4gMCAmJiBBcnJheS5pc0FycmF5KHRyYW5zZm9ybWVyc1swXSkpIHtcbiAgICAgIHRyYW5zZm9ybWVycyA9IHRyYW5zZm9ybWVyc1swXTtcbiAgICB9XG5cbiAgICAvLyBpZiBhbnkgdHJhbnNmb3JtZXJzIGFyZSBmdW5jdGlvbnMsIHRoaXMgbWVhbnMgdGhleSBhcmUgbm90IGluaXRpYXRlZCAtIGF1dG9tYXRpY2FsbHkgaW5pdGlhdGUgdGhlbVxuICAgIHRoaXMudHJhbnNmb3JtZXJzID0gdHJhbnNmb3JtZXJzLm1hcCh0cmFuc2Zvcm1lciA9PiB7XG4gICAgICByZXR1cm4gdHlwZW9mIHRyYW5zZm9ybWVyID09PSAnZnVuY3Rpb24nID8gdHJhbnNmb3JtZXIoKSA6IHRyYW5zZm9ybWVyO1xuICAgIH0pO1xuXG4gICAgLy8gcmV0dXJuIGFuIEVTMjAxNSB0ZW1wbGF0ZSB0YWdcbiAgICByZXR1cm4gdGhpcy50YWc7XG4gIH1cblxuICAvKipcbiAgICogQXBwbGllcyBhbGwgdHJhbnNmb3JtZXJzIHRvIGEgdGVtcGxhdGUgbGl0ZXJhbCB0YWdnZWQgd2l0aCB0aGlzIG1ldGhvZC5cbiAgICogSWYgYSBmdW5jdGlvbiBpcyBwYXNzZWQgYXMgdGhlIGZpcnN0IGFyZ3VtZW50LCBhc3N1bWVzIHRoZSBmdW5jdGlvbiBpcyBhIHRlbXBsYXRlIHRhZ1xuICAgKiBhbmQgYXBwbGllcyBpdCB0byB0aGUgdGVtcGxhdGUsIHJldHVybmluZyBhIHRlbXBsYXRlIHRhZy5cbiAgICogQHBhcmFtICB7KEZ1bmN0aW9ufFN0cmluZ3xBcnJheTxTdHJpbmc+KX0gc3RyaW5ncyAgICAgICAgLSBFaXRoZXIgYSB0ZW1wbGF0ZSB0YWcgb3IgYW4gYXJyYXkgY29udGFpbmluZyB0ZW1wbGF0ZSBzdHJpbmdzIHNlcGFyYXRlZCBieSBpZGVudGlmaWVyXG4gICAqIEBwYXJhbSAgey4uLip9ICAgICAgICAgICAgICAgICAgICAgICAgICAgIC4uLmV4cHJlc3Npb25zIC0gT3B0aW9uYWwgbGlzdCBvZiBzdWJzdGl0dXRpb24gdmFsdWVzLlxuICAgKiBAcmV0dXJuIHsoU3RyaW5nfEZ1bmN0aW9uKX0gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAtIEVpdGhlciBhbiBpbnRlcm1lZGlhcnkgdGFnIGZ1bmN0aW9uIG9yIHRoZSByZXN1bHRzIG9mIHByb2Nlc3NpbmcgdGhlIHRlbXBsYXRlLlxuICAgKi9cbiAgdGFnID0gKHN0cmluZ3MsIC4uLmV4cHJlc3Npb25zKSA9PiB7XG4gICAgaWYgKHR5cGVvZiBzdHJpbmdzID09PSAnZnVuY3Rpb24nKSB7XG4gICAgICAvLyBpZiB0aGUgZmlyc3QgYXJndW1lbnQgcGFzc2VkIGlzIGEgZnVuY3Rpb24sIGFzc3VtZSBpdCBpcyBhIHRlbXBsYXRlIHRhZyBhbmQgcmV0dXJuXG4gICAgICAvLyBhbiBpbnRlcm1lZGlhcnkgdGFnIHRoYXQgcHJvY2Vzc2VzIHRoZSB0ZW1wbGF0ZSB1c2luZyB0aGUgYWZvcmVtZW50aW9uZWQgdGFnLCBwYXNzaW5nIHRoZVxuICAgICAgLy8gcmVzdWx0IHRvIG91ciB0YWdcbiAgICAgIHJldHVybiB0aGlzLmludGVyaW1UYWcuYmluZCh0aGlzLCBzdHJpbmdzKTtcbiAgICB9XG5cbiAgICBpZiAodHlwZW9mIHN0cmluZ3MgPT09ICdzdHJpbmcnKSB7XG4gICAgICAvLyBpZiB0aGUgZmlyc3QgYXJndW1lbnQgcGFzc2VkIGlzIGEgc3RyaW5nLCBqdXN0IHRyYW5zZm9ybSBpdFxuICAgICAgcmV0dXJuIHRoaXMudHJhbnNmb3JtRW5kUmVzdWx0KHN0cmluZ3MpO1xuICAgIH1cblxuICAgIC8vIGVsc2UsIHJldHVybiBhIHRyYW5zZm9ybWVkIGVuZCByZXN1bHQgb2YgcHJvY2Vzc2luZyB0aGUgdGVtcGxhdGUgd2l0aCBvdXIgdGFnXG4gICAgc3RyaW5ncyA9IHN0cmluZ3MubWFwKHRoaXMudHJhbnNmb3JtU3RyaW5nLmJpbmQodGhpcykpO1xuICAgIHJldHVybiB0aGlzLnRyYW5zZm9ybUVuZFJlc3VsdChcbiAgICAgIHN0cmluZ3MucmVkdWNlKHRoaXMucHJvY2Vzc1N1YnN0aXR1dGlvbnMuYmluZCh0aGlzLCBleHByZXNzaW9ucykpLFxuICAgICk7XG4gIH07XG5cbiAgLyoqXG4gICAqIEFuIGludGVybWVkaWFyeSB0ZW1wbGF0ZSB0YWcgdGhhdCByZWNlaXZlcyBhIHRlbXBsYXRlIHRhZyBhbmQgcGFzc2VzIHRoZSByZXN1bHQgb2YgY2FsbGluZyB0aGUgdGVtcGxhdGUgd2l0aCB0aGUgcmVjZWl2ZWRcbiAgICogdGVtcGxhdGUgdGFnIHRvIG91ciBvd24gdGVtcGxhdGUgdGFnLlxuICAgKiBAcGFyYW0gIHtGdW5jdGlvbn0gICAgICAgIG5leHRUYWcgICAgICAgICAgLSB0aGUgcmVjZWl2ZWQgdGVtcGxhdGUgdGFnXG4gICAqIEBwYXJhbSAge0FycmF5PFN0cmluZz59ICAgdGVtcGxhdGUgICAgICAgICAtIHRoZSB0ZW1wbGF0ZSB0byBwcm9jZXNzXG4gICAqIEBwYXJhbSAgey4uLip9ICAgICAgICAgICAgLi4uc3Vic3RpdHV0aW9ucyAtIGBzdWJzdGl0dXRpb25zYCBpcyBhbiBhcnJheSBvZiBhbGwgc3Vic3RpdHV0aW9ucyBpbiB0aGUgdGVtcGxhdGVcbiAgICogQHJldHVybiB7Kn0gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC0gdGhlIGZpbmFsIHByb2Nlc3NlZCB2YWx1ZVxuICAgKi9cbiAgaW50ZXJpbVRhZyhwcmV2aW91c1RhZywgdGVtcGxhdGUsIC4uLnN1YnN0aXR1dGlvbnMpIHtcbiAgICByZXR1cm4gdGhpcy50YWdgJHtwcmV2aW91c1RhZyh0ZW1wbGF0ZSwgLi4uc3Vic3RpdHV0aW9ucyl9YDtcbiAgfVxuXG4gIC8qKlxuICAgKiBQZXJmb3JtcyBidWxrIHByb2Nlc3Npbmcgb24gdGhlIHRhZ2dlZCB0ZW1wbGF0ZSwgdHJhbnNmb3JtaW5nIGVhY2ggc3Vic3RpdHV0aW9uIGFuZCB0aGVuXG4gICAqIGNvbmNhdGVuYXRpbmcgdGhlIHJlc3VsdGluZyB2YWx1ZXMgaW50byBhIHN0cmluZy5cbiAgICogQHBhcmFtICB7QXJyYXk8Kj59IHN1YnN0aXR1dGlvbnMgLSBhbiBhcnJheSBvZiBhbGwgcmVtYWluaW5nIHN1YnN0aXR1dGlvbnMgcHJlc2VudCBpbiB0aGlzIHRlbXBsYXRlXG4gICAqIEBwYXJhbSAge1N0cmluZ30gICByZXN1bHRTb0ZhciAgIC0gdGhpcyBpdGVyYXRpb24ncyByZXN1bHQgc3RyaW5nIHNvIGZhclxuICAgKiBAcGFyYW0gIHtTdHJpbmd9ICAgcmVtYWluaW5nUGFydCAtIHRoZSB0ZW1wbGF0ZSBjaHVuayBhZnRlciB0aGUgY3VycmVudCBzdWJzdGl0dXRpb25cbiAgICogQHJldHVybiB7U3RyaW5nfSAgICAgICAgICAgICAgICAgLSB0aGUgcmVzdWx0IG9mIGpvaW5pbmcgdGhpcyBpdGVyYXRpb24ncyBwcm9jZXNzZWQgc3Vic3RpdHV0aW9uIHdpdGggdGhlIHJlc3VsdFxuICAgKi9cbiAgcHJvY2Vzc1N1YnN0aXR1dGlvbnMoc3Vic3RpdHV0aW9ucywgcmVzdWx0U29GYXIsIHJlbWFpbmluZ1BhcnQpIHtcbiAgICBjb25zdCBzdWJzdGl0dXRpb24gPSB0aGlzLnRyYW5zZm9ybVN1YnN0aXR1dGlvbihcbiAgICAgIHN1YnN0aXR1dGlvbnMuc2hpZnQoKSxcbiAgICAgIHJlc3VsdFNvRmFyLFxuICAgICk7XG4gICAgcmV0dXJuICcnLmNvbmNhdChyZXN1bHRTb0Zhciwgc3Vic3RpdHV0aW9uLCByZW1haW5pbmdQYXJ0KTtcbiAgfVxuXG4gIC8qKlxuICAgKiBJdGVyYXRlIHRocm91Z2ggZWFjaCB0cmFuc2Zvcm1lciwgYXBwbHlpbmcgdGhlIHRyYW5zZm9ybWVyJ3MgYG9uU3RyaW5nYCBtZXRob2QgdG8gdGhlIHRlbXBsYXRlXG4gICAqIHN0cmluZ3MgYmVmb3JlIGFsbCBzdWJzdGl0dXRpb25zIGFyZSBwcm9jZXNzZWQuXG4gICAqIEBwYXJhbSB7U3RyaW5nfSAgc3RyIC0gVGhlIGlucHV0IHN0cmluZ1xuICAgKiBAcmV0dXJuIHtTdHJpbmd9ICAgICAtIFRoZSBmaW5hbCByZXN1bHRzIG9mIHByb2Nlc3NpbmcgZWFjaCB0cmFuc2Zvcm1lclxuICAgKi9cbiAgdHJhbnNmb3JtU3RyaW5nKHN0cikge1xuICAgIGNvbnN0IGNiID0gKHJlcywgdHJhbnNmb3JtKSA9PlxuICAgICAgdHJhbnNmb3JtLm9uU3RyaW5nID8gdHJhbnNmb3JtLm9uU3RyaW5nKHJlcykgOiByZXM7XG4gICAgcmV0dXJuIHRoaXMudHJhbnNmb3JtZXJzLnJlZHVjZShjYiwgc3RyKTtcbiAgfVxuXG4gIC8qKlxuICAgKiBXaGVuIGEgc3Vic3RpdHV0aW9uIGlzIGVuY291bnRlcmVkLCBpdGVyYXRlcyB0aHJvdWdoIGVhY2ggdHJhbnNmb3JtZXIgYW5kIGFwcGxpZXMgdGhlIHRyYW5zZm9ybWVyJ3NcbiAgICogYG9uU3Vic3RpdHV0aW9uYCBtZXRob2QgdG8gdGhlIHN1YnN0aXR1dGlvbi5cbiAgICogQHBhcmFtICB7Kn0gICAgICBzdWJzdGl0dXRpb24gLSBUaGUgY3VycmVudCBzdWJzdGl0dXRpb25cbiAgICogQHBhcmFtICB7U3RyaW5nfSByZXN1bHRTb0ZhciAgLSBUaGUgcmVzdWx0IHVwIHRvIGFuZCBleGNsdWRpbmcgdGhpcyBzdWJzdGl0dXRpb24uXG4gICAqIEByZXR1cm4geyp9ICAgICAgICAgICAgICAgICAgIC0gVGhlIGZpbmFsIHJlc3VsdCBvZiBhcHBseWluZyBhbGwgc3Vic3RpdHV0aW9uIHRyYW5zZm9ybWF0aW9ucy5cbiAgICovXG4gIHRyYW5zZm9ybVN1YnN0aXR1dGlvbihzdWJzdGl0dXRpb24sIHJlc3VsdFNvRmFyKSB7XG4gICAgY29uc3QgY2IgPSAocmVzLCB0cmFuc2Zvcm0pID0+XG4gICAgICB0cmFuc2Zvcm0ub25TdWJzdGl0dXRpb25cbiAgICAgICAgPyB0cmFuc2Zvcm0ub25TdWJzdGl0dXRpb24ocmVzLCByZXN1bHRTb0ZhcilcbiAgICAgICAgOiByZXM7XG4gICAgcmV0dXJuIHRoaXMudHJhbnNmb3JtZXJzLnJlZHVjZShjYiwgc3Vic3RpdHV0aW9uKTtcbiAgfVxuXG4gIC8qKlxuICAgKiBJdGVyYXRlcyB0aHJvdWdoIGVhY2ggdHJhbnNmb3JtZXIsIGFwcGx5aW5nIHRoZSB0cmFuc2Zvcm1lcidzIGBvbkVuZFJlc3VsdGAgbWV0aG9kIHRvIHRoZVxuICAgKiB0ZW1wbGF0ZSBsaXRlcmFsIGFmdGVyIGFsbCBzdWJzdGl0dXRpb25zIGhhdmUgZmluaXNoZWQgcHJvY2Vzc2luZy5cbiAgICogQHBhcmFtICB7U3RyaW5nfSBlbmRSZXN1bHQgLSBUaGUgcHJvY2Vzc2VkIHRlbXBsYXRlLCBqdXN0IGJlZm9yZSBpdCBpcyByZXR1cm5lZCBmcm9tIHRoZSB0YWdcbiAgICogQHJldHVybiB7U3RyaW5nfSAgICAgICAgICAgLSBUaGUgZmluYWwgcmVzdWx0cyBvZiBwcm9jZXNzaW5nIGVhY2ggdHJhbnNmb3JtZXJcbiAgICovXG4gIHRyYW5zZm9ybUVuZFJlc3VsdChlbmRSZXN1bHQpIHtcbiAgICBjb25zdCBjYiA9IChyZXMsIHRyYW5zZm9ybSkgPT5cbiAgICAgIHRyYW5zZm9ybS5vbkVuZFJlc3VsdCA/IHRyYW5zZm9ybS5vbkVuZFJlc3VsdChyZXMpIDogcmVzO1xuICAgIHJldHVybiB0aGlzLnRyYW5zZm9ybWVycy5yZWR1Y2UoY2IsIGVuZFJlc3VsdCk7XG4gIH1cbn1cbiJdfQ==
 
 /***/ }),
-/* 785 */
+/* 783 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -43513,7 +43509,7 @@ var trimResultTransformer = function trimResultTransformer() {
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy90cmltUmVzdWx0VHJhbnNmb3JtZXIvdHJpbVJlc3VsdFRyYW5zZm9ybWVyLmpzIl0sIm5hbWVzIjpbInRyaW1SZXN1bHRUcmFuc2Zvcm1lciIsInNpZGUiLCJvbkVuZFJlc3VsdCIsImVuZFJlc3VsdCIsInRyaW0iLCJ0b0xvd2VyQ2FzZSIsInJlcGxhY2UiLCJFcnJvciJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7O0FBS0EsSUFBTUEsd0JBQXdCLFNBQXhCQSxxQkFBd0I7QUFBQSxNQUFDQyxJQUFELHVFQUFRLEVBQVI7QUFBQSxTQUFnQjtBQUM1Q0MsZUFENEMsdUJBQ2hDQyxTQURnQyxFQUNyQjtBQUNyQixVQUFJRixTQUFTLEVBQWIsRUFBaUI7QUFDZixlQUFPRSxVQUFVQyxJQUFWLEVBQVA7QUFDRDs7QUFFREgsYUFBT0EsS0FBS0ksV0FBTCxFQUFQOztBQUVBLFVBQUlKLFNBQVMsT0FBVCxJQUFvQkEsU0FBUyxNQUFqQyxFQUF5QztBQUN2QyxlQUFPRSxVQUFVRyxPQUFWLENBQWtCLE1BQWxCLEVBQTBCLEVBQTFCLENBQVA7QUFDRDs7QUFFRCxVQUFJTCxTQUFTLEtBQVQsSUFBa0JBLFNBQVMsT0FBL0IsRUFBd0M7QUFDdEMsZUFBT0UsVUFBVUcsT0FBVixDQUFrQixNQUFsQixFQUEwQixFQUExQixDQUFQO0FBQ0Q7O0FBRUQsWUFBTSxJQUFJQyxLQUFKLDBCQUFpQ04sSUFBakMsQ0FBTjtBQUNEO0FBakIyQyxHQUFoQjtBQUFBLENBQTlCOztBQW9CQSxlQUFlRCxxQkFBZiIsImZpbGUiOiJ0cmltUmVzdWx0VHJhbnNmb3JtZXIuanMiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIFRlbXBsYXRlVGFnIHRyYW5zZm9ybWVyIHRoYXQgdHJpbXMgd2hpdGVzcGFjZSBvbiB0aGUgZW5kIHJlc3VsdCBvZiBhIHRhZ2dlZCB0ZW1wbGF0ZVxuICogQHBhcmFtICB7U3RyaW5nfSBzaWRlID0gJycgLSBUaGUgc2lkZSBvZiB0aGUgc3RyaW5nIHRvIHRyaW0uIENhbiBiZSAnc3RhcnQnIG9yICdlbmQnIChhbHRlcm5hdGl2ZWx5ICdsZWZ0JyBvciAncmlnaHQnKVxuICogQHJldHVybiB7T2JqZWN0fSAgICAgICAgICAgLSBhIFRlbXBsYXRlVGFnIHRyYW5zZm9ybWVyXG4gKi9cbmNvbnN0IHRyaW1SZXN1bHRUcmFuc2Zvcm1lciA9IChzaWRlID0gJycpID0+ICh7XG4gIG9uRW5kUmVzdWx0KGVuZFJlc3VsdCkge1xuICAgIGlmIChzaWRlID09PSAnJykge1xuICAgICAgcmV0dXJuIGVuZFJlc3VsdC50cmltKCk7XG4gICAgfVxuXG4gICAgc2lkZSA9IHNpZGUudG9Mb3dlckNhc2UoKTtcblxuICAgIGlmIChzaWRlID09PSAnc3RhcnQnIHx8IHNpZGUgPT09ICdsZWZ0Jykge1xuICAgICAgcmV0dXJuIGVuZFJlc3VsdC5yZXBsYWNlKC9eXFxzKi8sICcnKTtcbiAgICB9XG5cbiAgICBpZiAoc2lkZSA9PT0gJ2VuZCcgfHwgc2lkZSA9PT0gJ3JpZ2h0Jykge1xuICAgICAgcmV0dXJuIGVuZFJlc3VsdC5yZXBsYWNlKC9cXHMqJC8sICcnKTtcbiAgICB9XG5cbiAgICB0aHJvdyBuZXcgRXJyb3IoYFNpZGUgbm90IHN1cHBvcnRlZDogJHtzaWRlfWApO1xuICB9LFxufSk7XG5cbmV4cG9ydCBkZWZhdWx0IHRyaW1SZXN1bHRUcmFuc2Zvcm1lcjtcbiJdfQ==
 
 /***/ }),
-/* 786 */
+/* 784 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -43553,7 +43549,7 @@ var stripIndentTransformer = function stripIndentTransformer() {
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9zdHJpcEluZGVudFRyYW5zZm9ybWVyL3N0cmlwSW5kZW50VHJhbnNmb3JtZXIuanMiXSwibmFtZXMiOlsic3RyaXBJbmRlbnRUcmFuc2Zvcm1lciIsInR5cGUiLCJvbkVuZFJlc3VsdCIsImVuZFJlc3VsdCIsIm1hdGNoIiwiaW5kZW50IiwiTWF0aCIsIm1pbiIsIm1hcCIsImVsIiwibGVuZ3RoIiwicmVnZXhwIiwiUmVnRXhwIiwicmVwbGFjZSIsIkVycm9yIl0sIm1hcHBpbmdzIjoiOztBQUFBOzs7OztBQUtBLElBQU1BLHlCQUF5QixTQUF6QkEsc0JBQXlCO0FBQUEsTUFBQ0MsSUFBRCx1RUFBUSxTQUFSO0FBQUEsU0FBdUI7QUFDcERDLGVBRG9ELHVCQUN4Q0MsU0FEd0MsRUFDN0I7QUFDckIsVUFBSUYsU0FBUyxTQUFiLEVBQXdCO0FBQ3RCO0FBQ0EsWUFBTUcsUUFBUUQsVUFBVUMsS0FBVixDQUFnQixtQkFBaEIsQ0FBZDtBQUNBLFlBQU1DLFNBQVNELFNBQVNFLEtBQUtDLEdBQUwsZ0NBQVlILE1BQU1JLEdBQU4sQ0FBVTtBQUFBLGlCQUFNQyxHQUFHQyxNQUFUO0FBQUEsU0FBVixDQUFaLEVBQXhCO0FBQ0EsWUFBSUwsTUFBSixFQUFZO0FBQ1YsY0FBTU0sU0FBUyxJQUFJQyxNQUFKLFNBQWlCUCxNQUFqQixRQUE0QixJQUE1QixDQUFmO0FBQ0EsaUJBQU9GLFVBQVVVLE9BQVYsQ0FBa0JGLE1BQWxCLEVBQTBCLEVBQTFCLENBQVA7QUFDRDtBQUNELGVBQU9SLFNBQVA7QUFDRDtBQUNELFVBQUlGLFNBQVMsS0FBYixFQUFvQjtBQUNsQjtBQUNBLGVBQU9FLFVBQVVVLE9BQVYsQ0FBa0IsYUFBbEIsRUFBaUMsRUFBakMsQ0FBUDtBQUNEO0FBQ0QsWUFBTSxJQUFJQyxLQUFKLG9CQUEyQmIsSUFBM0IsQ0FBTjtBQUNEO0FBakJtRCxHQUF2QjtBQUFBLENBQS9COztBQW9CQSxlQUFlRCxzQkFBZiIsImZpbGUiOiJzdHJpcEluZGVudFRyYW5zZm9ybWVyLmpzIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBzdHJpcHMgaW5kZW50YXRpb24gZnJvbSBhIHRlbXBsYXRlIGxpdGVyYWxcbiAqIEBwYXJhbSAge1N0cmluZ30gdHlwZSA9ICdpbml0aWFsJyAtIHdoZXRoZXIgdG8gcmVtb3ZlIGFsbCBpbmRlbnRhdGlvbiBvciBqdXN0IGxlYWRpbmcgaW5kZW50YXRpb24uIGNhbiBiZSAnYWxsJyBvciAnaW5pdGlhbCdcbiAqIEByZXR1cm4ge09iamVjdH0gICAgICAgICAgICAgICAgICAtIGEgVGVtcGxhdGVUYWcgdHJhbnNmb3JtZXJcbiAqL1xuY29uc3Qgc3RyaXBJbmRlbnRUcmFuc2Zvcm1lciA9ICh0eXBlID0gJ2luaXRpYWwnKSA9PiAoe1xuICBvbkVuZFJlc3VsdChlbmRSZXN1bHQpIHtcbiAgICBpZiAodHlwZSA9PT0gJ2luaXRpYWwnKSB7XG4gICAgICAvLyByZW1vdmUgdGhlIHNob3J0ZXN0IGxlYWRpbmcgaW5kZW50YXRpb24gZnJvbSBlYWNoIGxpbmVcbiAgICAgIGNvbnN0IG1hdGNoID0gZW5kUmVzdWx0Lm1hdGNoKC9eW15cXFNcXG5dKig/PVxcUykvZ20pO1xuICAgICAgY29uc3QgaW5kZW50ID0gbWF0Y2ggJiYgTWF0aC5taW4oLi4ubWF0Y2gubWFwKGVsID0+IGVsLmxlbmd0aCkpO1xuICAgICAgaWYgKGluZGVudCkge1xuICAgICAgICBjb25zdCByZWdleHAgPSBuZXcgUmVnRXhwKGBeLnske2luZGVudH19YCwgJ2dtJyk7XG4gICAgICAgIHJldHVybiBlbmRSZXN1bHQucmVwbGFjZShyZWdleHAsICcnKTtcbiAgICAgIH1cbiAgICAgIHJldHVybiBlbmRSZXN1bHQ7XG4gICAgfVxuICAgIGlmICh0eXBlID09PSAnYWxsJykge1xuICAgICAgLy8gcmVtb3ZlIGFsbCBpbmRlbnRhdGlvbiBmcm9tIGVhY2ggbGluZVxuICAgICAgcmV0dXJuIGVuZFJlc3VsdC5yZXBsYWNlKC9eW15cXFNcXG5dKy9nbSwgJycpO1xuICAgIH1cbiAgICB0aHJvdyBuZXcgRXJyb3IoYFVua25vd24gdHlwZTogJHt0eXBlfWApO1xuICB9LFxufSk7XG5cbmV4cG9ydCBkZWZhdWx0IHN0cmlwSW5kZW50VHJhbnNmb3JtZXI7XG4iXX0=
 
 /***/ }),
-/* 787 */
+/* 785 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -43578,7 +43574,7 @@ var replaceResultTransformer = function replaceResultTransformer(replaceWhat, re
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9yZXBsYWNlUmVzdWx0VHJhbnNmb3JtZXIvcmVwbGFjZVJlc3VsdFRyYW5zZm9ybWVyLmpzIl0sIm5hbWVzIjpbInJlcGxhY2VSZXN1bHRUcmFuc2Zvcm1lciIsInJlcGxhY2VXaGF0IiwicmVwbGFjZVdpdGgiLCJvbkVuZFJlc3VsdCIsImVuZFJlc3VsdCIsIkVycm9yIiwicmVwbGFjZSJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7OztBQU1BLElBQU1BLDJCQUEyQixTQUEzQkEsd0JBQTJCLENBQUNDLFdBQUQsRUFBY0MsV0FBZDtBQUFBLFNBQStCO0FBQzlEQyxlQUQ4RCx1QkFDbERDLFNBRGtELEVBQ3ZDO0FBQ3JCLFVBQUlILGVBQWUsSUFBZixJQUF1QkMsZUFBZSxJQUExQyxFQUFnRDtBQUM5QyxjQUFNLElBQUlHLEtBQUosQ0FDSix5REFESSxDQUFOO0FBR0Q7QUFDRCxhQUFPRCxVQUFVRSxPQUFWLENBQWtCTCxXQUFsQixFQUErQkMsV0FBL0IsQ0FBUDtBQUNEO0FBUjZELEdBQS9CO0FBQUEsQ0FBakM7O0FBV0EsZUFBZUYsd0JBQWYiLCJmaWxlIjoicmVwbGFjZVJlc3VsdFRyYW5zZm9ybWVyLmpzIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBSZXBsYWNlcyB0YWJzLCBuZXdsaW5lcyBhbmQgc3BhY2VzIHdpdGggdGhlIGNob3NlbiB2YWx1ZSB3aGVuIHRoZXkgb2NjdXIgaW4gc2VxdWVuY2VzXG4gKiBAcGFyYW0gIHsoU3RyaW5nfFJlZ0V4cCl9IHJlcGxhY2VXaGF0IC0gdGhlIHZhbHVlIG9yIHBhdHRlcm4gdGhhdCBzaG91bGQgYmUgcmVwbGFjZWRcbiAqIEBwYXJhbSAgeyp9ICAgICAgICAgICAgICAgcmVwbGFjZVdpdGggLSB0aGUgcmVwbGFjZW1lbnQgdmFsdWVcbiAqIEByZXR1cm4ge09iamVjdH0gICAgICAgICAgICAgICAgICAgICAgLSBhIFRlbXBsYXRlVGFnIHRyYW5zZm9ybWVyXG4gKi9cbmNvbnN0IHJlcGxhY2VSZXN1bHRUcmFuc2Zvcm1lciA9IChyZXBsYWNlV2hhdCwgcmVwbGFjZVdpdGgpID0+ICh7XG4gIG9uRW5kUmVzdWx0KGVuZFJlc3VsdCkge1xuICAgIGlmIChyZXBsYWNlV2hhdCA9PSBudWxsIHx8IHJlcGxhY2VXaXRoID09IG51bGwpIHtcbiAgICAgIHRocm93IG5ldyBFcnJvcihcbiAgICAgICAgJ3JlcGxhY2VSZXN1bHRUcmFuc2Zvcm1lciByZXF1aXJlcyBhdCBsZWFzdCAyIGFyZ3VtZW50cy4nLFxuICAgICAgKTtcbiAgICB9XG4gICAgcmV0dXJuIGVuZFJlc3VsdC5yZXBsYWNlKHJlcGxhY2VXaGF0LCByZXBsYWNlV2l0aCk7XG4gIH0sXG59KTtcblxuZXhwb3J0IGRlZmF1bHQgcmVwbGFjZVJlc3VsdFRyYW5zZm9ybWVyO1xuIl19
 
 /***/ }),
-/* 788 */
+/* 786 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -43603,18 +43599,18 @@ var replaceSubstitutionTransformer = function replaceSubstitutionTransformer(rep
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9yZXBsYWNlU3Vic3RpdHV0aW9uVHJhbnNmb3JtZXIvcmVwbGFjZVN1YnN0aXR1dGlvblRyYW5zZm9ybWVyLmpzIl0sIm5hbWVzIjpbInJlcGxhY2VTdWJzdGl0dXRpb25UcmFuc2Zvcm1lciIsInJlcGxhY2VXaGF0IiwicmVwbGFjZVdpdGgiLCJvblN1YnN0aXR1dGlvbiIsInN1YnN0aXR1dGlvbiIsInJlc3VsdFNvRmFyIiwiRXJyb3IiLCJ0b1N0cmluZyIsInJlcGxhY2UiXSwibWFwcGluZ3MiOiJBQUFBLElBQU1BLGlDQUFpQyxTQUFqQ0EsOEJBQWlDLENBQUNDLFdBQUQsRUFBY0MsV0FBZDtBQUFBLFNBQStCO0FBQ3BFQyxrQkFEb0UsMEJBQ3JEQyxZQURxRCxFQUN2Q0MsV0FEdUMsRUFDMUI7QUFDeEMsVUFBSUosZUFBZSxJQUFmLElBQXVCQyxlQUFlLElBQTFDLEVBQWdEO0FBQzlDLGNBQU0sSUFBSUksS0FBSixDQUNKLCtEQURJLENBQU47QUFHRDs7QUFFRDtBQUNBLFVBQUlGLGdCQUFnQixJQUFwQixFQUEwQjtBQUN4QixlQUFPQSxZQUFQO0FBQ0QsT0FGRCxNQUVPO0FBQ0wsZUFBT0EsYUFBYUcsUUFBYixHQUF3QkMsT0FBeEIsQ0FBZ0NQLFdBQWhDLEVBQTZDQyxXQUE3QyxDQUFQO0FBQ0Q7QUFDRjtBQWRtRSxHQUEvQjtBQUFBLENBQXZDOztBQWlCQSxlQUFlRiw4QkFBZiIsImZpbGUiOiJyZXBsYWNlU3Vic3RpdHV0aW9uVHJhbnNmb3JtZXIuanMiLCJzb3VyY2VzQ29udGVudCI6WyJjb25zdCByZXBsYWNlU3Vic3RpdHV0aW9uVHJhbnNmb3JtZXIgPSAocmVwbGFjZVdoYXQsIHJlcGxhY2VXaXRoKSA9PiAoe1xuICBvblN1YnN0aXR1dGlvbihzdWJzdGl0dXRpb24sIHJlc3VsdFNvRmFyKSB7XG4gICAgaWYgKHJlcGxhY2VXaGF0ID09IG51bGwgfHwgcmVwbGFjZVdpdGggPT0gbnVsbCkge1xuICAgICAgdGhyb3cgbmV3IEVycm9yKFxuICAgICAgICAncmVwbGFjZVN1YnN0aXR1dGlvblRyYW5zZm9ybWVyIHJlcXVpcmVzIGF0IGxlYXN0IDIgYXJndW1lbnRzLicsXG4gICAgICApO1xuICAgIH1cblxuICAgIC8vIERvIG5vdCB0b3VjaCBpZiBudWxsIG9yIHVuZGVmaW5lZFxuICAgIGlmIChzdWJzdGl0dXRpb24gPT0gbnVsbCkge1xuICAgICAgcmV0dXJuIHN1YnN0aXR1dGlvbjtcbiAgICB9IGVsc2Uge1xuICAgICAgcmV0dXJuIHN1YnN0aXR1dGlvbi50b1N0cmluZygpLnJlcGxhY2UocmVwbGFjZVdoYXQsIHJlcGxhY2VXaXRoKTtcbiAgICB9XG4gIH0sXG59KTtcblxuZXhwb3J0IGRlZmF1bHQgcmVwbGFjZVN1YnN0aXR1dGlvblRyYW5zZm9ybWVyO1xuIl19
 
 /***/ }),
-/* 789 */
+/* 787 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__replaceStringTransformer__ = __webpack_require__(790);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__replaceStringTransformer__ = __webpack_require__(788);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__replaceStringTransformer__["a"]; });
 
 
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9yZXBsYWNlU3RyaW5nVHJhbnNmb3JtZXIvaW5kZXguanMiXSwibmFtZXMiOlsiZGVmYXVsdCJdLCJtYXBwaW5ncyI6InFCQUFvQiw0QjtxQkFBYkEsTyIsImZpbGUiOiJpbmRleC5qcyIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBkZWZhdWx0IGZyb20gJy4vcmVwbGFjZVN0cmluZ1RyYW5zZm9ybWVyJztcbiJdfQ==
 
 /***/ }),
-/* 790 */
+/* 788 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -43634,7 +43630,7 @@ var replaceStringTransformer = function replaceStringTransformer(replaceWhat, re
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9yZXBsYWNlU3RyaW5nVHJhbnNmb3JtZXIvcmVwbGFjZVN0cmluZ1RyYW5zZm9ybWVyLmpzIl0sIm5hbWVzIjpbInJlcGxhY2VTdHJpbmdUcmFuc2Zvcm1lciIsInJlcGxhY2VXaGF0IiwicmVwbGFjZVdpdGgiLCJvblN0cmluZyIsInN0ciIsIkVycm9yIiwicmVwbGFjZSJdLCJtYXBwaW5ncyI6IkFBQUEsSUFBTUEsMkJBQTJCLFNBQTNCQSx3QkFBMkIsQ0FBQ0MsV0FBRCxFQUFjQyxXQUFkO0FBQUEsU0FBK0I7QUFDOURDLFlBRDhELG9CQUNyREMsR0FEcUQsRUFDaEQ7QUFDWixVQUFJSCxlQUFlLElBQWYsSUFBdUJDLGVBQWUsSUFBMUMsRUFBZ0Q7QUFDOUMsY0FBTSxJQUFJRyxLQUFKLENBQ0oseURBREksQ0FBTjtBQUdEOztBQUVELGFBQU9ELElBQUlFLE9BQUosQ0FBWUwsV0FBWixFQUF5QkMsV0FBekIsQ0FBUDtBQUNEO0FBVDZELEdBQS9CO0FBQUEsQ0FBakM7O0FBWUEsZUFBZUYsd0JBQWYiLCJmaWxlIjoicmVwbGFjZVN0cmluZ1RyYW5zZm9ybWVyLmpzIiwic291cmNlc0NvbnRlbnQiOlsiY29uc3QgcmVwbGFjZVN0cmluZ1RyYW5zZm9ybWVyID0gKHJlcGxhY2VXaGF0LCByZXBsYWNlV2l0aCkgPT4gKHtcbiAgb25TdHJpbmcoc3RyKSB7XG4gICAgaWYgKHJlcGxhY2VXaGF0ID09IG51bGwgfHwgcmVwbGFjZVdpdGggPT0gbnVsbCkge1xuICAgICAgdGhyb3cgbmV3IEVycm9yKFxuICAgICAgICAncmVwbGFjZVN0cmluZ1RyYW5zZm9ybWVyIHJlcXVpcmVzIGF0IGxlYXN0IDIgYXJndW1lbnRzLicsXG4gICAgICApO1xuICAgIH1cblxuICAgIHJldHVybiBzdHIucmVwbGFjZShyZXBsYWNlV2hhdCwgcmVwbGFjZVdpdGgpO1xuICB9LFxufSk7XG5cbmV4cG9ydCBkZWZhdWx0IHJlcGxhY2VTdHJpbmdUcmFuc2Zvcm1lcjtcbiJdfQ==
 
 /***/ }),
-/* 791 */
+/* 789 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -43685,7 +43681,7 @@ var inlineArrayTransformer = function inlineArrayTransformer() {
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9pbmxpbmVBcnJheVRyYW5zZm9ybWVyL2lubGluZUFycmF5VHJhbnNmb3JtZXIuanMiXSwibmFtZXMiOlsiZGVmYXVsdHMiLCJzZXBhcmF0b3IiLCJjb25qdW5jdGlvbiIsInNlcmlhbCIsImlubGluZUFycmF5VHJhbnNmb3JtZXIiLCJvcHRzIiwib25TdWJzdGl0dXRpb24iLCJzdWJzdGl0dXRpb24iLCJyZXN1bHRTb0ZhciIsIkFycmF5IiwiaXNBcnJheSIsImFycmF5TGVuZ3RoIiwibGVuZ3RoIiwiaW5kZW50IiwibWF0Y2giLCJqb2luIiwic2VwYXJhdG9ySW5kZXgiLCJsYXN0SW5kZXhPZiIsInNsaWNlIl0sIm1hcHBpbmdzIjoiQUFBQSxJQUFNQSxXQUFXO0FBQ2ZDLGFBQVcsRUFESTtBQUVmQyxlQUFhLEVBRkU7QUFHZkMsVUFBUTtBQUhPLENBQWpCOztBQU1BOzs7Ozs7OztBQVFBLElBQU1DLHlCQUF5QixTQUF6QkEsc0JBQXlCO0FBQUEsTUFBQ0MsSUFBRCx1RUFBUUwsUUFBUjtBQUFBLFNBQXNCO0FBQ25ETSxrQkFEbUQsMEJBQ3BDQyxZQURvQyxFQUN0QkMsV0FEc0IsRUFDVDtBQUN4QztBQUNBLFVBQUlDLE1BQU1DLE9BQU4sQ0FBY0gsWUFBZCxDQUFKLEVBQWlDO0FBQy9CLFlBQU1JLGNBQWNKLGFBQWFLLE1BQWpDO0FBQ0EsWUFBTVgsWUFBWUksS0FBS0osU0FBdkI7QUFDQSxZQUFNQyxjQUFjRyxLQUFLSCxXQUF6QjtBQUNBLFlBQU1DLFNBQVNFLEtBQUtGLE1BQXBCO0FBQ0E7QUFDQTtBQUNBLFlBQU1VLFNBQVNMLFlBQVlNLEtBQVosQ0FBa0IsZ0JBQWxCLENBQWY7QUFDQSxZQUFJRCxNQUFKLEVBQVk7QUFDVk4seUJBQWVBLGFBQWFRLElBQWIsQ0FBa0JkLFlBQVlZLE9BQU8sQ0FBUCxDQUE5QixDQUFmO0FBQ0QsU0FGRCxNQUVPO0FBQ0xOLHlCQUFlQSxhQUFhUSxJQUFiLENBQWtCZCxZQUFZLEdBQTlCLENBQWY7QUFDRDtBQUNEO0FBQ0EsWUFBSUMsZUFBZVMsY0FBYyxDQUFqQyxFQUFvQztBQUNsQyxjQUFNSyxpQkFBaUJULGFBQWFVLFdBQWIsQ0FBeUJoQixTQUF6QixDQUF2QjtBQUNBTSx5QkFDRUEsYUFBYVcsS0FBYixDQUFtQixDQUFuQixFQUFzQkYsY0FBdEIsS0FDQ2IsU0FBU0YsU0FBVCxHQUFxQixFQUR0QixJQUVBLEdBRkEsR0FHQUMsV0FIQSxHQUlBSyxhQUFhVyxLQUFiLENBQW1CRixpQkFBaUIsQ0FBcEMsQ0FMRjtBQU1EO0FBQ0Y7QUFDRCxhQUFPVCxZQUFQO0FBQ0Q7QUE1QmtELEdBQXRCO0FBQUEsQ0FBL0I7O0FBK0JBLGVBQWVILHNCQUFmIiwiZmlsZSI6ImlubGluZUFycmF5VHJhbnNmb3JtZXIuanMiLCJzb3VyY2VzQ29udGVudCI6WyJjb25zdCBkZWZhdWx0cyA9IHtcbiAgc2VwYXJhdG9yOiAnJyxcbiAgY29uanVuY3Rpb246ICcnLFxuICBzZXJpYWw6IGZhbHNlLFxufTtcblxuLyoqXG4gKiBDb252ZXJ0cyBhbiBhcnJheSBzdWJzdGl0dXRpb24gdG8gYSBzdHJpbmcgY29udGFpbmluZyBhIGxpc3RcbiAqIEBwYXJhbSAge1N0cmluZ30gW29wdHMuc2VwYXJhdG9yID0gJyddIC0gdGhlIGNoYXJhY3RlciB0aGF0IHNlcGFyYXRlcyBlYWNoIGl0ZW1cbiAqIEBwYXJhbSAge1N0cmluZ30gW29wdHMuY29uanVuY3Rpb24gPSAnJ10gIC0gcmVwbGFjZSB0aGUgbGFzdCBzZXBhcmF0b3Igd2l0aCB0aGlzXG4gKiBAcGFyYW0gIHtCb29sZWFufSBbb3B0cy5zZXJpYWwgPSBmYWxzZV0gLSBpbmNsdWRlIHRoZSBzZXBhcmF0b3IgYmVmb3JlIHRoZSBjb25qdW5jdGlvbj8gKE94Zm9yZCBjb21tYSB1c2UtY2FzZSlcbiAqXG4gKiBAcmV0dXJuIHtPYmplY3R9ICAgICAgICAgICAgICAgICAgICAgLSBhIFRlbXBsYXRlVGFnIHRyYW5zZm9ybWVyXG4gKi9cbmNvbnN0IGlubGluZUFycmF5VHJhbnNmb3JtZXIgPSAob3B0cyA9IGRlZmF1bHRzKSA9PiAoe1xuICBvblN1YnN0aXR1dGlvbihzdWJzdGl0dXRpb24sIHJlc3VsdFNvRmFyKSB7XG4gICAgLy8gb25seSBvcGVyYXRlIG9uIGFycmF5c1xuICAgIGlmIChBcnJheS5pc0FycmF5KHN1YnN0aXR1dGlvbikpIHtcbiAgICAgIGNvbnN0IGFycmF5TGVuZ3RoID0gc3Vic3RpdHV0aW9uLmxlbmd0aDtcbiAgICAgIGNvbnN0IHNlcGFyYXRvciA9IG9wdHMuc2VwYXJhdG9yO1xuICAgICAgY29uc3QgY29uanVuY3Rpb24gPSBvcHRzLmNvbmp1bmN0aW9uO1xuICAgICAgY29uc3Qgc2VyaWFsID0gb3B0cy5zZXJpYWw7XG4gICAgICAvLyBqb2luIGVhY2ggaXRlbSBpbiB0aGUgYXJyYXkgaW50byBhIHN0cmluZyB3aGVyZSBlYWNoIGl0ZW0gaXMgc2VwYXJhdGVkIGJ5IHNlcGFyYXRvclxuICAgICAgLy8gYmUgc3VyZSB0byBtYWludGFpbiBpbmRlbnRhdGlvblxuICAgICAgY29uc3QgaW5kZW50ID0gcmVzdWx0U29GYXIubWF0Y2goLyhcXG4/W15cXFNcXG5dKykkLyk7XG4gICAgICBpZiAoaW5kZW50KSB7XG4gICAgICAgIHN1YnN0aXR1dGlvbiA9IHN1YnN0aXR1dGlvbi5qb2luKHNlcGFyYXRvciArIGluZGVudFsxXSk7XG4gICAgICB9IGVsc2Uge1xuICAgICAgICBzdWJzdGl0dXRpb24gPSBzdWJzdGl0dXRpb24uam9pbihzZXBhcmF0b3IgKyAnICcpO1xuICAgICAgfVxuICAgICAgLy8gaWYgY29uanVuY3Rpb24gaXMgc2V0LCByZXBsYWNlIHRoZSBsYXN0IHNlcGFyYXRvciB3aXRoIGNvbmp1bmN0aW9uLCBidXQgb25seSBpZiB0aGVyZSBpcyBtb3JlIHRoYW4gb25lIHN1YnN0aXR1dGlvblxuICAgICAgaWYgKGNvbmp1bmN0aW9uICYmIGFycmF5TGVuZ3RoID4gMSkge1xuICAgICAgICBjb25zdCBzZXBhcmF0b3JJbmRleCA9IHN1YnN0aXR1dGlvbi5sYXN0SW5kZXhPZihzZXBhcmF0b3IpO1xuICAgICAgICBzdWJzdGl0dXRpb24gPVxuICAgICAgICAgIHN1YnN0aXR1dGlvbi5zbGljZSgwLCBzZXBhcmF0b3JJbmRleCkgK1xuICAgICAgICAgIChzZXJpYWwgPyBzZXBhcmF0b3IgOiAnJykgK1xuICAgICAgICAgICcgJyArXG4gICAgICAgICAgY29uanVuY3Rpb24gK1xuICAgICAgICAgIHN1YnN0aXR1dGlvbi5zbGljZShzZXBhcmF0b3JJbmRleCArIDEpO1xuICAgICAgfVxuICAgIH1cbiAgICByZXR1cm4gc3Vic3RpdHV0aW9uO1xuICB9LFxufSk7XG5cbmV4cG9ydCBkZWZhdWx0IGlubGluZUFycmF5VHJhbnNmb3JtZXI7XG4iXX0=
 
 /***/ }),
-/* 792 */
+/* 790 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -43708,7 +43704,7 @@ var splitStringTransformer = function splitStringTransformer(splitBy) {
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9zcGxpdFN0cmluZ1RyYW5zZm9ybWVyL3NwbGl0U3RyaW5nVHJhbnNmb3JtZXIuanMiXSwibmFtZXMiOlsic3BsaXRTdHJpbmdUcmFuc2Zvcm1lciIsIm9uU3Vic3RpdHV0aW9uIiwic3Vic3RpdHV0aW9uIiwicmVzdWx0U29GYXIiLCJzcGxpdEJ5IiwiaW5jbHVkZXMiLCJzcGxpdCIsIkVycm9yIl0sIm1hcHBpbmdzIjoiQUFBQSxJQUFNQSx5QkFBeUIsU0FBekJBLHNCQUF5QjtBQUFBLFNBQVk7QUFDekNDLGtCQUR5QywwQkFDMUJDLFlBRDBCLEVBQ1pDLFdBRFksRUFDQztBQUN4QyxVQUFJQyxXQUFXLElBQVgsSUFBbUIsT0FBT0EsT0FBUCxLQUFtQixRQUExQyxFQUFvRDtBQUNsRCxZQUFJLE9BQU9GLFlBQVAsS0FBd0IsUUFBeEIsSUFBb0NBLGFBQWFHLFFBQWIsQ0FBc0JELE9BQXRCLENBQXhDLEVBQXdFO0FBQ3RFRix5QkFBZUEsYUFBYUksS0FBYixDQUFtQkYsT0FBbkIsQ0FBZjtBQUNEO0FBQ0YsT0FKRCxNQUlPO0FBQ0wsY0FBTSxJQUFJRyxLQUFKLENBQVUscURBQVYsQ0FBTjtBQUNEO0FBQ0QsYUFBT0wsWUFBUDtBQUNEO0FBVndDLEdBQVo7QUFBQSxDQUEvQjs7QUFhQSxlQUFlRixzQkFBZiIsImZpbGUiOiJzcGxpdFN0cmluZ1RyYW5zZm9ybWVyLmpzIiwic291cmNlc0NvbnRlbnQiOlsiY29uc3Qgc3BsaXRTdHJpbmdUcmFuc2Zvcm1lciA9IHNwbGl0QnkgPT4gKHtcbiAgb25TdWJzdGl0dXRpb24oc3Vic3RpdHV0aW9uLCByZXN1bHRTb0Zhcikge1xuICAgIGlmIChzcGxpdEJ5ICE9IG51bGwgJiYgdHlwZW9mIHNwbGl0QnkgPT09ICdzdHJpbmcnKSB7XG4gICAgICBpZiAodHlwZW9mIHN1YnN0aXR1dGlvbiA9PT0gJ3N0cmluZycgJiYgc3Vic3RpdHV0aW9uLmluY2x1ZGVzKHNwbGl0QnkpKSB7XG4gICAgICAgIHN1YnN0aXR1dGlvbiA9IHN1YnN0aXR1dGlvbi5zcGxpdChzcGxpdEJ5KTtcbiAgICAgIH1cbiAgICB9IGVsc2Uge1xuICAgICAgdGhyb3cgbmV3IEVycm9yKCdZb3UgbmVlZCB0byBzcGVjaWZ5IGEgc3RyaW5nIGNoYXJhY3RlciB0byBzcGxpdCBieS4nKTtcbiAgICB9XG4gICAgcmV0dXJuIHN1YnN0aXR1dGlvbjtcbiAgfSxcbn0pO1xuXG5leHBvcnQgZGVmYXVsdCBzcGxpdFN0cmluZ1RyYW5zZm9ybWVyO1xuIl19
 
 /***/ }),
-/* 793 */
+/* 791 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -43734,18 +43730,18 @@ var removeNonPrintingValuesTransformer = function removeNonPrintingValuesTransfo
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9yZW1vdmVOb25QcmludGluZ1ZhbHVlc1RyYW5zZm9ybWVyL3JlbW92ZU5vblByaW50aW5nVmFsdWVzVHJhbnNmb3JtZXIuanMiXSwibmFtZXMiOlsiaXNWYWxpZFZhbHVlIiwieCIsIk51bWJlciIsImlzTmFOIiwicmVtb3ZlTm9uUHJpbnRpbmdWYWx1ZXNUcmFuc2Zvcm1lciIsIm9uU3Vic3RpdHV0aW9uIiwic3Vic3RpdHV0aW9uIiwiQXJyYXkiLCJpc0FycmF5IiwiZmlsdGVyIl0sIm1hcHBpbmdzIjoiQUFBQSxJQUFNQSxlQUFlLFNBQWZBLFlBQWU7QUFBQSxTQUNuQkMsS0FBSyxJQUFMLElBQWEsQ0FBQ0MsT0FBT0MsS0FBUCxDQUFhRixDQUFiLENBQWQsSUFBaUMsT0FBT0EsQ0FBUCxLQUFhLFNBRDNCO0FBQUEsQ0FBckI7O0FBR0EsSUFBTUcscUNBQXFDLFNBQXJDQSxrQ0FBcUM7QUFBQSxTQUFPO0FBQ2hEQyxrQkFEZ0QsMEJBQ2pDQyxZQURpQyxFQUNuQjtBQUMzQixVQUFJQyxNQUFNQyxPQUFOLENBQWNGLFlBQWQsQ0FBSixFQUFpQztBQUMvQixlQUFPQSxhQUFhRyxNQUFiLENBQW9CVCxZQUFwQixDQUFQO0FBQ0Q7QUFDRCxVQUFJQSxhQUFhTSxZQUFiLENBQUosRUFBZ0M7QUFDOUIsZUFBT0EsWUFBUDtBQUNEO0FBQ0QsYUFBTyxFQUFQO0FBQ0Q7QUFUK0MsR0FBUDtBQUFBLENBQTNDOztBQVlBLGVBQWVGLGtDQUFmIiwiZmlsZSI6InJlbW92ZU5vblByaW50aW5nVmFsdWVzVHJhbnNmb3JtZXIuanMiLCJzb3VyY2VzQ29udGVudCI6WyJjb25zdCBpc1ZhbGlkVmFsdWUgPSB4ID0+XG4gIHggIT0gbnVsbCAmJiAhTnVtYmVyLmlzTmFOKHgpICYmIHR5cGVvZiB4ICE9PSAnYm9vbGVhbic7XG5cbmNvbnN0IHJlbW92ZU5vblByaW50aW5nVmFsdWVzVHJhbnNmb3JtZXIgPSAoKSA9PiAoe1xuICBvblN1YnN0aXR1dGlvbihzdWJzdGl0dXRpb24pIHtcbiAgICBpZiAoQXJyYXkuaXNBcnJheShzdWJzdGl0dXRpb24pKSB7XG4gICAgICByZXR1cm4gc3Vic3RpdHV0aW9uLmZpbHRlcihpc1ZhbGlkVmFsdWUpO1xuICAgIH1cbiAgICBpZiAoaXNWYWxpZFZhbHVlKHN1YnN0aXR1dGlvbikpIHtcbiAgICAgIHJldHVybiBzdWJzdGl0dXRpb247XG4gICAgfVxuICAgIHJldHVybiAnJztcbiAgfSxcbn0pO1xuXG5leHBvcnQgZGVmYXVsdCByZW1vdmVOb25QcmludGluZ1ZhbHVlc1RyYW5zZm9ybWVyO1xuIl19
 
 /***/ }),
-/* 794 */
+/* 792 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__commaLists__ = __webpack_require__(795);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__commaLists__ = __webpack_require__(793);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__commaLists__["a"]; });
 
 
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9jb21tYUxpc3RzL2luZGV4LmpzIl0sIm5hbWVzIjpbImRlZmF1bHQiXSwibWFwcGluZ3MiOiJxQkFBb0IsYztxQkFBYkEsTyIsImZpbGUiOiJpbmRleC5qcyIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBkZWZhdWx0IGZyb20gJy4vY29tbWFMaXN0cyc7XG4iXX0=
 
 /***/ }),
-/* 795 */
+/* 793 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -43764,18 +43760,18 @@ var commaLists = new __WEBPACK_IMPORTED_MODULE_0__TemplateTag__["a" /* default *
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9jb21tYUxpc3RzL2NvbW1hTGlzdHMuanMiXSwibmFtZXMiOlsiVGVtcGxhdGVUYWciLCJzdHJpcEluZGVudFRyYW5zZm9ybWVyIiwiaW5saW5lQXJyYXlUcmFuc2Zvcm1lciIsInRyaW1SZXN1bHRUcmFuc2Zvcm1lciIsImNvbW1hTGlzdHMiLCJzZXBhcmF0b3IiXSwibWFwcGluZ3MiOiJBQUFBLE9BQU9BLFdBQVAsTUFBd0IsZ0JBQXhCO0FBQ0EsT0FBT0Msc0JBQVAsTUFBbUMsMkJBQW5DO0FBQ0EsT0FBT0Msc0JBQVAsTUFBbUMsMkJBQW5DO0FBQ0EsT0FBT0MscUJBQVAsTUFBa0MsMEJBQWxDOztBQUVBLElBQU1DLGFBQWEsSUFBSUosV0FBSixDQUNqQkUsdUJBQXVCLEVBQUVHLFdBQVcsR0FBYixFQUF2QixDQURpQixFQUVqQkosc0JBRmlCLEVBR2pCRSxxQkFIaUIsQ0FBbkI7O0FBTUEsZUFBZUMsVUFBZiIsImZpbGUiOiJjb21tYUxpc3RzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFRlbXBsYXRlVGFnIGZyb20gJy4uL1RlbXBsYXRlVGFnJztcbmltcG9ydCBzdHJpcEluZGVudFRyYW5zZm9ybWVyIGZyb20gJy4uL3N0cmlwSW5kZW50VHJhbnNmb3JtZXInO1xuaW1wb3J0IGlubGluZUFycmF5VHJhbnNmb3JtZXIgZnJvbSAnLi4vaW5saW5lQXJyYXlUcmFuc2Zvcm1lcic7XG5pbXBvcnQgdHJpbVJlc3VsdFRyYW5zZm9ybWVyIGZyb20gJy4uL3RyaW1SZXN1bHRUcmFuc2Zvcm1lcic7XG5cbmNvbnN0IGNvbW1hTGlzdHMgPSBuZXcgVGVtcGxhdGVUYWcoXG4gIGlubGluZUFycmF5VHJhbnNmb3JtZXIoeyBzZXBhcmF0b3I6ICcsJyB9KSxcbiAgc3RyaXBJbmRlbnRUcmFuc2Zvcm1lcixcbiAgdHJpbVJlc3VsdFRyYW5zZm9ybWVyLFxuKTtcblxuZXhwb3J0IGRlZmF1bHQgY29tbWFMaXN0cztcbiJdfQ==
 
 /***/ }),
-/* 796 */
+/* 794 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__commaListsAnd__ = __webpack_require__(797);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__commaListsAnd__ = __webpack_require__(795);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__commaListsAnd__["a"]; });
 
 
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9jb21tYUxpc3RzQW5kL2luZGV4LmpzIl0sIm5hbWVzIjpbImRlZmF1bHQiXSwibWFwcGluZ3MiOiJxQkFBb0IsaUI7cUJBQWJBLE8iLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgZGVmYXVsdCBmcm9tICcuL2NvbW1hTGlzdHNBbmQnO1xuIl19
 
 /***/ }),
-/* 797 */
+/* 795 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -43794,18 +43790,18 @@ var commaListsAnd = new __WEBPACK_IMPORTED_MODULE_0__TemplateTag__["a" /* defaul
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9jb21tYUxpc3RzQW5kL2NvbW1hTGlzdHNBbmQuanMiXSwibmFtZXMiOlsiVGVtcGxhdGVUYWciLCJzdHJpcEluZGVudFRyYW5zZm9ybWVyIiwiaW5saW5lQXJyYXlUcmFuc2Zvcm1lciIsInRyaW1SZXN1bHRUcmFuc2Zvcm1lciIsImNvbW1hTGlzdHNBbmQiLCJzZXBhcmF0b3IiLCJjb25qdW5jdGlvbiJdLCJtYXBwaW5ncyI6IkFBQUEsT0FBT0EsV0FBUCxNQUF3QixnQkFBeEI7QUFDQSxPQUFPQyxzQkFBUCxNQUFtQywyQkFBbkM7QUFDQSxPQUFPQyxzQkFBUCxNQUFtQywyQkFBbkM7QUFDQSxPQUFPQyxxQkFBUCxNQUFrQywwQkFBbEM7O0FBRUEsSUFBTUMsZ0JBQWdCLElBQUlKLFdBQUosQ0FDcEJFLHVCQUF1QixFQUFFRyxXQUFXLEdBQWIsRUFBa0JDLGFBQWEsS0FBL0IsRUFBdkIsQ0FEb0IsRUFFcEJMLHNCQUZvQixFQUdwQkUscUJBSG9CLENBQXRCOztBQU1BLGVBQWVDLGFBQWYiLCJmaWxlIjoiY29tbWFMaXN0c0FuZC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBUZW1wbGF0ZVRhZyBmcm9tICcuLi9UZW1wbGF0ZVRhZyc7XG5pbXBvcnQgc3RyaXBJbmRlbnRUcmFuc2Zvcm1lciBmcm9tICcuLi9zdHJpcEluZGVudFRyYW5zZm9ybWVyJztcbmltcG9ydCBpbmxpbmVBcnJheVRyYW5zZm9ybWVyIGZyb20gJy4uL2lubGluZUFycmF5VHJhbnNmb3JtZXInO1xuaW1wb3J0IHRyaW1SZXN1bHRUcmFuc2Zvcm1lciBmcm9tICcuLi90cmltUmVzdWx0VHJhbnNmb3JtZXInO1xuXG5jb25zdCBjb21tYUxpc3RzQW5kID0gbmV3IFRlbXBsYXRlVGFnKFxuICBpbmxpbmVBcnJheVRyYW5zZm9ybWVyKHsgc2VwYXJhdG9yOiAnLCcsIGNvbmp1bmN0aW9uOiAnYW5kJyB9KSxcbiAgc3RyaXBJbmRlbnRUcmFuc2Zvcm1lcixcbiAgdHJpbVJlc3VsdFRyYW5zZm9ybWVyLFxuKTtcblxuZXhwb3J0IGRlZmF1bHQgY29tbWFMaXN0c0FuZDtcbiJdfQ==
 
 /***/ }),
-/* 798 */
+/* 796 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__commaListsOr__ = __webpack_require__(799);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__commaListsOr__ = __webpack_require__(797);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__commaListsOr__["a"]; });
 
 
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9jb21tYUxpc3RzT3IvaW5kZXguanMiXSwibmFtZXMiOlsiZGVmYXVsdCJdLCJtYXBwaW5ncyI6InFCQUFvQixnQjtxQkFBYkEsTyIsImZpbGUiOiJpbmRleC5qcyIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBkZWZhdWx0IGZyb20gJy4vY29tbWFMaXN0c09yJztcbiJdfQ==
 
 /***/ }),
-/* 799 */
+/* 797 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -43824,7 +43820,7 @@ var commaListsOr = new __WEBPACK_IMPORTED_MODULE_0__TemplateTag__["a" /* default
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9jb21tYUxpc3RzT3IvY29tbWFMaXN0c09yLmpzIl0sIm5hbWVzIjpbIlRlbXBsYXRlVGFnIiwic3RyaXBJbmRlbnRUcmFuc2Zvcm1lciIsImlubGluZUFycmF5VHJhbnNmb3JtZXIiLCJ0cmltUmVzdWx0VHJhbnNmb3JtZXIiLCJjb21tYUxpc3RzT3IiLCJzZXBhcmF0b3IiLCJjb25qdW5jdGlvbiJdLCJtYXBwaW5ncyI6IkFBQUEsT0FBT0EsV0FBUCxNQUF3QixnQkFBeEI7QUFDQSxPQUFPQyxzQkFBUCxNQUFtQywyQkFBbkM7QUFDQSxPQUFPQyxzQkFBUCxNQUFtQywyQkFBbkM7QUFDQSxPQUFPQyxxQkFBUCxNQUFrQywwQkFBbEM7O0FBRUEsSUFBTUMsZUFBZSxJQUFJSixXQUFKLENBQ25CRSx1QkFBdUIsRUFBRUcsV0FBVyxHQUFiLEVBQWtCQyxhQUFhLElBQS9CLEVBQXZCLENBRG1CLEVBRW5CTCxzQkFGbUIsRUFHbkJFLHFCQUhtQixDQUFyQjs7QUFNQSxlQUFlQyxZQUFmIiwiZmlsZSI6ImNvbW1hTGlzdHNPci5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBUZW1wbGF0ZVRhZyBmcm9tICcuLi9UZW1wbGF0ZVRhZyc7XG5pbXBvcnQgc3RyaXBJbmRlbnRUcmFuc2Zvcm1lciBmcm9tICcuLi9zdHJpcEluZGVudFRyYW5zZm9ybWVyJztcbmltcG9ydCBpbmxpbmVBcnJheVRyYW5zZm9ybWVyIGZyb20gJy4uL2lubGluZUFycmF5VHJhbnNmb3JtZXInO1xuaW1wb3J0IHRyaW1SZXN1bHRUcmFuc2Zvcm1lciBmcm9tICcuLi90cmltUmVzdWx0VHJhbnNmb3JtZXInO1xuXG5jb25zdCBjb21tYUxpc3RzT3IgPSBuZXcgVGVtcGxhdGVUYWcoXG4gIGlubGluZUFycmF5VHJhbnNmb3JtZXIoeyBzZXBhcmF0b3I6ICcsJywgY29uanVuY3Rpb246ICdvcicgfSksXG4gIHN0cmlwSW5kZW50VHJhbnNmb3JtZXIsXG4gIHRyaW1SZXN1bHRUcmFuc2Zvcm1lcixcbik7XG5cbmV4cG9ydCBkZWZhdWx0IGNvbW1hTGlzdHNPcjtcbiJdfQ==
 
 /***/ }),
-/* 800 */
+/* 798 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -43833,7 +43829,7 @@ var commaListsOr = new __WEBPACK_IMPORTED_MODULE_0__TemplateTag__["a" /* default
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__inlineArrayTransformer__ = __webpack_require__(83);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__trimResultTransformer__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__splitStringTransformer__ = __webpack_require__(558);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__removeNonPrintingValuesTransformer__ = __webpack_require__(628);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__removeNonPrintingValuesTransformer__ = __webpack_require__(626);
 
 
 
@@ -43847,7 +43843,7 @@ var html = new __WEBPACK_IMPORTED_MODULE_0__TemplateTag__["a" /* default */](Obj
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9odG1sL2h0bWwuanMiXSwibmFtZXMiOlsiVGVtcGxhdGVUYWciLCJzdHJpcEluZGVudFRyYW5zZm9ybWVyIiwiaW5saW5lQXJyYXlUcmFuc2Zvcm1lciIsInRyaW1SZXN1bHRUcmFuc2Zvcm1lciIsInNwbGl0U3RyaW5nVHJhbnNmb3JtZXIiLCJyZW1vdmVOb25QcmludGluZ1ZhbHVlc1RyYW5zZm9ybWVyIiwiaHRtbCJdLCJtYXBwaW5ncyI6IkFBQUEsT0FBT0EsV0FBUCxNQUF3QixnQkFBeEI7QUFDQSxPQUFPQyxzQkFBUCxNQUFtQywyQkFBbkM7QUFDQSxPQUFPQyxzQkFBUCxNQUFtQywyQkFBbkM7QUFDQSxPQUFPQyxxQkFBUCxNQUFrQywwQkFBbEM7QUFDQSxPQUFPQyxzQkFBUCxNQUFtQywyQkFBbkM7QUFDQSxPQUFPQyxrQ0FBUCxNQUErQyx1Q0FBL0M7O0FBRUEsSUFBTUMsT0FBTyxJQUFJTixXQUFKLENBQ1hJLHVCQUF1QixJQUF2QixDQURXLEVBRVhDLGtDQUZXLEVBR1hILHNCQUhXLEVBSVhELHNCQUpXLEVBS1hFLHFCQUxXLENBQWI7O0FBUUEsZUFBZUcsSUFBZiIsImZpbGUiOiJodG1sLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFRlbXBsYXRlVGFnIGZyb20gJy4uL1RlbXBsYXRlVGFnJztcbmltcG9ydCBzdHJpcEluZGVudFRyYW5zZm9ybWVyIGZyb20gJy4uL3N0cmlwSW5kZW50VHJhbnNmb3JtZXInO1xuaW1wb3J0IGlubGluZUFycmF5VHJhbnNmb3JtZXIgZnJvbSAnLi4vaW5saW5lQXJyYXlUcmFuc2Zvcm1lcic7XG5pbXBvcnQgdHJpbVJlc3VsdFRyYW5zZm9ybWVyIGZyb20gJy4uL3RyaW1SZXN1bHRUcmFuc2Zvcm1lcic7XG5pbXBvcnQgc3BsaXRTdHJpbmdUcmFuc2Zvcm1lciBmcm9tICcuLi9zcGxpdFN0cmluZ1RyYW5zZm9ybWVyJztcbmltcG9ydCByZW1vdmVOb25QcmludGluZ1ZhbHVlc1RyYW5zZm9ybWVyIGZyb20gJy4uL3JlbW92ZU5vblByaW50aW5nVmFsdWVzVHJhbnNmb3JtZXInO1xuXG5jb25zdCBodG1sID0gbmV3IFRlbXBsYXRlVGFnKFxuICBzcGxpdFN0cmluZ1RyYW5zZm9ybWVyKCdcXG4nKSxcbiAgcmVtb3ZlTm9uUHJpbnRpbmdWYWx1ZXNUcmFuc2Zvcm1lcixcbiAgaW5saW5lQXJyYXlUcmFuc2Zvcm1lcixcbiAgc3RyaXBJbmRlbnRUcmFuc2Zvcm1lcixcbiAgdHJpbVJlc3VsdFRyYW5zZm9ybWVyLFxuKTtcblxuZXhwb3J0IGRlZmF1bHQgaHRtbDtcbiJdfQ==
 
 /***/ }),
-/* 801 */
+/* 799 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -43858,7 +43854,7 @@ var html = new __WEBPACK_IMPORTED_MODULE_0__TemplateTag__["a" /* default */](Obj
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9jb2RlQmxvY2svaW5kZXguanMiXSwibmFtZXMiOlsiZGVmYXVsdCJdLCJtYXBwaW5ncyI6InFCQUFvQixTO3FCQUFiQSxPIiwiZmlsZSI6ImluZGV4LmpzIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGRlZmF1bHQgZnJvbSAnLi4vaHRtbCc7XG4iXX0=
 
 /***/ }),
-/* 802 */
+/* 800 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -43869,18 +43865,18 @@ var html = new __WEBPACK_IMPORTED_MODULE_0__TemplateTag__["a" /* default */](Obj
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9zb3VyY2UvaW5kZXguanMiXSwibmFtZXMiOlsiZGVmYXVsdCJdLCJtYXBwaW5ncyI6InFCQUFvQixTO3FCQUFiQSxPIiwiZmlsZSI6ImluZGV4LmpzIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGRlZmF1bHQgZnJvbSAnLi4vaHRtbCc7XG4iXX0=
 
 /***/ }),
-/* 803 */
+/* 801 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__safeHtml__ = __webpack_require__(804);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__safeHtml__ = __webpack_require__(802);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__safeHtml__["a"]; });
 
 
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9zYWZlSHRtbC9pbmRleC5qcyJdLCJuYW1lcyI6WyJkZWZhdWx0Il0sIm1hcHBpbmdzIjoicUJBQW9CLFk7cUJBQWJBLE8iLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgZGVmYXVsdCBmcm9tICcuL3NhZmVIdG1sJztcbiJdfQ==
 
 /***/ }),
-/* 804 */
+/* 802 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -43889,7 +43885,7 @@ var html = new __WEBPACK_IMPORTED_MODULE_0__TemplateTag__["a" /* default */](Obj
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__inlineArrayTransformer__ = __webpack_require__(83);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__trimResultTransformer__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__splitStringTransformer__ = __webpack_require__(558);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__replaceSubstitutionTransformer__ = __webpack_require__(627);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__replaceSubstitutionTransformer__ = __webpack_require__(625);
 
 
 
@@ -43903,18 +43899,18 @@ var safeHtml = new __WEBPACK_IMPORTED_MODULE_0__TemplateTag__["a" /* default */]
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9zYWZlSHRtbC9zYWZlSHRtbC5qcyJdLCJuYW1lcyI6WyJUZW1wbGF0ZVRhZyIsInN0cmlwSW5kZW50VHJhbnNmb3JtZXIiLCJpbmxpbmVBcnJheVRyYW5zZm9ybWVyIiwidHJpbVJlc3VsdFRyYW5zZm9ybWVyIiwic3BsaXRTdHJpbmdUcmFuc2Zvcm1lciIsInJlcGxhY2VTdWJzdGl0dXRpb25UcmFuc2Zvcm1lciIsInNhZmVIdG1sIl0sIm1hcHBpbmdzIjoiQUFBQSxPQUFPQSxXQUFQLE1BQXdCLGdCQUF4QjtBQUNBLE9BQU9DLHNCQUFQLE1BQW1DLDJCQUFuQztBQUNBLE9BQU9DLHNCQUFQLE1BQW1DLDJCQUFuQztBQUNBLE9BQU9DLHFCQUFQLE1BQWtDLDBCQUFsQztBQUNBLE9BQU9DLHNCQUFQLE1BQW1DLDJCQUFuQztBQUNBLE9BQU9DLDhCQUFQLE1BQTJDLG1DQUEzQzs7QUFFQSxJQUFNQyxXQUFXLElBQUlOLFdBQUosQ0FDZkksdUJBQXVCLElBQXZCLENBRGUsRUFFZkYsc0JBRmUsRUFHZkQsc0JBSGUsRUFJZkUscUJBSmUsRUFLZkUsK0JBQStCLElBQS9CLEVBQXFDLE9BQXJDLENBTGUsRUFNZkEsK0JBQStCLElBQS9CLEVBQXFDLE1BQXJDLENBTmUsRUFPZkEsK0JBQStCLElBQS9CLEVBQXFDLE1BQXJDLENBUGUsRUFRZkEsK0JBQStCLElBQS9CLEVBQXFDLFFBQXJDLENBUmUsRUFTZkEsK0JBQStCLElBQS9CLEVBQXFDLFFBQXJDLENBVGUsRUFVZkEsK0JBQStCLElBQS9CLEVBQXFDLFFBQXJDLENBVmUsQ0FBakI7O0FBYUEsZUFBZUMsUUFBZiIsImZpbGUiOiJzYWZlSHRtbC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBUZW1wbGF0ZVRhZyBmcm9tICcuLi9UZW1wbGF0ZVRhZyc7XG5pbXBvcnQgc3RyaXBJbmRlbnRUcmFuc2Zvcm1lciBmcm9tICcuLi9zdHJpcEluZGVudFRyYW5zZm9ybWVyJztcbmltcG9ydCBpbmxpbmVBcnJheVRyYW5zZm9ybWVyIGZyb20gJy4uL2lubGluZUFycmF5VHJhbnNmb3JtZXInO1xuaW1wb3J0IHRyaW1SZXN1bHRUcmFuc2Zvcm1lciBmcm9tICcuLi90cmltUmVzdWx0VHJhbnNmb3JtZXInO1xuaW1wb3J0IHNwbGl0U3RyaW5nVHJhbnNmb3JtZXIgZnJvbSAnLi4vc3BsaXRTdHJpbmdUcmFuc2Zvcm1lcic7XG5pbXBvcnQgcmVwbGFjZVN1YnN0aXR1dGlvblRyYW5zZm9ybWVyIGZyb20gJy4uL3JlcGxhY2VTdWJzdGl0dXRpb25UcmFuc2Zvcm1lcic7XG5cbmNvbnN0IHNhZmVIdG1sID0gbmV3IFRlbXBsYXRlVGFnKFxuICBzcGxpdFN0cmluZ1RyYW5zZm9ybWVyKCdcXG4nKSxcbiAgaW5saW5lQXJyYXlUcmFuc2Zvcm1lcixcbiAgc3RyaXBJbmRlbnRUcmFuc2Zvcm1lcixcbiAgdHJpbVJlc3VsdFRyYW5zZm9ybWVyLFxuICByZXBsYWNlU3Vic3RpdHV0aW9uVHJhbnNmb3JtZXIoLyYvZywgJyZhbXA7JyksXG4gIHJlcGxhY2VTdWJzdGl0dXRpb25UcmFuc2Zvcm1lcigvPC9nLCAnJmx0OycpLFxuICByZXBsYWNlU3Vic3RpdHV0aW9uVHJhbnNmb3JtZXIoLz4vZywgJyZndDsnKSxcbiAgcmVwbGFjZVN1YnN0aXR1dGlvblRyYW5zZm9ybWVyKC9cIi9nLCAnJnF1b3Q7JyksXG4gIHJlcGxhY2VTdWJzdGl0dXRpb25UcmFuc2Zvcm1lcigvJy9nLCAnJiN4Mjc7JyksXG4gIHJlcGxhY2VTdWJzdGl0dXRpb25UcmFuc2Zvcm1lcigvYC9nLCAnJiN4NjA7JyksXG4pO1xuXG5leHBvcnQgZGVmYXVsdCBzYWZlSHRtbDtcbiJdfQ==
 
 /***/ }),
-/* 805 */
+/* 803 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__oneLine__ = __webpack_require__(806);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__oneLine__ = __webpack_require__(804);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__oneLine__["a"]; });
 
 
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9vbmVMaW5lL2luZGV4LmpzIl0sIm5hbWVzIjpbImRlZmF1bHQiXSwibWFwcGluZ3MiOiJxQkFBb0IsVztxQkFBYkEsTyIsImZpbGUiOiJpbmRleC5qcyIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBkZWZhdWx0IGZyb20gJy4vb25lTGluZSc7XG4iXX0=
 
 /***/ }),
-/* 806 */
+/* 804 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -43931,18 +43927,18 @@ var oneLine = new __WEBPACK_IMPORTED_MODULE_0__TemplateTag__["a" /* default */](
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9vbmVMaW5lL29uZUxpbmUuanMiXSwibmFtZXMiOlsiVGVtcGxhdGVUYWciLCJ0cmltUmVzdWx0VHJhbnNmb3JtZXIiLCJyZXBsYWNlUmVzdWx0VHJhbnNmb3JtZXIiLCJvbmVMaW5lIl0sIm1hcHBpbmdzIjoiQUFBQSxPQUFPQSxXQUFQLE1BQXdCLGdCQUF4QjtBQUNBLE9BQU9DLHFCQUFQLE1BQWtDLDBCQUFsQztBQUNBLE9BQU9DLHdCQUFQLE1BQXFDLDZCQUFyQzs7QUFFQSxJQUFNQyxVQUFVLElBQUlILFdBQUosQ0FDZEUseUJBQXlCLGlCQUF6QixFQUE0QyxHQUE1QyxDQURjLEVBRWRELHFCQUZjLENBQWhCOztBQUtBLGVBQWVFLE9BQWYiLCJmaWxlIjoib25lTGluZS5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBUZW1wbGF0ZVRhZyBmcm9tICcuLi9UZW1wbGF0ZVRhZyc7XG5pbXBvcnQgdHJpbVJlc3VsdFRyYW5zZm9ybWVyIGZyb20gJy4uL3RyaW1SZXN1bHRUcmFuc2Zvcm1lcic7XG5pbXBvcnQgcmVwbGFjZVJlc3VsdFRyYW5zZm9ybWVyIGZyb20gJy4uL3JlcGxhY2VSZXN1bHRUcmFuc2Zvcm1lcic7XG5cbmNvbnN0IG9uZUxpbmUgPSBuZXcgVGVtcGxhdGVUYWcoXG4gIHJlcGxhY2VSZXN1bHRUcmFuc2Zvcm1lcigvKD86XFxuKD86XFxzKikpKy9nLCAnICcpLFxuICB0cmltUmVzdWx0VHJhbnNmb3JtZXIsXG4pO1xuXG5leHBvcnQgZGVmYXVsdCBvbmVMaW5lO1xuIl19
 
 /***/ }),
-/* 807 */
+/* 805 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__oneLineTrim__ = __webpack_require__(808);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__oneLineTrim__ = __webpack_require__(806);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__oneLineTrim__["a"]; });
 
 
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9vbmVMaW5lVHJpbS9pbmRleC5qcyJdLCJuYW1lcyI6WyJkZWZhdWx0Il0sIm1hcHBpbmdzIjoicUJBQW9CLGU7cUJBQWJBLE8iLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgZGVmYXVsdCBmcm9tICcuL29uZUxpbmVUcmltJztcbiJdfQ==
 
 /***/ }),
-/* 808 */
+/* 806 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -43959,18 +43955,18 @@ var oneLineTrim = new __WEBPACK_IMPORTED_MODULE_0__TemplateTag__["a" /* default 
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9vbmVMaW5lVHJpbS9vbmVMaW5lVHJpbS5qcyJdLCJuYW1lcyI6WyJUZW1wbGF0ZVRhZyIsInRyaW1SZXN1bHRUcmFuc2Zvcm1lciIsInJlcGxhY2VSZXN1bHRUcmFuc2Zvcm1lciIsIm9uZUxpbmVUcmltIl0sIm1hcHBpbmdzIjoiQUFBQSxPQUFPQSxXQUFQLE1BQXdCLGdCQUF4QjtBQUNBLE9BQU9DLHFCQUFQLE1BQWtDLDBCQUFsQztBQUNBLE9BQU9DLHdCQUFQLE1BQXFDLDZCQUFyQzs7QUFFQSxJQUFNQyxjQUFjLElBQUlILFdBQUosQ0FDbEJFLHlCQUF5QixZQUF6QixFQUF1QyxFQUF2QyxDQURrQixFQUVsQkQscUJBRmtCLENBQXBCOztBQUtBLGVBQWVFLFdBQWYiLCJmaWxlIjoib25lTGluZVRyaW0uanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgVGVtcGxhdGVUYWcgZnJvbSAnLi4vVGVtcGxhdGVUYWcnO1xuaW1wb3J0IHRyaW1SZXN1bHRUcmFuc2Zvcm1lciBmcm9tICcuLi90cmltUmVzdWx0VHJhbnNmb3JtZXInO1xuaW1wb3J0IHJlcGxhY2VSZXN1bHRUcmFuc2Zvcm1lciBmcm9tICcuLi9yZXBsYWNlUmVzdWx0VHJhbnNmb3JtZXInO1xuXG5jb25zdCBvbmVMaW5lVHJpbSA9IG5ldyBUZW1wbGF0ZVRhZyhcbiAgcmVwbGFjZVJlc3VsdFRyYW5zZm9ybWVyKC8oPzpcXG5cXHMqKS9nLCAnJyksXG4gIHRyaW1SZXN1bHRUcmFuc2Zvcm1lcixcbik7XG5cbmV4cG9ydCBkZWZhdWx0IG9uZUxpbmVUcmltO1xuIl19
 
 /***/ }),
-/* 809 */
+/* 807 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__oneLineCommaLists__ = __webpack_require__(810);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__oneLineCommaLists__ = __webpack_require__(808);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__oneLineCommaLists__["a"]; });
 
 
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9vbmVMaW5lQ29tbWFMaXN0cy9pbmRleC5qcyJdLCJuYW1lcyI6WyJkZWZhdWx0Il0sIm1hcHBpbmdzIjoicUJBQW9CLHFCO3FCQUFiQSxPIiwiZmlsZSI6ImluZGV4LmpzIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGRlZmF1bHQgZnJvbSAnLi9vbmVMaW5lQ29tbWFMaXN0cyc7XG4iXX0=
 
 /***/ }),
-/* 810 */
+/* 808 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -43989,18 +43985,18 @@ var oneLineCommaLists = new __WEBPACK_IMPORTED_MODULE_0__TemplateTag__["a" /* de
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9vbmVMaW5lQ29tbWFMaXN0cy9vbmVMaW5lQ29tbWFMaXN0cy5qcyJdLCJuYW1lcyI6WyJUZW1wbGF0ZVRhZyIsImlubGluZUFycmF5VHJhbnNmb3JtZXIiLCJ0cmltUmVzdWx0VHJhbnNmb3JtZXIiLCJyZXBsYWNlUmVzdWx0VHJhbnNmb3JtZXIiLCJvbmVMaW5lQ29tbWFMaXN0cyIsInNlcGFyYXRvciJdLCJtYXBwaW5ncyI6IkFBQUEsT0FBT0EsV0FBUCxNQUF3QixnQkFBeEI7QUFDQSxPQUFPQyxzQkFBUCxNQUFtQywyQkFBbkM7QUFDQSxPQUFPQyxxQkFBUCxNQUFrQywwQkFBbEM7QUFDQSxPQUFPQyx3QkFBUCxNQUFxQyw2QkFBckM7O0FBRUEsSUFBTUMsb0JBQW9CLElBQUlKLFdBQUosQ0FDeEJDLHVCQUF1QixFQUFFSSxXQUFXLEdBQWIsRUFBdkIsQ0FEd0IsRUFFeEJGLHlCQUF5QixVQUF6QixFQUFxQyxHQUFyQyxDQUZ3QixFQUd4QkQscUJBSHdCLENBQTFCOztBQU1BLGVBQWVFLGlCQUFmIiwiZmlsZSI6Im9uZUxpbmVDb21tYUxpc3RzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFRlbXBsYXRlVGFnIGZyb20gJy4uL1RlbXBsYXRlVGFnJztcbmltcG9ydCBpbmxpbmVBcnJheVRyYW5zZm9ybWVyIGZyb20gJy4uL2lubGluZUFycmF5VHJhbnNmb3JtZXInO1xuaW1wb3J0IHRyaW1SZXN1bHRUcmFuc2Zvcm1lciBmcm9tICcuLi90cmltUmVzdWx0VHJhbnNmb3JtZXInO1xuaW1wb3J0IHJlcGxhY2VSZXN1bHRUcmFuc2Zvcm1lciBmcm9tICcuLi9yZXBsYWNlUmVzdWx0VHJhbnNmb3JtZXInO1xuXG5jb25zdCBvbmVMaW5lQ29tbWFMaXN0cyA9IG5ldyBUZW1wbGF0ZVRhZyhcbiAgaW5saW5lQXJyYXlUcmFuc2Zvcm1lcih7IHNlcGFyYXRvcjogJywnIH0pLFxuICByZXBsYWNlUmVzdWx0VHJhbnNmb3JtZXIoLyg/OlxccyspL2csICcgJyksXG4gIHRyaW1SZXN1bHRUcmFuc2Zvcm1lcixcbik7XG5cbmV4cG9ydCBkZWZhdWx0IG9uZUxpbmVDb21tYUxpc3RzO1xuIl19
 
 /***/ }),
-/* 811 */
+/* 809 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__oneLineCommaListsOr__ = __webpack_require__(812);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__oneLineCommaListsOr__ = __webpack_require__(810);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__oneLineCommaListsOr__["a"]; });
 
 
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9vbmVMaW5lQ29tbWFMaXN0c09yL2luZGV4LmpzIl0sIm5hbWVzIjpbImRlZmF1bHQiXSwibWFwcGluZ3MiOiJxQkFBb0IsdUI7cUJBQWJBLE8iLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgZGVmYXVsdCBmcm9tICcuL29uZUxpbmVDb21tYUxpc3RzT3InO1xuIl19
 
 /***/ }),
-/* 812 */
+/* 810 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -44019,18 +44015,18 @@ var oneLineCommaListsOr = new __WEBPACK_IMPORTED_MODULE_0__TemplateTag__["a" /* 
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9vbmVMaW5lQ29tbWFMaXN0c09yL29uZUxpbmVDb21tYUxpc3RzT3IuanMiXSwibmFtZXMiOlsiVGVtcGxhdGVUYWciLCJpbmxpbmVBcnJheVRyYW5zZm9ybWVyIiwidHJpbVJlc3VsdFRyYW5zZm9ybWVyIiwicmVwbGFjZVJlc3VsdFRyYW5zZm9ybWVyIiwib25lTGluZUNvbW1hTGlzdHNPciIsInNlcGFyYXRvciIsImNvbmp1bmN0aW9uIl0sIm1hcHBpbmdzIjoiQUFBQSxPQUFPQSxXQUFQLE1BQXdCLGdCQUF4QjtBQUNBLE9BQU9DLHNCQUFQLE1BQW1DLDJCQUFuQztBQUNBLE9BQU9DLHFCQUFQLE1BQWtDLDBCQUFsQztBQUNBLE9BQU9DLHdCQUFQLE1BQXFDLDZCQUFyQzs7QUFFQSxJQUFNQyxzQkFBc0IsSUFBSUosV0FBSixDQUMxQkMsdUJBQXVCLEVBQUVJLFdBQVcsR0FBYixFQUFrQkMsYUFBYSxJQUEvQixFQUF2QixDQUQwQixFQUUxQkgseUJBQXlCLFVBQXpCLEVBQXFDLEdBQXJDLENBRjBCLEVBRzFCRCxxQkFIMEIsQ0FBNUI7O0FBTUEsZUFBZUUsbUJBQWYiLCJmaWxlIjoib25lTGluZUNvbW1hTGlzdHNPci5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBUZW1wbGF0ZVRhZyBmcm9tICcuLi9UZW1wbGF0ZVRhZyc7XG5pbXBvcnQgaW5saW5lQXJyYXlUcmFuc2Zvcm1lciBmcm9tICcuLi9pbmxpbmVBcnJheVRyYW5zZm9ybWVyJztcbmltcG9ydCB0cmltUmVzdWx0VHJhbnNmb3JtZXIgZnJvbSAnLi4vdHJpbVJlc3VsdFRyYW5zZm9ybWVyJztcbmltcG9ydCByZXBsYWNlUmVzdWx0VHJhbnNmb3JtZXIgZnJvbSAnLi4vcmVwbGFjZVJlc3VsdFRyYW5zZm9ybWVyJztcblxuY29uc3Qgb25lTGluZUNvbW1hTGlzdHNPciA9IG5ldyBUZW1wbGF0ZVRhZyhcbiAgaW5saW5lQXJyYXlUcmFuc2Zvcm1lcih7IHNlcGFyYXRvcjogJywnLCBjb25qdW5jdGlvbjogJ29yJyB9KSxcbiAgcmVwbGFjZVJlc3VsdFRyYW5zZm9ybWVyKC8oPzpcXHMrKS9nLCAnICcpLFxuICB0cmltUmVzdWx0VHJhbnNmb3JtZXIsXG4pO1xuXG5leHBvcnQgZGVmYXVsdCBvbmVMaW5lQ29tbWFMaXN0c09yO1xuIl19
 
 /***/ }),
-/* 813 */
+/* 811 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__oneLineCommaListsAnd__ = __webpack_require__(814);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__oneLineCommaListsAnd__ = __webpack_require__(812);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__oneLineCommaListsAnd__["a"]; });
 
 
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9vbmVMaW5lQ29tbWFMaXN0c0FuZC9pbmRleC5qcyJdLCJuYW1lcyI6WyJkZWZhdWx0Il0sIm1hcHBpbmdzIjoicUJBQW9CLHdCO3FCQUFiQSxPIiwiZmlsZSI6ImluZGV4LmpzIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGRlZmF1bHQgZnJvbSAnLi9vbmVMaW5lQ29tbWFMaXN0c0FuZCc7XG4iXX0=
 
 /***/ }),
-/* 814 */
+/* 812 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -44049,18 +44045,18 @@ var oneLineCommaListsAnd = new __WEBPACK_IMPORTED_MODULE_0__TemplateTag__["a" /*
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9vbmVMaW5lQ29tbWFMaXN0c0FuZC9vbmVMaW5lQ29tbWFMaXN0c0FuZC5qcyJdLCJuYW1lcyI6WyJUZW1wbGF0ZVRhZyIsImlubGluZUFycmF5VHJhbnNmb3JtZXIiLCJ0cmltUmVzdWx0VHJhbnNmb3JtZXIiLCJyZXBsYWNlUmVzdWx0VHJhbnNmb3JtZXIiLCJvbmVMaW5lQ29tbWFMaXN0c0FuZCIsInNlcGFyYXRvciIsImNvbmp1bmN0aW9uIl0sIm1hcHBpbmdzIjoiQUFBQSxPQUFPQSxXQUFQLE1BQXdCLGdCQUF4QjtBQUNBLE9BQU9DLHNCQUFQLE1BQW1DLDJCQUFuQztBQUNBLE9BQU9DLHFCQUFQLE1BQWtDLDBCQUFsQztBQUNBLE9BQU9DLHdCQUFQLE1BQXFDLDZCQUFyQzs7QUFFQSxJQUFNQyx1QkFBdUIsSUFBSUosV0FBSixDQUMzQkMsdUJBQXVCLEVBQUVJLFdBQVcsR0FBYixFQUFrQkMsYUFBYSxLQUEvQixFQUF2QixDQUQyQixFQUUzQkgseUJBQXlCLFVBQXpCLEVBQXFDLEdBQXJDLENBRjJCLEVBRzNCRCxxQkFIMkIsQ0FBN0I7O0FBTUEsZUFBZUUsb0JBQWYiLCJmaWxlIjoib25lTGluZUNvbW1hTGlzdHNBbmQuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgVGVtcGxhdGVUYWcgZnJvbSAnLi4vVGVtcGxhdGVUYWcnO1xuaW1wb3J0IGlubGluZUFycmF5VHJhbnNmb3JtZXIgZnJvbSAnLi4vaW5saW5lQXJyYXlUcmFuc2Zvcm1lcic7XG5pbXBvcnQgdHJpbVJlc3VsdFRyYW5zZm9ybWVyIGZyb20gJy4uL3RyaW1SZXN1bHRUcmFuc2Zvcm1lcic7XG5pbXBvcnQgcmVwbGFjZVJlc3VsdFRyYW5zZm9ybWVyIGZyb20gJy4uL3JlcGxhY2VSZXN1bHRUcmFuc2Zvcm1lcic7XG5cbmNvbnN0IG9uZUxpbmVDb21tYUxpc3RzQW5kID0gbmV3IFRlbXBsYXRlVGFnKFxuICBpbmxpbmVBcnJheVRyYW5zZm9ybWVyKHsgc2VwYXJhdG9yOiAnLCcsIGNvbmp1bmN0aW9uOiAnYW5kJyB9KSxcbiAgcmVwbGFjZVJlc3VsdFRyYW5zZm9ybWVyKC8oPzpcXHMrKS9nLCAnICcpLFxuICB0cmltUmVzdWx0VHJhbnNmb3JtZXIsXG4pO1xuXG5leHBvcnQgZGVmYXVsdCBvbmVMaW5lQ29tbWFMaXN0c0FuZDtcbiJdfQ==
 
 /***/ }),
-/* 815 */
+/* 813 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__inlineLists__ = __webpack_require__(816);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__inlineLists__ = __webpack_require__(814);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__inlineLists__["a"]; });
 
 
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9pbmxpbmVMaXN0cy9pbmRleC5qcyJdLCJuYW1lcyI6WyJkZWZhdWx0Il0sIm1hcHBpbmdzIjoicUJBQW9CLGU7cUJBQWJBLE8iLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgZGVmYXVsdCBmcm9tICcuL2lubGluZUxpc3RzJztcbiJdfQ==
 
 /***/ }),
-/* 816 */
+/* 814 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -44079,18 +44075,18 @@ var inlineLists = new __WEBPACK_IMPORTED_MODULE_0__TemplateTag__["a" /* default 
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9pbmxpbmVMaXN0cy9pbmxpbmVMaXN0cy5qcyJdLCJuYW1lcyI6WyJUZW1wbGF0ZVRhZyIsInN0cmlwSW5kZW50VHJhbnNmb3JtZXIiLCJpbmxpbmVBcnJheVRyYW5zZm9ybWVyIiwidHJpbVJlc3VsdFRyYW5zZm9ybWVyIiwiaW5saW5lTGlzdHMiXSwibWFwcGluZ3MiOiJBQUFBLE9BQU9BLFdBQVAsTUFBd0IsZ0JBQXhCO0FBQ0EsT0FBT0Msc0JBQVAsTUFBbUMsMkJBQW5DO0FBQ0EsT0FBT0Msc0JBQVAsTUFBbUMsMkJBQW5DO0FBQ0EsT0FBT0MscUJBQVAsTUFBa0MsMEJBQWxDOztBQUVBLElBQU1DLGNBQWMsSUFBSUosV0FBSixDQUNsQkUsc0JBRGtCLEVBRWxCRCxzQkFGa0IsRUFHbEJFLHFCQUhrQixDQUFwQjs7QUFNQSxlQUFlQyxXQUFmIiwiZmlsZSI6ImlubGluZUxpc3RzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFRlbXBsYXRlVGFnIGZyb20gJy4uL1RlbXBsYXRlVGFnJztcbmltcG9ydCBzdHJpcEluZGVudFRyYW5zZm9ybWVyIGZyb20gJy4uL3N0cmlwSW5kZW50VHJhbnNmb3JtZXInO1xuaW1wb3J0IGlubGluZUFycmF5VHJhbnNmb3JtZXIgZnJvbSAnLi4vaW5saW5lQXJyYXlUcmFuc2Zvcm1lcic7XG5pbXBvcnQgdHJpbVJlc3VsdFRyYW5zZm9ybWVyIGZyb20gJy4uL3RyaW1SZXN1bHRUcmFuc2Zvcm1lcic7XG5cbmNvbnN0IGlubGluZUxpc3RzID0gbmV3IFRlbXBsYXRlVGFnKFxuICBpbmxpbmVBcnJheVRyYW5zZm9ybWVyLFxuICBzdHJpcEluZGVudFRyYW5zZm9ybWVyLFxuICB0cmltUmVzdWx0VHJhbnNmb3JtZXIsXG4pO1xuXG5leHBvcnQgZGVmYXVsdCBpbmxpbmVMaXN0cztcbiJdfQ==
 
 /***/ }),
-/* 817 */
+/* 815 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__oneLineInlineLists__ = __webpack_require__(818);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__oneLineInlineLists__ = __webpack_require__(816);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__oneLineInlineLists__["a"]; });
 
 
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9vbmVMaW5lSW5saW5lTGlzdHMvaW5kZXguanMiXSwibmFtZXMiOlsiZGVmYXVsdCJdLCJtYXBwaW5ncyI6InFCQUFvQixzQjtxQkFBYkEsTyIsImZpbGUiOiJpbmRleC5qcyIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBkZWZhdWx0IGZyb20gJy4vb25lTGluZUlubGluZUxpc3RzJztcbiJdfQ==
 
 /***/ }),
-/* 818 */
+/* 816 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -44109,18 +44105,18 @@ var oneLineInlineLists = new __WEBPACK_IMPORTED_MODULE_0__TemplateTag__["a" /* d
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9vbmVMaW5lSW5saW5lTGlzdHMvb25lTGluZUlubGluZUxpc3RzLmpzIl0sIm5hbWVzIjpbIlRlbXBsYXRlVGFnIiwiaW5saW5lQXJyYXlUcmFuc2Zvcm1lciIsInRyaW1SZXN1bHRUcmFuc2Zvcm1lciIsInJlcGxhY2VSZXN1bHRUcmFuc2Zvcm1lciIsIm9uZUxpbmVJbmxpbmVMaXN0cyJdLCJtYXBwaW5ncyI6IkFBQUEsT0FBT0EsV0FBUCxNQUF3QixnQkFBeEI7QUFDQSxPQUFPQyxzQkFBUCxNQUFtQywyQkFBbkM7QUFDQSxPQUFPQyxxQkFBUCxNQUFrQywwQkFBbEM7QUFDQSxPQUFPQyx3QkFBUCxNQUFxQyw2QkFBckM7O0FBRUEsSUFBTUMscUJBQXFCLElBQUlKLFdBQUosQ0FDekJDLHNCQUR5QixFQUV6QkUseUJBQXlCLFVBQXpCLEVBQXFDLEdBQXJDLENBRnlCLEVBR3pCRCxxQkFIeUIsQ0FBM0I7O0FBTUEsZUFBZUUsa0JBQWYiLCJmaWxlIjoib25lTGluZUlubGluZUxpc3RzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFRlbXBsYXRlVGFnIGZyb20gJy4uL1RlbXBsYXRlVGFnJztcbmltcG9ydCBpbmxpbmVBcnJheVRyYW5zZm9ybWVyIGZyb20gJy4uL2lubGluZUFycmF5VHJhbnNmb3JtZXInO1xuaW1wb3J0IHRyaW1SZXN1bHRUcmFuc2Zvcm1lciBmcm9tICcuLi90cmltUmVzdWx0VHJhbnNmb3JtZXInO1xuaW1wb3J0IHJlcGxhY2VSZXN1bHRUcmFuc2Zvcm1lciBmcm9tICcuLi9yZXBsYWNlUmVzdWx0VHJhbnNmb3JtZXInO1xuXG5jb25zdCBvbmVMaW5lSW5saW5lTGlzdHMgPSBuZXcgVGVtcGxhdGVUYWcoXG4gIGlubGluZUFycmF5VHJhbnNmb3JtZXIsXG4gIHJlcGxhY2VSZXN1bHRUcmFuc2Zvcm1lcigvKD86XFxzKykvZywgJyAnKSxcbiAgdHJpbVJlc3VsdFRyYW5zZm9ybWVyLFxuKTtcblxuZXhwb3J0IGRlZmF1bHQgb25lTGluZUlubGluZUxpc3RzO1xuIl19
 
 /***/ }),
-/* 819 */
+/* 817 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__stripIndent__ = __webpack_require__(820);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__stripIndent__ = __webpack_require__(818);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__stripIndent__["a"]; });
 
 
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9zdHJpcEluZGVudC9pbmRleC5qcyJdLCJuYW1lcyI6WyJkZWZhdWx0Il0sIm1hcHBpbmdzIjoicUJBQW9CLGU7cUJBQWJBLE8iLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgZGVmYXVsdCBmcm9tICcuL3N0cmlwSW5kZW50JztcbiJdfQ==
 
 /***/ }),
-/* 820 */
+/* 818 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -44137,18 +44133,18 @@ var stripIndent = new __WEBPACK_IMPORTED_MODULE_0__TemplateTag__["a" /* default 
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9zdHJpcEluZGVudC9zdHJpcEluZGVudC5qcyJdLCJuYW1lcyI6WyJUZW1wbGF0ZVRhZyIsInN0cmlwSW5kZW50VHJhbnNmb3JtZXIiLCJ0cmltUmVzdWx0VHJhbnNmb3JtZXIiLCJzdHJpcEluZGVudCJdLCJtYXBwaW5ncyI6IkFBQUEsT0FBT0EsV0FBUCxNQUF3QixnQkFBeEI7QUFDQSxPQUFPQyxzQkFBUCxNQUFtQywyQkFBbkM7QUFDQSxPQUFPQyxxQkFBUCxNQUFrQywwQkFBbEM7O0FBRUEsSUFBTUMsY0FBYyxJQUFJSCxXQUFKLENBQ2xCQyxzQkFEa0IsRUFFbEJDLHFCQUZrQixDQUFwQjs7QUFLQSxlQUFlQyxXQUFmIiwiZmlsZSI6InN0cmlwSW5kZW50LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFRlbXBsYXRlVGFnIGZyb20gJy4uL1RlbXBsYXRlVGFnJztcbmltcG9ydCBzdHJpcEluZGVudFRyYW5zZm9ybWVyIGZyb20gJy4uL3N0cmlwSW5kZW50VHJhbnNmb3JtZXInO1xuaW1wb3J0IHRyaW1SZXN1bHRUcmFuc2Zvcm1lciBmcm9tICcuLi90cmltUmVzdWx0VHJhbnNmb3JtZXInO1xuXG5jb25zdCBzdHJpcEluZGVudCA9IG5ldyBUZW1wbGF0ZVRhZyhcbiAgc3RyaXBJbmRlbnRUcmFuc2Zvcm1lcixcbiAgdHJpbVJlc3VsdFRyYW5zZm9ybWVyLFxuKTtcblxuZXhwb3J0IGRlZmF1bHQgc3RyaXBJbmRlbnQ7XG4iXX0=
 
 /***/ }),
-/* 821 */
+/* 819 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__stripIndents__ = __webpack_require__(822);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__stripIndents__ = __webpack_require__(820);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__stripIndents__["a"]; });
 
 
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9zdHJpcEluZGVudHMvaW5kZXguanMiXSwibmFtZXMiOlsiZGVmYXVsdCJdLCJtYXBwaW5ncyI6InFCQUFvQixnQjtxQkFBYkEsTyIsImZpbGUiOiJpbmRleC5qcyIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBkZWZhdWx0IGZyb20gJy4vc3RyaXBJbmRlbnRzJztcbiJdfQ==
 
 /***/ }),
-/* 822 */
+/* 820 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -44165,7 +44161,7 @@ var stripIndents = new __WEBPACK_IMPORTED_MODULE_0__TemplateTag__["a" /* default
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9zdHJpcEluZGVudHMvc3RyaXBJbmRlbnRzLmpzIl0sIm5hbWVzIjpbIlRlbXBsYXRlVGFnIiwic3RyaXBJbmRlbnRUcmFuc2Zvcm1lciIsInRyaW1SZXN1bHRUcmFuc2Zvcm1lciIsInN0cmlwSW5kZW50cyJdLCJtYXBwaW5ncyI6IkFBQUEsT0FBT0EsV0FBUCxNQUF3QixnQkFBeEI7QUFDQSxPQUFPQyxzQkFBUCxNQUFtQywyQkFBbkM7QUFDQSxPQUFPQyxxQkFBUCxNQUFrQywwQkFBbEM7O0FBRUEsSUFBTUMsZUFBZSxJQUFJSCxXQUFKLENBQ25CQyx1QkFBdUIsS0FBdkIsQ0FEbUIsRUFFbkJDLHFCQUZtQixDQUFyQjs7QUFLQSxlQUFlQyxZQUFmIiwiZmlsZSI6InN0cmlwSW5kZW50cy5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBUZW1wbGF0ZVRhZyBmcm9tICcuLi9UZW1wbGF0ZVRhZyc7XG5pbXBvcnQgc3RyaXBJbmRlbnRUcmFuc2Zvcm1lciBmcm9tICcuLi9zdHJpcEluZGVudFRyYW5zZm9ybWVyJztcbmltcG9ydCB0cmltUmVzdWx0VHJhbnNmb3JtZXIgZnJvbSAnLi4vdHJpbVJlc3VsdFRyYW5zZm9ybWVyJztcblxuY29uc3Qgc3RyaXBJbmRlbnRzID0gbmV3IFRlbXBsYXRlVGFnKFxuICBzdHJpcEluZGVudFRyYW5zZm9ybWVyKCdhbGwnKSxcbiAgdHJpbVJlc3VsdFRyYW5zZm9ybWVyLFxuKTtcblxuZXhwb3J0IGRlZmF1bHQgc3RyaXBJbmRlbnRzO1xuIl19
 
 /***/ }),
-/* 823 */
+/* 821 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44184,7 +44180,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _lodash = __webpack_require__(824);
+var _lodash = __webpack_require__(822);
 
 var _lodash2 = _interopRequireDefault(_lodash);
 
@@ -44235,7 +44231,7 @@ var isReactRenderable = function isReactRenderable(element) {
 exports.default = isReactRenderable;
 
 /***/ }),
-/* 824 */
+/* 822 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {/**
@@ -44592,7 +44588,7 @@ module.exports = flattenDeep;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(28)))
 
 /***/ }),
-/* 825 */
+/* 823 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44670,7 +44666,7 @@ ErrorDisplay.propTypes = {
 exports.default = ErrorDisplay;
 
 /***/ }),
-/* 826 */
+/* 824 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {
@@ -44744,7 +44740,7 @@ function config (name) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(28)))
 
 /***/ }),
-/* 827 */
+/* 825 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44760,7 +44756,7 @@ var _extends3 = _interopRequireDefault(_extends2);
 
 exports.default = action;
 
-var _v = __webpack_require__(828);
+var _v = __webpack_require__(826);
 
 var _v2 = _interopRequireDefault(_v);
 
@@ -44768,11 +44764,11 @@ var _addons = __webpack_require__(143);
 
 var _addons2 = _interopRequireDefault(_addons);
 
-var _ = __webpack_require__(629);
+var _ = __webpack_require__(627);
 
 var _util = __webpack_require__(288);
 
-var _configureActions = __webpack_require__(634);
+var _configureActions = __webpack_require__(632);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -44805,11 +44801,11 @@ function action(name) {
 }
 
 /***/ }),
-/* 828 */
+/* 826 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var rng = __webpack_require__(829);
-var bytesToUuid = __webpack_require__(830);
+var rng = __webpack_require__(827);
+var bytesToUuid = __webpack_require__(828);
 
 // **`v1()` - Generate time-based UUID**
 //
@@ -44920,7 +44916,7 @@ module.exports = v1;
 
 
 /***/ }),
-/* 829 */
+/* 827 */
 /***/ (function(module, exports) {
 
 // Unique ID creation requires a high quality random # generator.  In the
@@ -44960,7 +44956,7 @@ if (getRandomValues) {
 
 
 /***/ }),
-/* 830 */
+/* 828 */
 /***/ (function(module, exports) {
 
 /**
@@ -44990,16 +44986,16 @@ module.exports = bytesToUuid;
 
 
 /***/ }),
-/* 831 */
+/* 829 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = { "default": __webpack_require__(832), __esModule: true };
+module.exports = { "default": __webpack_require__(830), __esModule: true };
 
 /***/ }),
-/* 832 */
+/* 830 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(833);
+__webpack_require__(831);
 var $Object = __webpack_require__(5).Object;
 module.exports = function getOwnPropertyDescriptor(it, key) {
   return $Object.getOwnPropertyDescriptor(it, key);
@@ -45007,7 +45003,7 @@ module.exports = function getOwnPropertyDescriptor(it, key) {
 
 
 /***/ }),
-/* 833 */
+/* 831 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.6 Object.getOwnPropertyDescriptor(O, P)
@@ -45022,7 +45018,7 @@ __webpack_require__(144)('getOwnPropertyDescriptor', function () {
 
 
 /***/ }),
-/* 834 */
+/* 832 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45052,7 +45048,7 @@ function getPropertiesList(value) {
 }
 
 /***/ }),
-/* 835 */
+/* 833 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45068,7 +45064,7 @@ function isObject(value) {
 }
 
 /***/ }),
-/* 836 */
+/* 834 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45091,7 +45087,7 @@ function muteProperty(key, value) {
 }
 
 /***/ }),
-/* 837 */
+/* 835 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45120,7 +45116,7 @@ function prepareArguments(arg, depth) {
 }
 
 /***/ }),
-/* 838 */
+/* 836 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45138,13 +45134,13 @@ var _typeof2 = __webpack_require__(116);
 
 var _typeof3 = _interopRequireDefault(_typeof2);
 
-var _weakMap = __webpack_require__(839);
+var _weakMap = __webpack_require__(837);
 
 var _weakMap2 = _interopRequireDefault(_weakMap);
 
 exports.default = decycle;
 
-var _errors = __webpack_require__(845);
+var _errors = __webpack_require__(843);
 
 var _util = __webpack_require__(288);
 
@@ -45152,7 +45148,7 @@ var _ = __webpack_require__(562);
 
 var _types = __webpack_require__(568);
 
-var _configureDepth = __webpack_require__(632);
+var _configureDepth = __webpack_require__(630);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -45245,25 +45241,25 @@ function decycle(object) {
 }
 
 /***/ }),
-/* 839 */
+/* 837 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = { "default": __webpack_require__(840), __esModule: true };
+module.exports = { "default": __webpack_require__(838), __esModule: true };
 
 /***/ }),
-/* 840 */
+/* 838 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(145);
 __webpack_require__(78);
+__webpack_require__(839);
 __webpack_require__(841);
-__webpack_require__(843);
-__webpack_require__(844);
+__webpack_require__(842);
 module.exports = __webpack_require__(5).WeakMap;
 
 
 /***/ }),
-/* 841 */
+/* 839 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45272,7 +45268,7 @@ var each = __webpack_require__(254)(0);
 var redefine = __webpack_require__(178);
 var meta = __webpack_require__(103);
 var assign = __webpack_require__(266);
-var weak = __webpack_require__(842);
+var weak = __webpack_require__(840);
 var isObject = __webpack_require__(18);
 var fails = __webpack_require__(36);
 var validate = __webpack_require__(255);
@@ -45329,7 +45325,7 @@ if (fails(function () { return new $WeakMap().set((Object.freeze || Object)(tmp)
 
 
 /***/ }),
-/* 842 */
+/* 840 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45421,7 +45417,7 @@ module.exports = {
 
 
 /***/ }),
-/* 843 */
+/* 841 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // https://tc39.github.io/proposal-setmap-offrom/#sec-weakmap.of
@@ -45429,7 +45425,7 @@ __webpack_require__(566)('WeakMap');
 
 
 /***/ }),
-/* 844 */
+/* 842 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // https://tc39.github.io/proposal-setmap-offrom/#sec-weakmap.from
@@ -45437,7 +45433,7 @@ __webpack_require__(567)('WeakMap');
 
 
 /***/ }),
-/* 845 */
+/* 843 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45448,7 +45444,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.DecycleError = undefined;
 
-var _DecycleError2 = __webpack_require__(846);
+var _DecycleError2 = __webpack_require__(844);
 
 var _DecycleError3 = _interopRequireDefault(_DecycleError2);
 
@@ -45457,7 +45453,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.DecycleError = _DecycleError3.default;
 
 /***/ }),
-/* 846 */
+/* 844 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45483,7 +45479,7 @@ var _inherits2 = __webpack_require__(24);
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _makeError = __webpack_require__(847);
+var _makeError = __webpack_require__(845);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -45501,7 +45497,7 @@ var DecycleError = function (_BaseError) {
 exports.default = DecycleError;
 
 /***/ }),
-/* 847 */
+/* 845 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45655,7 +45651,7 @@ exports.BaseError = BaseError
 
 
 /***/ }),
-/* 848 */
+/* 846 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45669,15 +45665,15 @@ var _defineProperty2 = __webpack_require__(62);
 
 var _defineProperty3 = _interopRequireDefault(_defineProperty2);
 
-var _createNamedObject = __webpack_require__(849);
+var _createNamedObject = __webpack_require__(847);
 
 var _createNamedObject2 = _interopRequireDefault(_createNamedObject);
 
-var _getObjectName = __webpack_require__(853);
+var _getObjectName = __webpack_require__(851);
 
 var _getObjectName2 = _interopRequireDefault(_getObjectName);
 
-var _configureDepth2 = __webpack_require__(632);
+var _configureDepth2 = __webpack_require__(630);
 
 var _configureDepth3 = _interopRequireDefault(_configureDepth2);
 
@@ -45705,7 +45701,7 @@ var objectType = {
 exports.default = objectType;
 
 /***/ }),
-/* 849 */
+/* 847 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45739,7 +45735,7 @@ function createNamedObject(obj, key) {
 }
 
 /***/ }),
-/* 850 */
+/* 848 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45750,7 +45746,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = createFunctionEval;
 
-var _isReserved = __webpack_require__(851);
+var _isReserved = __webpack_require__(849);
 
 var _isReserved2 = _interopRequireDefault(_isReserved);
 
@@ -45764,7 +45760,7 @@ function createFunctionEval(name) {
 }
 
 /***/ }),
-/* 851 */
+/* 849 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45775,7 +45771,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = isReserved;
 
-var _reservedKeywords = __webpack_require__(852);
+var _reservedKeywords = __webpack_require__(850);
 
 var _reservedKeywords2 = _interopRequireDefault(_reservedKeywords);
 
@@ -45786,7 +45782,7 @@ function isReserved(name) {
 }
 
 /***/ }),
-/* 852 */
+/* 850 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45800,7 +45796,7 @@ var reservedWords = ['break', 'case', 'catch', 'class', 'continue', 'debugger', 
 exports.default = reservedWords;
 
 /***/ }),
-/* 853 */
+/* 851 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45811,7 +45807,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = getObjectName;
 
-var _canAccessProperty = __webpack_require__(854);
+var _canAccessProperty = __webpack_require__(852);
 
 var _canAccessProperty2 = _interopRequireDefault(_canAccessProperty);
 
@@ -45842,7 +45838,7 @@ function getObjectName(value) {
 }
 
 /***/ }),
-/* 854 */
+/* 852 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45865,7 +45861,7 @@ function canAccessProperty(key, value) {
 }
 
 /***/ }),
-/* 855 */
+/* 853 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45899,7 +45895,7 @@ var dateType = {
 exports.default = dateType;
 
 /***/ }),
-/* 856 */
+/* 854 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45913,7 +45909,7 @@ var _defineProperty2 = __webpack_require__(62);
 
 var _defineProperty3 = _interopRequireDefault(_defineProperty2);
 
-var _createBoundFunction = __webpack_require__(857);
+var _createBoundFunction = __webpack_require__(855);
 
 var _createBoundFunction2 = _interopRequireDefault(_createBoundFunction);
 
@@ -45943,7 +45939,7 @@ var functionType = {
 exports.default = functionType;
 
 /***/ }),
-/* 857 */
+/* 855 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45965,7 +45961,7 @@ function createBoundFunction(name) {
 }
 
 /***/ }),
-/* 858 */
+/* 856 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45979,7 +45975,7 @@ var _defineProperty2 = __webpack_require__(62);
 
 var _defineProperty3 = _interopRequireDefault(_defineProperty2);
 
-var _isFinite = __webpack_require__(859);
+var _isFinite = __webpack_require__(857);
 
 var _isFinite2 = _interopRequireDefault(_isFinite);
 
@@ -46003,21 +45999,21 @@ var InfinityType = {
 exports.default = InfinityType;
 
 /***/ }),
-/* 859 */
+/* 857 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = { "default": __webpack_require__(860), __esModule: true };
+module.exports = { "default": __webpack_require__(858), __esModule: true };
 
 /***/ }),
-/* 860 */
+/* 858 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(861);
+__webpack_require__(859);
 module.exports = __webpack_require__(5).Number.isFinite;
 
 
 /***/ }),
-/* 861 */
+/* 859 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 20.1.2.2 Number.isFinite(number)
@@ -46032,7 +46028,7 @@ $export($export.S, 'Number', {
 
 
 /***/ }),
-/* 862 */
+/* 860 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46046,7 +46042,7 @@ var _defineProperty2 = __webpack_require__(62);
 
 var _defineProperty3 = _interopRequireDefault(_defineProperty2);
 
-var _isNan = __webpack_require__(863);
+var _isNan = __webpack_require__(861);
 
 var _isNan2 = _interopRequireDefault(_isNan);
 
@@ -46069,21 +46065,21 @@ var NaNType = {
 exports.default = NaNType;
 
 /***/ }),
-/* 863 */
+/* 861 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = { "default": __webpack_require__(864), __esModule: true };
+module.exports = { "default": __webpack_require__(862), __esModule: true };
 
 /***/ }),
-/* 864 */
+/* 862 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(865);
+__webpack_require__(863);
 module.exports = __webpack_require__(5).Number.isNaN;
 
 
 /***/ }),
-/* 865 */
+/* 863 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 20.1.2.4 Number.isNaN(number)
@@ -46098,7 +46094,7 @@ $export($export.S, 'Number', {
 
 
 /***/ }),
-/* 866 */
+/* 864 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46112,7 +46108,7 @@ var _defineProperty2 = __webpack_require__(62);
 
 var _defineProperty3 = _interopRequireDefault(_defineProperty2);
 
-var _createRegExp = __webpack_require__(867);
+var _createRegExp = __webpack_require__(865);
 
 var _createRegExp2 = _interopRequireDefault(_createRegExp);
 
@@ -46136,7 +46132,7 @@ var regExpType = {
 exports.default = regExpType;
 
 /***/ }),
-/* 867 */
+/* 865 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46153,7 +46149,7 @@ function createRegExp(regExp) {
 }
 
 /***/ }),
-/* 868 */
+/* 866 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46171,7 +46167,7 @@ var _typeof2 = __webpack_require__(116);
 
 var _typeof3 = _interopRequireDefault(_typeof2);
 
-var _createSymbol = __webpack_require__(869);
+var _createSymbol = __webpack_require__(867);
 
 var _createSymbol2 = _interopRequireDefault(_createSymbol);
 
@@ -46195,7 +46191,7 @@ var symbolType = {
 exports.default = symbolType;
 
 /***/ }),
-/* 869 */
+/* 867 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46218,7 +46214,7 @@ function createSymbol(name) {
 }
 
 /***/ }),
-/* 870 */
+/* 868 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46252,7 +46248,7 @@ var undefinedType = {
 exports.default = undefinedType;
 
 /***/ }),
-/* 871 */
+/* 869 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46268,7 +46264,7 @@ var _typeof3 = _interopRequireDefault(_typeof2);
 
 exports.default = retrocycle;
 
-var _reviver = __webpack_require__(633);
+var _reviver = __webpack_require__(631);
 
 var _reviver2 = _interopRequireDefault(_reviver);
 
@@ -46327,7 +46323,7 @@ function retrocycle(json) {
 }
 
 /***/ }),
-/* 872 */
+/* 870 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46361,7 +46357,7 @@ function typeFilter(value) {
 exports.default = typeFilter;
 
 /***/ }),
-/* 873 */
+/* 871 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46390,7 +46386,7 @@ function typeReplacer(value) {
 exports.default = typeReplacer;
 
 /***/ }),
-/* 874 */
+/* 872 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46405,7 +46401,7 @@ function omitProperty(name) {
 }
 
 /***/ }),
-/* 875 */
+/* 873 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46421,7 +46417,7 @@ var _toConsumableArray3 = _interopRequireDefault(_toConsumableArray2);
 
 exports.default = decorateAction;
 
-var _preview = __webpack_require__(630);
+var _preview = __webpack_require__(628);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -46442,7 +46438,7 @@ function decorateAction(decorators) {
 }
 
 /***/ }),
-/* 876 */
+/* 874 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46465,7 +46461,7 @@ var _addons = __webpack_require__(143);
 
 var _addons2 = _interopRequireDefault(_addons);
 
-var _ = __webpack_require__(635);
+var _ = __webpack_require__(633);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -46502,17 +46498,17 @@ var hrefTo = exports.hrefTo = function hrefTo(kind, story) {
 };
 
 /***/ }),
-/* 877 */
+/* 875 */
 /***/ (function(module, exports, __webpack_require__) {
 
-const preview = __webpack_require__(878);
+const preview = __webpack_require__(876);
 
 exports.setOptions = preview.setOptions;
 preview.init();
 
 
 /***/ }),
-/* 878 */
+/* 876 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46577,13 +46573,13 @@ function setOptions(newOptions) {
 }
 
 /***/ }),
-/* 879 */
+/* 877 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(880);
+var content = __webpack_require__(878);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -46591,7 +46587,7 @@ var transform;
 var options = {}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(882)(content, options);
+var update = __webpack_require__(880)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -46608,10 +46604,10 @@ if(false) {
 }
 
 /***/ }),
-/* 880 */
+/* 878 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(881)(false);
+exports = module.exports = __webpack_require__(879)(false);
 // imports
 
 
@@ -46622,7 +46618,7 @@ exports.push([module.i, "/*!\n * Primer\n * http://primer.github.io\n *\n * Rele
 
 
 /***/ }),
-/* 881 */
+/* 879 */
 /***/ (function(module, exports) {
 
 /*
@@ -46704,7 +46700,7 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-/* 882 */
+/* 880 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -46750,7 +46746,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(883);
+var	fixUrls = __webpack_require__(881);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -47063,7 +47059,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 883 */
+/* 881 */
 /***/ (function(module, exports) {
 
 
@@ -47158,13 +47154,13 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 884 */
+/* 882 */
 /***/ (function(module, exports) {
 
-module.exports = {"version":"10.7.0","name":"primer","description":"Primer is the CSS framework that powers GitHub's front-end design. primer includes 23 packages that are grouped into 3 core meta-packages for easy install. Each package and meta-package is independently versioned and distributed via npm, so it's easy to include all or part of Primer within your own project.","homepage":"http://primer.github.io/","author":"GitHub, Inc.","license":"MIT","style":"build/build.css","sass":"index.scss","primer":{"module_type":"meta"},"main":"build/index.js","files":["index.scss","lib","build","CHANGELOG.md"],"repository":"https://github.com/primer/primer/tree/master/modules/primer","bugs":{"url":"https://github.com/primer/primer/issues"},"scripts":{"build":"../../script/npm-run primer-module-build index.scss","prepare":"npm run build","lint":"../../script/lint-scss","test":"../../script/npm-run-all build lint"},"dependencies":{"primer-alerts":"1.5.7","primer-avatars":"1.5.4","primer-base":"1.7.2","primer-blankslate":"1.4.7","primer-box":"2.5.7","primer-branch-name":"1.0.5","primer-breadcrumb":"1.5.3","primer-buttons":"2.5.5","primer-core":"6.10.1","primer-forms":"2.1.2","primer-labels":"1.5.7","primer-layout":"1.4.7","primer-markdown":"3.7.7","primer-marketing":"6.2.2","primer-marketing-buttons":"1.0.6","primer-marketing-support":"1.5.2","primer-marketing-type":"1.4.7","primer-marketing-utilities":"1.6.3","primer-navigation":"1.5.5","primer-page-headers":"1.4.7","primer-page-sections":"1.4.7","primer-pagination":"1.0.1","primer-popover":"0.1.1","primer-product":"5.6.4","primer-subhead":"1.0.5","primer-support":"4.5.4","primer-table-object":"1.4.7","primer-tables":"1.4.7","primer-tooltips":"1.5.5","primer-truncate":"1.4.7","primer-utilities":"4.11.1"},"keywords":["primer","css","github","design-system"]}
+module.exports = {"version":"10.7.0","name":"primer","description":"Primer is the CSS framework that powers GitHub's front-end design. primer includes 23 packages that are grouped into 3 core meta-packages for easy install. Each package and meta-package is independently versioned and distributed via npm, so it's easy to include all or part of Primer within your own project.","homepage":"http://primer.github.io/","author":"GitHub, Inc.","license":"MIT","style":"build/build.css","sass":"index.scss","primer":{"module_type":"meta"},"main":"build/index.js","files":["index.scss","lib","build","CHANGELOG.md"],"repository":"https://github.com/primer/primer/tree/master/modules/primer","bugs":{"url":"https://github.com/primer/primer/issues"},"scripts":{"build":"../../script/npm-run primer-module-build index.scss","prepare":"npm run build","lint":"../../script/lint-scss","test":"../../script/npm-run-all build lint","prepublishOnly":"../../script/notify pending","publish":"../../script/notify success"},"dependencies":{"primer-alerts":"1.5.8","primer-avatars":"1.5.5","primer-base":"1.7.3","primer-blankslate":"1.4.8","primer-box":"2.5.8","primer-branch-name":"1.0.6","primer-breadcrumb":"1.5.4","primer-buttons":"2.5.6","primer-core":"6.10.2","primer-forms":"2.1.3","primer-labels":"1.5.8","primer-layout":"1.4.8","primer-markdown":"3.7.8","primer-marketing":"6.2.3","primer-marketing-buttons":"1.0.7","primer-marketing-support":"1.5.3","primer-marketing-type":"1.4.8","primer-marketing-utilities":"1.6.4","primer-navigation":"1.5.6","primer-page-headers":"1.4.8","primer-page-sections":"1.4.8","primer-pagination":"1.0.2","primer-popover":"0.1.2","primer-product":"5.6.5","primer-subhead":"1.0.6","primer-support":"4.5.5","primer-table-object":"1.4.8","primer-tables":"1.4.8","primer-tooltips":"1.5.6","primer-truncate":"1.4.8","primer-utilities":"4.11.2"},"keywords":["primer","css","github","design-system"]}
 
 /***/ }),
-/* 885 */
+/* 883 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
@@ -47295,36 +47291,36 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 885;
+webpackContext.id = 883;
 
 /***/ }),
-/* 886 */
+/* 884 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var unified = __webpack_require__(887);
-var parse = __webpack_require__(899);
-var stringify = __webpack_require__(946);
+var unified = __webpack_require__(885);
+var parse = __webpack_require__(897);
+var stringify = __webpack_require__(944);
 
 module.exports = unified().use(parse).use(stringify).freeze();
 
 
 /***/ }),
-/* 887 */
+/* 885 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 /* Dependencies. */
-var extend = __webpack_require__(888)
-var bail = __webpack_require__(889)
-var vfile = __webpack_require__(890)
-var trough = __webpack_require__(896)
-var string = __webpack_require__(897)
-var plain = __webpack_require__(898)
+var extend = __webpack_require__(886)
+var bail = __webpack_require__(887)
+var vfile = __webpack_require__(888)
+var trough = __webpack_require__(894)
+var string = __webpack_require__(895)
+var plain = __webpack_require__(896)
 
 /* Expose a frozen processor. */
 module.exports = unified().freeze()
@@ -47785,7 +47781,7 @@ function assertDone(name, asyncName, complete) {
 
 
 /***/ }),
-/* 888 */
+/* 886 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47878,7 +47874,7 @@ module.exports = function extend() {
 
 
 /***/ }),
-/* 889 */
+/* 887 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47894,14 +47890,14 @@ function bail(err) {
 
 
 /***/ }),
-/* 890 */
+/* 888 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var VMessage = __webpack_require__(891);
-var VFile = __webpack_require__(893);
+var VMessage = __webpack_require__(889);
+var VFile = __webpack_require__(891);
 
 module.exports = VFile;
 
@@ -47954,13 +47950,13 @@ function info() {
 
 
 /***/ }),
-/* 891 */
+/* 889 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var stringify = __webpack_require__(892)
+var stringify = __webpack_require__(890)
 
 module.exports = VMessage
 
@@ -48055,7 +48051,7 @@ function parseOrigin(origin) {
 
 
 /***/ }),
-/* 892 */
+/* 890 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48112,15 +48108,15 @@ function index(value) {
 
 
 /***/ }),
-/* 893 */
+/* 891 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {
 
-var path = __webpack_require__(636);
-var replace = __webpack_require__(894);
-var buffer = __webpack_require__(895);
+var path = __webpack_require__(634);
+var replace = __webpack_require__(892);
+var buffer = __webpack_require__(893);
 
 module.exports = VFile;
 
@@ -48289,13 +48285,13 @@ function assertPath(path, name) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(85)))
 
 /***/ }),
-/* 894 */
+/* 892 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var path = __webpack_require__(636);
+var path = __webpack_require__(634);
 
 function replaceExt(npath, ext) {
   if (typeof npath !== 'string') {
@@ -48314,7 +48310,7 @@ module.exports = replaceExt;
 
 
 /***/ }),
-/* 895 */
+/* 893 */
 /***/ (function(module, exports) {
 
 /*!
@@ -48341,7 +48337,7 @@ function isSlowBuffer (obj) {
 
 
 /***/ }),
-/* 896 */
+/* 894 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48481,7 +48477,7 @@ function wrap(fn, next) {
 
 
 /***/ }),
-/* 897 */
+/* 895 */
 /***/ (function(module, exports) {
 
 var toString = Object.prototype.toString
@@ -48494,7 +48490,7 @@ function isString(obj) {
 
 
 /***/ }),
-/* 898 */
+/* 896 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48508,15 +48504,15 @@ module.exports = function (x) {
 
 
 /***/ }),
-/* 899 */
+/* 897 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var unherit = __webpack_require__(637);
+var unherit = __webpack_require__(635);
 var xtend = __webpack_require__(118);
-var Parser = __webpack_require__(900);
+var Parser = __webpack_require__(898);
 
 module.exports = parse;
 parse.Parser = Parser;
@@ -48529,18 +48525,18 @@ function parse(options) {
 
 
 /***/ }),
-/* 900 */
+/* 898 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var xtend = __webpack_require__(118);
-var toggle = __webpack_require__(639);
-var vfileLocation = __webpack_require__(901);
-var unescape = __webpack_require__(902);
-var decode = __webpack_require__(903);
-var tokenizer = __webpack_require__(906);
+var toggle = __webpack_require__(637);
+var vfileLocation = __webpack_require__(899);
+var unescape = __webpack_require__(900);
+var decode = __webpack_require__(901);
+var tokenizer = __webpack_require__(904);
 
 module.exports = Parser;
 
@@ -48563,11 +48559,11 @@ function Parser(doc, file) {
 var proto = Parser.prototype;
 
 /* Expose core. */
-proto.setOptions = __webpack_require__(907);
-proto.parse = __webpack_require__(909);
+proto.setOptions = __webpack_require__(905);
+proto.parse = __webpack_require__(907);
 
 /* Expose `defaults`. */
-proto.options = __webpack_require__(645);
+proto.options = __webpack_require__(643);
 
 /* Enter and exit helpers. */
 proto.exitStart = toggle('atStart', true);
@@ -48634,34 +48630,34 @@ proto.interruptBlockquote = [
 
 /* Handlers. */
 proto.blockTokenizers = {
-  newline: __webpack_require__(911),
-  indentedCode: __webpack_require__(912),
-  fencedCode: __webpack_require__(913),
-  blockquote: __webpack_require__(914),
-  atxHeading: __webpack_require__(915),
-  thematicBreak: __webpack_require__(916),
-  list: __webpack_require__(917),
-  setextHeading: __webpack_require__(919),
-  html: __webpack_require__(920),
-  footnote: __webpack_require__(921),
-  definition: __webpack_require__(923),
-  table: __webpack_require__(924),
-  paragraph: __webpack_require__(925)
+  newline: __webpack_require__(909),
+  indentedCode: __webpack_require__(910),
+  fencedCode: __webpack_require__(911),
+  blockquote: __webpack_require__(912),
+  atxHeading: __webpack_require__(913),
+  thematicBreak: __webpack_require__(914),
+  list: __webpack_require__(915),
+  setextHeading: __webpack_require__(917),
+  html: __webpack_require__(918),
+  footnote: __webpack_require__(919),
+  definition: __webpack_require__(921),
+  table: __webpack_require__(922),
+  paragraph: __webpack_require__(923)
 };
 
 proto.inlineTokenizers = {
-  escape: __webpack_require__(926),
-  autoLink: __webpack_require__(928),
-  url: __webpack_require__(929),
-  html: __webpack_require__(931),
-  link: __webpack_require__(932),
-  reference: __webpack_require__(933),
-  strong: __webpack_require__(934),
-  emphasis: __webpack_require__(936),
-  deletion: __webpack_require__(939),
-  code: __webpack_require__(941),
-  break: __webpack_require__(943),
-  text: __webpack_require__(945)
+  escape: __webpack_require__(924),
+  autoLink: __webpack_require__(926),
+  url: __webpack_require__(927),
+  html: __webpack_require__(929),
+  link: __webpack_require__(930),
+  reference: __webpack_require__(931),
+  strong: __webpack_require__(932),
+  emphasis: __webpack_require__(934),
+  deletion: __webpack_require__(937),
+  code: __webpack_require__(939),
+  break: __webpack_require__(941),
+  text: __webpack_require__(943)
 };
 
 /* Expose precedence. */
@@ -48687,7 +48683,7 @@ function keys(value) {
 
 
 /***/ }),
-/* 901 */
+/* 899 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48771,7 +48767,7 @@ function indices(value) {
 
 
 /***/ }),
-/* 902 */
+/* 900 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48815,7 +48811,7 @@ function factory(ctx, key) {
 
 
 /***/ }),
-/* 903 */
+/* 901 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48885,19 +48881,19 @@ function factory(ctx) {
 
 
 /***/ }),
-/* 904 */
+/* 902 */
 /***/ (function(module, exports) {
 
 module.exports = {"AEli":"Æ","AElig":"Æ","AM":"&","AMP":"&","Aacut":"Á","Aacute":"Á","Abreve":"Ă","Acir":"Â","Acirc":"Â","Acy":"А","Afr":"𝔄","Agrav":"À","Agrave":"À","Alpha":"Α","Amacr":"Ā","And":"⩓","Aogon":"Ą","Aopf":"𝔸","ApplyFunction":"⁡","Arin":"Å","Aring":"Å","Ascr":"𝒜","Assign":"≔","Atild":"Ã","Atilde":"Ã","Aum":"Ä","Auml":"Ä","Backslash":"∖","Barv":"⫧","Barwed":"⌆","Bcy":"Б","Because":"∵","Bernoullis":"ℬ","Beta":"Β","Bfr":"𝔅","Bopf":"𝔹","Breve":"˘","Bscr":"ℬ","Bumpeq":"≎","CHcy":"Ч","COP":"©","COPY":"©","Cacute":"Ć","Cap":"⋒","CapitalDifferentialD":"ⅅ","Cayleys":"ℭ","Ccaron":"Č","Ccedi":"Ç","Ccedil":"Ç","Ccirc":"Ĉ","Cconint":"∰","Cdot":"Ċ","Cedilla":"¸","CenterDot":"·","Cfr":"ℭ","Chi":"Χ","CircleDot":"⊙","CircleMinus":"⊖","CirclePlus":"⊕","CircleTimes":"⊗","ClockwiseContourIntegral":"∲","CloseCurlyDoubleQuote":"”","CloseCurlyQuote":"’","Colon":"∷","Colone":"⩴","Congruent":"≡","Conint":"∯","ContourIntegral":"∮","Copf":"ℂ","Coproduct":"∐","CounterClockwiseContourIntegral":"∳","Cross":"⨯","Cscr":"𝒞","Cup":"⋓","CupCap":"≍","DD":"ⅅ","DDotrahd":"⤑","DJcy":"Ђ","DScy":"Ѕ","DZcy":"Џ","Dagger":"‡","Darr":"↡","Dashv":"⫤","Dcaron":"Ď","Dcy":"Д","Del":"∇","Delta":"Δ","Dfr":"𝔇","DiacriticalAcute":"´","DiacriticalDot":"˙","DiacriticalDoubleAcute":"˝","DiacriticalGrave":"`","DiacriticalTilde":"˜","Diamond":"⋄","DifferentialD":"ⅆ","Dopf":"𝔻","Dot":"¨","DotDot":"⃜","DotEqual":"≐","DoubleContourIntegral":"∯","DoubleDot":"¨","DoubleDownArrow":"⇓","DoubleLeftArrow":"⇐","DoubleLeftRightArrow":"⇔","DoubleLeftTee":"⫤","DoubleLongLeftArrow":"⟸","DoubleLongLeftRightArrow":"⟺","DoubleLongRightArrow":"⟹","DoubleRightArrow":"⇒","DoubleRightTee":"⊨","DoubleUpArrow":"⇑","DoubleUpDownArrow":"⇕","DoubleVerticalBar":"∥","DownArrow":"↓","DownArrowBar":"⤓","DownArrowUpArrow":"⇵","DownBreve":"̑","DownLeftRightVector":"⥐","DownLeftTeeVector":"⥞","DownLeftVector":"↽","DownLeftVectorBar":"⥖","DownRightTeeVector":"⥟","DownRightVector":"⇁","DownRightVectorBar":"⥗","DownTee":"⊤","DownTeeArrow":"↧","Downarrow":"⇓","Dscr":"𝒟","Dstrok":"Đ","ENG":"Ŋ","ET":"Ð","ETH":"Ð","Eacut":"É","Eacute":"É","Ecaron":"Ě","Ecir":"Ê","Ecirc":"Ê","Ecy":"Э","Edot":"Ė","Efr":"𝔈","Egrav":"È","Egrave":"È","Element":"∈","Emacr":"Ē","EmptySmallSquare":"◻","EmptyVerySmallSquare":"▫","Eogon":"Ę","Eopf":"𝔼","Epsilon":"Ε","Equal":"⩵","EqualTilde":"≂","Equilibrium":"⇌","Escr":"ℰ","Esim":"⩳","Eta":"Η","Eum":"Ë","Euml":"Ë","Exists":"∃","ExponentialE":"ⅇ","Fcy":"Ф","Ffr":"𝔉","FilledSmallSquare":"◼","FilledVerySmallSquare":"▪","Fopf":"𝔽","ForAll":"∀","Fouriertrf":"ℱ","Fscr":"ℱ","GJcy":"Ѓ","G":">","GT":">","Gamma":"Γ","Gammad":"Ϝ","Gbreve":"Ğ","Gcedil":"Ģ","Gcirc":"Ĝ","Gcy":"Г","Gdot":"Ġ","Gfr":"𝔊","Gg":"⋙","Gopf":"𝔾","GreaterEqual":"≥","GreaterEqualLess":"⋛","GreaterFullEqual":"≧","GreaterGreater":"⪢","GreaterLess":"≷","GreaterSlantEqual":"⩾","GreaterTilde":"≳","Gscr":"𝒢","Gt":"≫","HARDcy":"Ъ","Hacek":"ˇ","Hat":"^","Hcirc":"Ĥ","Hfr":"ℌ","HilbertSpace":"ℋ","Hopf":"ℍ","HorizontalLine":"─","Hscr":"ℋ","Hstrok":"Ħ","HumpDownHump":"≎","HumpEqual":"≏","IEcy":"Е","IJlig":"Ĳ","IOcy":"Ё","Iacut":"Í","Iacute":"Í","Icir":"Î","Icirc":"Î","Icy":"И","Idot":"İ","Ifr":"ℑ","Igrav":"Ì","Igrave":"Ì","Im":"ℑ","Imacr":"Ī","ImaginaryI":"ⅈ","Implies":"⇒","Int":"∬","Integral":"∫","Intersection":"⋂","InvisibleComma":"⁣","InvisibleTimes":"⁢","Iogon":"Į","Iopf":"𝕀","Iota":"Ι","Iscr":"ℐ","Itilde":"Ĩ","Iukcy":"І","Ium":"Ï","Iuml":"Ï","Jcirc":"Ĵ","Jcy":"Й","Jfr":"𝔍","Jopf":"𝕁","Jscr":"𝒥","Jsercy":"Ј","Jukcy":"Є","KHcy":"Х","KJcy":"Ќ","Kappa":"Κ","Kcedil":"Ķ","Kcy":"К","Kfr":"𝔎","Kopf":"𝕂","Kscr":"𝒦","LJcy":"Љ","L":"<","LT":"<","Lacute":"Ĺ","Lambda":"Λ","Lang":"⟪","Laplacetrf":"ℒ","Larr":"↞","Lcaron":"Ľ","Lcedil":"Ļ","Lcy":"Л","LeftAngleBracket":"⟨","LeftArrow":"←","LeftArrowBar":"⇤","LeftArrowRightArrow":"⇆","LeftCeiling":"⌈","LeftDoubleBracket":"⟦","LeftDownTeeVector":"⥡","LeftDownVector":"⇃","LeftDownVectorBar":"⥙","LeftFloor":"⌊","LeftRightArrow":"↔","LeftRightVector":"⥎","LeftTee":"⊣","LeftTeeArrow":"↤","LeftTeeVector":"⥚","LeftTriangle":"⊲","LeftTriangleBar":"⧏","LeftTriangleEqual":"⊴","LeftUpDownVector":"⥑","LeftUpTeeVector":"⥠","LeftUpVector":"↿","LeftUpVectorBar":"⥘","LeftVector":"↼","LeftVectorBar":"⥒","Leftarrow":"⇐","Leftrightarrow":"⇔","LessEqualGreater":"⋚","LessFullEqual":"≦","LessGreater":"≶","LessLess":"⪡","LessSlantEqual":"⩽","LessTilde":"≲","Lfr":"𝔏","Ll":"⋘","Lleftarrow":"⇚","Lmidot":"Ŀ","LongLeftArrow":"⟵","LongLeftRightArrow":"⟷","LongRightArrow":"⟶","Longleftarrow":"⟸","Longleftrightarrow":"⟺","Longrightarrow":"⟹","Lopf":"𝕃","LowerLeftArrow":"↙","LowerRightArrow":"↘","Lscr":"ℒ","Lsh":"↰","Lstrok":"Ł","Lt":"≪","Map":"⤅","Mcy":"М","MediumSpace":" ","Mellintrf":"ℳ","Mfr":"𝔐","MinusPlus":"∓","Mopf":"𝕄","Mscr":"ℳ","Mu":"Μ","NJcy":"Њ","Nacute":"Ń","Ncaron":"Ň","Ncedil":"Ņ","Ncy":"Н","NegativeMediumSpace":"​","NegativeThickSpace":"​","NegativeThinSpace":"​","NegativeVeryThinSpace":"​","NestedGreaterGreater":"≫","NestedLessLess":"≪","NewLine":"\n","Nfr":"𝔑","NoBreak":"⁠","NonBreakingSpace":" ","Nopf":"ℕ","Not":"⫬","NotCongruent":"≢","NotCupCap":"≭","NotDoubleVerticalBar":"∦","NotElement":"∉","NotEqual":"≠","NotEqualTilde":"≂̸","NotExists":"∄","NotGreater":"≯","NotGreaterEqual":"≱","NotGreaterFullEqual":"≧̸","NotGreaterGreater":"≫̸","NotGreaterLess":"≹","NotGreaterSlantEqual":"⩾̸","NotGreaterTilde":"≵","NotHumpDownHump":"≎̸","NotHumpEqual":"≏̸","NotLeftTriangle":"⋪","NotLeftTriangleBar":"⧏̸","NotLeftTriangleEqual":"⋬","NotLess":"≮","NotLessEqual":"≰","NotLessGreater":"≸","NotLessLess":"≪̸","NotLessSlantEqual":"⩽̸","NotLessTilde":"≴","NotNestedGreaterGreater":"⪢̸","NotNestedLessLess":"⪡̸","NotPrecedes":"⊀","NotPrecedesEqual":"⪯̸","NotPrecedesSlantEqual":"⋠","NotReverseElement":"∌","NotRightTriangle":"⋫","NotRightTriangleBar":"⧐̸","NotRightTriangleEqual":"⋭","NotSquareSubset":"⊏̸","NotSquareSubsetEqual":"⋢","NotSquareSuperset":"⊐̸","NotSquareSupersetEqual":"⋣","NotSubset":"⊂⃒","NotSubsetEqual":"⊈","NotSucceeds":"⊁","NotSucceedsEqual":"⪰̸","NotSucceedsSlantEqual":"⋡","NotSucceedsTilde":"≿̸","NotSuperset":"⊃⃒","NotSupersetEqual":"⊉","NotTilde":"≁","NotTildeEqual":"≄","NotTildeFullEqual":"≇","NotTildeTilde":"≉","NotVerticalBar":"∤","Nscr":"𝒩","Ntild":"Ñ","Ntilde":"Ñ","Nu":"Ν","OElig":"Œ","Oacut":"Ó","Oacute":"Ó","Ocir":"Ô","Ocirc":"Ô","Ocy":"О","Odblac":"Ő","Ofr":"𝔒","Ograv":"Ò","Ograve":"Ò","Omacr":"Ō","Omega":"Ω","Omicron":"Ο","Oopf":"𝕆","OpenCurlyDoubleQuote":"“","OpenCurlyQuote":"‘","Or":"⩔","Oscr":"𝒪","Oslas":"Ø","Oslash":"Ø","Otild":"Õ","Otilde":"Õ","Otimes":"⨷","Oum":"Ö","Ouml":"Ö","OverBar":"‾","OverBrace":"⏞","OverBracket":"⎴","OverParenthesis":"⏜","PartialD":"∂","Pcy":"П","Pfr":"𝔓","Phi":"Φ","Pi":"Π","PlusMinus":"±","Poincareplane":"ℌ","Popf":"ℙ","Pr":"⪻","Precedes":"≺","PrecedesEqual":"⪯","PrecedesSlantEqual":"≼","PrecedesTilde":"≾","Prime":"″","Product":"∏","Proportion":"∷","Proportional":"∝","Pscr":"𝒫","Psi":"Ψ","QUO":"\"","QUOT":"\"","Qfr":"𝔔","Qopf":"ℚ","Qscr":"𝒬","RBarr":"⤐","RE":"®","REG":"®","Racute":"Ŕ","Rang":"⟫","Rarr":"↠","Rarrtl":"⤖","Rcaron":"Ř","Rcedil":"Ŗ","Rcy":"Р","Re":"ℜ","ReverseElement":"∋","ReverseEquilibrium":"⇋","ReverseUpEquilibrium":"⥯","Rfr":"ℜ","Rho":"Ρ","RightAngleBracket":"⟩","RightArrow":"→","RightArrowBar":"⇥","RightArrowLeftArrow":"⇄","RightCeiling":"⌉","RightDoubleBracket":"⟧","RightDownTeeVector":"⥝","RightDownVector":"⇂","RightDownVectorBar":"⥕","RightFloor":"⌋","RightTee":"⊢","RightTeeArrow":"↦","RightTeeVector":"⥛","RightTriangle":"⊳","RightTriangleBar":"⧐","RightTriangleEqual":"⊵","RightUpDownVector":"⥏","RightUpTeeVector":"⥜","RightUpVector":"↾","RightUpVectorBar":"⥔","RightVector":"⇀","RightVectorBar":"⥓","Rightarrow":"⇒","Ropf":"ℝ","RoundImplies":"⥰","Rrightarrow":"⇛","Rscr":"ℛ","Rsh":"↱","RuleDelayed":"⧴","SHCHcy":"Щ","SHcy":"Ш","SOFTcy":"Ь","Sacute":"Ś","Sc":"⪼","Scaron":"Š","Scedil":"Ş","Scirc":"Ŝ","Scy":"С","Sfr":"𝔖","ShortDownArrow":"↓","ShortLeftArrow":"←","ShortRightArrow":"→","ShortUpArrow":"↑","Sigma":"Σ","SmallCircle":"∘","Sopf":"𝕊","Sqrt":"√","Square":"□","SquareIntersection":"⊓","SquareSubset":"⊏","SquareSubsetEqual":"⊑","SquareSuperset":"⊐","SquareSupersetEqual":"⊒","SquareUnion":"⊔","Sscr":"𝒮","Star":"⋆","Sub":"⋐","Subset":"⋐","SubsetEqual":"⊆","Succeeds":"≻","SucceedsEqual":"⪰","SucceedsSlantEqual":"≽","SucceedsTilde":"≿","SuchThat":"∋","Sum":"∑","Sup":"⋑","Superset":"⊃","SupersetEqual":"⊇","Supset":"⋑","THOR":"Þ","THORN":"Þ","TRADE":"™","TSHcy":"Ћ","TScy":"Ц","Tab":"\t","Tau":"Τ","Tcaron":"Ť","Tcedil":"Ţ","Tcy":"Т","Tfr":"𝔗","Therefore":"∴","Theta":"Θ","ThickSpace":"  ","ThinSpace":" ","Tilde":"∼","TildeEqual":"≃","TildeFullEqual":"≅","TildeTilde":"≈","Topf":"𝕋","TripleDot":"⃛","Tscr":"𝒯","Tstrok":"Ŧ","Uacut":"Ú","Uacute":"Ú","Uarr":"↟","Uarrocir":"⥉","Ubrcy":"Ў","Ubreve":"Ŭ","Ucir":"Û","Ucirc":"Û","Ucy":"У","Udblac":"Ű","Ufr":"𝔘","Ugrav":"Ù","Ugrave":"Ù","Umacr":"Ū","UnderBar":"_","UnderBrace":"⏟","UnderBracket":"⎵","UnderParenthesis":"⏝","Union":"⋃","UnionPlus":"⊎","Uogon":"Ų","Uopf":"𝕌","UpArrow":"↑","UpArrowBar":"⤒","UpArrowDownArrow":"⇅","UpDownArrow":"↕","UpEquilibrium":"⥮","UpTee":"⊥","UpTeeArrow":"↥","Uparrow":"⇑","Updownarrow":"⇕","UpperLeftArrow":"↖","UpperRightArrow":"↗","Upsi":"ϒ","Upsilon":"Υ","Uring":"Ů","Uscr":"𝒰","Utilde":"Ũ","Uum":"Ü","Uuml":"Ü","VDash":"⊫","Vbar":"⫫","Vcy":"В","Vdash":"⊩","Vdashl":"⫦","Vee":"⋁","Verbar":"‖","Vert":"‖","VerticalBar":"∣","VerticalLine":"|","VerticalSeparator":"❘","VerticalTilde":"≀","VeryThinSpace":" ","Vfr":"𝔙","Vopf":"𝕍","Vscr":"𝒱","Vvdash":"⊪","Wcirc":"Ŵ","Wedge":"⋀","Wfr":"𝔚","Wopf":"𝕎","Wscr":"𝒲","Xfr":"𝔛","Xi":"Ξ","Xopf":"𝕏","Xscr":"𝒳","YAcy":"Я","YIcy":"Ї","YUcy":"Ю","Yacut":"Ý","Yacute":"Ý","Ycirc":"Ŷ","Ycy":"Ы","Yfr":"𝔜","Yopf":"𝕐","Yscr":"𝒴","Yuml":"Ÿ","ZHcy":"Ж","Zacute":"Ź","Zcaron":"Ž","Zcy":"З","Zdot":"Ż","ZeroWidthSpace":"​","Zeta":"Ζ","Zfr":"ℨ","Zopf":"ℤ","Zscr":"𝒵","aacut":"á","aacute":"á","abreve":"ă","ac":"∾","acE":"∾̳","acd":"∿","acir":"â","acirc":"â","acut":"´","acute":"´","acy":"а","aeli":"æ","aelig":"æ","af":"⁡","afr":"𝔞","agrav":"à","agrave":"à","alefsym":"ℵ","aleph":"ℵ","alpha":"α","amacr":"ā","amalg":"⨿","am":"&","amp":"&","and":"∧","andand":"⩕","andd":"⩜","andslope":"⩘","andv":"⩚","ang":"∠","ange":"⦤","angle":"∠","angmsd":"∡","angmsdaa":"⦨","angmsdab":"⦩","angmsdac":"⦪","angmsdad":"⦫","angmsdae":"⦬","angmsdaf":"⦭","angmsdag":"⦮","angmsdah":"⦯","angrt":"∟","angrtvb":"⊾","angrtvbd":"⦝","angsph":"∢","angst":"Å","angzarr":"⍼","aogon":"ą","aopf":"𝕒","ap":"≈","apE":"⩰","apacir":"⩯","ape":"≊","apid":"≋","apos":"'","approx":"≈","approxeq":"≊","arin":"å","aring":"å","ascr":"𝒶","ast":"*","asymp":"≈","asympeq":"≍","atild":"ã","atilde":"ã","aum":"ä","auml":"ä","awconint":"∳","awint":"⨑","bNot":"⫭","backcong":"≌","backepsilon":"϶","backprime":"‵","backsim":"∽","backsimeq":"⋍","barvee":"⊽","barwed":"⌅","barwedge":"⌅","bbrk":"⎵","bbrktbrk":"⎶","bcong":"≌","bcy":"б","bdquo":"„","becaus":"∵","because":"∵","bemptyv":"⦰","bepsi":"϶","bernou":"ℬ","beta":"β","beth":"ℶ","between":"≬","bfr":"𝔟","bigcap":"⋂","bigcirc":"◯","bigcup":"⋃","bigodot":"⨀","bigoplus":"⨁","bigotimes":"⨂","bigsqcup":"⨆","bigstar":"★","bigtriangledown":"▽","bigtriangleup":"△","biguplus":"⨄","bigvee":"⋁","bigwedge":"⋀","bkarow":"⤍","blacklozenge":"⧫","blacksquare":"▪","blacktriangle":"▴","blacktriangledown":"▾","blacktriangleleft":"◂","blacktriangleright":"▸","blank":"␣","blk12":"▒","blk14":"░","blk34":"▓","block":"█","bne":"=⃥","bnequiv":"≡⃥","bnot":"⌐","bopf":"𝕓","bot":"⊥","bottom":"⊥","bowtie":"⋈","boxDL":"╗","boxDR":"╔","boxDl":"╖","boxDr":"╓","boxH":"═","boxHD":"╦","boxHU":"╩","boxHd":"╤","boxHu":"╧","boxUL":"╝","boxUR":"╚","boxUl":"╜","boxUr":"╙","boxV":"║","boxVH":"╬","boxVL":"╣","boxVR":"╠","boxVh":"╫","boxVl":"╢","boxVr":"╟","boxbox":"⧉","boxdL":"╕","boxdR":"╒","boxdl":"┐","boxdr":"┌","boxh":"─","boxhD":"╥","boxhU":"╨","boxhd":"┬","boxhu":"┴","boxminus":"⊟","boxplus":"⊞","boxtimes":"⊠","boxuL":"╛","boxuR":"╘","boxul":"┘","boxur":"└","boxv":"│","boxvH":"╪","boxvL":"╡","boxvR":"╞","boxvh":"┼","boxvl":"┤","boxvr":"├","bprime":"‵","breve":"˘","brvba":"¦","brvbar":"¦","bscr":"𝒷","bsemi":"⁏","bsim":"∽","bsime":"⋍","bsol":"\\","bsolb":"⧅","bsolhsub":"⟈","bull":"•","bullet":"•","bump":"≎","bumpE":"⪮","bumpe":"≏","bumpeq":"≏","cacute":"ć","cap":"∩","capand":"⩄","capbrcup":"⩉","capcap":"⩋","capcup":"⩇","capdot":"⩀","caps":"∩︀","caret":"⁁","caron":"ˇ","ccaps":"⩍","ccaron":"č","ccedi":"ç","ccedil":"ç","ccirc":"ĉ","ccups":"⩌","ccupssm":"⩐","cdot":"ċ","cedi":"¸","cedil":"¸","cemptyv":"⦲","cen":"¢","cent":"¢","centerdot":"·","cfr":"𝔠","chcy":"ч","check":"✓","checkmark":"✓","chi":"χ","cir":"○","cirE":"⧃","circ":"ˆ","circeq":"≗","circlearrowleft":"↺","circlearrowright":"↻","circledR":"®","circledS":"Ⓢ","circledast":"⊛","circledcirc":"⊚","circleddash":"⊝","cire":"≗","cirfnint":"⨐","cirmid":"⫯","cirscir":"⧂","clubs":"♣","clubsuit":"♣","colon":":","colone":"≔","coloneq":"≔","comma":",","commat":"@","comp":"∁","compfn":"∘","complement":"∁","complexes":"ℂ","cong":"≅","congdot":"⩭","conint":"∮","copf":"𝕔","coprod":"∐","cop":"©","copy":"©","copysr":"℗","crarr":"↵","cross":"✗","cscr":"𝒸","csub":"⫏","csube":"⫑","csup":"⫐","csupe":"⫒","ctdot":"⋯","cudarrl":"⤸","cudarrr":"⤵","cuepr":"⋞","cuesc":"⋟","cularr":"↶","cularrp":"⤽","cup":"∪","cupbrcap":"⩈","cupcap":"⩆","cupcup":"⩊","cupdot":"⊍","cupor":"⩅","cups":"∪︀","curarr":"↷","curarrm":"⤼","curlyeqprec":"⋞","curlyeqsucc":"⋟","curlyvee":"⋎","curlywedge":"⋏","curre":"¤","curren":"¤","curvearrowleft":"↶","curvearrowright":"↷","cuvee":"⋎","cuwed":"⋏","cwconint":"∲","cwint":"∱","cylcty":"⌭","dArr":"⇓","dHar":"⥥","dagger":"†","daleth":"ℸ","darr":"↓","dash":"‐","dashv":"⊣","dbkarow":"⤏","dblac":"˝","dcaron":"ď","dcy":"д","dd":"ⅆ","ddagger":"‡","ddarr":"⇊","ddotseq":"⩷","de":"°","deg":"°","delta":"δ","demptyv":"⦱","dfisht":"⥿","dfr":"𝔡","dharl":"⇃","dharr":"⇂","diam":"⋄","diamond":"⋄","diamondsuit":"♦","diams":"♦","die":"¨","digamma":"ϝ","disin":"⋲","div":"÷","divid":"÷","divide":"÷","divideontimes":"⋇","divonx":"⋇","djcy":"ђ","dlcorn":"⌞","dlcrop":"⌍","dollar":"$","dopf":"𝕕","dot":"˙","doteq":"≐","doteqdot":"≑","dotminus":"∸","dotplus":"∔","dotsquare":"⊡","doublebarwedge":"⌆","downarrow":"↓","downdownarrows":"⇊","downharpoonleft":"⇃","downharpoonright":"⇂","drbkarow":"⤐","drcorn":"⌟","drcrop":"⌌","dscr":"𝒹","dscy":"ѕ","dsol":"⧶","dstrok":"đ","dtdot":"⋱","dtri":"▿","dtrif":"▾","duarr":"⇵","duhar":"⥯","dwangle":"⦦","dzcy":"џ","dzigrarr":"⟿","eDDot":"⩷","eDot":"≑","eacut":"é","eacute":"é","easter":"⩮","ecaron":"ě","ecir":"ê","ecirc":"ê","ecolon":"≕","ecy":"э","edot":"ė","ee":"ⅇ","efDot":"≒","efr":"𝔢","eg":"⪚","egrav":"è","egrave":"è","egs":"⪖","egsdot":"⪘","el":"⪙","elinters":"⏧","ell":"ℓ","els":"⪕","elsdot":"⪗","emacr":"ē","empty":"∅","emptyset":"∅","emptyv":"∅","emsp13":" ","emsp14":" ","emsp":" ","eng":"ŋ","ensp":" ","eogon":"ę","eopf":"𝕖","epar":"⋕","eparsl":"⧣","eplus":"⩱","epsi":"ε","epsilon":"ε","epsiv":"ϵ","eqcirc":"≖","eqcolon":"≕","eqsim":"≂","eqslantgtr":"⪖","eqslantless":"⪕","equals":"=","equest":"≟","equiv":"≡","equivDD":"⩸","eqvparsl":"⧥","erDot":"≓","erarr":"⥱","escr":"ℯ","esdot":"≐","esim":"≂","eta":"η","et":"ð","eth":"ð","eum":"ë","euml":"ë","euro":"€","excl":"!","exist":"∃","expectation":"ℰ","exponentiale":"ⅇ","fallingdotseq":"≒","fcy":"ф","female":"♀","ffilig":"ﬃ","fflig":"ﬀ","ffllig":"ﬄ","ffr":"𝔣","filig":"ﬁ","fjlig":"fj","flat":"♭","fllig":"ﬂ","fltns":"▱","fnof":"ƒ","fopf":"𝕗","forall":"∀","fork":"⋔","forkv":"⫙","fpartint":"⨍","frac1":"¼","frac12":"½","frac13":"⅓","frac14":"¼","frac15":"⅕","frac16":"⅙","frac18":"⅛","frac23":"⅔","frac25":"⅖","frac3":"¾","frac34":"¾","frac35":"⅗","frac38":"⅜","frac45":"⅘","frac56":"⅚","frac58":"⅝","frac78":"⅞","frasl":"⁄","frown":"⌢","fscr":"𝒻","gE":"≧","gEl":"⪌","gacute":"ǵ","gamma":"γ","gammad":"ϝ","gap":"⪆","gbreve":"ğ","gcirc":"ĝ","gcy":"г","gdot":"ġ","ge":"≥","gel":"⋛","geq":"≥","geqq":"≧","geqslant":"⩾","ges":"⩾","gescc":"⪩","gesdot":"⪀","gesdoto":"⪂","gesdotol":"⪄","gesl":"⋛︀","gesles":"⪔","gfr":"𝔤","gg":"≫","ggg":"⋙","gimel":"ℷ","gjcy":"ѓ","gl":"≷","glE":"⪒","gla":"⪥","glj":"⪤","gnE":"≩","gnap":"⪊","gnapprox":"⪊","gne":"⪈","gneq":"⪈","gneqq":"≩","gnsim":"⋧","gopf":"𝕘","grave":"`","gscr":"ℊ","gsim":"≳","gsime":"⪎","gsiml":"⪐","g":">","gt":">","gtcc":"⪧","gtcir":"⩺","gtdot":"⋗","gtlPar":"⦕","gtquest":"⩼","gtrapprox":"⪆","gtrarr":"⥸","gtrdot":"⋗","gtreqless":"⋛","gtreqqless":"⪌","gtrless":"≷","gtrsim":"≳","gvertneqq":"≩︀","gvnE":"≩︀","hArr":"⇔","hairsp":" ","half":"½","hamilt":"ℋ","hardcy":"ъ","harr":"↔","harrcir":"⥈","harrw":"↭","hbar":"ℏ","hcirc":"ĥ","hearts":"♥","heartsuit":"♥","hellip":"…","hercon":"⊹","hfr":"𝔥","hksearow":"⤥","hkswarow":"⤦","hoarr":"⇿","homtht":"∻","hookleftarrow":"↩","hookrightarrow":"↪","hopf":"𝕙","horbar":"―","hscr":"𝒽","hslash":"ℏ","hstrok":"ħ","hybull":"⁃","hyphen":"‐","iacut":"í","iacute":"í","ic":"⁣","icir":"î","icirc":"î","icy":"и","iecy":"е","iexc":"¡","iexcl":"¡","iff":"⇔","ifr":"𝔦","igrav":"ì","igrave":"ì","ii":"ⅈ","iiiint":"⨌","iiint":"∭","iinfin":"⧜","iiota":"℩","ijlig":"ĳ","imacr":"ī","image":"ℑ","imagline":"ℐ","imagpart":"ℑ","imath":"ı","imof":"⊷","imped":"Ƶ","in":"∈","incare":"℅","infin":"∞","infintie":"⧝","inodot":"ı","int":"∫","intcal":"⊺","integers":"ℤ","intercal":"⊺","intlarhk":"⨗","intprod":"⨼","iocy":"ё","iogon":"į","iopf":"𝕚","iota":"ι","iprod":"⨼","iques":"¿","iquest":"¿","iscr":"𝒾","isin":"∈","isinE":"⋹","isindot":"⋵","isins":"⋴","isinsv":"⋳","isinv":"∈","it":"⁢","itilde":"ĩ","iukcy":"і","ium":"ï","iuml":"ï","jcirc":"ĵ","jcy":"й","jfr":"𝔧","jmath":"ȷ","jopf":"𝕛","jscr":"𝒿","jsercy":"ј","jukcy":"є","kappa":"κ","kappav":"ϰ","kcedil":"ķ","kcy":"к","kfr":"𝔨","kgreen":"ĸ","khcy":"х","kjcy":"ќ","kopf":"𝕜","kscr":"𝓀","lAarr":"⇚","lArr":"⇐","lAtail":"⤛","lBarr":"⤎","lE":"≦","lEg":"⪋","lHar":"⥢","lacute":"ĺ","laemptyv":"⦴","lagran":"ℒ","lambda":"λ","lang":"⟨","langd":"⦑","langle":"⟨","lap":"⪅","laqu":"«","laquo":"«","larr":"←","larrb":"⇤","larrbfs":"⤟","larrfs":"⤝","larrhk":"↩","larrlp":"↫","larrpl":"⤹","larrsim":"⥳","larrtl":"↢","lat":"⪫","latail":"⤙","late":"⪭","lates":"⪭︀","lbarr":"⤌","lbbrk":"❲","lbrace":"{","lbrack":"[","lbrke":"⦋","lbrksld":"⦏","lbrkslu":"⦍","lcaron":"ľ","lcedil":"ļ","lceil":"⌈","lcub":"{","lcy":"л","ldca":"⤶","ldquo":"“","ldquor":"„","ldrdhar":"⥧","ldrushar":"⥋","ldsh":"↲","le":"≤","leftarrow":"←","leftarrowtail":"↢","leftharpoondown":"↽","leftharpoonup":"↼","leftleftarrows":"⇇","leftrightarrow":"↔","leftrightarrows":"⇆","leftrightharpoons":"⇋","leftrightsquigarrow":"↭","leftthreetimes":"⋋","leg":"⋚","leq":"≤","leqq":"≦","leqslant":"⩽","les":"⩽","lescc":"⪨","lesdot":"⩿","lesdoto":"⪁","lesdotor":"⪃","lesg":"⋚︀","lesges":"⪓","lessapprox":"⪅","lessdot":"⋖","lesseqgtr":"⋚","lesseqqgtr":"⪋","lessgtr":"≶","lesssim":"≲","lfisht":"⥼","lfloor":"⌊","lfr":"𝔩","lg":"≶","lgE":"⪑","lhard":"↽","lharu":"↼","lharul":"⥪","lhblk":"▄","ljcy":"љ","ll":"≪","llarr":"⇇","llcorner":"⌞","llhard":"⥫","lltri":"◺","lmidot":"ŀ","lmoust":"⎰","lmoustache":"⎰","lnE":"≨","lnap":"⪉","lnapprox":"⪉","lne":"⪇","lneq":"⪇","lneqq":"≨","lnsim":"⋦","loang":"⟬","loarr":"⇽","lobrk":"⟦","longleftarrow":"⟵","longleftrightarrow":"⟷","longmapsto":"⟼","longrightarrow":"⟶","looparrowleft":"↫","looparrowright":"↬","lopar":"⦅","lopf":"𝕝","loplus":"⨭","lotimes":"⨴","lowast":"∗","lowbar":"_","loz":"◊","lozenge":"◊","lozf":"⧫","lpar":"(","lparlt":"⦓","lrarr":"⇆","lrcorner":"⌟","lrhar":"⇋","lrhard":"⥭","lrm":"‎","lrtri":"⊿","lsaquo":"‹","lscr":"𝓁","lsh":"↰","lsim":"≲","lsime":"⪍","lsimg":"⪏","lsqb":"[","lsquo":"‘","lsquor":"‚","lstrok":"ł","l":"<","lt":"<","ltcc":"⪦","ltcir":"⩹","ltdot":"⋖","lthree":"⋋","ltimes":"⋉","ltlarr":"⥶","ltquest":"⩻","ltrPar":"⦖","ltri":"◃","ltrie":"⊴","ltrif":"◂","lurdshar":"⥊","luruhar":"⥦","lvertneqq":"≨︀","lvnE":"≨︀","mDDot":"∺","mac":"¯","macr":"¯","male":"♂","malt":"✠","maltese":"✠","map":"↦","mapsto":"↦","mapstodown":"↧","mapstoleft":"↤","mapstoup":"↥","marker":"▮","mcomma":"⨩","mcy":"м","mdash":"—","measuredangle":"∡","mfr":"𝔪","mho":"℧","micr":"µ","micro":"µ","mid":"∣","midast":"*","midcir":"⫰","middo":"·","middot":"·","minus":"−","minusb":"⊟","minusd":"∸","minusdu":"⨪","mlcp":"⫛","mldr":"…","mnplus":"∓","models":"⊧","mopf":"𝕞","mp":"∓","mscr":"𝓂","mstpos":"∾","mu":"μ","multimap":"⊸","mumap":"⊸","nGg":"⋙̸","nGt":"≫⃒","nGtv":"≫̸","nLeftarrow":"⇍","nLeftrightarrow":"⇎","nLl":"⋘̸","nLt":"≪⃒","nLtv":"≪̸","nRightarrow":"⇏","nVDash":"⊯","nVdash":"⊮","nabla":"∇","nacute":"ń","nang":"∠⃒","nap":"≉","napE":"⩰̸","napid":"≋̸","napos":"ŉ","napprox":"≉","natur":"♮","natural":"♮","naturals":"ℕ","nbs":" ","nbsp":" ","nbump":"≎̸","nbumpe":"≏̸","ncap":"⩃","ncaron":"ň","ncedil":"ņ","ncong":"≇","ncongdot":"⩭̸","ncup":"⩂","ncy":"н","ndash":"–","ne":"≠","neArr":"⇗","nearhk":"⤤","nearr":"↗","nearrow":"↗","nedot":"≐̸","nequiv":"≢","nesear":"⤨","nesim":"≂̸","nexist":"∄","nexists":"∄","nfr":"𝔫","ngE":"≧̸","nge":"≱","ngeq":"≱","ngeqq":"≧̸","ngeqslant":"⩾̸","nges":"⩾̸","ngsim":"≵","ngt":"≯","ngtr":"≯","nhArr":"⇎","nharr":"↮","nhpar":"⫲","ni":"∋","nis":"⋼","nisd":"⋺","niv":"∋","njcy":"њ","nlArr":"⇍","nlE":"≦̸","nlarr":"↚","nldr":"‥","nle":"≰","nleftarrow":"↚","nleftrightarrow":"↮","nleq":"≰","nleqq":"≦̸","nleqslant":"⩽̸","nles":"⩽̸","nless":"≮","nlsim":"≴","nlt":"≮","nltri":"⋪","nltrie":"⋬","nmid":"∤","nopf":"𝕟","no":"¬","not":"¬","notin":"∉","notinE":"⋹̸","notindot":"⋵̸","notinva":"∉","notinvb":"⋷","notinvc":"⋶","notni":"∌","notniva":"∌","notnivb":"⋾","notnivc":"⋽","npar":"∦","nparallel":"∦","nparsl":"⫽⃥","npart":"∂̸","npolint":"⨔","npr":"⊀","nprcue":"⋠","npre":"⪯̸","nprec":"⊀","npreceq":"⪯̸","nrArr":"⇏","nrarr":"↛","nrarrc":"⤳̸","nrarrw":"↝̸","nrightarrow":"↛","nrtri":"⋫","nrtrie":"⋭","nsc":"⊁","nsccue":"⋡","nsce":"⪰̸","nscr":"𝓃","nshortmid":"∤","nshortparallel":"∦","nsim":"≁","nsime":"≄","nsimeq":"≄","nsmid":"∤","nspar":"∦","nsqsube":"⋢","nsqsupe":"⋣","nsub":"⊄","nsubE":"⫅̸","nsube":"⊈","nsubset":"⊂⃒","nsubseteq":"⊈","nsubseteqq":"⫅̸","nsucc":"⊁","nsucceq":"⪰̸","nsup":"⊅","nsupE":"⫆̸","nsupe":"⊉","nsupset":"⊃⃒","nsupseteq":"⊉","nsupseteqq":"⫆̸","ntgl":"≹","ntild":"ñ","ntilde":"ñ","ntlg":"≸","ntriangleleft":"⋪","ntrianglelefteq":"⋬","ntriangleright":"⋫","ntrianglerighteq":"⋭","nu":"ν","num":"#","numero":"№","numsp":" ","nvDash":"⊭","nvHarr":"⤄","nvap":"≍⃒","nvdash":"⊬","nvge":"≥⃒","nvgt":">⃒","nvinfin":"⧞","nvlArr":"⤂","nvle":"≤⃒","nvlt":"<⃒","nvltrie":"⊴⃒","nvrArr":"⤃","nvrtrie":"⊵⃒","nvsim":"∼⃒","nwArr":"⇖","nwarhk":"⤣","nwarr":"↖","nwarrow":"↖","nwnear":"⤧","oS":"Ⓢ","oacut":"ó","oacute":"ó","oast":"⊛","ocir":"ô","ocirc":"ô","ocy":"о","odash":"⊝","odblac":"ő","odiv":"⨸","odot":"⊙","odsold":"⦼","oelig":"œ","ofcir":"⦿","ofr":"𝔬","ogon":"˛","ograv":"ò","ograve":"ò","ogt":"⧁","ohbar":"⦵","ohm":"Ω","oint":"∮","olarr":"↺","olcir":"⦾","olcross":"⦻","oline":"‾","olt":"⧀","omacr":"ō","omega":"ω","omicron":"ο","omid":"⦶","ominus":"⊖","oopf":"𝕠","opar":"⦷","operp":"⦹","oplus":"⊕","or":"∨","orarr":"↻","ord":"º","order":"ℴ","orderof":"ℴ","ordf":"ª","ordm":"º","origof":"⊶","oror":"⩖","orslope":"⩗","orv":"⩛","oscr":"ℴ","oslas":"ø","oslash":"ø","osol":"⊘","otild":"õ","otilde":"õ","otimes":"⊗","otimesas":"⨶","oum":"ö","ouml":"ö","ovbar":"⌽","par":"¶","para":"¶","parallel":"∥","parsim":"⫳","parsl":"⫽","part":"∂","pcy":"п","percnt":"%","period":".","permil":"‰","perp":"⊥","pertenk":"‱","pfr":"𝔭","phi":"φ","phiv":"ϕ","phmmat":"ℳ","phone":"☎","pi":"π","pitchfork":"⋔","piv":"ϖ","planck":"ℏ","planckh":"ℎ","plankv":"ℏ","plus":"+","plusacir":"⨣","plusb":"⊞","pluscir":"⨢","plusdo":"∔","plusdu":"⨥","pluse":"⩲","plusm":"±","plusmn":"±","plussim":"⨦","plustwo":"⨧","pm":"±","pointint":"⨕","popf":"𝕡","poun":"£","pound":"£","pr":"≺","prE":"⪳","prap":"⪷","prcue":"≼","pre":"⪯","prec":"≺","precapprox":"⪷","preccurlyeq":"≼","preceq":"⪯","precnapprox":"⪹","precneqq":"⪵","precnsim":"⋨","precsim":"≾","prime":"′","primes":"ℙ","prnE":"⪵","prnap":"⪹","prnsim":"⋨","prod":"∏","profalar":"⌮","profline":"⌒","profsurf":"⌓","prop":"∝","propto":"∝","prsim":"≾","prurel":"⊰","pscr":"𝓅","psi":"ψ","puncsp":" ","qfr":"𝔮","qint":"⨌","qopf":"𝕢","qprime":"⁗","qscr":"𝓆","quaternions":"ℍ","quatint":"⨖","quest":"?","questeq":"≟","quo":"\"","quot":"\"","rAarr":"⇛","rArr":"⇒","rAtail":"⤜","rBarr":"⤏","rHar":"⥤","race":"∽̱","racute":"ŕ","radic":"√","raemptyv":"⦳","rang":"⟩","rangd":"⦒","range":"⦥","rangle":"⟩","raqu":"»","raquo":"»","rarr":"→","rarrap":"⥵","rarrb":"⇥","rarrbfs":"⤠","rarrc":"⤳","rarrfs":"⤞","rarrhk":"↪","rarrlp":"↬","rarrpl":"⥅","rarrsim":"⥴","rarrtl":"↣","rarrw":"↝","ratail":"⤚","ratio":"∶","rationals":"ℚ","rbarr":"⤍","rbbrk":"❳","rbrace":"}","rbrack":"]","rbrke":"⦌","rbrksld":"⦎","rbrkslu":"⦐","rcaron":"ř","rcedil":"ŗ","rceil":"⌉","rcub":"}","rcy":"р","rdca":"⤷","rdldhar":"⥩","rdquo":"”","rdquor":"”","rdsh":"↳","real":"ℜ","realine":"ℛ","realpart":"ℜ","reals":"ℝ","rect":"▭","re":"®","reg":"®","rfisht":"⥽","rfloor":"⌋","rfr":"𝔯","rhard":"⇁","rharu":"⇀","rharul":"⥬","rho":"ρ","rhov":"ϱ","rightarrow":"→","rightarrowtail":"↣","rightharpoondown":"⇁","rightharpoonup":"⇀","rightleftarrows":"⇄","rightleftharpoons":"⇌","rightrightarrows":"⇉","rightsquigarrow":"↝","rightthreetimes":"⋌","ring":"˚","risingdotseq":"≓","rlarr":"⇄","rlhar":"⇌","rlm":"‏","rmoust":"⎱","rmoustache":"⎱","rnmid":"⫮","roang":"⟭","roarr":"⇾","robrk":"⟧","ropar":"⦆","ropf":"𝕣","roplus":"⨮","rotimes":"⨵","rpar":")","rpargt":"⦔","rppolint":"⨒","rrarr":"⇉","rsaquo":"›","rscr":"𝓇","rsh":"↱","rsqb":"]","rsquo":"’","rsquor":"’","rthree":"⋌","rtimes":"⋊","rtri":"▹","rtrie":"⊵","rtrif":"▸","rtriltri":"⧎","ruluhar":"⥨","rx":"℞","sacute":"ś","sbquo":"‚","sc":"≻","scE":"⪴","scap":"⪸","scaron":"š","sccue":"≽","sce":"⪰","scedil":"ş","scirc":"ŝ","scnE":"⪶","scnap":"⪺","scnsim":"⋩","scpolint":"⨓","scsim":"≿","scy":"с","sdot":"⋅","sdotb":"⊡","sdote":"⩦","seArr":"⇘","searhk":"⤥","searr":"↘","searrow":"↘","sec":"§","sect":"§","semi":";","seswar":"⤩","setminus":"∖","setmn":"∖","sext":"✶","sfr":"𝔰","sfrown":"⌢","sharp":"♯","shchcy":"щ","shcy":"ш","shortmid":"∣","shortparallel":"∥","sh":"­","shy":"­","sigma":"σ","sigmaf":"ς","sigmav":"ς","sim":"∼","simdot":"⩪","sime":"≃","simeq":"≃","simg":"⪞","simgE":"⪠","siml":"⪝","simlE":"⪟","simne":"≆","simplus":"⨤","simrarr":"⥲","slarr":"←","smallsetminus":"∖","smashp":"⨳","smeparsl":"⧤","smid":"∣","smile":"⌣","smt":"⪪","smte":"⪬","smtes":"⪬︀","softcy":"ь","sol":"/","solb":"⧄","solbar":"⌿","sopf":"𝕤","spades":"♠","spadesuit":"♠","spar":"∥","sqcap":"⊓","sqcaps":"⊓︀","sqcup":"⊔","sqcups":"⊔︀","sqsub":"⊏","sqsube":"⊑","sqsubset":"⊏","sqsubseteq":"⊑","sqsup":"⊐","sqsupe":"⊒","sqsupset":"⊐","sqsupseteq":"⊒","squ":"□","square":"□","squarf":"▪","squf":"▪","srarr":"→","sscr":"𝓈","ssetmn":"∖","ssmile":"⌣","sstarf":"⋆","star":"☆","starf":"★","straightepsilon":"ϵ","straightphi":"ϕ","strns":"¯","sub":"⊂","subE":"⫅","subdot":"⪽","sube":"⊆","subedot":"⫃","submult":"⫁","subnE":"⫋","subne":"⊊","subplus":"⪿","subrarr":"⥹","subset":"⊂","subseteq":"⊆","subseteqq":"⫅","subsetneq":"⊊","subsetneqq":"⫋","subsim":"⫇","subsub":"⫕","subsup":"⫓","succ":"≻","succapprox":"⪸","succcurlyeq":"≽","succeq":"⪰","succnapprox":"⪺","succneqq":"⪶","succnsim":"⋩","succsim":"≿","sum":"∑","sung":"♪","sup":"⊃","sup1":"¹","sup2":"²","sup3":"³","supE":"⫆","supdot":"⪾","supdsub":"⫘","supe":"⊇","supedot":"⫄","suphsol":"⟉","suphsub":"⫗","suplarr":"⥻","supmult":"⫂","supnE":"⫌","supne":"⊋","supplus":"⫀","supset":"⊃","supseteq":"⊇","supseteqq":"⫆","supsetneq":"⊋","supsetneqq":"⫌","supsim":"⫈","supsub":"⫔","supsup":"⫖","swArr":"⇙","swarhk":"⤦","swarr":"↙","swarrow":"↙","swnwar":"⤪","szli":"ß","szlig":"ß","target":"⌖","tau":"τ","tbrk":"⎴","tcaron":"ť","tcedil":"ţ","tcy":"т","tdot":"⃛","telrec":"⌕","tfr":"𝔱","there4":"∴","therefore":"∴","theta":"θ","thetasym":"ϑ","thetav":"ϑ","thickapprox":"≈","thicksim":"∼","thinsp":" ","thkap":"≈","thksim":"∼","thor":"þ","thorn":"þ","tilde":"˜","time":"×","times":"×","timesb":"⊠","timesbar":"⨱","timesd":"⨰","tint":"∭","toea":"⤨","top":"⊤","topbot":"⌶","topcir":"⫱","topf":"𝕥","topfork":"⫚","tosa":"⤩","tprime":"‴","trade":"™","triangle":"▵","triangledown":"▿","triangleleft":"◃","trianglelefteq":"⊴","triangleq":"≜","triangleright":"▹","trianglerighteq":"⊵","tridot":"◬","trie":"≜","triminus":"⨺","triplus":"⨹","trisb":"⧍","tritime":"⨻","trpezium":"⏢","tscr":"𝓉","tscy":"ц","tshcy":"ћ","tstrok":"ŧ","twixt":"≬","twoheadleftarrow":"↞","twoheadrightarrow":"↠","uArr":"⇑","uHar":"⥣","uacut":"ú","uacute":"ú","uarr":"↑","ubrcy":"ў","ubreve":"ŭ","ucir":"û","ucirc":"û","ucy":"у","udarr":"⇅","udblac":"ű","udhar":"⥮","ufisht":"⥾","ufr":"𝔲","ugrav":"ù","ugrave":"ù","uharl":"↿","uharr":"↾","uhblk":"▀","ulcorn":"⌜","ulcorner":"⌜","ulcrop":"⌏","ultri":"◸","umacr":"ū","um":"¨","uml":"¨","uogon":"ų","uopf":"𝕦","uparrow":"↑","updownarrow":"↕","upharpoonleft":"↿","upharpoonright":"↾","uplus":"⊎","upsi":"υ","upsih":"ϒ","upsilon":"υ","upuparrows":"⇈","urcorn":"⌝","urcorner":"⌝","urcrop":"⌎","uring":"ů","urtri":"◹","uscr":"𝓊","utdot":"⋰","utilde":"ũ","utri":"▵","utrif":"▴","uuarr":"⇈","uum":"ü","uuml":"ü","uwangle":"⦧","vArr":"⇕","vBar":"⫨","vBarv":"⫩","vDash":"⊨","vangrt":"⦜","varepsilon":"ϵ","varkappa":"ϰ","varnothing":"∅","varphi":"ϕ","varpi":"ϖ","varpropto":"∝","varr":"↕","varrho":"ϱ","varsigma":"ς","varsubsetneq":"⊊︀","varsubsetneqq":"⫋︀","varsupsetneq":"⊋︀","varsupsetneqq":"⫌︀","vartheta":"ϑ","vartriangleleft":"⊲","vartriangleright":"⊳","vcy":"в","vdash":"⊢","vee":"∨","veebar":"⊻","veeeq":"≚","vellip":"⋮","verbar":"|","vert":"|","vfr":"𝔳","vltri":"⊲","vnsub":"⊂⃒","vnsup":"⊃⃒","vopf":"𝕧","vprop":"∝","vrtri":"⊳","vscr":"𝓋","vsubnE":"⫋︀","vsubne":"⊊︀","vsupnE":"⫌︀","vsupne":"⊋︀","vzigzag":"⦚","wcirc":"ŵ","wedbar":"⩟","wedge":"∧","wedgeq":"≙","weierp":"℘","wfr":"𝔴","wopf":"𝕨","wp":"℘","wr":"≀","wreath":"≀","wscr":"𝓌","xcap":"⋂","xcirc":"◯","xcup":"⋃","xdtri":"▽","xfr":"𝔵","xhArr":"⟺","xharr":"⟷","xi":"ξ","xlArr":"⟸","xlarr":"⟵","xmap":"⟼","xnis":"⋻","xodot":"⨀","xopf":"𝕩","xoplus":"⨁","xotime":"⨂","xrArr":"⟹","xrarr":"⟶","xscr":"𝓍","xsqcup":"⨆","xuplus":"⨄","xutri":"△","xvee":"⋁","xwedge":"⋀","yacut":"ý","yacute":"ý","yacy":"я","ycirc":"ŷ","ycy":"ы","ye":"¥","yen":"¥","yfr":"𝔶","yicy":"ї","yopf":"𝕪","yscr":"𝓎","yucy":"ю","yum":"ÿ","yuml":"ÿ","zacute":"ź","zcaron":"ž","zcy":"з","zdot":"ż","zeetrf":"ℨ","zeta":"ζ","zfr":"𝔷","zhcy":"ж","zigrarr":"⇝","zopf":"𝕫","zscr":"𝓏","zwj":"‍","zwnj":"‌"}
 
 /***/ }),
-/* 905 */
+/* 903 */
 /***/ (function(module, exports) {
 
 module.exports = {"0":"�","128":"€","130":"‚","131":"ƒ","132":"„","133":"…","134":"†","135":"‡","136":"ˆ","137":"‰","138":"Š","139":"‹","140":"Œ","142":"Ž","145":"‘","146":"’","147":"“","148":"”","149":"•","150":"–","151":"—","152":"˜","153":"™","154":"š","155":"›","156":"œ","158":"ž","159":"Ÿ"}
 
 /***/ }),
-/* 906 */
+/* 904 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49235,15 +49231,15 @@ function factory(type) {
 
 
 /***/ }),
-/* 907 */
+/* 905 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var xtend = __webpack_require__(118);
-var escapes = __webpack_require__(644);
-var defaults = __webpack_require__(645);
+var escapes = __webpack_require__(642);
+var defaults = __webpack_require__(643);
 
 module.exports = setOptions;
 
@@ -49289,20 +49285,20 @@ function setOptions(options) {
 
 
 /***/ }),
-/* 908 */
+/* 906 */
 /***/ (function(module, exports) {
 
 module.exports = ["address","article","aside","base","basefont","blockquote","body","caption","center","col","colgroup","dd","details","dialog","dir","div","dl","dt","fieldset","figcaption","figure","footer","form","frame","frameset","h1","h2","h3","h4","h5","h6","head","header","hgroup","hr","html","iframe","legend","li","link","main","menu","menuitem","meta","nav","noframes","ol","optgroup","option","p","param","pre","section","source","title","summary","table","tbody","td","tfoot","th","thead","title","tr","track","ul"]
 
 /***/ }),
-/* 909 */
+/* 907 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var xtend = __webpack_require__(118);
-var removePosition = __webpack_require__(910);
+var removePosition = __webpack_require__(908);
 
 module.exports = parse;
 
@@ -49347,13 +49343,13 @@ function parse() {
 
 
 /***/ }),
-/* 910 */
+/* 908 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var visit = __webpack_require__(646)
+var visit = __webpack_require__(644)
 
 module.exports = removePosition
 
@@ -49373,7 +49369,7 @@ function soft(node) {
 
 
 /***/ }),
-/* 911 */
+/* 909 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49427,7 +49423,7 @@ function newline(eat, value, silent) {
 
 
 /***/ }),
-/* 912 */
+/* 910 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49532,7 +49528,7 @@ function indentedCode(eat, value, silent) {
 
 
 /***/ }),
-/* 913 */
+/* 911 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49775,7 +49771,7 @@ function fencedCode(eat, value, silent) {
 
 
 /***/ }),
-/* 914 */
+/* 912 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49911,7 +49907,7 @@ function blockquote(eat, value, silent) {
 
 
 /***/ }),
-/* 915 */
+/* 913 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50059,7 +50055,7 @@ function atxHeading(eat, value, silent) {
 
 
 /***/ }),
-/* 916 */
+/* 914 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50136,7 +50132,7 @@ function thematicBreak(eat, value, silent) {
 
 
 /***/ }),
-/* 917 */
+/* 915 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50147,8 +50143,8 @@ function thematicBreak(eat, value, silent) {
 var trim = __webpack_require__(181);
 var repeat = __webpack_require__(84);
 var decimal = __webpack_require__(256);
-var getIndent = __webpack_require__(648);
-var removeIndent = __webpack_require__(918);
+var getIndent = __webpack_require__(646);
+var removeIndent = __webpack_require__(916);
 var interrupt = __webpack_require__(572);
 
 module.exports = list;
@@ -50617,7 +50613,7 @@ function normalListItem(ctx, value, position) {
 
 
 /***/ }),
-/* 918 */
+/* 916 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50625,7 +50621,7 @@ function normalListItem(ctx, value, position) {
 
 var trim = __webpack_require__(181);
 var repeat = __webpack_require__(84);
-var getIndent = __webpack_require__(648);
+var getIndent = __webpack_require__(646);
 
 module.exports = indentation;
 
@@ -50702,7 +50698,7 @@ function indentation(value, maximum) {
 
 
 /***/ }),
-/* 919 */
+/* 917 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50816,13 +50812,13 @@ function setextHeading(eat, value, silent) {
 
 
 /***/ }),
-/* 920 */
+/* 918 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var openCloseTag = __webpack_require__(649).openCloseTag;
+var openCloseTag = __webpack_require__(647).openCloseTag;
 
 module.exports = blockHTML;
 
@@ -50917,7 +50913,7 @@ function blockHTML(eat, value, silent) {
 
 
 /***/ }),
-/* 921 */
+/* 919 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51109,7 +51105,7 @@ function footnoteDefinition(eat, value, silent) {
 
 
 /***/ }),
-/* 922 */
+/* 920 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51124,7 +51120,7 @@ function collapse(value) {
 
 
 /***/ }),
-/* 923 */
+/* 921 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51409,7 +51405,7 @@ function isUnclosedURLCharacter(character) {
 
 
 /***/ }),
-/* 924 */
+/* 922 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51682,7 +51678,7 @@ function table(eat, value, silent) {
 
 
 /***/ }),
-/* 925 */
+/* 923 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51811,13 +51807,13 @@ function paragraph(eat, value, silent) {
 
 
 /***/ }),
-/* 926 */
+/* 924 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var locate = __webpack_require__(927);
+var locate = __webpack_require__(925);
 
 module.exports = escape;
 escape.locator = locate;
@@ -51852,7 +51848,7 @@ function escape(eat, value, silent) {
 
 
 /***/ }),
-/* 927 */
+/* 925 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51866,7 +51862,7 @@ function locate(value, fromIndex) {
 
 
 /***/ }),
-/* 928 */
+/* 926 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51874,7 +51870,7 @@ function locate(value, fromIndex) {
 
 var whitespace = __webpack_require__(58);
 var decode = __webpack_require__(296);
-var locate = __webpack_require__(650);
+var locate = __webpack_require__(648);
 
 module.exports = autoLink;
 autoLink.locator = locate;
@@ -52017,7 +52013,7 @@ function autoLink(eat, value, silent) {
 
 
 /***/ }),
-/* 929 */
+/* 927 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52025,7 +52021,7 @@ function autoLink(eat, value, silent) {
 
 var decode = __webpack_require__(296);
 var whitespace = __webpack_require__(58);
-var locate = __webpack_require__(930);
+var locate = __webpack_require__(928);
 
 module.exports = url;
 url.locator = locate;
@@ -52168,7 +52164,7 @@ function url(eat, value, silent) {
 
 
 /***/ }),
-/* 930 */
+/* 928 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52201,15 +52197,15 @@ function locate(value, fromIndex) {
 
 
 /***/ }),
-/* 931 */
+/* 929 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var alphabetical = __webpack_require__(643);
-var locate = __webpack_require__(650);
-var tag = __webpack_require__(649).tag;
+var alphabetical = __webpack_require__(641);
+var locate = __webpack_require__(648);
+var tag = __webpack_require__(647).tag;
 
 module.exports = inlineHTML;
 inlineHTML.locator = locate;
@@ -52262,14 +52258,14 @@ function inlineHTML(eat, value, silent) {
 
 
 /***/ }),
-/* 932 */
+/* 930 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var whitespace = __webpack_require__(58);
-var locate = __webpack_require__(651);
+var locate = __webpack_require__(649);
 
 module.exports = link;
 link.locator = locate;
@@ -52661,14 +52657,14 @@ function link(eat, value, silent) {
 
 
 /***/ }),
-/* 933 */
+/* 931 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var whitespace = __webpack_require__(58);
-var locate = __webpack_require__(651);
+var locate = __webpack_require__(649);
 var normalize = __webpack_require__(573);
 
 module.exports = reference;
@@ -52872,7 +52868,7 @@ function reference(eat, value, silent) {
 
 
 /***/ }),
-/* 934 */
+/* 932 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52880,7 +52876,7 @@ function reference(eat, value, silent) {
 
 var trim = __webpack_require__(181);
 var whitespace = __webpack_require__(58);
-var locate = __webpack_require__(935);
+var locate = __webpack_require__(933);
 
 module.exports = strong;
 strong.locator = locate;
@@ -52963,7 +52959,7 @@ function strong(eat, value, silent) {
 
 
 /***/ }),
-/* 935 */
+/* 933 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52988,16 +52984,16 @@ function locate(value, fromIndex) {
 
 
 /***/ }),
-/* 936 */
+/* 934 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var trim = __webpack_require__(181);
-var word = __webpack_require__(937);
+var word = __webpack_require__(935);
 var whitespace = __webpack_require__(58);
-var locate = __webpack_require__(938);
+var locate = __webpack_require__(936);
 
 module.exports = emphasis;
 emphasis.locator = locate;
@@ -53080,7 +53076,7 @@ function emphasis(eat, value, silent) {
 
 
 /***/ }),
-/* 937 */
+/* 935 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53101,7 +53097,7 @@ function wordCharacter(character) {
 
 
 /***/ }),
-/* 938 */
+/* 936 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53126,14 +53122,14 @@ function locate(value, fromIndex) {
 
 
 /***/ }),
-/* 939 */
+/* 937 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var whitespace = __webpack_require__(58);
-var locate = __webpack_require__(940);
+var locate = __webpack_require__(938);
 
 module.exports = strikethrough;
 strikethrough.locator = locate;
@@ -53193,7 +53189,7 @@ function strikethrough(eat, value, silent) {
 
 
 /***/ }),
-/* 940 */
+/* 938 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53207,14 +53203,14 @@ function locate(value, fromIndex) {
 
 
 /***/ }),
-/* 941 */
+/* 939 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var whitespace = __webpack_require__(58);
-var locate = __webpack_require__(942);
+var locate = __webpack_require__(940);
 
 module.exports = inlineCode;
 inlineCode.locator = locate;
@@ -53326,7 +53322,7 @@ function inlineCode(eat, value, silent) {
 
 
 /***/ }),
-/* 942 */
+/* 940 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53340,13 +53336,13 @@ function locate(value, fromIndex) {
 
 
 /***/ }),
-/* 943 */
+/* 941 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var locate = __webpack_require__(944);
+var locate = __webpack_require__(942);
 
 module.exports = hardBreak;
 hardBreak.locator = locate;
@@ -53387,7 +53383,7 @@ function hardBreak(eat, value, silent) {
 
 
 /***/ }),
-/* 944 */
+/* 942 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53411,7 +53407,7 @@ function locate(value, fromIndex) {
 
 
 /***/ }),
-/* 945 */
+/* 943 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53476,15 +53472,15 @@ function text(eat, value, silent) {
 
 
 /***/ }),
-/* 946 */
+/* 944 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var unherit = __webpack_require__(637);
+var unherit = __webpack_require__(635);
 var xtend = __webpack_require__(118);
-var Compiler = __webpack_require__(947);
+var Compiler = __webpack_require__(945);
 
 module.exports = stringify;
 stringify.Compiler = Compiler;
@@ -53497,14 +53493,14 @@ function stringify(options) {
 
 
 /***/ }),
-/* 947 */
+/* 945 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var xtend = __webpack_require__(118);
-var toggle = __webpack_require__(639);
+var toggle = __webpack_require__(637);
 
 module.exports = Compiler;
 
@@ -53523,57 +53519,57 @@ var proto = Compiler.prototype;
 /* Enter and exit helpers. */
 proto.enterLink = toggle('inLink', false);
 proto.enterTable = toggle('inTable', false);
-proto.enterLinkReference = __webpack_require__(948);
+proto.enterLinkReference = __webpack_require__(946);
 
 /* Configuration. */
-proto.options = __webpack_require__(653);
-proto.setOptions = __webpack_require__(949);
+proto.options = __webpack_require__(651);
+proto.setOptions = __webpack_require__(947);
 
-proto.compile = __webpack_require__(955);
-proto.visit = __webpack_require__(959);
-proto.all = __webpack_require__(960);
-proto.block = __webpack_require__(961);
-proto.visitOrderedItems = __webpack_require__(962);
-proto.visitUnorderedItems = __webpack_require__(963);
+proto.compile = __webpack_require__(953);
+proto.visit = __webpack_require__(957);
+proto.all = __webpack_require__(958);
+proto.block = __webpack_require__(959);
+proto.visitOrderedItems = __webpack_require__(960);
+proto.visitUnorderedItems = __webpack_require__(961);
 
 /* Expose visitors. */
 proto.visitors = {
-  root: __webpack_require__(964),
-  text: __webpack_require__(965),
-  heading: __webpack_require__(966),
-  paragraph: __webpack_require__(967),
-  blockquote: __webpack_require__(968),
-  list: __webpack_require__(969),
-  listItem: __webpack_require__(970),
-  inlineCode: __webpack_require__(971),
-  code: __webpack_require__(972),
-  html: __webpack_require__(973),
-  thematicBreak: __webpack_require__(974),
-  strong: __webpack_require__(975),
-  emphasis: __webpack_require__(976),
-  break: __webpack_require__(977),
-  delete: __webpack_require__(978),
-  link: __webpack_require__(979),
-  linkReference: __webpack_require__(981),
-  imageReference: __webpack_require__(983),
-  definition: __webpack_require__(984),
-  image: __webpack_require__(985),
-  footnote: __webpack_require__(986),
-  footnoteReference: __webpack_require__(987),
-  footnoteDefinition: __webpack_require__(988),
-  table: __webpack_require__(989),
-  tableCell: __webpack_require__(991)
+  root: __webpack_require__(962),
+  text: __webpack_require__(963),
+  heading: __webpack_require__(964),
+  paragraph: __webpack_require__(965),
+  blockquote: __webpack_require__(966),
+  list: __webpack_require__(967),
+  listItem: __webpack_require__(968),
+  inlineCode: __webpack_require__(969),
+  code: __webpack_require__(970),
+  html: __webpack_require__(971),
+  thematicBreak: __webpack_require__(972),
+  strong: __webpack_require__(973),
+  emphasis: __webpack_require__(974),
+  break: __webpack_require__(975),
+  delete: __webpack_require__(976),
+  link: __webpack_require__(977),
+  linkReference: __webpack_require__(979),
+  imageReference: __webpack_require__(981),
+  definition: __webpack_require__(982),
+  image: __webpack_require__(983),
+  footnote: __webpack_require__(984),
+  footnoteReference: __webpack_require__(985),
+  footnoteDefinition: __webpack_require__(986),
+  table: __webpack_require__(987),
+  tableCell: __webpack_require__(989)
 };
 
 
 /***/ }),
-/* 948 */
+/* 946 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var returner = __webpack_require__(652);
+var returner = __webpack_require__(650);
 
 module.exports = enter;
 
@@ -53610,17 +53606,17 @@ function enter(compiler, node) {
 
 
 /***/ }),
-/* 949 */
+/* 947 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var xtend = __webpack_require__(118);
-var encode = __webpack_require__(950);
-var defaults = __webpack_require__(653);
-var escapeFactory = __webpack_require__(953);
-var returner = __webpack_require__(652);
+var encode = __webpack_require__(948);
+var defaults = __webpack_require__(651);
+var escapeFactory = __webpack_require__(951);
+var returner = __webpack_require__(650);
 
 module.exports = setOptions;
 
@@ -53785,17 +53781,17 @@ function encodeFactory(type) {
 
 
 /***/ }),
-/* 950 */
+/* 948 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var entities = __webpack_require__(951)
-var legacy = __webpack_require__(640)
-var hexadecimal = __webpack_require__(641)
-var alphanumerical = __webpack_require__(642)
-var dangerous = __webpack_require__(952)
+var entities = __webpack_require__(949)
+var legacy = __webpack_require__(638)
+var hexadecimal = __webpack_require__(639)
+var alphanumerical = __webpack_require__(640)
+var dangerous = __webpack_require__(950)
 
 /* Expose. */
 module.exports = encode
@@ -53926,29 +53922,29 @@ function construct() {
 
 
 /***/ }),
-/* 951 */
+/* 949 */
 /***/ (function(module, exports) {
 
 module.exports = {"nbsp":" ","iexcl":"¡","cent":"¢","pound":"£","curren":"¤","yen":"¥","brvbar":"¦","sect":"§","uml":"¨","copy":"©","ordf":"ª","laquo":"«","not":"¬","shy":"­","reg":"®","macr":"¯","deg":"°","plusmn":"±","sup2":"²","sup3":"³","acute":"´","micro":"µ","para":"¶","middot":"·","cedil":"¸","sup1":"¹","ordm":"º","raquo":"»","frac14":"¼","frac12":"½","frac34":"¾","iquest":"¿","Agrave":"À","Aacute":"Á","Acirc":"Â","Atilde":"Ã","Auml":"Ä","Aring":"Å","AElig":"Æ","Ccedil":"Ç","Egrave":"È","Eacute":"É","Ecirc":"Ê","Euml":"Ë","Igrave":"Ì","Iacute":"Í","Icirc":"Î","Iuml":"Ï","ETH":"Ð","Ntilde":"Ñ","Ograve":"Ò","Oacute":"Ó","Ocirc":"Ô","Otilde":"Õ","Ouml":"Ö","times":"×","Oslash":"Ø","Ugrave":"Ù","Uacute":"Ú","Ucirc":"Û","Uuml":"Ü","Yacute":"Ý","THORN":"Þ","szlig":"ß","agrave":"à","aacute":"á","acirc":"â","atilde":"ã","auml":"ä","aring":"å","aelig":"æ","ccedil":"ç","egrave":"è","eacute":"é","ecirc":"ê","euml":"ë","igrave":"ì","iacute":"í","icirc":"î","iuml":"ï","eth":"ð","ntilde":"ñ","ograve":"ò","oacute":"ó","ocirc":"ô","otilde":"õ","ouml":"ö","divide":"÷","oslash":"ø","ugrave":"ù","uacute":"ú","ucirc":"û","uuml":"ü","yacute":"ý","thorn":"þ","yuml":"ÿ","fnof":"ƒ","Alpha":"Α","Beta":"Β","Gamma":"Γ","Delta":"Δ","Epsilon":"Ε","Zeta":"Ζ","Eta":"Η","Theta":"Θ","Iota":"Ι","Kappa":"Κ","Lambda":"Λ","Mu":"Μ","Nu":"Ν","Xi":"Ξ","Omicron":"Ο","Pi":"Π","Rho":"Ρ","Sigma":"Σ","Tau":"Τ","Upsilon":"Υ","Phi":"Φ","Chi":"Χ","Psi":"Ψ","Omega":"Ω","alpha":"α","beta":"β","gamma":"γ","delta":"δ","epsilon":"ε","zeta":"ζ","eta":"η","theta":"θ","iota":"ι","kappa":"κ","lambda":"λ","mu":"μ","nu":"ν","xi":"ξ","omicron":"ο","pi":"π","rho":"ρ","sigmaf":"ς","sigma":"σ","tau":"τ","upsilon":"υ","phi":"φ","chi":"χ","psi":"ψ","omega":"ω","thetasym":"ϑ","upsih":"ϒ","piv":"ϖ","bull":"•","hellip":"…","prime":"′","Prime":"″","oline":"‾","frasl":"⁄","weierp":"℘","image":"ℑ","real":"ℜ","trade":"™","alefsym":"ℵ","larr":"←","uarr":"↑","rarr":"→","darr":"↓","harr":"↔","crarr":"↵","lArr":"⇐","uArr":"⇑","rArr":"⇒","dArr":"⇓","hArr":"⇔","forall":"∀","part":"∂","exist":"∃","empty":"∅","nabla":"∇","isin":"∈","notin":"∉","ni":"∋","prod":"∏","sum":"∑","minus":"−","lowast":"∗","radic":"√","prop":"∝","infin":"∞","ang":"∠","and":"∧","or":"∨","cap":"∩","cup":"∪","int":"∫","there4":"∴","sim":"∼","cong":"≅","asymp":"≈","ne":"≠","equiv":"≡","le":"≤","ge":"≥","sub":"⊂","sup":"⊃","nsub":"⊄","sube":"⊆","supe":"⊇","oplus":"⊕","otimes":"⊗","perp":"⊥","sdot":"⋅","lceil":"⌈","rceil":"⌉","lfloor":"⌊","rfloor":"⌋","lang":"〈","rang":"〉","loz":"◊","spades":"♠","clubs":"♣","hearts":"♥","diams":"♦","quot":"\"","amp":"&","lt":"<","gt":">","OElig":"Œ","oelig":"œ","Scaron":"Š","scaron":"š","Yuml":"Ÿ","circ":"ˆ","tilde":"˜","ensp":" ","emsp":" ","thinsp":" ","zwnj":"‌","zwj":"‍","lrm":"‎","rlm":"‏","ndash":"–","mdash":"—","lsquo":"‘","rsquo":"’","sbquo":"‚","ldquo":"“","rdquo":"”","bdquo":"„","dagger":"†","Dagger":"‡","permil":"‰","lsaquo":"‹","rsaquo":"›","euro":"€"}
 
 /***/ }),
-/* 952 */
+/* 950 */
 /***/ (function(module, exports) {
 
 module.exports = ["cent","copy","divide","gt","lt","not","para","times"]
 
 /***/ }),
-/* 953 */
+/* 951 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var decimal = __webpack_require__(256);
-var alphanumeric = __webpack_require__(954);
+var alphanumeric = __webpack_require__(952);
 var whitespace = __webpack_require__(58);
-var escapes = __webpack_require__(644);
-var prefix = __webpack_require__(654);
+var escapes = __webpack_require__(642);
+var prefix = __webpack_require__(652);
 
 module.exports = factory;
 
@@ -54192,7 +54188,7 @@ function protocol(value) {
 
 
 /***/ }),
-/* 954 */
+/* 952 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54207,13 +54203,13 @@ module.exports = function (str) {
 
 
 /***/ }),
-/* 955 */
+/* 953 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var compact = __webpack_require__(956);
+var compact = __webpack_require__(954);
 
 module.exports = compile;
 
@@ -54224,15 +54220,15 @@ function compile() {
 
 
 /***/ }),
-/* 956 */
+/* 954 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 /* Dependencies. */
-var visit = __webpack_require__(646);
-var modify = __webpack_require__(957);
+var visit = __webpack_require__(644);
+var modify = __webpack_require__(955);
 
 /* Expose. */
 module.exports = compact;
@@ -54303,13 +54299,13 @@ function mergeable(node, commonmark) {
 
 
 /***/ }),
-/* 957 */
+/* 955 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var iterate = __webpack_require__(958)
+var iterate = __webpack_require__(956)
 
 module.exports = modifierFactory
 
@@ -54345,7 +54341,7 @@ function wrapperFactory(callback) {
 
 
 /***/ }),
-/* 958 */
+/* 956 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54395,7 +54391,7 @@ function iterate(values, callback, context) {
 
 
 /***/ }),
-/* 959 */
+/* 957 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54423,7 +54419,7 @@ function one(node, parent) {
 
 
 /***/ }),
-/* 960 */
+/* 958 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54448,7 +54444,7 @@ function all(parent) {
 
 
 /***/ }),
-/* 961 */
+/* 959 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54500,7 +54496,7 @@ function block(node) {
 
 
 /***/ }),
-/* 962 */
+/* 960 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54544,7 +54540,7 @@ function orderedItems(node) {
 
 
 /***/ }),
-/* 963 */
+/* 961 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54573,7 +54569,7 @@ function unorderedItems(node) {
 
 
 /***/ }),
-/* 964 */
+/* 962 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54589,7 +54585,7 @@ function root(node) {
 
 
 /***/ }),
-/* 965 */
+/* 963 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54613,7 +54609,7 @@ function text(node, parent) {
 
 
 /***/ }),
-/* 966 */
+/* 964 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54659,7 +54655,7 @@ function heading(node) {
 
 
 /***/ }),
-/* 967 */
+/* 965 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54673,7 +54669,7 @@ function paragraph(node) {
 
 
 /***/ }),
-/* 968 */
+/* 966 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54698,7 +54694,7 @@ function blockquote(node) {
 
 
 /***/ }),
-/* 969 */
+/* 967 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54718,14 +54714,14 @@ function list(node) {
 
 
 /***/ }),
-/* 970 */
+/* 968 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var repeat = __webpack_require__(84);
-var pad = __webpack_require__(655);
+var pad = __webpack_require__(653);
 
 module.exports = listItem;
 
@@ -54786,13 +54782,13 @@ function listItem(node, parent, position, bullet) {
 
 
 /***/ }),
-/* 971 */
+/* 969 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var streak = __webpack_require__(656);
+var streak = __webpack_require__(654);
 var repeat = __webpack_require__(84);
 
 module.exports = inlineCode;
@@ -54828,15 +54824,15 @@ function inlineCode(node) {
 
 
 /***/ }),
-/* 972 */
+/* 970 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var streak = __webpack_require__(656);
+var streak = __webpack_require__(654);
 var repeat = __webpack_require__(84);
-var pad = __webpack_require__(655);
+var pad = __webpack_require__(653);
 
 module.exports = code;
 
@@ -54912,7 +54908,7 @@ function code(node, parent) {
 
 
 /***/ }),
-/* 973 */
+/* 971 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54926,7 +54922,7 @@ function html(node) {
 
 
 /***/ }),
-/* 974 */
+/* 972 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54959,7 +54955,7 @@ function thematic() {
 
 
 /***/ }),
-/* 975 */
+/* 973 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54984,7 +54980,7 @@ function strong(node) {
 
 
 /***/ }),
-/* 976 */
+/* 974 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55007,7 +55003,7 @@ function emphasis(node) {
 
 
 /***/ }),
-/* 977 */
+/* 975 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55023,7 +55019,7 @@ function lineBreak() {
 
 
 /***/ }),
-/* 978 */
+/* 976 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55037,7 +55033,7 @@ function strikethrough(node) {
 
 
 /***/ }),
-/* 979 */
+/* 977 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55097,7 +55093,7 @@ function link(node) {
 
 
 /***/ }),
-/* 980 */
+/* 978 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55127,14 +55123,14 @@ function ccount(value, character) {
 
 
 /***/ }),
-/* 981 */
+/* 979 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var copy = __webpack_require__(982);
-var label = __webpack_require__(657);
+var copy = __webpack_require__(980);
+var label = __webpack_require__(655);
 
 module.exports = linkReference;
 
@@ -55155,13 +55151,13 @@ function linkReference(node) {
 
 
 /***/ }),
-/* 982 */
+/* 980 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var entityPrefixLength = __webpack_require__(654);
+var entityPrefixLength = __webpack_require__(652);
 
 module.exports = copy;
 
@@ -55222,13 +55218,13 @@ function copy(value, identifier) {
 
 
 /***/ }),
-/* 983 */
+/* 981 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var label = __webpack_require__(657);
+var label = __webpack_require__(655);
 
 module.exports = imageReference;
 
@@ -55238,7 +55234,7 @@ function imageReference(node) {
 
 
 /***/ }),
-/* 984 */
+/* 982 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55268,7 +55264,7 @@ function definition(node) {
 
 
 /***/ }),
-/* 985 */
+/* 983 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55306,7 +55302,7 @@ function image(node) {
 
 
 /***/ }),
-/* 986 */
+/* 984 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55320,7 +55316,7 @@ function footnote(node) {
 
 
 /***/ }),
-/* 987 */
+/* 985 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55334,7 +55330,7 @@ function footnoteReference(node) {
 
 
 /***/ }),
-/* 988 */
+/* 986 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55353,13 +55349,13 @@ function footnoteDefinition(node) {
 
 
 /***/ }),
-/* 989 */
+/* 987 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var markdownTable = __webpack_require__(990);
+var markdownTable = __webpack_require__(988);
 
 module.exports = table;
 
@@ -55426,7 +55422,7 @@ function table(node) {
 
 
 /***/ }),
-/* 990 */
+/* 988 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55684,7 +55680,7 @@ function dotindex(value) {
 
 
 /***/ }),
-/* 991 */
+/* 989 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55698,13 +55694,13 @@ function tableCell(node) {
 
 
 /***/ }),
-/* 992 */
+/* 990 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var WeakMap = __webpack_require__(993);
+var WeakMap = __webpack_require__(991);
 
 
 module.exports = function (ast) {
@@ -55760,17 +55756,17 @@ function wrapNode (node, parent) {
 
 
 /***/ }),
-/* 993 */
+/* 991 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-module.exports = __webpack_require__(994)() ? WeakMap : __webpack_require__(995);
+module.exports = __webpack_require__(992)() ? WeakMap : __webpack_require__(993);
 
 
 /***/ }),
-/* 994 */
+/* 992 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55797,21 +55793,21 @@ module.exports = function () {
 
 
 /***/ }),
-/* 995 */
+/* 993 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var setPrototypeOf    = __webpack_require__(576)
-  , object            = __webpack_require__(997)
+  , object            = __webpack_require__(995)
   , value             = __webpack_require__(110)
-  , randomUniq        = __webpack_require__(998)
+  , randomUniq        = __webpack_require__(996)
   , d                 = __webpack_require__(257)
-  , getIterator       = __webpack_require__(664)
-  , forOf             = __webpack_require__(1030)
+  , getIterator       = __webpack_require__(662)
+  , forOf             = __webpack_require__(1028)
   , toStringTagSymbol = __webpack_require__(170).toStringTag
-  , isNative          = __webpack_require__(1031)
+  , isNative          = __webpack_require__(1029)
 
   , isArray = Array.isArray, defineProperty = Object.defineProperty
   , hasOwnProperty = Object.prototype.hasOwnProperty, getPrototypeOf = Object.getPrototypeOf
@@ -55870,7 +55866,7 @@ defineProperty(WeakMapPoly.prototype, toStringTagSymbol, d('c', 'WeakMap'));
 
 
 /***/ }),
-/* 996 */
+/* 994 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55880,8 +55876,8 @@ defineProperty(WeakMapPoly.prototype, toStringTagSymbol, d('c', 'WeakMap'));
 
 var create = Object.create, shim;
 
-if (!__webpack_require__(658)()) {
-	shim = __webpack_require__(659);
+if (!__webpack_require__(656)()) {
+	shim = __webpack_require__(657);
 }
 
 module.exports = (function () {
@@ -55925,13 +55921,13 @@ module.exports = (function () {
 
 
 /***/ }),
-/* 997 */
+/* 995 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var isObject = __webpack_require__(660);
+var isObject = __webpack_require__(658);
 
 module.exports = function (value) {
 	if (!isObject(value)) throw new TypeError(value + " is not an Object");
@@ -55940,7 +55936,7 @@ module.exports = function (value) {
 
 
 /***/ }),
-/* 998 */
+/* 996 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55960,7 +55956,7 @@ module.exports = function () {
 
 
 /***/ }),
-/* 999 */
+/* 997 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55976,13 +55972,13 @@ module.exports = function () {
 
 
 /***/ }),
-/* 1000 */
+/* 998 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var keys  = __webpack_require__(1001)
+var keys  = __webpack_require__(999)
   , value = __webpack_require__(110)
   , max   = Math.max;
 
@@ -56006,17 +56002,17 @@ module.exports = function (dest, src /*, …srcn*/) {
 
 
 /***/ }),
-/* 1001 */
+/* 999 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-module.exports = __webpack_require__(1002)() ? Object.keys : __webpack_require__(1003);
+module.exports = __webpack_require__(1000)() ? Object.keys : __webpack_require__(1001);
 
 
 /***/ }),
-/* 1002 */
+/* 1000 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56033,7 +56029,7 @@ module.exports = function () {
 
 
 /***/ }),
-/* 1003 */
+/* 1001 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56047,7 +56043,7 @@ module.exports = function (object) { return keys(isValue(object) ? Object(object
 
 
 /***/ }),
-/* 1004 */
+/* 1002 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56061,7 +56057,7 @@ module.exports = function (obj) {
 
 
 /***/ }),
-/* 1005 */
+/* 1003 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56076,7 +56072,7 @@ module.exports = function () {
 
 
 /***/ }),
-/* 1006 */
+/* 1004 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56090,17 +56086,17 @@ module.exports = function (searchString/*, position*/) {
 
 
 /***/ }),
-/* 1007 */
+/* 1005 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var setPrototypeOf = __webpack_require__(576)
-  , contains       = __webpack_require__(663)
+  , contains       = __webpack_require__(661)
   , d              = __webpack_require__(257)
   , Symbol         = __webpack_require__(170)
-  , Iterator       = __webpack_require__(665);
+  , Iterator       = __webpack_require__(663);
 
 var defineProperty = Object.defineProperty, ArrayIterator;
 
@@ -56129,7 +56125,7 @@ defineProperty(ArrayIterator.prototype, Symbol.toStringTag, d("c", "Array Iterat
 
 
 /***/ }),
-/* 1008 */
+/* 1006 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56153,7 +56149,7 @@ module.exports = function () {
 
 
 /***/ }),
-/* 1009 */
+/* 1007 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56162,7 +56158,7 @@ module.exports = function () {
 
 
 var d              = __webpack_require__(257)
-  , validateSymbol = __webpack_require__(1010)
+  , validateSymbol = __webpack_require__(1008)
 
   , create = Object.create, defineProperties = Object.defineProperties
   , defineProperty = Object.defineProperty, objPrototype = Object.prototype
@@ -56278,13 +56274,13 @@ defineProperty(HiddenSymbol.prototype, SymbolPolyfill.toPrimitive,
 
 
 /***/ }),
-/* 1010 */
+/* 1008 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var isSymbol = __webpack_require__(1011);
+var isSymbol = __webpack_require__(1009);
 
 module.exports = function (value) {
 	if (!isSymbol(value)) throw new TypeError(value + " is not a symbol");
@@ -56293,7 +56289,7 @@ module.exports = function (value) {
 
 
 /***/ }),
-/* 1011 */
+/* 1009 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56309,7 +56305,7 @@ module.exports = function (x) {
 
 
 /***/ }),
-/* 1012 */
+/* 1010 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56328,16 +56324,16 @@ module.exports = function () {
 
 
 /***/ }),
-/* 1013 */
+/* 1011 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var copy             = __webpack_require__(1014)
-  , normalizeOptions = __webpack_require__(662)
+var copy             = __webpack_require__(1012)
+  , normalizeOptions = __webpack_require__(660)
   , ensureCallable   = __webpack_require__(171)
-  , map              = __webpack_require__(1024)
+  , map              = __webpack_require__(1022)
   , callable         = __webpack_require__(171)
   , validValue       = __webpack_require__(110)
 
@@ -56367,13 +56363,13 @@ module.exports = function (props/*, options*/) {
 
 
 /***/ }),
-/* 1014 */
+/* 1012 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var aFrom  = __webpack_require__(1015)
+var aFrom  = __webpack_require__(1013)
   , assign = __webpack_require__(577)
   , value  = __webpack_require__(110);
 
@@ -56393,19 +56389,19 @@ module.exports = function (obj/*, propertyNames, options*/) {
 
 
 /***/ }),
-/* 1015 */
+/* 1013 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-module.exports = __webpack_require__(1016)()
+module.exports = __webpack_require__(1014)()
 	? Array.from
-	: __webpack_require__(1017);
+	: __webpack_require__(1015);
 
 
 /***/ }),
-/* 1016 */
+/* 1014 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56421,7 +56417,7 @@ module.exports = function () {
 
 
 /***/ }),
-/* 1017 */
+/* 1015 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56429,8 +56425,8 @@ module.exports = function () {
 
 var iteratorSymbol = __webpack_require__(170).iterator
   , isArguments    = __webpack_require__(297)
-  , isFunction     = __webpack_require__(1018)
-  , toPosInt       = __webpack_require__(1019)
+  , isFunction     = __webpack_require__(1016)
+  , toPosInt       = __webpack_require__(1017)
   , callable       = __webpack_require__(171)
   , validValue     = __webpack_require__(110)
   , isValue        = __webpack_require__(182)
@@ -56547,13 +56543,13 @@ module.exports = function (arrayLike /*, mapFn, thisArg*/) {
 
 
 /***/ }),
-/* 1018 */
+/* 1016 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var objToString = Object.prototype.toString, id = objToString.call(__webpack_require__(661));
+var objToString = Object.prototype.toString, id = objToString.call(__webpack_require__(659));
 
 module.exports = function (value) {
 	return typeof value === "function" && objToString.call(value) === id;
@@ -56561,13 +56557,13 @@ module.exports = function (value) {
 
 
 /***/ }),
-/* 1019 */
+/* 1017 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var toInteger = __webpack_require__(1020)
+var toInteger = __webpack_require__(1018)
 
   , max = Math.max;
 
@@ -56577,13 +56573,13 @@ module.exports = function (value) {
 
 
 /***/ }),
-/* 1020 */
+/* 1018 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var sign = __webpack_require__(1021)
+var sign = __webpack_require__(1019)
 
   , abs = Math.abs, floor = Math.floor;
 
@@ -56596,19 +56592,19 @@ module.exports = function (value) {
 
 
 /***/ }),
-/* 1021 */
+/* 1019 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-module.exports = __webpack_require__(1022)()
+module.exports = __webpack_require__(1020)()
 	? Math.sign
-	: __webpack_require__(1023);
+	: __webpack_require__(1021);
 
 
 /***/ }),
-/* 1022 */
+/* 1020 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56622,7 +56618,7 @@ module.exports = function () {
 
 
 /***/ }),
-/* 1023 */
+/* 1021 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56636,14 +56632,14 @@ module.exports = function (value) {
 
 
 /***/ }),
-/* 1024 */
+/* 1022 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var callable = __webpack_require__(171)
-  , forEach  = __webpack_require__(1025)
+  , forEach  = __webpack_require__(1023)
   , call     = Function.prototype.call;
 
 module.exports = function (obj, cb /*, thisArg*/) {
@@ -56657,17 +56653,17 @@ module.exports = function (obj, cb /*, thisArg*/) {
 
 
 /***/ }),
-/* 1025 */
+/* 1023 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-module.exports = __webpack_require__(1026)("forEach");
+module.exports = __webpack_require__(1024)("forEach");
 
 
 /***/ }),
-/* 1026 */
+/* 1024 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56704,7 +56700,7 @@ module.exports = function (method, defVal) {
 
 
 /***/ }),
-/* 1027 */
+/* 1025 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56716,7 +56712,7 @@ module.exports = function (method, defVal) {
 var setPrototypeOf = __webpack_require__(576)
   , d              = __webpack_require__(257)
   , Symbol         = __webpack_require__(170)
-  , Iterator       = __webpack_require__(665);
+  , Iterator       = __webpack_require__(663);
 
 var defineProperty = Object.defineProperty, StringIterator;
 
@@ -56750,13 +56746,13 @@ defineProperty(StringIterator.prototype, Symbol.toStringTag, d("c", "String Iter
 
 
 /***/ }),
-/* 1028 */
+/* 1026 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var isIterable = __webpack_require__(1029);
+var isIterable = __webpack_require__(1027);
 
 module.exports = function (value) {
 	if (!isIterable(value)) throw new TypeError(value + " is not iterable");
@@ -56765,7 +56761,7 @@ module.exports = function (value) {
 
 
 /***/ }),
-/* 1029 */
+/* 1027 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56788,7 +56784,7 @@ module.exports = function (value) {
 
 
 /***/ }),
-/* 1030 */
+/* 1028 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56797,7 +56793,7 @@ module.exports = function (value) {
 var isArguments = __webpack_require__(297)
   , callable    = __webpack_require__(171)
   , isString    = __webpack_require__(298)
-  , get         = __webpack_require__(664);
+  , get         = __webpack_require__(662);
 
 var isArray = Array.isArray, call = Function.prototype.call, some = Array.prototype.some;
 
@@ -56842,7 +56838,7 @@ module.exports = function (iterable, cb /*, thisArg*/) {
 
 
 /***/ }),
-/* 1031 */
+/* 1029 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56857,16 +56853,16 @@ module.exports = (function () {
 
 
 /***/ }),
-/* 1032 */
+/* 1030 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var parseSelector = __webpack_require__(1033),
-    matchSelector = __webpack_require__(1040);
+var parseSelector = __webpack_require__(1031),
+    matchSelector = __webpack_require__(1038);
 
-var debug = __webpack_require__(1045)('unist-util-select');
+var debug = __webpack_require__(1043)('unist-util-select');
 
 
 var select = function select (ast, selector) {
@@ -56904,14 +56900,14 @@ module.exports = select;
 
 
 /***/ }),
-/* 1033 */
+/* 1031 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var Parser = __webpack_require__(1034).CssSelectorParser,
-    nthCheck = __webpack_require__(1036);
+var Parser = __webpack_require__(1032).CssSelectorParser,
+    nthCheck = __webpack_require__(1034);
 
 
 module.exports = function parseSelector (selector) {
@@ -56963,15 +56959,15 @@ function compileNthChecks (ast) {
 
 
 /***/ }),
-/* 1034 */
+/* 1032 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = {
-  CssSelectorParser: __webpack_require__(1035).CssSelectorParser
+  CssSelectorParser: __webpack_require__(1033).CssSelectorParser
 };
 
 /***/ }),
-/* 1035 */
+/* 1033 */
 /***/ (function(module, exports) {
 
 function CssSelectorParser() {
@@ -57573,11 +57569,11 @@ exports.CssSelectorParser = CssSelectorParser;
 
 
 /***/ }),
-/* 1036 */
+/* 1034 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var parse = __webpack_require__(1037),
-    compile = __webpack_require__(1038);
+var parse = __webpack_require__(1035),
+    compile = __webpack_require__(1036);
 
 module.exports = function nthCheck(formula){
 	return compile(parse(formula));
@@ -57587,7 +57583,7 @@ module.exports.parse = parse;
 module.exports.compile = compile;
 
 /***/ }),
-/* 1037 */
+/* 1035 */
 /***/ (function(module, exports) {
 
 module.exports = parse;
@@ -57633,12 +57629,12 @@ function parse(formula){
 
 
 /***/ }),
-/* 1038 */
+/* 1036 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = compile;
 
-var BaseFuncs = __webpack_require__(1039),
+var BaseFuncs = __webpack_require__(1037),
     trueFunc  = BaseFuncs.trueFunc,
     falseFunc = BaseFuncs.falseFunc;
 
@@ -57678,7 +57674,7 @@ function compile(parsed){
 }
 
 /***/ }),
-/* 1039 */
+/* 1037 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -57691,15 +57687,15 @@ module.exports = {
 };
 
 /***/ }),
-/* 1040 */
+/* 1038 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var walkers = __webpack_require__(1041),
-    matchNode = __webpack_require__(1043),
-    Collector = __webpack_require__(1044);
+var walkers = __webpack_require__(1039),
+    matchNode = __webpack_require__(1041),
+    Collector = __webpack_require__(1042);
 
 var select = exports;
 
@@ -57772,13 +57768,13 @@ function searchOpts (opts, rule) {
 
 
 /***/ }),
-/* 1041 */
+/* 1039 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var TypeIndex = __webpack_require__(1042);
+var TypeIndex = __webpack_require__(1040);
 
 var walkers = exports;
 
@@ -57929,7 +57925,7 @@ function walkIterator (parent, opts) {
 
 
 /***/ }),
-/* 1042 */
+/* 1040 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57959,7 +57955,7 @@ module.exports = function TypeIndex () {
 
 
 /***/ }),
-/* 1043 */
+/* 1041 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -58073,7 +58069,7 @@ function matchPseudos (rule, node, nodeIndex, parent, props) {
 
 
 /***/ }),
-/* 1044 */
+/* 1042 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -58112,7 +58108,7 @@ module.exports = function Collector () {
 
 
 /***/ }),
-/* 1045 */
+/* 1043 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(process) {/**
@@ -58121,7 +58117,7 @@ module.exports = function Collector () {
  * Expose `debug()` as the module.
  */
 
-exports = module.exports = __webpack_require__(1046);
+exports = module.exports = __webpack_require__(1044);
 exports.log = log;
 exports.formatArgs = formatArgs;
 exports.save = save;
@@ -58304,7 +58300,7 @@ function localstorage() {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(85)))
 
 /***/ }),
-/* 1046 */
+/* 1044 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -58320,7 +58316,7 @@ exports.coerce = coerce;
 exports.disable = disable;
 exports.enable = enable;
 exports.enabled = enabled;
-exports.humanize = __webpack_require__(1047);
+exports.humanize = __webpack_require__(1045);
 
 /**
  * The currently active debug mode names, and names to skip.
@@ -58512,7 +58508,7 @@ function coerce(val) {
 
 
 /***/ }),
-/* 1047 */
+/* 1045 */
 /***/ (function(module, exports) {
 
 /**
@@ -58670,13 +58666,13 @@ function plural(ms, n, name) {
 
 
 /***/ }),
-/* 1048 */
+/* 1046 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var is = __webpack_require__(647)
+var is = __webpack_require__(645)
 
 module.exports = findBefore
 
@@ -58718,16 +58714,16 @@ function findBefore(parent, index, test) {
 
 
 /***/ }),
-/* 1049 */
+/* 1047 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var parser = __webpack_require__(1050);
-var processingInstructions = __webpack_require__(670);
-var isValidNodeDefinitions = __webpack_require__(674);
-var processNodeDefinitions = __webpack_require__(671);
+var parser = __webpack_require__(1048);
+var processingInstructions = __webpack_require__(668);
+var isValidNodeDefinitions = __webpack_require__(672);
+var processNodeDefinitions = __webpack_require__(669);
 
 module.exports = {
   Parser: parser,
@@ -58738,20 +58734,20 @@ module.exports = {
 
 
 /***/ }),
-/* 1050 */
+/* 1048 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var find = __webpack_require__(1051);
-var reject = __webpack_require__(1055);
-var addIndex = __webpack_require__(1066);
-var map = __webpack_require__(1069);
-var HtmlParser = __webpack_require__(1072);
-var DomHandler = __webpack_require__(1079);
-var ProcessingInstructions = __webpack_require__(670);
-var IsValidNodeDefinitions = __webpack_require__(674);
-var utils = __webpack_require__(672);
+var find = __webpack_require__(1049);
+var reject = __webpack_require__(1053);
+var addIndex = __webpack_require__(1064);
+var map = __webpack_require__(1067);
+var HtmlParser = __webpack_require__(1070);
+var DomHandler = __webpack_require__(1077);
+var ProcessingInstructions = __webpack_require__(668);
+var IsValidNodeDefinitions = __webpack_require__(672);
+var utils = __webpack_require__(670);
 
 function Html2ReactParser(options) {
   function parseHtmlToTree(html) {
@@ -58817,14 +58813,14 @@ module.exports = Html2ReactParser;
 
 
 /***/ }),
-/* 1051 */
+/* 1049 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var _curry2 = /*#__PURE__*/__webpack_require__(89);
 
 var _dispatchable = /*#__PURE__*/__webpack_require__(578);
 
-var _xfind = /*#__PURE__*/__webpack_require__(1053);
+var _xfind = /*#__PURE__*/__webpack_require__(1051);
 
 /**
  * Returns the first element of the list which matches the predicate, or
@@ -58865,7 +58861,7 @@ var find = /*#__PURE__*/_curry2( /*#__PURE__*/_dispatchable(['find'], _xfind, fu
 module.exports = find;
 
 /***/ }),
-/* 1052 */
+/* 1050 */
 /***/ (function(module, exports) {
 
 function _isTransformer(obj) {
@@ -58874,12 +58870,12 @@ function _isTransformer(obj) {
 module.exports = _isTransformer;
 
 /***/ }),
-/* 1053 */
+/* 1051 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var _curry2 = /*#__PURE__*/__webpack_require__(89);
 
-var _reduced = /*#__PURE__*/__webpack_require__(1054);
+var _reduced = /*#__PURE__*/__webpack_require__(1052);
 
 var _xfBase = /*#__PURE__*/__webpack_require__(579);
 
@@ -58914,7 +58910,7 @@ var _xfind = /*#__PURE__*/_curry2(function _xfind(f, xf) {
 module.exports = _xfind;
 
 /***/ }),
-/* 1054 */
+/* 1052 */
 /***/ (function(module, exports) {
 
 function _reduced(x) {
@@ -58926,14 +58922,14 @@ function _reduced(x) {
 module.exports = _reduced;
 
 /***/ }),
-/* 1055 */
+/* 1053 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var _complement = /*#__PURE__*/__webpack_require__(1056);
+var _complement = /*#__PURE__*/__webpack_require__(1054);
 
 var _curry2 = /*#__PURE__*/__webpack_require__(89);
 
-var filter = /*#__PURE__*/__webpack_require__(1057);
+var filter = /*#__PURE__*/__webpack_require__(1055);
 
 /**
  * The complement of [`filter`](#filter).
@@ -58967,7 +58963,7 @@ var reject = /*#__PURE__*/_curry2(function reject(pred, filterable) {
 module.exports = reject;
 
 /***/ }),
-/* 1056 */
+/* 1054 */
 /***/ (function(module, exports) {
 
 function _complement(f) {
@@ -58978,22 +58974,22 @@ function _complement(f) {
 module.exports = _complement;
 
 /***/ }),
-/* 1057 */
+/* 1055 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var _curry2 = /*#__PURE__*/__webpack_require__(89);
 
 var _dispatchable = /*#__PURE__*/__webpack_require__(578);
 
-var _filter = /*#__PURE__*/__webpack_require__(1058);
+var _filter = /*#__PURE__*/__webpack_require__(1056);
 
-var _isObject = /*#__PURE__*/__webpack_require__(1059);
+var _isObject = /*#__PURE__*/__webpack_require__(1057);
 
 var _reduce = /*#__PURE__*/__webpack_require__(580);
 
-var _xfilter = /*#__PURE__*/__webpack_require__(1064);
+var _xfilter = /*#__PURE__*/__webpack_require__(1062);
 
-var keys = /*#__PURE__*/__webpack_require__(667);
+var keys = /*#__PURE__*/__webpack_require__(665);
 
 /**
  * Takes a predicate and a `Filterable`, and returns a new filterable of the
@@ -59037,7 +59033,7 @@ var filter = /*#__PURE__*/_curry2( /*#__PURE__*/_dispatchable(['filter'], _xfilt
 module.exports = filter;
 
 /***/ }),
-/* 1058 */
+/* 1056 */
 /***/ (function(module, exports) {
 
 function _filter(fn, list) {
@@ -59056,7 +59052,7 @@ function _filter(fn, list) {
 module.exports = _filter;
 
 /***/ }),
-/* 1059 */
+/* 1057 */
 /***/ (function(module, exports) {
 
 function _isObject(x) {
@@ -59065,14 +59061,14 @@ function _isObject(x) {
 module.exports = _isObject;
 
 /***/ }),
-/* 1060 */
+/* 1058 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var _curry1 = /*#__PURE__*/__webpack_require__(172);
 
-var _isArray = /*#__PURE__*/__webpack_require__(666);
+var _isArray = /*#__PURE__*/__webpack_require__(664);
 
-var _isString = /*#__PURE__*/__webpack_require__(1061);
+var _isString = /*#__PURE__*/__webpack_require__(1059);
 
 /**
  * Tests whether or not an object is similar to an array.
@@ -59120,7 +59116,7 @@ var _isArrayLike = /*#__PURE__*/_curry1(function isArrayLike(x) {
 module.exports = _isArrayLike;
 
 /***/ }),
-/* 1061 */
+/* 1059 */
 /***/ (function(module, exports) {
 
 function _isString(x) {
@@ -59129,7 +59125,7 @@ function _isString(x) {
 module.exports = _isString;
 
 /***/ }),
-/* 1062 */
+/* 1060 */
 /***/ (function(module, exports) {
 
 var XWrap = /*#__PURE__*/function () {
@@ -59155,7 +59151,7 @@ function _xwrap(fn) {
 module.exports = _xwrap;
 
 /***/ }),
-/* 1063 */
+/* 1061 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var _arity = /*#__PURE__*/__webpack_require__(581);
@@ -59194,7 +59190,7 @@ var bind = /*#__PURE__*/_curry2(function bind(fn, thisObj) {
 module.exports = bind;
 
 /***/ }),
-/* 1064 */
+/* 1062 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var _curry2 = /*#__PURE__*/__webpack_require__(89);
@@ -59222,7 +59218,7 @@ var _xfilter = /*#__PURE__*/_curry2(function _xfilter(f, xf) {
 module.exports = _xfilter;
 
 /***/ }),
-/* 1065 */
+/* 1063 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var _has = /*#__PURE__*/__webpack_require__(582);
@@ -59239,14 +59235,14 @@ var _isArguments = function () {
 module.exports = _isArguments;
 
 /***/ }),
-/* 1066 */
+/* 1064 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var _concat = /*#__PURE__*/__webpack_require__(1067);
+var _concat = /*#__PURE__*/__webpack_require__(1065);
 
 var _curry1 = /*#__PURE__*/__webpack_require__(172);
 
-var curryN = /*#__PURE__*/__webpack_require__(668);
+var curryN = /*#__PURE__*/__webpack_require__(666);
 
 /**
  * Creates a new list iteration function from an existing one by adding two new
@@ -59291,7 +59287,7 @@ var addIndex = /*#__PURE__*/_curry1(function addIndex(fn) {
 module.exports = addIndex;
 
 /***/ }),
-/* 1067 */
+/* 1065 */
 /***/ (function(module, exports) {
 
 /**
@@ -59328,7 +59324,7 @@ function _concat(set1, set2) {
 module.exports = _concat;
 
 /***/ }),
-/* 1068 */
+/* 1066 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var _arity = /*#__PURE__*/__webpack_require__(581);
@@ -59373,22 +59369,22 @@ function _curryN(length, received, fn) {
 module.exports = _curryN;
 
 /***/ }),
-/* 1069 */
+/* 1067 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var _curry2 = /*#__PURE__*/__webpack_require__(89);
 
 var _dispatchable = /*#__PURE__*/__webpack_require__(578);
 
-var _map = /*#__PURE__*/__webpack_require__(1070);
+var _map = /*#__PURE__*/__webpack_require__(1068);
 
 var _reduce = /*#__PURE__*/__webpack_require__(580);
 
-var _xmap = /*#__PURE__*/__webpack_require__(1071);
+var _xmap = /*#__PURE__*/__webpack_require__(1069);
 
-var curryN = /*#__PURE__*/__webpack_require__(668);
+var curryN = /*#__PURE__*/__webpack_require__(666);
 
-var keys = /*#__PURE__*/__webpack_require__(667);
+var keys = /*#__PURE__*/__webpack_require__(665);
 
 /**
  * Takes a function and
@@ -59445,7 +59441,7 @@ var map = /*#__PURE__*/_curry2( /*#__PURE__*/_dispatchable(['fantasy-land/map', 
 module.exports = map;
 
 /***/ }),
-/* 1070 */
+/* 1068 */
 /***/ (function(module, exports) {
 
 function _map(fn, functor) {
@@ -59461,7 +59457,7 @@ function _map(fn, functor) {
 module.exports = _map;
 
 /***/ }),
-/* 1071 */
+/* 1069 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var _curry2 = /*#__PURE__*/__webpack_require__(89);
@@ -59489,10 +59485,10 @@ var _xmap = /*#__PURE__*/_curry2(function _xmap(f, xf) {
 module.exports = _xmap;
 
 /***/ }),
-/* 1072 */
+/* 1070 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Tokenizer = __webpack_require__(1073);
+var Tokenizer = __webpack_require__(1071);
 
 /*
 	Options:
@@ -59614,7 +59610,7 @@ function Parser(cbs, options){
 	if(this._cbs.onparserinit) this._cbs.onparserinit(this);
 }
 
-__webpack_require__(638)(Parser, __webpack_require__(275).EventEmitter);
+__webpack_require__(636)(Parser, __webpack_require__(275).EventEmitter);
 
 Parser.prototype._updatePosition = function(initialOffset){
 	if(this.endIndex === null){
@@ -59848,15 +59844,15 @@ module.exports = Parser;
 
 
 /***/ }),
-/* 1073 */
+/* 1071 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = Tokenizer;
 
-var decodeCodePoint = __webpack_require__(1074),
-    entityMap = __webpack_require__(1076),
-    legacyMap = __webpack_require__(1077),
-    xmlMap    = __webpack_require__(1078),
+var decodeCodePoint = __webpack_require__(1072),
+    entityMap = __webpack_require__(1074),
+    legacyMap = __webpack_require__(1075),
+    xmlMap    = __webpack_require__(1076),
 
     i = 0,
 
@@ -60760,10 +60756,10 @@ Tokenizer.prototype._emitPartial = function(value){
 
 
 /***/ }),
-/* 1074 */
+/* 1072 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var decodeMap = __webpack_require__(1075);
+var decodeMap = __webpack_require__(1073);
 
 module.exports = decodeCodePoint;
 
@@ -60792,38 +60788,38 @@ function decodeCodePoint(codePoint){
 
 
 /***/ }),
-/* 1075 */
+/* 1073 */
 /***/ (function(module, exports) {
 
 module.exports = {"0":65533,"128":8364,"130":8218,"131":402,"132":8222,"133":8230,"134":8224,"135":8225,"136":710,"137":8240,"138":352,"139":8249,"140":338,"142":381,"145":8216,"146":8217,"147":8220,"148":8221,"149":8226,"150":8211,"151":8212,"152":732,"153":8482,"154":353,"155":8250,"156":339,"158":382,"159":376}
 
 /***/ }),
-/* 1076 */
+/* 1074 */
 /***/ (function(module, exports) {
 
 module.exports = {"Aacute":"Á","aacute":"á","Abreve":"Ă","abreve":"ă","ac":"∾","acd":"∿","acE":"∾̳","Acirc":"Â","acirc":"â","acute":"´","Acy":"А","acy":"а","AElig":"Æ","aelig":"æ","af":"⁡","Afr":"𝔄","afr":"𝔞","Agrave":"À","agrave":"à","alefsym":"ℵ","aleph":"ℵ","Alpha":"Α","alpha":"α","Amacr":"Ā","amacr":"ā","amalg":"⨿","amp":"&","AMP":"&","andand":"⩕","And":"⩓","and":"∧","andd":"⩜","andslope":"⩘","andv":"⩚","ang":"∠","ange":"⦤","angle":"∠","angmsdaa":"⦨","angmsdab":"⦩","angmsdac":"⦪","angmsdad":"⦫","angmsdae":"⦬","angmsdaf":"⦭","angmsdag":"⦮","angmsdah":"⦯","angmsd":"∡","angrt":"∟","angrtvb":"⊾","angrtvbd":"⦝","angsph":"∢","angst":"Å","angzarr":"⍼","Aogon":"Ą","aogon":"ą","Aopf":"𝔸","aopf":"𝕒","apacir":"⩯","ap":"≈","apE":"⩰","ape":"≊","apid":"≋","apos":"'","ApplyFunction":"⁡","approx":"≈","approxeq":"≊","Aring":"Å","aring":"å","Ascr":"𝒜","ascr":"𝒶","Assign":"≔","ast":"*","asymp":"≈","asympeq":"≍","Atilde":"Ã","atilde":"ã","Auml":"Ä","auml":"ä","awconint":"∳","awint":"⨑","backcong":"≌","backepsilon":"϶","backprime":"‵","backsim":"∽","backsimeq":"⋍","Backslash":"∖","Barv":"⫧","barvee":"⊽","barwed":"⌅","Barwed":"⌆","barwedge":"⌅","bbrk":"⎵","bbrktbrk":"⎶","bcong":"≌","Bcy":"Б","bcy":"б","bdquo":"„","becaus":"∵","because":"∵","Because":"∵","bemptyv":"⦰","bepsi":"϶","bernou":"ℬ","Bernoullis":"ℬ","Beta":"Β","beta":"β","beth":"ℶ","between":"≬","Bfr":"𝔅","bfr":"𝔟","bigcap":"⋂","bigcirc":"◯","bigcup":"⋃","bigodot":"⨀","bigoplus":"⨁","bigotimes":"⨂","bigsqcup":"⨆","bigstar":"★","bigtriangledown":"▽","bigtriangleup":"△","biguplus":"⨄","bigvee":"⋁","bigwedge":"⋀","bkarow":"⤍","blacklozenge":"⧫","blacksquare":"▪","blacktriangle":"▴","blacktriangledown":"▾","blacktriangleleft":"◂","blacktriangleright":"▸","blank":"␣","blk12":"▒","blk14":"░","blk34":"▓","block":"█","bne":"=⃥","bnequiv":"≡⃥","bNot":"⫭","bnot":"⌐","Bopf":"𝔹","bopf":"𝕓","bot":"⊥","bottom":"⊥","bowtie":"⋈","boxbox":"⧉","boxdl":"┐","boxdL":"╕","boxDl":"╖","boxDL":"╗","boxdr":"┌","boxdR":"╒","boxDr":"╓","boxDR":"╔","boxh":"─","boxH":"═","boxhd":"┬","boxHd":"╤","boxhD":"╥","boxHD":"╦","boxhu":"┴","boxHu":"╧","boxhU":"╨","boxHU":"╩","boxminus":"⊟","boxplus":"⊞","boxtimes":"⊠","boxul":"┘","boxuL":"╛","boxUl":"╜","boxUL":"╝","boxur":"└","boxuR":"╘","boxUr":"╙","boxUR":"╚","boxv":"│","boxV":"║","boxvh":"┼","boxvH":"╪","boxVh":"╫","boxVH":"╬","boxvl":"┤","boxvL":"╡","boxVl":"╢","boxVL":"╣","boxvr":"├","boxvR":"╞","boxVr":"╟","boxVR":"╠","bprime":"‵","breve":"˘","Breve":"˘","brvbar":"¦","bscr":"𝒷","Bscr":"ℬ","bsemi":"⁏","bsim":"∽","bsime":"⋍","bsolb":"⧅","bsol":"\\","bsolhsub":"⟈","bull":"•","bullet":"•","bump":"≎","bumpE":"⪮","bumpe":"≏","Bumpeq":"≎","bumpeq":"≏","Cacute":"Ć","cacute":"ć","capand":"⩄","capbrcup":"⩉","capcap":"⩋","cap":"∩","Cap":"⋒","capcup":"⩇","capdot":"⩀","CapitalDifferentialD":"ⅅ","caps":"∩︀","caret":"⁁","caron":"ˇ","Cayleys":"ℭ","ccaps":"⩍","Ccaron":"Č","ccaron":"č","Ccedil":"Ç","ccedil":"ç","Ccirc":"Ĉ","ccirc":"ĉ","Cconint":"∰","ccups":"⩌","ccupssm":"⩐","Cdot":"Ċ","cdot":"ċ","cedil":"¸","Cedilla":"¸","cemptyv":"⦲","cent":"¢","centerdot":"·","CenterDot":"·","cfr":"𝔠","Cfr":"ℭ","CHcy":"Ч","chcy":"ч","check":"✓","checkmark":"✓","Chi":"Χ","chi":"χ","circ":"ˆ","circeq":"≗","circlearrowleft":"↺","circlearrowright":"↻","circledast":"⊛","circledcirc":"⊚","circleddash":"⊝","CircleDot":"⊙","circledR":"®","circledS":"Ⓢ","CircleMinus":"⊖","CirclePlus":"⊕","CircleTimes":"⊗","cir":"○","cirE":"⧃","cire":"≗","cirfnint":"⨐","cirmid":"⫯","cirscir":"⧂","ClockwiseContourIntegral":"∲","CloseCurlyDoubleQuote":"”","CloseCurlyQuote":"’","clubs":"♣","clubsuit":"♣","colon":":","Colon":"∷","Colone":"⩴","colone":"≔","coloneq":"≔","comma":",","commat":"@","comp":"∁","compfn":"∘","complement":"∁","complexes":"ℂ","cong":"≅","congdot":"⩭","Congruent":"≡","conint":"∮","Conint":"∯","ContourIntegral":"∮","copf":"𝕔","Copf":"ℂ","coprod":"∐","Coproduct":"∐","copy":"©","COPY":"©","copysr":"℗","CounterClockwiseContourIntegral":"∳","crarr":"↵","cross":"✗","Cross":"⨯","Cscr":"𝒞","cscr":"𝒸","csub":"⫏","csube":"⫑","csup":"⫐","csupe":"⫒","ctdot":"⋯","cudarrl":"⤸","cudarrr":"⤵","cuepr":"⋞","cuesc":"⋟","cularr":"↶","cularrp":"⤽","cupbrcap":"⩈","cupcap":"⩆","CupCap":"≍","cup":"∪","Cup":"⋓","cupcup":"⩊","cupdot":"⊍","cupor":"⩅","cups":"∪︀","curarr":"↷","curarrm":"⤼","curlyeqprec":"⋞","curlyeqsucc":"⋟","curlyvee":"⋎","curlywedge":"⋏","curren":"¤","curvearrowleft":"↶","curvearrowright":"↷","cuvee":"⋎","cuwed":"⋏","cwconint":"∲","cwint":"∱","cylcty":"⌭","dagger":"†","Dagger":"‡","daleth":"ℸ","darr":"↓","Darr":"↡","dArr":"⇓","dash":"‐","Dashv":"⫤","dashv":"⊣","dbkarow":"⤏","dblac":"˝","Dcaron":"Ď","dcaron":"ď","Dcy":"Д","dcy":"д","ddagger":"‡","ddarr":"⇊","DD":"ⅅ","dd":"ⅆ","DDotrahd":"⤑","ddotseq":"⩷","deg":"°","Del":"∇","Delta":"Δ","delta":"δ","demptyv":"⦱","dfisht":"⥿","Dfr":"𝔇","dfr":"𝔡","dHar":"⥥","dharl":"⇃","dharr":"⇂","DiacriticalAcute":"´","DiacriticalDot":"˙","DiacriticalDoubleAcute":"˝","DiacriticalGrave":"`","DiacriticalTilde":"˜","diam":"⋄","diamond":"⋄","Diamond":"⋄","diamondsuit":"♦","diams":"♦","die":"¨","DifferentialD":"ⅆ","digamma":"ϝ","disin":"⋲","div":"÷","divide":"÷","divideontimes":"⋇","divonx":"⋇","DJcy":"Ђ","djcy":"ђ","dlcorn":"⌞","dlcrop":"⌍","dollar":"$","Dopf":"𝔻","dopf":"𝕕","Dot":"¨","dot":"˙","DotDot":"⃜","doteq":"≐","doteqdot":"≑","DotEqual":"≐","dotminus":"∸","dotplus":"∔","dotsquare":"⊡","doublebarwedge":"⌆","DoubleContourIntegral":"∯","DoubleDot":"¨","DoubleDownArrow":"⇓","DoubleLeftArrow":"⇐","DoubleLeftRightArrow":"⇔","DoubleLeftTee":"⫤","DoubleLongLeftArrow":"⟸","DoubleLongLeftRightArrow":"⟺","DoubleLongRightArrow":"⟹","DoubleRightArrow":"⇒","DoubleRightTee":"⊨","DoubleUpArrow":"⇑","DoubleUpDownArrow":"⇕","DoubleVerticalBar":"∥","DownArrowBar":"⤓","downarrow":"↓","DownArrow":"↓","Downarrow":"⇓","DownArrowUpArrow":"⇵","DownBreve":"̑","downdownarrows":"⇊","downharpoonleft":"⇃","downharpoonright":"⇂","DownLeftRightVector":"⥐","DownLeftTeeVector":"⥞","DownLeftVectorBar":"⥖","DownLeftVector":"↽","DownRightTeeVector":"⥟","DownRightVectorBar":"⥗","DownRightVector":"⇁","DownTeeArrow":"↧","DownTee":"⊤","drbkarow":"⤐","drcorn":"⌟","drcrop":"⌌","Dscr":"𝒟","dscr":"𝒹","DScy":"Ѕ","dscy":"ѕ","dsol":"⧶","Dstrok":"Đ","dstrok":"đ","dtdot":"⋱","dtri":"▿","dtrif":"▾","duarr":"⇵","duhar":"⥯","dwangle":"⦦","DZcy":"Џ","dzcy":"џ","dzigrarr":"⟿","Eacute":"É","eacute":"é","easter":"⩮","Ecaron":"Ě","ecaron":"ě","Ecirc":"Ê","ecirc":"ê","ecir":"≖","ecolon":"≕","Ecy":"Э","ecy":"э","eDDot":"⩷","Edot":"Ė","edot":"ė","eDot":"≑","ee":"ⅇ","efDot":"≒","Efr":"𝔈","efr":"𝔢","eg":"⪚","Egrave":"È","egrave":"è","egs":"⪖","egsdot":"⪘","el":"⪙","Element":"∈","elinters":"⏧","ell":"ℓ","els":"⪕","elsdot":"⪗","Emacr":"Ē","emacr":"ē","empty":"∅","emptyset":"∅","EmptySmallSquare":"◻","emptyv":"∅","EmptyVerySmallSquare":"▫","emsp13":" ","emsp14":" ","emsp":" ","ENG":"Ŋ","eng":"ŋ","ensp":" ","Eogon":"Ę","eogon":"ę","Eopf":"𝔼","eopf":"𝕖","epar":"⋕","eparsl":"⧣","eplus":"⩱","epsi":"ε","Epsilon":"Ε","epsilon":"ε","epsiv":"ϵ","eqcirc":"≖","eqcolon":"≕","eqsim":"≂","eqslantgtr":"⪖","eqslantless":"⪕","Equal":"⩵","equals":"=","EqualTilde":"≂","equest":"≟","Equilibrium":"⇌","equiv":"≡","equivDD":"⩸","eqvparsl":"⧥","erarr":"⥱","erDot":"≓","escr":"ℯ","Escr":"ℰ","esdot":"≐","Esim":"⩳","esim":"≂","Eta":"Η","eta":"η","ETH":"Ð","eth":"ð","Euml":"Ë","euml":"ë","euro":"€","excl":"!","exist":"∃","Exists":"∃","expectation":"ℰ","exponentiale":"ⅇ","ExponentialE":"ⅇ","fallingdotseq":"≒","Fcy":"Ф","fcy":"ф","female":"♀","ffilig":"ﬃ","fflig":"ﬀ","ffllig":"ﬄ","Ffr":"𝔉","ffr":"𝔣","filig":"ﬁ","FilledSmallSquare":"◼","FilledVerySmallSquare":"▪","fjlig":"fj","flat":"♭","fllig":"ﬂ","fltns":"▱","fnof":"ƒ","Fopf":"𝔽","fopf":"𝕗","forall":"∀","ForAll":"∀","fork":"⋔","forkv":"⫙","Fouriertrf":"ℱ","fpartint":"⨍","frac12":"½","frac13":"⅓","frac14":"¼","frac15":"⅕","frac16":"⅙","frac18":"⅛","frac23":"⅔","frac25":"⅖","frac34":"¾","frac35":"⅗","frac38":"⅜","frac45":"⅘","frac56":"⅚","frac58":"⅝","frac78":"⅞","frasl":"⁄","frown":"⌢","fscr":"𝒻","Fscr":"ℱ","gacute":"ǵ","Gamma":"Γ","gamma":"γ","Gammad":"Ϝ","gammad":"ϝ","gap":"⪆","Gbreve":"Ğ","gbreve":"ğ","Gcedil":"Ģ","Gcirc":"Ĝ","gcirc":"ĝ","Gcy":"Г","gcy":"г","Gdot":"Ġ","gdot":"ġ","ge":"≥","gE":"≧","gEl":"⪌","gel":"⋛","geq":"≥","geqq":"≧","geqslant":"⩾","gescc":"⪩","ges":"⩾","gesdot":"⪀","gesdoto":"⪂","gesdotol":"⪄","gesl":"⋛︀","gesles":"⪔","Gfr":"𝔊","gfr":"𝔤","gg":"≫","Gg":"⋙","ggg":"⋙","gimel":"ℷ","GJcy":"Ѓ","gjcy":"ѓ","gla":"⪥","gl":"≷","glE":"⪒","glj":"⪤","gnap":"⪊","gnapprox":"⪊","gne":"⪈","gnE":"≩","gneq":"⪈","gneqq":"≩","gnsim":"⋧","Gopf":"𝔾","gopf":"𝕘","grave":"`","GreaterEqual":"≥","GreaterEqualLess":"⋛","GreaterFullEqual":"≧","GreaterGreater":"⪢","GreaterLess":"≷","GreaterSlantEqual":"⩾","GreaterTilde":"≳","Gscr":"𝒢","gscr":"ℊ","gsim":"≳","gsime":"⪎","gsiml":"⪐","gtcc":"⪧","gtcir":"⩺","gt":">","GT":">","Gt":"≫","gtdot":"⋗","gtlPar":"⦕","gtquest":"⩼","gtrapprox":"⪆","gtrarr":"⥸","gtrdot":"⋗","gtreqless":"⋛","gtreqqless":"⪌","gtrless":"≷","gtrsim":"≳","gvertneqq":"≩︀","gvnE":"≩︀","Hacek":"ˇ","hairsp":" ","half":"½","hamilt":"ℋ","HARDcy":"Ъ","hardcy":"ъ","harrcir":"⥈","harr":"↔","hArr":"⇔","harrw":"↭","Hat":"^","hbar":"ℏ","Hcirc":"Ĥ","hcirc":"ĥ","hearts":"♥","heartsuit":"♥","hellip":"…","hercon":"⊹","hfr":"𝔥","Hfr":"ℌ","HilbertSpace":"ℋ","hksearow":"⤥","hkswarow":"⤦","hoarr":"⇿","homtht":"∻","hookleftarrow":"↩","hookrightarrow":"↪","hopf":"𝕙","Hopf":"ℍ","horbar":"―","HorizontalLine":"─","hscr":"𝒽","Hscr":"ℋ","hslash":"ℏ","Hstrok":"Ħ","hstrok":"ħ","HumpDownHump":"≎","HumpEqual":"≏","hybull":"⁃","hyphen":"‐","Iacute":"Í","iacute":"í","ic":"⁣","Icirc":"Î","icirc":"î","Icy":"И","icy":"и","Idot":"İ","IEcy":"Е","iecy":"е","iexcl":"¡","iff":"⇔","ifr":"𝔦","Ifr":"ℑ","Igrave":"Ì","igrave":"ì","ii":"ⅈ","iiiint":"⨌","iiint":"∭","iinfin":"⧜","iiota":"℩","IJlig":"Ĳ","ijlig":"ĳ","Imacr":"Ī","imacr":"ī","image":"ℑ","ImaginaryI":"ⅈ","imagline":"ℐ","imagpart":"ℑ","imath":"ı","Im":"ℑ","imof":"⊷","imped":"Ƶ","Implies":"⇒","incare":"℅","in":"∈","infin":"∞","infintie":"⧝","inodot":"ı","intcal":"⊺","int":"∫","Int":"∬","integers":"ℤ","Integral":"∫","intercal":"⊺","Intersection":"⋂","intlarhk":"⨗","intprod":"⨼","InvisibleComma":"⁣","InvisibleTimes":"⁢","IOcy":"Ё","iocy":"ё","Iogon":"Į","iogon":"į","Iopf":"𝕀","iopf":"𝕚","Iota":"Ι","iota":"ι","iprod":"⨼","iquest":"¿","iscr":"𝒾","Iscr":"ℐ","isin":"∈","isindot":"⋵","isinE":"⋹","isins":"⋴","isinsv":"⋳","isinv":"∈","it":"⁢","Itilde":"Ĩ","itilde":"ĩ","Iukcy":"І","iukcy":"і","Iuml":"Ï","iuml":"ï","Jcirc":"Ĵ","jcirc":"ĵ","Jcy":"Й","jcy":"й","Jfr":"𝔍","jfr":"𝔧","jmath":"ȷ","Jopf":"𝕁","jopf":"𝕛","Jscr":"𝒥","jscr":"𝒿","Jsercy":"Ј","jsercy":"ј","Jukcy":"Є","jukcy":"є","Kappa":"Κ","kappa":"κ","kappav":"ϰ","Kcedil":"Ķ","kcedil":"ķ","Kcy":"К","kcy":"к","Kfr":"𝔎","kfr":"𝔨","kgreen":"ĸ","KHcy":"Х","khcy":"х","KJcy":"Ќ","kjcy":"ќ","Kopf":"𝕂","kopf":"𝕜","Kscr":"𝒦","kscr":"𝓀","lAarr":"⇚","Lacute":"Ĺ","lacute":"ĺ","laemptyv":"⦴","lagran":"ℒ","Lambda":"Λ","lambda":"λ","lang":"⟨","Lang":"⟪","langd":"⦑","langle":"⟨","lap":"⪅","Laplacetrf":"ℒ","laquo":"«","larrb":"⇤","larrbfs":"⤟","larr":"←","Larr":"↞","lArr":"⇐","larrfs":"⤝","larrhk":"↩","larrlp":"↫","larrpl":"⤹","larrsim":"⥳","larrtl":"↢","latail":"⤙","lAtail":"⤛","lat":"⪫","late":"⪭","lates":"⪭︀","lbarr":"⤌","lBarr":"⤎","lbbrk":"❲","lbrace":"{","lbrack":"[","lbrke":"⦋","lbrksld":"⦏","lbrkslu":"⦍","Lcaron":"Ľ","lcaron":"ľ","Lcedil":"Ļ","lcedil":"ļ","lceil":"⌈","lcub":"{","Lcy":"Л","lcy":"л","ldca":"⤶","ldquo":"“","ldquor":"„","ldrdhar":"⥧","ldrushar":"⥋","ldsh":"↲","le":"≤","lE":"≦","LeftAngleBracket":"⟨","LeftArrowBar":"⇤","leftarrow":"←","LeftArrow":"←","Leftarrow":"⇐","LeftArrowRightArrow":"⇆","leftarrowtail":"↢","LeftCeiling":"⌈","LeftDoubleBracket":"⟦","LeftDownTeeVector":"⥡","LeftDownVectorBar":"⥙","LeftDownVector":"⇃","LeftFloor":"⌊","leftharpoondown":"↽","leftharpoonup":"↼","leftleftarrows":"⇇","leftrightarrow":"↔","LeftRightArrow":"↔","Leftrightarrow":"⇔","leftrightarrows":"⇆","leftrightharpoons":"⇋","leftrightsquigarrow":"↭","LeftRightVector":"⥎","LeftTeeArrow":"↤","LeftTee":"⊣","LeftTeeVector":"⥚","leftthreetimes":"⋋","LeftTriangleBar":"⧏","LeftTriangle":"⊲","LeftTriangleEqual":"⊴","LeftUpDownVector":"⥑","LeftUpTeeVector":"⥠","LeftUpVectorBar":"⥘","LeftUpVector":"↿","LeftVectorBar":"⥒","LeftVector":"↼","lEg":"⪋","leg":"⋚","leq":"≤","leqq":"≦","leqslant":"⩽","lescc":"⪨","les":"⩽","lesdot":"⩿","lesdoto":"⪁","lesdotor":"⪃","lesg":"⋚︀","lesges":"⪓","lessapprox":"⪅","lessdot":"⋖","lesseqgtr":"⋚","lesseqqgtr":"⪋","LessEqualGreater":"⋚","LessFullEqual":"≦","LessGreater":"≶","lessgtr":"≶","LessLess":"⪡","lesssim":"≲","LessSlantEqual":"⩽","LessTilde":"≲","lfisht":"⥼","lfloor":"⌊","Lfr":"𝔏","lfr":"𝔩","lg":"≶","lgE":"⪑","lHar":"⥢","lhard":"↽","lharu":"↼","lharul":"⥪","lhblk":"▄","LJcy":"Љ","ljcy":"љ","llarr":"⇇","ll":"≪","Ll":"⋘","llcorner":"⌞","Lleftarrow":"⇚","llhard":"⥫","lltri":"◺","Lmidot":"Ŀ","lmidot":"ŀ","lmoustache":"⎰","lmoust":"⎰","lnap":"⪉","lnapprox":"⪉","lne":"⪇","lnE":"≨","lneq":"⪇","lneqq":"≨","lnsim":"⋦","loang":"⟬","loarr":"⇽","lobrk":"⟦","longleftarrow":"⟵","LongLeftArrow":"⟵","Longleftarrow":"⟸","longleftrightarrow":"⟷","LongLeftRightArrow":"⟷","Longleftrightarrow":"⟺","longmapsto":"⟼","longrightarrow":"⟶","LongRightArrow":"⟶","Longrightarrow":"⟹","looparrowleft":"↫","looparrowright":"↬","lopar":"⦅","Lopf":"𝕃","lopf":"𝕝","loplus":"⨭","lotimes":"⨴","lowast":"∗","lowbar":"_","LowerLeftArrow":"↙","LowerRightArrow":"↘","loz":"◊","lozenge":"◊","lozf":"⧫","lpar":"(","lparlt":"⦓","lrarr":"⇆","lrcorner":"⌟","lrhar":"⇋","lrhard":"⥭","lrm":"‎","lrtri":"⊿","lsaquo":"‹","lscr":"𝓁","Lscr":"ℒ","lsh":"↰","Lsh":"↰","lsim":"≲","lsime":"⪍","lsimg":"⪏","lsqb":"[","lsquo":"‘","lsquor":"‚","Lstrok":"Ł","lstrok":"ł","ltcc":"⪦","ltcir":"⩹","lt":"<","LT":"<","Lt":"≪","ltdot":"⋖","lthree":"⋋","ltimes":"⋉","ltlarr":"⥶","ltquest":"⩻","ltri":"◃","ltrie":"⊴","ltrif":"◂","ltrPar":"⦖","lurdshar":"⥊","luruhar":"⥦","lvertneqq":"≨︀","lvnE":"≨︀","macr":"¯","male":"♂","malt":"✠","maltese":"✠","Map":"⤅","map":"↦","mapsto":"↦","mapstodown":"↧","mapstoleft":"↤","mapstoup":"↥","marker":"▮","mcomma":"⨩","Mcy":"М","mcy":"м","mdash":"—","mDDot":"∺","measuredangle":"∡","MediumSpace":" ","Mellintrf":"ℳ","Mfr":"𝔐","mfr":"𝔪","mho":"℧","micro":"µ","midast":"*","midcir":"⫰","mid":"∣","middot":"·","minusb":"⊟","minus":"−","minusd":"∸","minusdu":"⨪","MinusPlus":"∓","mlcp":"⫛","mldr":"…","mnplus":"∓","models":"⊧","Mopf":"𝕄","mopf":"𝕞","mp":"∓","mscr":"𝓂","Mscr":"ℳ","mstpos":"∾","Mu":"Μ","mu":"μ","multimap":"⊸","mumap":"⊸","nabla":"∇","Nacute":"Ń","nacute":"ń","nang":"∠⃒","nap":"≉","napE":"⩰̸","napid":"≋̸","napos":"ŉ","napprox":"≉","natural":"♮","naturals":"ℕ","natur":"♮","nbsp":" ","nbump":"≎̸","nbumpe":"≏̸","ncap":"⩃","Ncaron":"Ň","ncaron":"ň","Ncedil":"Ņ","ncedil":"ņ","ncong":"≇","ncongdot":"⩭̸","ncup":"⩂","Ncy":"Н","ncy":"н","ndash":"–","nearhk":"⤤","nearr":"↗","neArr":"⇗","nearrow":"↗","ne":"≠","nedot":"≐̸","NegativeMediumSpace":"​","NegativeThickSpace":"​","NegativeThinSpace":"​","NegativeVeryThinSpace":"​","nequiv":"≢","nesear":"⤨","nesim":"≂̸","NestedGreaterGreater":"≫","NestedLessLess":"≪","NewLine":"\n","nexist":"∄","nexists":"∄","Nfr":"𝔑","nfr":"𝔫","ngE":"≧̸","nge":"≱","ngeq":"≱","ngeqq":"≧̸","ngeqslant":"⩾̸","nges":"⩾̸","nGg":"⋙̸","ngsim":"≵","nGt":"≫⃒","ngt":"≯","ngtr":"≯","nGtv":"≫̸","nharr":"↮","nhArr":"⇎","nhpar":"⫲","ni":"∋","nis":"⋼","nisd":"⋺","niv":"∋","NJcy":"Њ","njcy":"њ","nlarr":"↚","nlArr":"⇍","nldr":"‥","nlE":"≦̸","nle":"≰","nleftarrow":"↚","nLeftarrow":"⇍","nleftrightarrow":"↮","nLeftrightarrow":"⇎","nleq":"≰","nleqq":"≦̸","nleqslant":"⩽̸","nles":"⩽̸","nless":"≮","nLl":"⋘̸","nlsim":"≴","nLt":"≪⃒","nlt":"≮","nltri":"⋪","nltrie":"⋬","nLtv":"≪̸","nmid":"∤","NoBreak":"⁠","NonBreakingSpace":" ","nopf":"𝕟","Nopf":"ℕ","Not":"⫬","not":"¬","NotCongruent":"≢","NotCupCap":"≭","NotDoubleVerticalBar":"∦","NotElement":"∉","NotEqual":"≠","NotEqualTilde":"≂̸","NotExists":"∄","NotGreater":"≯","NotGreaterEqual":"≱","NotGreaterFullEqual":"≧̸","NotGreaterGreater":"≫̸","NotGreaterLess":"≹","NotGreaterSlantEqual":"⩾̸","NotGreaterTilde":"≵","NotHumpDownHump":"≎̸","NotHumpEqual":"≏̸","notin":"∉","notindot":"⋵̸","notinE":"⋹̸","notinva":"∉","notinvb":"⋷","notinvc":"⋶","NotLeftTriangleBar":"⧏̸","NotLeftTriangle":"⋪","NotLeftTriangleEqual":"⋬","NotLess":"≮","NotLessEqual":"≰","NotLessGreater":"≸","NotLessLess":"≪̸","NotLessSlantEqual":"⩽̸","NotLessTilde":"≴","NotNestedGreaterGreater":"⪢̸","NotNestedLessLess":"⪡̸","notni":"∌","notniva":"∌","notnivb":"⋾","notnivc":"⋽","NotPrecedes":"⊀","NotPrecedesEqual":"⪯̸","NotPrecedesSlantEqual":"⋠","NotReverseElement":"∌","NotRightTriangleBar":"⧐̸","NotRightTriangle":"⋫","NotRightTriangleEqual":"⋭","NotSquareSubset":"⊏̸","NotSquareSubsetEqual":"⋢","NotSquareSuperset":"⊐̸","NotSquareSupersetEqual":"⋣","NotSubset":"⊂⃒","NotSubsetEqual":"⊈","NotSucceeds":"⊁","NotSucceedsEqual":"⪰̸","NotSucceedsSlantEqual":"⋡","NotSucceedsTilde":"≿̸","NotSuperset":"⊃⃒","NotSupersetEqual":"⊉","NotTilde":"≁","NotTildeEqual":"≄","NotTildeFullEqual":"≇","NotTildeTilde":"≉","NotVerticalBar":"∤","nparallel":"∦","npar":"∦","nparsl":"⫽⃥","npart":"∂̸","npolint":"⨔","npr":"⊀","nprcue":"⋠","nprec":"⊀","npreceq":"⪯̸","npre":"⪯̸","nrarrc":"⤳̸","nrarr":"↛","nrArr":"⇏","nrarrw":"↝̸","nrightarrow":"↛","nRightarrow":"⇏","nrtri":"⋫","nrtrie":"⋭","nsc":"⊁","nsccue":"⋡","nsce":"⪰̸","Nscr":"𝒩","nscr":"𝓃","nshortmid":"∤","nshortparallel":"∦","nsim":"≁","nsime":"≄","nsimeq":"≄","nsmid":"∤","nspar":"∦","nsqsube":"⋢","nsqsupe":"⋣","nsub":"⊄","nsubE":"⫅̸","nsube":"⊈","nsubset":"⊂⃒","nsubseteq":"⊈","nsubseteqq":"⫅̸","nsucc":"⊁","nsucceq":"⪰̸","nsup":"⊅","nsupE":"⫆̸","nsupe":"⊉","nsupset":"⊃⃒","nsupseteq":"⊉","nsupseteqq":"⫆̸","ntgl":"≹","Ntilde":"Ñ","ntilde":"ñ","ntlg":"≸","ntriangleleft":"⋪","ntrianglelefteq":"⋬","ntriangleright":"⋫","ntrianglerighteq":"⋭","Nu":"Ν","nu":"ν","num":"#","numero":"№","numsp":" ","nvap":"≍⃒","nvdash":"⊬","nvDash":"⊭","nVdash":"⊮","nVDash":"⊯","nvge":"≥⃒","nvgt":">⃒","nvHarr":"⤄","nvinfin":"⧞","nvlArr":"⤂","nvle":"≤⃒","nvlt":"<⃒","nvltrie":"⊴⃒","nvrArr":"⤃","nvrtrie":"⊵⃒","nvsim":"∼⃒","nwarhk":"⤣","nwarr":"↖","nwArr":"⇖","nwarrow":"↖","nwnear":"⤧","Oacute":"Ó","oacute":"ó","oast":"⊛","Ocirc":"Ô","ocirc":"ô","ocir":"⊚","Ocy":"О","ocy":"о","odash":"⊝","Odblac":"Ő","odblac":"ő","odiv":"⨸","odot":"⊙","odsold":"⦼","OElig":"Œ","oelig":"œ","ofcir":"⦿","Ofr":"𝔒","ofr":"𝔬","ogon":"˛","Ograve":"Ò","ograve":"ò","ogt":"⧁","ohbar":"⦵","ohm":"Ω","oint":"∮","olarr":"↺","olcir":"⦾","olcross":"⦻","oline":"‾","olt":"⧀","Omacr":"Ō","omacr":"ō","Omega":"Ω","omega":"ω","Omicron":"Ο","omicron":"ο","omid":"⦶","ominus":"⊖","Oopf":"𝕆","oopf":"𝕠","opar":"⦷","OpenCurlyDoubleQuote":"“","OpenCurlyQuote":"‘","operp":"⦹","oplus":"⊕","orarr":"↻","Or":"⩔","or":"∨","ord":"⩝","order":"ℴ","orderof":"ℴ","ordf":"ª","ordm":"º","origof":"⊶","oror":"⩖","orslope":"⩗","orv":"⩛","oS":"Ⓢ","Oscr":"𝒪","oscr":"ℴ","Oslash":"Ø","oslash":"ø","osol":"⊘","Otilde":"Õ","otilde":"õ","otimesas":"⨶","Otimes":"⨷","otimes":"⊗","Ouml":"Ö","ouml":"ö","ovbar":"⌽","OverBar":"‾","OverBrace":"⏞","OverBracket":"⎴","OverParenthesis":"⏜","para":"¶","parallel":"∥","par":"∥","parsim":"⫳","parsl":"⫽","part":"∂","PartialD":"∂","Pcy":"П","pcy":"п","percnt":"%","period":".","permil":"‰","perp":"⊥","pertenk":"‱","Pfr":"𝔓","pfr":"𝔭","Phi":"Φ","phi":"φ","phiv":"ϕ","phmmat":"ℳ","phone":"☎","Pi":"Π","pi":"π","pitchfork":"⋔","piv":"ϖ","planck":"ℏ","planckh":"ℎ","plankv":"ℏ","plusacir":"⨣","plusb":"⊞","pluscir":"⨢","plus":"+","plusdo":"∔","plusdu":"⨥","pluse":"⩲","PlusMinus":"±","plusmn":"±","plussim":"⨦","plustwo":"⨧","pm":"±","Poincareplane":"ℌ","pointint":"⨕","popf":"𝕡","Popf":"ℙ","pound":"£","prap":"⪷","Pr":"⪻","pr":"≺","prcue":"≼","precapprox":"⪷","prec":"≺","preccurlyeq":"≼","Precedes":"≺","PrecedesEqual":"⪯","PrecedesSlantEqual":"≼","PrecedesTilde":"≾","preceq":"⪯","precnapprox":"⪹","precneqq":"⪵","precnsim":"⋨","pre":"⪯","prE":"⪳","precsim":"≾","prime":"′","Prime":"″","primes":"ℙ","prnap":"⪹","prnE":"⪵","prnsim":"⋨","prod":"∏","Product":"∏","profalar":"⌮","profline":"⌒","profsurf":"⌓","prop":"∝","Proportional":"∝","Proportion":"∷","propto":"∝","prsim":"≾","prurel":"⊰","Pscr":"𝒫","pscr":"𝓅","Psi":"Ψ","psi":"ψ","puncsp":" ","Qfr":"𝔔","qfr":"𝔮","qint":"⨌","qopf":"𝕢","Qopf":"ℚ","qprime":"⁗","Qscr":"𝒬","qscr":"𝓆","quaternions":"ℍ","quatint":"⨖","quest":"?","questeq":"≟","quot":"\"","QUOT":"\"","rAarr":"⇛","race":"∽̱","Racute":"Ŕ","racute":"ŕ","radic":"√","raemptyv":"⦳","rang":"⟩","Rang":"⟫","rangd":"⦒","range":"⦥","rangle":"⟩","raquo":"»","rarrap":"⥵","rarrb":"⇥","rarrbfs":"⤠","rarrc":"⤳","rarr":"→","Rarr":"↠","rArr":"⇒","rarrfs":"⤞","rarrhk":"↪","rarrlp":"↬","rarrpl":"⥅","rarrsim":"⥴","Rarrtl":"⤖","rarrtl":"↣","rarrw":"↝","ratail":"⤚","rAtail":"⤜","ratio":"∶","rationals":"ℚ","rbarr":"⤍","rBarr":"⤏","RBarr":"⤐","rbbrk":"❳","rbrace":"}","rbrack":"]","rbrke":"⦌","rbrksld":"⦎","rbrkslu":"⦐","Rcaron":"Ř","rcaron":"ř","Rcedil":"Ŗ","rcedil":"ŗ","rceil":"⌉","rcub":"}","Rcy":"Р","rcy":"р","rdca":"⤷","rdldhar":"⥩","rdquo":"”","rdquor":"”","rdsh":"↳","real":"ℜ","realine":"ℛ","realpart":"ℜ","reals":"ℝ","Re":"ℜ","rect":"▭","reg":"®","REG":"®","ReverseElement":"∋","ReverseEquilibrium":"⇋","ReverseUpEquilibrium":"⥯","rfisht":"⥽","rfloor":"⌋","rfr":"𝔯","Rfr":"ℜ","rHar":"⥤","rhard":"⇁","rharu":"⇀","rharul":"⥬","Rho":"Ρ","rho":"ρ","rhov":"ϱ","RightAngleBracket":"⟩","RightArrowBar":"⇥","rightarrow":"→","RightArrow":"→","Rightarrow":"⇒","RightArrowLeftArrow":"⇄","rightarrowtail":"↣","RightCeiling":"⌉","RightDoubleBracket":"⟧","RightDownTeeVector":"⥝","RightDownVectorBar":"⥕","RightDownVector":"⇂","RightFloor":"⌋","rightharpoondown":"⇁","rightharpoonup":"⇀","rightleftarrows":"⇄","rightleftharpoons":"⇌","rightrightarrows":"⇉","rightsquigarrow":"↝","RightTeeArrow":"↦","RightTee":"⊢","RightTeeVector":"⥛","rightthreetimes":"⋌","RightTriangleBar":"⧐","RightTriangle":"⊳","RightTriangleEqual":"⊵","RightUpDownVector":"⥏","RightUpTeeVector":"⥜","RightUpVectorBar":"⥔","RightUpVector":"↾","RightVectorBar":"⥓","RightVector":"⇀","ring":"˚","risingdotseq":"≓","rlarr":"⇄","rlhar":"⇌","rlm":"‏","rmoustache":"⎱","rmoust":"⎱","rnmid":"⫮","roang":"⟭","roarr":"⇾","robrk":"⟧","ropar":"⦆","ropf":"𝕣","Ropf":"ℝ","roplus":"⨮","rotimes":"⨵","RoundImplies":"⥰","rpar":")","rpargt":"⦔","rppolint":"⨒","rrarr":"⇉","Rrightarrow":"⇛","rsaquo":"›","rscr":"𝓇","Rscr":"ℛ","rsh":"↱","Rsh":"↱","rsqb":"]","rsquo":"’","rsquor":"’","rthree":"⋌","rtimes":"⋊","rtri":"▹","rtrie":"⊵","rtrif":"▸","rtriltri":"⧎","RuleDelayed":"⧴","ruluhar":"⥨","rx":"℞","Sacute":"Ś","sacute":"ś","sbquo":"‚","scap":"⪸","Scaron":"Š","scaron":"š","Sc":"⪼","sc":"≻","sccue":"≽","sce":"⪰","scE":"⪴","Scedil":"Ş","scedil":"ş","Scirc":"Ŝ","scirc":"ŝ","scnap":"⪺","scnE":"⪶","scnsim":"⋩","scpolint":"⨓","scsim":"≿","Scy":"С","scy":"с","sdotb":"⊡","sdot":"⋅","sdote":"⩦","searhk":"⤥","searr":"↘","seArr":"⇘","searrow":"↘","sect":"§","semi":";","seswar":"⤩","setminus":"∖","setmn":"∖","sext":"✶","Sfr":"𝔖","sfr":"𝔰","sfrown":"⌢","sharp":"♯","SHCHcy":"Щ","shchcy":"щ","SHcy":"Ш","shcy":"ш","ShortDownArrow":"↓","ShortLeftArrow":"←","shortmid":"∣","shortparallel":"∥","ShortRightArrow":"→","ShortUpArrow":"↑","shy":"­","Sigma":"Σ","sigma":"σ","sigmaf":"ς","sigmav":"ς","sim":"∼","simdot":"⩪","sime":"≃","simeq":"≃","simg":"⪞","simgE":"⪠","siml":"⪝","simlE":"⪟","simne":"≆","simplus":"⨤","simrarr":"⥲","slarr":"←","SmallCircle":"∘","smallsetminus":"∖","smashp":"⨳","smeparsl":"⧤","smid":"∣","smile":"⌣","smt":"⪪","smte":"⪬","smtes":"⪬︀","SOFTcy":"Ь","softcy":"ь","solbar":"⌿","solb":"⧄","sol":"/","Sopf":"𝕊","sopf":"𝕤","spades":"♠","spadesuit":"♠","spar":"∥","sqcap":"⊓","sqcaps":"⊓︀","sqcup":"⊔","sqcups":"⊔︀","Sqrt":"√","sqsub":"⊏","sqsube":"⊑","sqsubset":"⊏","sqsubseteq":"⊑","sqsup":"⊐","sqsupe":"⊒","sqsupset":"⊐","sqsupseteq":"⊒","square":"□","Square":"□","SquareIntersection":"⊓","SquareSubset":"⊏","SquareSubsetEqual":"⊑","SquareSuperset":"⊐","SquareSupersetEqual":"⊒","SquareUnion":"⊔","squarf":"▪","squ":"□","squf":"▪","srarr":"→","Sscr":"𝒮","sscr":"𝓈","ssetmn":"∖","ssmile":"⌣","sstarf":"⋆","Star":"⋆","star":"☆","starf":"★","straightepsilon":"ϵ","straightphi":"ϕ","strns":"¯","sub":"⊂","Sub":"⋐","subdot":"⪽","subE":"⫅","sube":"⊆","subedot":"⫃","submult":"⫁","subnE":"⫋","subne":"⊊","subplus":"⪿","subrarr":"⥹","subset":"⊂","Subset":"⋐","subseteq":"⊆","subseteqq":"⫅","SubsetEqual":"⊆","subsetneq":"⊊","subsetneqq":"⫋","subsim":"⫇","subsub":"⫕","subsup":"⫓","succapprox":"⪸","succ":"≻","succcurlyeq":"≽","Succeeds":"≻","SucceedsEqual":"⪰","SucceedsSlantEqual":"≽","SucceedsTilde":"≿","succeq":"⪰","succnapprox":"⪺","succneqq":"⪶","succnsim":"⋩","succsim":"≿","SuchThat":"∋","sum":"∑","Sum":"∑","sung":"♪","sup1":"¹","sup2":"²","sup3":"³","sup":"⊃","Sup":"⋑","supdot":"⪾","supdsub":"⫘","supE":"⫆","supe":"⊇","supedot":"⫄","Superset":"⊃","SupersetEqual":"⊇","suphsol":"⟉","suphsub":"⫗","suplarr":"⥻","supmult":"⫂","supnE":"⫌","supne":"⊋","supplus":"⫀","supset":"⊃","Supset":"⋑","supseteq":"⊇","supseteqq":"⫆","supsetneq":"⊋","supsetneqq":"⫌","supsim":"⫈","supsub":"⫔","supsup":"⫖","swarhk":"⤦","swarr":"↙","swArr":"⇙","swarrow":"↙","swnwar":"⤪","szlig":"ß","Tab":"\t","target":"⌖","Tau":"Τ","tau":"τ","tbrk":"⎴","Tcaron":"Ť","tcaron":"ť","Tcedil":"Ţ","tcedil":"ţ","Tcy":"Т","tcy":"т","tdot":"⃛","telrec":"⌕","Tfr":"𝔗","tfr":"𝔱","there4":"∴","therefore":"∴","Therefore":"∴","Theta":"Θ","theta":"θ","thetasym":"ϑ","thetav":"ϑ","thickapprox":"≈","thicksim":"∼","ThickSpace":"  ","ThinSpace":" ","thinsp":" ","thkap":"≈","thksim":"∼","THORN":"Þ","thorn":"þ","tilde":"˜","Tilde":"∼","TildeEqual":"≃","TildeFullEqual":"≅","TildeTilde":"≈","timesbar":"⨱","timesb":"⊠","times":"×","timesd":"⨰","tint":"∭","toea":"⤨","topbot":"⌶","topcir":"⫱","top":"⊤","Topf":"𝕋","topf":"𝕥","topfork":"⫚","tosa":"⤩","tprime":"‴","trade":"™","TRADE":"™","triangle":"▵","triangledown":"▿","triangleleft":"◃","trianglelefteq":"⊴","triangleq":"≜","triangleright":"▹","trianglerighteq":"⊵","tridot":"◬","trie":"≜","triminus":"⨺","TripleDot":"⃛","triplus":"⨹","trisb":"⧍","tritime":"⨻","trpezium":"⏢","Tscr":"𝒯","tscr":"𝓉","TScy":"Ц","tscy":"ц","TSHcy":"Ћ","tshcy":"ћ","Tstrok":"Ŧ","tstrok":"ŧ","twixt":"≬","twoheadleftarrow":"↞","twoheadrightarrow":"↠","Uacute":"Ú","uacute":"ú","uarr":"↑","Uarr":"↟","uArr":"⇑","Uarrocir":"⥉","Ubrcy":"Ў","ubrcy":"ў","Ubreve":"Ŭ","ubreve":"ŭ","Ucirc":"Û","ucirc":"û","Ucy":"У","ucy":"у","udarr":"⇅","Udblac":"Ű","udblac":"ű","udhar":"⥮","ufisht":"⥾","Ufr":"𝔘","ufr":"𝔲","Ugrave":"Ù","ugrave":"ù","uHar":"⥣","uharl":"↿","uharr":"↾","uhblk":"▀","ulcorn":"⌜","ulcorner":"⌜","ulcrop":"⌏","ultri":"◸","Umacr":"Ū","umacr":"ū","uml":"¨","UnderBar":"_","UnderBrace":"⏟","UnderBracket":"⎵","UnderParenthesis":"⏝","Union":"⋃","UnionPlus":"⊎","Uogon":"Ų","uogon":"ų","Uopf":"𝕌","uopf":"𝕦","UpArrowBar":"⤒","uparrow":"↑","UpArrow":"↑","Uparrow":"⇑","UpArrowDownArrow":"⇅","updownarrow":"↕","UpDownArrow":"↕","Updownarrow":"⇕","UpEquilibrium":"⥮","upharpoonleft":"↿","upharpoonright":"↾","uplus":"⊎","UpperLeftArrow":"↖","UpperRightArrow":"↗","upsi":"υ","Upsi":"ϒ","upsih":"ϒ","Upsilon":"Υ","upsilon":"υ","UpTeeArrow":"↥","UpTee":"⊥","upuparrows":"⇈","urcorn":"⌝","urcorner":"⌝","urcrop":"⌎","Uring":"Ů","uring":"ů","urtri":"◹","Uscr":"𝒰","uscr":"𝓊","utdot":"⋰","Utilde":"Ũ","utilde":"ũ","utri":"▵","utrif":"▴","uuarr":"⇈","Uuml":"Ü","uuml":"ü","uwangle":"⦧","vangrt":"⦜","varepsilon":"ϵ","varkappa":"ϰ","varnothing":"∅","varphi":"ϕ","varpi":"ϖ","varpropto":"∝","varr":"↕","vArr":"⇕","varrho":"ϱ","varsigma":"ς","varsubsetneq":"⊊︀","varsubsetneqq":"⫋︀","varsupsetneq":"⊋︀","varsupsetneqq":"⫌︀","vartheta":"ϑ","vartriangleleft":"⊲","vartriangleright":"⊳","vBar":"⫨","Vbar":"⫫","vBarv":"⫩","Vcy":"В","vcy":"в","vdash":"⊢","vDash":"⊨","Vdash":"⊩","VDash":"⊫","Vdashl":"⫦","veebar":"⊻","vee":"∨","Vee":"⋁","veeeq":"≚","vellip":"⋮","verbar":"|","Verbar":"‖","vert":"|","Vert":"‖","VerticalBar":"∣","VerticalLine":"|","VerticalSeparator":"❘","VerticalTilde":"≀","VeryThinSpace":" ","Vfr":"𝔙","vfr":"𝔳","vltri":"⊲","vnsub":"⊂⃒","vnsup":"⊃⃒","Vopf":"𝕍","vopf":"𝕧","vprop":"∝","vrtri":"⊳","Vscr":"𝒱","vscr":"𝓋","vsubnE":"⫋︀","vsubne":"⊊︀","vsupnE":"⫌︀","vsupne":"⊋︀","Vvdash":"⊪","vzigzag":"⦚","Wcirc":"Ŵ","wcirc":"ŵ","wedbar":"⩟","wedge":"∧","Wedge":"⋀","wedgeq":"≙","weierp":"℘","Wfr":"𝔚","wfr":"𝔴","Wopf":"𝕎","wopf":"𝕨","wp":"℘","wr":"≀","wreath":"≀","Wscr":"𝒲","wscr":"𝓌","xcap":"⋂","xcirc":"◯","xcup":"⋃","xdtri":"▽","Xfr":"𝔛","xfr":"𝔵","xharr":"⟷","xhArr":"⟺","Xi":"Ξ","xi":"ξ","xlarr":"⟵","xlArr":"⟸","xmap":"⟼","xnis":"⋻","xodot":"⨀","Xopf":"𝕏","xopf":"𝕩","xoplus":"⨁","xotime":"⨂","xrarr":"⟶","xrArr":"⟹","Xscr":"𝒳","xscr":"𝓍","xsqcup":"⨆","xuplus":"⨄","xutri":"△","xvee":"⋁","xwedge":"⋀","Yacute":"Ý","yacute":"ý","YAcy":"Я","yacy":"я","Ycirc":"Ŷ","ycirc":"ŷ","Ycy":"Ы","ycy":"ы","yen":"¥","Yfr":"𝔜","yfr":"𝔶","YIcy":"Ї","yicy":"ї","Yopf":"𝕐","yopf":"𝕪","Yscr":"𝒴","yscr":"𝓎","YUcy":"Ю","yucy":"ю","yuml":"ÿ","Yuml":"Ÿ","Zacute":"Ź","zacute":"ź","Zcaron":"Ž","zcaron":"ž","Zcy":"З","zcy":"з","Zdot":"Ż","zdot":"ż","zeetrf":"ℨ","ZeroWidthSpace":"​","Zeta":"Ζ","zeta":"ζ","zfr":"𝔷","Zfr":"ℨ","ZHcy":"Ж","zhcy":"ж","zigrarr":"⇝","zopf":"𝕫","Zopf":"ℤ","Zscr":"𝒵","zscr":"𝓏","zwj":"‍","zwnj":"‌"}
 
 /***/ }),
-/* 1077 */
+/* 1075 */
 /***/ (function(module, exports) {
 
 module.exports = {"Aacute":"Á","aacute":"á","Acirc":"Â","acirc":"â","acute":"´","AElig":"Æ","aelig":"æ","Agrave":"À","agrave":"à","amp":"&","AMP":"&","Aring":"Å","aring":"å","Atilde":"Ã","atilde":"ã","Auml":"Ä","auml":"ä","brvbar":"¦","Ccedil":"Ç","ccedil":"ç","cedil":"¸","cent":"¢","copy":"©","COPY":"©","curren":"¤","deg":"°","divide":"÷","Eacute":"É","eacute":"é","Ecirc":"Ê","ecirc":"ê","Egrave":"È","egrave":"è","ETH":"Ð","eth":"ð","Euml":"Ë","euml":"ë","frac12":"½","frac14":"¼","frac34":"¾","gt":">","GT":">","Iacute":"Í","iacute":"í","Icirc":"Î","icirc":"î","iexcl":"¡","Igrave":"Ì","igrave":"ì","iquest":"¿","Iuml":"Ï","iuml":"ï","laquo":"«","lt":"<","LT":"<","macr":"¯","micro":"µ","middot":"·","nbsp":" ","not":"¬","Ntilde":"Ñ","ntilde":"ñ","Oacute":"Ó","oacute":"ó","Ocirc":"Ô","ocirc":"ô","Ograve":"Ò","ograve":"ò","ordf":"ª","ordm":"º","Oslash":"Ø","oslash":"ø","Otilde":"Õ","otilde":"õ","Ouml":"Ö","ouml":"ö","para":"¶","plusmn":"±","pound":"£","quot":"\"","QUOT":"\"","raquo":"»","reg":"®","REG":"®","sect":"§","shy":"­","sup1":"¹","sup2":"²","sup3":"³","szlig":"ß","THORN":"Þ","thorn":"þ","times":"×","Uacute":"Ú","uacute":"ú","Ucirc":"Û","ucirc":"û","Ugrave":"Ù","ugrave":"ù","uml":"¨","Uuml":"Ü","uuml":"ü","Yacute":"Ý","yacute":"ý","yen":"¥","yuml":"ÿ"}
 
 /***/ }),
-/* 1078 */
+/* 1076 */
 /***/ (function(module, exports) {
 
 module.exports = {"amp":"&","apos":"'","gt":">","lt":"<","quot":"\""}
 
 /***/ }),
-/* 1079 */
+/* 1077 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var ElementType = __webpack_require__(1080);
+var ElementType = __webpack_require__(1078);
 
 var re_whitespace = /\s+/g;
-var NodePrototype = __webpack_require__(669);
-var ElementPrototype = __webpack_require__(1081);
+var NodePrototype = __webpack_require__(667);
+var ElementPrototype = __webpack_require__(1079);
 
 function DomHandler(callback, options, elementCB){
 	if(typeof callback === "object"){
@@ -61039,7 +61035,7 @@ module.exports = DomHandler;
 
 
 /***/ }),
-/* 1080 */
+/* 1078 */
 /***/ (function(module, exports) {
 
 //Types of elements found in the DOM
@@ -61060,11 +61056,11 @@ module.exports = {
 
 
 /***/ }),
-/* 1081 */
+/* 1079 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // DOM-Level-1-compliant structure
-var NodePrototype = __webpack_require__(669);
+var NodePrototype = __webpack_require__(667);
 var ElementPrototype = module.exports = Object.create(NodePrototype);
 
 var domLvl1 = {
@@ -61086,7 +61082,7 @@ Object.keys(domLvl1).forEach(function(key) {
 
 
 /***/ }),
-/* 1082 */
+/* 1080 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -61101,11 +61097,11 @@ module.exports = {
 
 
 /***/ }),
-/* 1083 */
+/* 1081 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var _camelize = __webpack_require__(1084);
-var _curry = __webpack_require__(1089);
+var _camelize = __webpack_require__(1082);
+var _curry = __webpack_require__(1087);
 
 module.exports = _curry(function camelize(str) {
   return _camelize(str, true);
@@ -61113,11 +61109,11 @@ module.exports = _curry(function camelize(str) {
 
 
 /***/ }),
-/* 1084 */
+/* 1082 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var trim = __webpack_require__(1085);
-var decap = __webpack_require__(1088);
+var trim = __webpack_require__(1083);
+var decap = __webpack_require__(1086);
 
 module.exports = function camelize(str, decapitalize) {
   str = trim(str).replace(/[-_\s]+(.)?/g, function(match, c) {
@@ -61133,11 +61129,11 @@ module.exports = function camelize(str, decapitalize) {
 
 
 /***/ }),
-/* 1085 */
+/* 1083 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var makeString = __webpack_require__(583);
-var defaultToWhiteSpace = __webpack_require__(1086);
+var defaultToWhiteSpace = __webpack_require__(1084);
 var nativeTrim = String.prototype.trim;
 
 module.exports = function trim(str, characters) {
@@ -61149,10 +61145,10 @@ module.exports = function trim(str, characters) {
 
 
 /***/ }),
-/* 1086 */
+/* 1084 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var escapeRegExp = __webpack_require__(1087);
+var escapeRegExp = __webpack_require__(1085);
 
 module.exports = function defaultToWhiteSpace(characters) {
   if (characters == null)
@@ -61165,7 +61161,7 @@ module.exports = function defaultToWhiteSpace(characters) {
 
 
 /***/ }),
-/* 1087 */
+/* 1085 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var makeString = __webpack_require__(583);
@@ -61176,7 +61172,7 @@ module.exports = function escapeRegExp(str) {
 
 
 /***/ }),
-/* 1088 */
+/* 1086 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var makeString = __webpack_require__(583);
@@ -61188,11 +61184,11 @@ module.exports = function decapitalize(str) {
 
 
 /***/ }),
-/* 1089 */
+/* 1087 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var merge = __webpack_require__(1090),
-    countDefinedItems = __webpack_require__(1092),
+var merge = __webpack_require__(1088),
+    countDefinedItems = __webpack_require__(1090),
     slice = Array.prototype.slice,
     __;
 
@@ -61232,10 +61228,10 @@ module.exports.__ = __;
 
 
 /***/ }),
-/* 1090 */
+/* 1088 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var map = __webpack_require__(1091);
+var map = __webpack_require__(1089);
 
 module.exports = function merge(args, curryArgs) {
   var mergedArgs = [];
@@ -61253,10 +61249,10 @@ module.exports = function merge(args, curryArgs) {
 
 
 /***/ }),
-/* 1091 */
+/* 1089 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var forEach = __webpack_require__(673);
+var forEach = __webpack_require__(671);
 
 module.exports = function map(arr, fn) {
   var newArr = [];
@@ -61270,10 +61266,10 @@ module.exports = function map(arr, fn) {
 
 
 /***/ }),
-/* 1092 */
+/* 1090 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var forEach = __webpack_require__(673);
+var forEach = __webpack_require__(671);
 
 module.exports = function(args) {
   var count = 0;
@@ -61289,7 +61285,7 @@ module.exports = function(args) {
 
 
 /***/ }),
-/* 1093 */
+/* 1091 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var _curry1 = /*#__PURE__*/__webpack_require__(172);
@@ -61328,10 +61324,10 @@ var toPairs = /*#__PURE__*/_curry1(function toPairs(obj) {
 module.exports = toPairs;
 
 /***/ }),
-/* 1094 */
+/* 1092 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var _curry3 = /*#__PURE__*/__webpack_require__(1095);
+var _curry3 = /*#__PURE__*/__webpack_require__(1093);
 
 var _reduce = /*#__PURE__*/__webpack_require__(580);
 
@@ -61387,7 +61383,7 @@ var reduce = /*#__PURE__*/_curry3(_reduce);
 module.exports = reduce;
 
 /***/ }),
-/* 1095 */
+/* 1093 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var _curry1 = /*#__PURE__*/__webpack_require__(172);
@@ -61443,7 +61439,7 @@ function _curry3(fn) {
 module.exports = _curry3;
 
 /***/ }),
-/* 1096 */
+/* 1094 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -61531,7 +61527,7 @@ module.exports = camelCaseMap;
 
 
 /***/ }),
-/* 1097 */
+/* 1095 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -61644,17 +61640,17 @@ exports.default = createParser();
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 1098 */
+/* 1096 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-module.exports = __webpack_require__(1099);
+module.exports = __webpack_require__(1097);
 
 
 /***/ }),
-/* 1099 */
+/* 1097 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -61669,7 +61665,7 @@ module.exports = __webpack_require__(1099);
 
 
 var ReactDefaultInjection = __webpack_require__(279);
-var ReactServerRendering = __webpack_require__(1100);
+var ReactServerRendering = __webpack_require__(1098);
 var ReactVersion = __webpack_require__(287);
 
 ReactDefaultInjection.inject();
@@ -61683,7 +61679,7 @@ var ReactDOMServer = {
 module.exports = ReactDOMServer;
 
 /***/ }),
-/* 1100 */
+/* 1098 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -61704,7 +61700,7 @@ var ReactDefaultBatchingStrategy = __webpack_require__(284);
 var ReactInstrumentation = __webpack_require__(19);
 var ReactMarkupChecksum = __webpack_require__(286);
 var ReactReconciler = __webpack_require__(44);
-var ReactServerBatchingStrategy = __webpack_require__(1101);
+var ReactServerBatchingStrategy = __webpack_require__(1099);
 var ReactServerRenderingTransaction = __webpack_require__(283);
 var ReactUpdates = __webpack_require__(25);
 
@@ -61776,7 +61772,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 1101 */
+/* 1099 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -61801,10 +61797,10 @@ var ReactServerBatchingStrategy = {
 module.exports = ReactServerBatchingStrategy;
 
 /***/ }),
-/* 1102 */
+/* 1100 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var data = __webpack_require__(1103)
+var data = __webpack_require__(1101)
 var objectAssign = __webpack_require__(4)
 
 Object.keys(data).forEach(function(key) {
@@ -61875,10 +61871,43 @@ module.exports = data
 
 
 /***/ }),
-/* 1103 */
+/* 1101 */
 /***/ (function(module, exports) {
 
 module.exports = {"alert":{"keywords":["warning","triangle","exclamation","point"],"path":"<path fill-rule=\"evenodd\" d=\"M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z\"/>","height":"16","width":"16"},"arrow-down":{"keywords":["point","direction"],"path":"<path fill-rule=\"evenodd\" d=\"M7 7V3H3v4H0l5 6 5-6z\"/>","height":"16","width":"10"},"arrow-left":{"keywords":["point","direction"],"path":"<path fill-rule=\"evenodd\" d=\"M6 3L0 8l6 5v-3h4V6H6z\"/>","height":"16","width":"10"},"arrow-right":{"keywords":["point","direction"],"path":"<path fill-rule=\"evenodd\" d=\"M10 8L4 3v3H0v4h4v3z\"/>","height":"16","width":"10"},"arrow-small-down":{"keywords":["point","direction"],"path":"<path fill-rule=\"evenodd\" d=\"M4 7V5H2v2H0l3 4 3-4z\"/>","height":"16","width":"6"},"arrow-small-left":{"keywords":["point","direction","little","tiny"],"path":"<path fill-rule=\"evenodd\" d=\"M4 7V5L0 8l4 3V9h2V7z\"/>","height":"16","width":"6"},"arrow-small-right":{"keywords":["point","direction","little","tiny"],"path":"<path fill-rule=\"evenodd\" d=\"M6 8L2 5v2H0v2h2v2z\"/>","height":"16","width":"6"},"arrow-small-up":{"keywords":["point","direction","little","tiny"],"path":"<path fill-rule=\"evenodd\" d=\"M3 5L0 9h2v2h2V9h2z\"/>","height":"16","width":"6"},"arrow-up":{"keywords":["point","direction"],"path":"<path fill-rule=\"evenodd\" d=\"M5 3L0 9h3v4h4V9h3z\"/>","height":"16","width":"10"},"beaker":{"keywords":["experiment","labs","experimental","feature","test","science","education","study","development","testing"],"path":"<path fill-rule=\"evenodd\" d=\"M14.38 14.59L11 7V3h1V2H3v1h1v4L.63 14.59A1 1 0 0 0 1.54 16h11.94c.72 0 1.2-.75.91-1.41h-.01zM3.75 10L5 7V3h5v4l1.25 3h-7.5zM8 8h1v1H8V8zM7 7H6V6h1v1zm0-3h1v1H7V4zm0-3H6V0h1v1z\"/>","height":"16","width":"16"},"bell":{"keywords":["notification"],"path":"<path fill-rule=\"evenodd\" d=\"M14 12v1H0v-1l.73-.58c.77-.77.81-2.55 1.19-4.42C2.69 3.23 6 2 6 2c0-.55.45-1 1-1s1 .45 1 1c0 0 3.39 1.23 4.16 5 .38 1.88.42 3.66 1.19 4.42l.66.58H14zm-7 4c1.11 0 2-.89 2-2H5c0 1.11.89 2 2 2z\"/>","height":"16","width":"14"},"bold":{"keywords":["bold"],"path":"<path fill-rule=\"evenodd\" d=\"M1 2h3.83c2.48 0 4.3.75 4.3 2.95 0 1.14-.63 2.23-1.67 2.61v.06c1.33.3 2.3 1.23 2.3 2.86 0 2.39-1.97 3.52-4.61 3.52H1V2zm3.66 4.95c1.67 0 2.38-.66 2.38-1.69 0-1.17-.78-1.61-2.34-1.61H3.13v3.3h1.53zm.27 5.39c1.77 0 2.75-.64 2.75-1.98 0-1.27-.95-1.81-2.75-1.81h-1.8v3.8h1.8v-.01z\"/>","height":"16","width":"10"},"book":{"keywords":["book","journal","wiki","readme"],"path":"<path fill-rule=\"evenodd\" d=\"M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z\"/>","height":"16","width":"16"},"bookmark":{"keywords":["tabbard"],"path":"<path fill-rule=\"evenodd\" d=\"M9 0H1C.27 0 0 .27 0 1v15l5-3.09L10 16V1c0-.73-.27-1-1-1zm-.78 4.25L6.36 5.61l.72 2.16c.06.22-.02.28-.2.17L5 6.6 3.12 7.94c-.19.11-.25.05-.2-.17l.72-2.16-1.86-1.36c-.17-.16-.14-.23.09-.23l2.3-.03.7-2.16h.25l.7 2.16 2.3.03c.23 0 .27.08.09.23h.01z\"/>","height":"16","width":"10"},"briefcase":{"keywords":["suitcase","business"],"path":"<path fill-rule=\"evenodd\" d=\"M9 4V3c0-.55-.45-1-1-1H6c-.55 0-1 .45-1 1v1H1c-.55 0-1 .45-1 1v8c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1H9zM6 3h2v1H6V3zm7 6H8v1H6V9H1V5h1v3h10V5h1v4z\"/>","height":"16","width":"14"},"broadcast":{"keywords":["rss","radio","signal"],"path":"<path fill-rule=\"evenodd\" d=\"M9 9H8c.55 0 1-.45 1-1V7c0-.55-.45-1-1-1H7c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1H6c-.55 0-1 .45-1 1v2h1v3c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-3h1v-2c0-.55-.45-1-1-1zM7 7h1v1H7V7zm2 4H8v4H7v-4H6v-1h3v1zm2.09-3.5c0-1.98-1.61-3.59-3.59-3.59A3.593 3.593 0 0 0 4 8.31v1.98c-.61-.77-1-1.73-1-2.8 0-2.48 2.02-4.5 4.5-4.5S12 5.01 12 7.49c0 1.06-.39 2.03-1 2.8V8.31c.06-.27.09-.53.09-.81zm3.91 0c0 2.88-1.63 5.38-4 6.63v-1.05a6.553 6.553 0 0 0 3.09-5.58A6.59 6.59 0 0 0 7.5.91 6.59 6.59 0 0 0 .91 7.5c0 2.36 1.23 4.42 3.09 5.58v1.05A7.497 7.497 0 0 1 7.5 0C11.64 0 15 3.36 15 7.5z\"/>","height":"16","width":"16"},"browser":{"keywords":["window","web"],"path":"<path fill-rule=\"evenodd\" d=\"M5 3h1v1H5V3zM3 3h1v1H3V3zM1 3h1v1H1V3zm12 10H1V5h12v8zm0-9H7V3h6v1zm1-1c0-.55-.45-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V3z\"/>","height":"16","width":"14"},"bug":{"keywords":["insect"],"path":"<path fill-rule=\"evenodd\" d=\"M11 10h3V9h-3V8l3.17-1.03-.34-.94L11 7V6c0-.55-.45-1-1-1V4c0-.48-.36-.88-.83-.97L10.2 2H12V1H9.8l-2 2h-.59L5.2 1H3v1h1.8l1.03 1.03C5.36 3.12 5 3.51 5 4v1c-.55 0-1 .45-1 1v1l-2.83-.97-.34.94L4 8v1H1v1h3v1L.83 12.03l.34.94L4 12v1c0 .55.45 1 1 1h1l1-1V6h1v7l1 1h1c.55 0 1-.45 1-1v-1l2.83.97.34-.94L11 11v-1zM9 5H6V4h3v1z\"/>","height":"16","width":"16"},"calendar":{"keywords":["time","day","month","year"],"path":"<path fill-rule=\"evenodd\" d=\"M13 2h-1v1.5c0 .28-.22.5-.5.5h-2c-.28 0-.5-.22-.5-.5V2H6v1.5c0 .28-.22.5-.5.5h-2c-.28 0-.5-.22-.5-.5V2H2c-.55 0-1 .45-1 1v11c0 .55.45 1 1 1h11c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 12H2V5h11v9zM5 3H4V1h1v2zm6 0h-1V1h1v2zM6 7H5V6h1v1zm2 0H7V6h1v1zm2 0H9V6h1v1zm2 0h-1V6h1v1zM4 9H3V8h1v1zm2 0H5V8h1v1zm2 0H7V8h1v1zm2 0H9V8h1v1zm2 0h-1V8h1v1zm-8 2H3v-1h1v1zm2 0H5v-1h1v1zm2 0H7v-1h1v1zm2 0H9v-1h1v1zm2 0h-1v-1h1v1zm-8 2H3v-1h1v1zm2 0H5v-1h1v1zm2 0H7v-1h1v1zm2 0H9v-1h1v1z\"/>","height":"16","width":"14"},"check":{"keywords":["mark","yes","confirm","accept","ok","success"],"path":"<path fill-rule=\"evenodd\" d=\"M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z\"/>","height":"16","width":"12"},"checklist":{"keywords":["todo"],"path":"<path fill-rule=\"evenodd\" d=\"M16 8.5l-6 6-3-3L8.5 10l1.5 1.5L14.5 7 16 8.5zM5.7 12.2l.8.8H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h7c.55 0 1 .45 1 1v6.5l-.8-.8c-.39-.39-1.03-.39-1.42 0L5.7 10.8a.996.996 0 0 0 0 1.41v-.01zM4 4h5V3H4v1zm0 2h5V5H4v1zm0 2h3V7H4v1zM3 9H2v1h1V9zm0-2H2v1h1V7zm0-2H2v1h1V5zm0-2H2v1h1V3z\"/>","height":"16","width":"16"},"chevron-down":{"keywords":["triangle","arrow"],"path":"<path fill-rule=\"evenodd\" d=\"M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6z\"/>","height":"16","width":"10"},"chevron-left":{"keywords":["triangle","arrow"],"path":"<path fill-rule=\"evenodd\" d=\"M5.5 3L7 4.5 3.25 8 7 11.5 5.5 13l-5-5z\"/>","height":"16","width":"8"},"chevron-right":{"keywords":["triangle","arrow"],"path":"<path fill-rule=\"evenodd\" d=\"M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z\"/>","height":"16","width":"8"},"chevron-up":{"keywords":["triangle","arrow"],"path":"<path fill-rule=\"evenodd\" d=\"M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5z\"/>","height":"16","width":"10"},"circle-slash":{"keywords":["no","deny","fail","failure","error","bad"],"path":"<path fill-rule=\"evenodd\" d=\"M7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm0 1.3c1.3 0 2.5.44 3.47 1.17l-8 8A5.755 5.755 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zm0 11.41c-1.3 0-2.5-.44-3.47-1.17l8-8c.73.97 1.17 2.17 1.17 3.47 0 3.14-2.56 5.7-5.7 5.7z\"/>","height":"16","width":"14"},"circuit-board":{"keywords":["developer","hardware","electricity"],"path":"<path fill-rule=\"evenodd\" d=\"M3 5c0-.55.45-1 1-1s1 .45 1 1-.45 1-1 1-1-.45-1-1zm8 0c0-.55-.45-1-1-1s-1 .45-1 1 .45 1 1 1 1-.45 1-1zm0 6c0-.55-.45-1-1-1s-1 .45-1 1 .45 1 1 1 1-.45 1-1zm2-10H5v2.17c.36.19.64.47.83.83h2.34c.42-.78 1.33-1.28 2.34-1.05.75.19 1.36.8 1.53 1.55.31 1.38-.72 2.59-2.05 2.59-.8 0-1.48-.44-1.83-1.09H5.83c-.42.8-1.33 1.28-2.34 1.03-.73-.17-1.34-.78-1.52-1.52C1.72 4.49 2.2 3.59 3 3.17V1H1c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1l5-5h2.17c.42-.78 1.33-1.28 2.34-1.05.75.19 1.36.8 1.53 1.55.31 1.38-.72 2.59-2.05 2.59-.8 0-1.48-.44-1.83-1.09H6.99L4 15h9c.55 0 1-.45 1-1V2c0-.55-.45-1-1-1z\"/>","height":"16","width":"14"},"clippy":{"keywords":["copy","paste","save","capture"],"path":"<path fill-rule=\"evenodd\" d=\"M2 13h4v1H2v-1zm5-6H2v1h5V7zm2 3V8l-3 3 3 3v-2h5v-2H9zM4.5 9H2v1h2.5V9zM2 12h2.5v-1H2v1zm9 1h1v2c-.02.28-.11.52-.3.7-.19.18-.42.28-.7.3H1c-.55 0-1-.45-1-1V4c0-.55.45-1 1-1h3c0-1.11.89-2 2-2 1.11 0 2 .89 2 2h3c.55 0 1 .45 1 1v5h-1V6H1v9h10v-2zM2 5h8c0-.55-.45-1-1-1H8c-.55 0-1-.45-1-1s-.45-1-1-1-1 .45-1 1-.45 1-1 1H3c-.55 0-1 .45-1 1z\"/>","height":"16","width":"14"},"clock":{"keywords":["time","hour","minute","second"],"path":"<path fill-rule=\"evenodd\" d=\"M8 8h3v2H7c-.55 0-1-.45-1-1V4h2v4zM7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7z\"/>","height":"16","width":"14"},"cloud-download":{"keywords":["save","install","get"],"path":"<path fill-rule=\"evenodd\" d=\"M9 12h2l-3 3-3-3h2V7h2v5zm3-8c0-.44-.91-3-4.5-3C5.08 1 3 2.92 3 5 1.02 5 0 6.52 0 8c0 1.53 1 3 3 3h3V9.7H3C1.38 9.7 1.3 8.28 1.3 8c0-.17.05-1.7 1.7-1.7h1.3V5c0-1.39 1.56-2.7 3.2-2.7 2.55 0 3.13 1.55 3.2 1.8v1.2H12c.81 0 2.7.22 2.7 2.2 0 2.09-2.25 2.2-2.7 2.2h-2V11h2c2.08 0 4-1.16 4-3.5C16 5.06 14.08 4 12 4z\"/>","height":"16","width":"16"},"cloud-upload":{"keywords":["put","export"],"path":"<path fill-rule=\"evenodd\" d=\"M7 9H5l3-3 3 3H9v5H7V9zm5-4c0-.44-.91-3-4.5-3C5.08 2 3 3.92 3 6 1.02 6 0 7.52 0 9c0 1.53 1 3 3 3h3v-1.3H3c-1.62 0-1.7-1.42-1.7-1.7 0-.17.05-1.7 1.7-1.7h1.3V6c0-1.39 1.56-2.7 3.2-2.7 2.55 0 3.13 1.55 3.2 1.8v1.2H12c.81 0 2.7.22 2.7 2.2 0 2.09-2.25 2.2-2.7 2.2h-2V12h2c2.08 0 4-1.16 4-3.5C16 6.06 14.08 5 12 5z\"/>","height":"16","width":"16"},"code":{"keywords":["brackets"],"path":"<path fill-rule=\"evenodd\" d=\"M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z\"/>","height":"16","width":"14"},"comment":{"keywords":["speak","bubble"],"path":"<path fill-rule=\"evenodd\" d=\"M14 1H2c-.55 0-1 .45-1 1v8c0 .55.45 1 1 1h2v3.5L7.5 11H14c.55 0 1-.45 1-1V2c0-.55-.45-1-1-1zm0 9H7l-2 2v-2H2V2h12v8z\"/>","height":"16","width":"16"},"comment-discussion":{"keywords":["converse","talk"],"path":"<path fill-rule=\"evenodd\" d=\"M15 1H6c-.55 0-1 .45-1 1v2H1c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h1v3l3-3h4c.55 0 1-.45 1-1V9h1l3 3V9h1c.55 0 1-.45 1-1V2c0-.55-.45-1-1-1zM9 11H4.5L3 12.5V11H1V5h4v3c0 .55.45 1 1 1h3v2zm6-3h-2v1.5L11.5 8H6V2h9v6z\"/>","height":"16","width":"16"},"credit-card":{"keywords":["money","billing","payments","transactions"],"path":"<path fill-rule=\"evenodd\" d=\"M12 9H2V8h10v1zm4-6v9c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h14c.55 0 1 .45 1 1zm-1 3H1v6h14V6zm0-3H1v1h14V3zm-9 7H2v1h4v-1z\"/>","height":"16","width":"16"},"dash":{"keywords":["hyphen","range"],"path":"<path fill-rule=\"evenodd\" d=\"M0 7v2h8V7z\"/>","height":"16","width":"8"},"dashboard":{"keywords":["speed","dial"],"path":"<path fill-rule=\"evenodd\" d=\"M9 5H8V4h1v1zm4 3h-1v1h1V8zM6 5H5v1h1V5zM5 8H4v1h1V8zm11-5.5l-.5-.5L9 7c-.06-.02-1 0-1 0-.55 0-1 .45-1 1v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-.92l6-5.58zm-1.59 4.09c.19.61.3 1.25.3 1.91 0 3.42-2.78 6.2-6.2 6.2-3.42 0-6.21-2.78-6.21-6.2 0-3.42 2.78-6.2 6.2-6.2 1.2 0 2.31.34 3.27.94l.94-.94A7.459 7.459 0 0 0 8.51 1C4.36 1 1 4.36 1 8.5 1 12.64 4.36 16 8.5 16c4.14 0 7.5-3.36 7.5-7.5 0-1.03-.2-2.02-.59-2.91l-1 1z\"/>","height":"16","width":"16"},"database":{"keywords":["disks","data"],"path":"<path fill-rule=\"evenodd\" d=\"M6 15c-3.31 0-6-.9-6-2v-2c0-.17.09-.34.21-.5.67.86 3 1.5 5.79 1.5s5.12-.64 5.79-1.5c.13.16.21.33.21.5v2c0 1.1-2.69 2-6 2zm0-4c-3.31 0-6-.9-6-2V7c0-.11.04-.21.09-.31.03-.06.07-.13.12-.19C.88 7.36 3.21 8 6 8s5.12-.64 5.79-1.5c.05.06.09.13.12.19.05.1.09.21.09.31v2c0 1.1-2.69 2-6 2zm0-4c-3.31 0-6-.9-6-2V3c0-1.1 2.69-2 6-2s6 .9 6 2v2c0 1.1-2.69 2-6 2zm0-5c-2.21 0-4 .45-4 1s1.79 1 4 1 4-.45 4-1-1.79-1-4-1z\"/>","height":"16","width":"12"},"desktop-download":{"keywords":["clone","download"],"path":"<path fill-rule=\"evenodd\" d=\"M4 6h3V0h2v6h3l-4 4-4-4zm11-4h-4v1h4v8H1V3h4V2H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5.34c-.25.61-.86 1.39-2.34 2h8c-1.48-.61-2.09-1.39-2.34-2H15c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1z\"/>","height":"16","width":"16"},"device-camera":{"keywords":["photo","picture","image","snapshot"],"path":"<path fill-rule=\"evenodd\" d=\"M15 3H7c0-.55-.45-1-1-1H2c-.55 0-1 .45-1 1-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h14c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1zM6 5H2V4h4v1zm4.5 7C8.56 12 7 10.44 7 8.5S8.56 5 10.5 5 14 6.56 14 8.5 12.44 12 10.5 12zM13 8.5c0 1.38-1.13 2.5-2.5 2.5S8 9.87 8 8.5 9.13 6 10.5 6 13 7.13 13 8.5z\"/>","height":"16","width":"16"},"device-camera-video":{"keywords":["watch","view","media","stream"],"path":"<path fill-rule=\"evenodd\" d=\"M15.2 2.09L10 5.72V3c0-.55-.45-1-1-1H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h8c.55 0 1-.45 1-1V9.28l5.2 3.63c.33.23.8 0 .8-.41v-10c0-.41-.47-.64-.8-.41z\"/>","height":"16","width":"16"},"device-desktop":{"keywords":["computer","monitor"],"path":"<path fill-rule=\"evenodd\" d=\"M15 2H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5.34c-.25.61-.86 1.39-2.34 2h8c-1.48-.61-2.09-1.39-2.34-2H15c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 9H1V3h14v8z\"/>","height":"16","width":"16"},"device-mobile":{"keywords":["phone","iphone","cellphone"],"path":"<path fill-rule=\"evenodd\" d=\"M9 0H1C.45 0 0 .45 0 1v14c0 .55.45 1 1 1h8c.55 0 1-.45 1-1V1c0-.55-.45-1-1-1zM5 15.3c-.72 0-1.3-.58-1.3-1.3 0-.72.58-1.3 1.3-1.3.72 0 1.3.58 1.3 1.3 0 .72-.58 1.3-1.3 1.3zM9 12H1V2h8v10z\"/>","height":"16","width":"10"},"diff":{"keywords":["difference","changes","compare"],"path":"<path fill-rule=\"evenodd\" d=\"M6 7h2v1H6v2H5V8H3V7h2V5h1v2zm-3 6h5v-1H3v1zM7.5 2L11 5.5V15c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h6.5zM10 6L7 3H1v12h9V6zM8.5 0H3v1h5l4 4v8h1V4.5L8.5 0z\"/>","height":"16","width":"13"},"diff-added":{"keywords":["new","addition"],"path":"<path fill-rule=\"evenodd\" d=\"M13 1H1c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V2c0-.55-.45-1-1-1zm0 13H1V2h12v12zM6 9H3V7h3V4h2v3h3v2H8v3H6V9z\"/>","height":"16","width":"14"},"diff-ignored":{"keywords":["slash"],"path":"<path fill-rule=\"evenodd\" d=\"M13 1H1c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V2c0-.55-.45-1-1-1zm0 13H1V2h12v12zm-8.5-2H3v-1.5L9.5 4H11v1.5L4.5 12z\"/>","height":"16","width":"14"},"diff-modified":{"keywords":["dot","changed","updated"],"path":"<path fill-rule=\"evenodd\" d=\"M13 1H1c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V2c0-.55-.45-1-1-1zm0 13H1V2h12v12zM4 8c0-1.66 1.34-3 3-3s3 1.34 3 3-1.34 3-3 3-3-1.34-3-3z\"/>","height":"16","width":"14"},"diff-removed":{"keywords":["deleted","subtracted","dash"],"path":"<path fill-rule=\"evenodd\" d=\"M13 1H1c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V2c0-.55-.45-1-1-1zm0 13H1V2h12v12zm-2-5H3V7h8v2z\"/>","height":"16","width":"14"},"diff-renamed":{"keywords":["moved","arrow"],"path":"<path fill-rule=\"evenodd\" d=\"M6 9H3V7h3V4l5 4-5 4V9zm8-7v12c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h12c.55 0 1 .45 1 1zm-1 0H1v12h12V2z\"/>","height":"16","width":"14"},"ellipsis":{"keywords":["dot","read","more","hidden","expand"],"path":"<path fill-rule=\"evenodd\" d=\"M11 5H1c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM4 9H2V7h2v2zm3 0H5V7h2v2zm3 0H8V7h2v2z\"/>","height":"16","width":"12"},"eye":{"keywords":["look","watch","see"],"path":"<path fill-rule=\"evenodd\" d=\"M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z\"/>","height":"16","width":"16"},"file":{"keywords":["file"],"path":"<path fill-rule=\"evenodd\" d=\"M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z\"/>","height":"16","width":"12"},"file-binary":{"keywords":["image","video","word","powerpoint","excel"],"path":"<path fill-rule=\"evenodd\" d=\"M4 12h1v1H2v-1h1v-2H2V9h2v3zm8-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5zM8 4H6v1h1v2H6v1h3V7H8V4zM2 4h3v4H2V4zm1 3h1V5H3v2zm3 2h3v4H6V9zm1 3h1v-2H7v2z\"/>","height":"16","width":"12"},"file-code":{"keywords":["text","javascript","html","css","php","ruby","coffeescript","sass","scss"],"path":"<path fill-rule=\"evenodd\" d=\"M8.5 1H1c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V4.5L8.5 1zM11 14H1V2h7l3 3v9zM5 6.98L3.5 8.5 5 10l-.5 1L2 8.5 4.5 6l.5.98zM7.5 6L10 8.5 7.5 11l-.5-.98L8.5 8.5 7 7l.5-1z\"/>","height":"16","width":"12"},"file-directory":{"keywords":["folder"],"path":"<path fill-rule=\"evenodd\" d=\"M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z\"/>","height":"16","width":"14"},"file-media":{"keywords":["image","video","audio"],"path":"<path fill-rule=\"evenodd\" d=\"M6 5h2v2H6V5zm6-.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v11l3-5 2 4 2-2 3 3V5z\"/>","height":"16","width":"12"},"file-pdf":{"keywords":["adobe"],"path":"<path fill-rule=\"evenodd\" d=\"M8.5 1H1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V4.5L8.5 1zM1 2h4a.68.68 0 0 0-.31.2 1.08 1.08 0 0 0-.23.47 4.22 4.22 0 0 0-.09 1.47c.06.609.173 1.211.34 1.8A21.78 21.78 0 0 1 3.6 8.6c-.5 1-.8 1.66-.91 1.84a7.16 7.16 0 0 0-.69.3 4.19 4.19 0 0 0-1 .64V2zm4.42 4.8a5.65 5.65 0 0 0 1.17 2.09c.275.237.595.417.94.53-.64.09-1.23.2-1.81.33a12.22 12.22 0 0 0-1.81.59c-.587.243.22-.44.61-1.25.365-.74.67-1.51.91-2.3l-.01.01zM11 14H1.5a.74.74 0 0 1-.17 0 2.12 2.12 0 0 0 .73-.44 10.14 10.14 0 0 0 1.78-2.38c.31-.13.58-.23.81-.31l.42-.14c.45-.13.94-.23 1.44-.33s1-.16 1.48-.2a8.65 8.65 0 0 0 1.39.53c.403.11.814.188 1.23.23h.38V14H11zm0-4.86a3.74 3.74 0 0 0-.64-.28 4.22 4.22 0 0 0-.75-.11c-.411.003-.822.03-1.23.08a3 3 0 0 1-1-.64 6.07 6.07 0 0 1-1.29-2.33c.111-.661.178-1.33.2-2 .02-.25.02-.5 0-.75a1.05 1.05 0 0 0-.2-.88.82.82 0 0 0-.61-.23H8l3 3v4.14z\"/>","height":"16","width":"12"},"file-submodule":{"keywords":["folder"],"path":"<path fill-rule=\"evenodd\" d=\"M10 7H4v7h9c.55 0 1-.45 1-1V8h-4V7zM9 9H5V8h4v1zm4-5H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h2V7c0-.55.45-1 1-1h6c.55 0 1 .45 1 1h3V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z\"/>","height":"16","width":"14"},"file-symlink-directory":{"keywords":["folder","subfolder","link","alias"],"path":"<path fill-rule=\"evenodd\" d=\"M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM1 3h5v1H1V3zm6 9v-2c-.98-.02-1.84.22-2.55.7-.71.48-1.19 1.25-1.45 2.3.02-1.64.39-2.88 1.13-3.73C4.86 8.43 5.82 8 7.01 8V6l4 3-4 3H7z\"/>","height":"16","width":"14"},"file-symlink-file":{"keywords":["link","alias"],"path":"<path fill-rule=\"evenodd\" d=\"M8.5 1H1c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V4.5L8.5 1zM11 14H1V2h7l3 3v9zM6 4.5l4 3-4 3v-2c-.98-.02-1.84.22-2.55.7-.71.48-1.19 1.25-1.45 2.3.02-1.64.39-2.88 1.13-3.73.73-.84 1.69-1.27 2.88-1.27v-2H6z\"/>","height":"16","width":"12"},"file-text":{"keywords":["document"],"path":"<path d=\"M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z\"/>","height":"16","width":"12"},"file-zip":{"keywords":["compress","archive"],"path":"<path fill-rule=\"evenodd\" d=\"M8.5 1H1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V4.5L8.5 1zM11 14H1V2h3v1h1V2h3l3 3v9zM5 4V3h1v1H5zM4 4h1v1H4V4zm1 2V5h1v1H5zM4 6h1v1H4V6zm1 2V7h1v1H5zM4 9.28A2 2 0 0 0 3 11v1h4v-1a2 2 0 0 0-2-2V8H4v1.28zM6 10v1H4v-1h2z\"/>","height":"16","width":"12"},"flame":{"keywords":["fire","hot","burn","trending"],"path":"<path fill-rule=\"evenodd\" d=\"M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z\"/>","height":"16","width":"12"},"fold":{"keywords":["unfold","hide","collapse"],"path":"<path fill-rule=\"evenodd\" d=\"M7 9l3 3H8v3H6v-3H4l3-3zm3-6H8V0H6v3H4l3 3 3-3zm4 2c0-.55-.45-1-1-1h-2.5l-1 1h3l-2 2h-7l-2-2h3l-1-1H1c-.55 0-1 .45-1 1l2.5 2.5L0 10c0 .55.45 1 1 1h2.5l1-1h-3l2-2h7l2 2h-3l1 1H13c.55 0 1-.45 1-1l-2.5-2.5L14 5z\"/>","height":"16","width":"14"},"gear":{"keywords":["settings"],"path":"<path fill-rule=\"evenodd\" d=\"M14 8.77v-1.6l-1.94-.64-.45-1.09.88-1.84-1.13-1.13-1.81.91-1.09-.45-.69-1.92h-1.6l-.63 1.94-1.11.45-1.84-.88-1.13 1.13.91 1.81-.45 1.09L0 7.23v1.59l1.94.64.45 1.09-.88 1.84 1.13 1.13 1.81-.91 1.09.45.69 1.92h1.59l.63-1.94 1.11-.45 1.84.88 1.13-1.13-.92-1.81.47-1.09L14 8.75v.02zM7 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z\"/>","height":"16","width":"14"},"gift":{"keywords":["package","present","skill","craft","freebie"],"path":"<path fill-rule=\"evenodd\" d=\"M13 4h-1.38c.19-.33.33-.67.36-.91.06-.67-.11-1.22-.52-1.61C11.1 1.1 10.65 1 10.1 1h-.11c-.53.02-1.11.25-1.53.58-.42.33-.73.72-.97 1.2-.23-.48-.55-.88-.97-1.2-.42-.32-1-.58-1.53-.58h-.03c-.56 0-1.06.09-1.44.48-.41.39-.58.94-.52 1.61.03.23.17.58.36.91H1.98c-.55 0-1 .45-1 1v3h1v5c0 .55.45 1 1 1h9c.55 0 1-.45 1-1V8h1V5c0-.55-.45-1-1-1H13zm-4.78-.88c.17-.36.42-.67.75-.92.3-.23.72-.39 1.05-.41h.09c.45 0 .66.11.8.25s.33.39.3.95c-.05.19-.25.61-.5 1h-2.9l.41-.88v.01zM4.09 2.04c.13-.13.31-.25.91-.25.31 0 .72.17 1.03.41.33.25.58.55.75.92L7.2 4H4.3c-.25-.39-.45-.81-.5-1-.03-.56.16-.81.3-.95l-.01-.01zM7 12.99H3V8h4v5-.01zm0-6H2V5h5v2-.01zm5 6H8V8h4v5-.01zm1-6H8V5h5v2-.01z\"/>","height":"16","width":"14"},"gist":{"keywords":["gist","github"],"path":"<path fill-rule=\"evenodd\" d=\"M7.5 5L10 7.5 7.5 10l-.75-.75L8.5 7.5 6.75 5.75 7.5 5zm-3 0L2 7.5 4.5 10l.75-.75L3.5 7.5l1.75-1.75L4.5 5zM0 13V2c0-.55.45-1 1-1h10c.55 0 1 .45 1 1v11c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1zm1 0h10V2H1v11z\"/>","height":"16","width":"12"},"gist-secret":{"keywords":["gist","secret","private"],"path":"<path fill-rule=\"evenodd\" d=\"M8 10.5L9 14H5l1-3.5L5.25 9h3.5L8 10.5zM10 6H4L2 7h10l-2-1zM9 2L7 3 5 2 4 5h6L9 2zm4.03 7.75L10 9l1 2-2 3h3.22c.45 0 .86-.31.97-.75l.56-2.28c.14-.53-.19-1.08-.72-1.22zM4 9l-3.03.75c-.53.14-.86.69-.72 1.22l.56 2.28c.11.44.52.75.97.75H5l-2-3 1-2z\"/>","height":"16","width":"14"},"git-branch":{"keywords":["branch","git"],"path":"<path fill-rule=\"evenodd\" d=\"M10 5c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v.3c-.02.52-.23.98-.63 1.38-.4.4-.86.61-1.38.63-.83.02-1.48.16-2 .45V4.72a1.993 1.993 0 0 0-1-3.72C.88 1 0 1.89 0 3a2 2 0 0 0 1 1.72v6.56c-.59.35-1 .99-1 1.72 0 1.11.89 2 2 2 1.11 0 2-.89 2-2 0-.53-.2-1-.53-1.36.09-.06.48-.41.59-.47.25-.11.56-.17.94-.17 1.05-.05 1.95-.45 2.75-1.25S8.95 7.77 9 6.73h-.02C9.59 6.37 10 5.73 10 5zM2 1.8c.66 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2C1.35 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2zm0 12.41c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm6-8c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z\"/>","height":"16","width":"10"},"git-commit":{"keywords":["save"],"path":"<path fill-rule=\"evenodd\" d=\"M10.86 7c-.45-1.72-2-3-3.86-3-1.86 0-3.41 1.28-3.86 3H0v2h3.14c.45 1.72 2 3 3.86 3 1.86 0 3.41-1.28 3.86-3H14V7h-3.14zM7 10.2c-1.22 0-2.2-.98-2.2-2.2 0-1.22.98-2.2 2.2-2.2 1.22 0 2.2.98 2.2 2.2 0 1.22-.98 2.2-2.2 2.2z\"/>","height":"16","width":"14"},"git-compare":{"keywords":["difference","changes"],"path":"<path fill-rule=\"evenodd\" d=\"M5 12H4c-.27-.02-.48-.11-.69-.31-.21-.2-.3-.42-.31-.69V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V11c.03.78.34 1.47.94 2.06.6.59 1.28.91 2.06.94h1v2l3-3-3-3v2zM2 1.8c.66 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2C1.35 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2zm11 9.48V5c-.03-.78-.34-1.47-.94-2.06-.6-.59-1.28-.91-2.06-.94H9V0L6 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 12 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z\"/>","height":"16","width":"14"},"git-merge":{"keywords":["join"],"path":"<path fill-rule=\"evenodd\" d=\"M10 7c-.73 0-1.38.41-1.73 1.02V8C7.22 7.98 6 7.64 5.14 6.98c-.75-.58-1.5-1.61-1.89-2.44A1.993 1.993 0 0 0 2 .99C.89.99 0 1.89 0 3a2 2 0 0 0 1 1.72v6.56c-.59.35-1 .99-1 1.72 0 1.11.89 2 2 2a1.993 1.993 0 0 0 1-3.72V7.67c.67.7 1.44 1.27 2.3 1.69.86.42 2.03.63 2.97.64v-.02c.36.61 1 1.02 1.73 1.02 1.11 0 2-.89 2-2 0-1.11-.89-2-2-2zm-6.8 6c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm8 6c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z\"/>","height":"16","width":"12"},"git-pull-request":{"keywords":["review"],"path":"<path fill-rule=\"evenodd\" d=\"M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z\"/>","height":"16","width":"12"},"globe":{"keywords":["world"],"path":"<path fill-rule=\"evenodd\" d=\"M7 1C3.14 1 0 4.14 0 8s3.14 7 7 7c.48 0 .94-.05 1.38-.14-.17-.08-.2-.73-.02-1.09.19-.41.81-1.45.2-1.8-.61-.35-.44-.5-.81-.91-.37-.41-.22-.47-.25-.58-.08-.34.36-.89.39-.94.02-.06.02-.27 0-.33 0-.08-.27-.22-.34-.23-.06 0-.11.11-.2.13-.09.02-.5-.25-.59-.33-.09-.08-.14-.23-.27-.34-.13-.13-.14-.03-.33-.11s-.8-.31-1.28-.48c-.48-.19-.52-.47-.52-.66-.02-.2-.3-.47-.42-.67-.14-.2-.16-.47-.2-.41-.04.06.25.78.2.81-.05.02-.16-.2-.3-.38-.14-.19.14-.09-.3-.95s.14-1.3.17-1.75c.03-.45.38.17.19-.13-.19-.3 0-.89-.14-1.11-.13-.22-.88.25-.88.25.02-.22.69-.58 1.16-.92.47-.34.78-.06 1.16.05.39.13.41.09.28-.05-.13-.13.06-.17.36-.13.28.05.38.41.83.36.47-.03.05.09.11.22s-.06.11-.38.3c-.3.2.02.22.55.61s.38-.25.31-.55c-.07-.3.39-.06.39-.06.33.22.27.02.5.08.23.06.91.64.91.64-.83.44-.31.48-.17.59.14.11-.28.3-.28.3-.17-.17-.19.02-.3.08-.11.06-.02.22-.02.22-.56.09-.44.69-.42.83 0 .14-.38.36-.47.58-.09.2.25.64.06.66-.19.03-.34-.66-1.31-.41-.3.08-.94.41-.59 1.08.36.69.92-.19 1.11-.09.19.1-.06.53-.02.55.04.02.53.02.56.61.03.59.77.53.92.55.17 0 .7-.44.77-.45.06-.03.38-.28 1.03.09.66.36.98.31 1.2.47.22.16.08.47.28.58.2.11 1.06-.03 1.28.31.22.34-.88 2.09-1.22 2.28-.34.19-.48.64-.84.92s-.81.64-1.27.91c-.41.23-.47.66-.66.8 3.14-.7 5.48-3.5 5.48-6.84 0-3.86-3.14-7-7-7L7 1zm1.64 6.56c-.09.03-.28.22-.78-.08-.48-.3-.81-.23-.86-.28 0 0-.05-.11.17-.14.44-.05.98.41 1.11.41.13 0 .19-.13.41-.05.22.08.05.13-.05.14zM6.34 1.7c-.05-.03.03-.08.09-.14.03-.03.02-.11.05-.14.11-.11.61-.25.52.03-.11.27-.58.3-.66.25zm1.23.89c-.19-.02-.58-.05-.52-.14.3-.28-.09-.38-.34-.38-.25-.02-.34-.16-.22-.19.12-.03.61.02.7.08.08.06.52.25.55.38.02.13 0 .25-.17.25zm1.47-.05c-.14.09-.83-.41-.95-.52-.56-.48-.89-.31-1-.41-.11-.1-.08-.19.11-.34.19-.15.69.06 1 .09.3.03.66.27.66.55.02.25.33.5.19.63h-.01z\"/>","height":"16","width":"14"},"grabber":{"keywords":["mover","drap","drop"],"path":"<path fill-rule=\"evenodd\" d=\"M8 4v1H0V4h8zM0 8h8V7H0v1zm0 3h8v-1H0v1z\"/>","height":"16","width":"8"},"graph":{"keywords":["trend","stats","statistics"],"path":"<path fill-rule=\"evenodd\" d=\"M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z\"/>","height":"16","width":"16"},"heart":{"keywords":["love"],"path":"<path fill-rule=\"evenodd\" d=\"M11.2 3c-.52-.63-1.25-.95-2.2-1-.97 0-1.69.42-2.2 1-.51.58-.78.92-.8 1-.02-.08-.28-.42-.8-1-.52-.58-1.17-1-2.2-1-.95.05-1.69.38-2.2 1-.52.61-.78 1.28-.8 2 0 .52.09 1.52.67 2.67C1.25 8.82 3.01 10.61 6 13c2.98-2.39 4.77-4.17 5.34-5.33C11.91 6.51 12 5.5 12 5c-.02-.72-.28-1.39-.8-2.02V3z\"/>","height":"16","width":"12"},"history":{"keywords":["time","past","revert","back"],"path":"<path fill-rule=\"evenodd\" d=\"M8 13H6V6h5v2H8v5zM7 1C4.81 1 2.87 2.02 1.59 3.59L0 2v4h4L2.5 4.5C3.55 3.17 5.17 2.3 7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-.34.03-.67.09-1H.08C.03 7.33 0 7.66 0 8c0 3.86 3.14 7 7 7s7-3.14 7-7-3.14-7-7-7z\"/>","height":"16","width":"14"},"home":{"keywords":["welcome","index","house","building"],"path":"<path fill-rule=\"evenodd\" d=\"M16 9l-3-3V2h-2v2L8 1 0 9h2l1 5c0 .55.45 1 1 1h8c.55 0 1-.45 1-1l1-5h2zm-4 5H9v-4H7v4H4L2.81 7.69 8 2.5l5.19 5.19L12 14z\"/>","height":"16","width":"16"},"horizontal-rule":{"keywords":["hr"],"path":"<path fill-rule=\"evenodd\" d=\"M1 7h2v2h1V3H3v3H1V3H0v6h1V7zm9 2V7H9v2h1zm0-3V4H9v2h1zM7 6V4h2V3H6v6h1V7h2V6H7zm-7 7h10v-2H0v2z\"/>","height":"16","width":"10"},"hubot":{"keywords":["robot"],"path":"<path fill-rule=\"evenodd\" d=\"M3 6c-.55 0-1 .45-1 1v2c0 .55.45 1 1 1h8c.55 0 1-.45 1-1V7c0-.55-.45-1-1-1H3zm8 1.75L9.75 9h-1.5L7 7.75 5.75 9h-1.5L3 7.75V7h.75L5 8.25 6.25 7h1.5L9 8.25 10.25 7H11v.75zM5 11h4v1H5v-1zm2-9C3.14 2 0 4.91 0 8.5V13c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V8.5C14 4.91 10.86 2 7 2zm6 11H1V8.5c0-3.09 2.64-5.59 6-5.59s6 2.5 6 5.59V13z\"/>","height":"16","width":"14"},"inbox":{"keywords":["mail","todo","new","messages"],"path":"<path fill-rule=\"evenodd\" d=\"M14 9l-1.13-7.14c-.08-.48-.5-.86-1-.86H2.13c-.5 0-.92.38-1 .86L0 9v5c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V9zm-3.28.55l-.44.89c-.17.34-.52.56-.91.56H4.61c-.38 0-.72-.22-.89-.55l-.44-.91c-.17-.33-.52-.55-.89-.55H1l1-7h10l1 7h-1.38c-.39 0-.73.22-.91.55l.01.01z\"/>","height":"16","width":"14"},"info":{"keywords":["help"],"path":"<path fill-rule=\"evenodd\" d=\"M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z\"/>","height":"16","width":"14"},"issue-closed":{"keywords":["done","complete"],"path":"<path fill-rule=\"evenodd\" d=\"M7 10h2v2H7v-2zm2-6H7v5h2V4zm1.5 1.5l-1 1L12 9l4-4.5-1-1L12 7l-1.5-1.5zM8 13.7A5.71 5.71 0 0 1 2.3 8c0-3.14 2.56-5.7 5.7-5.7 1.83 0 3.45.88 4.5 2.2l.92-.92A6.947 6.947 0 0 0 8 1C4.14 1 1 4.14 1 8s3.14 7 7 7 7-3.14 7-7l-1.52 1.52c-.66 2.41-2.86 4.19-5.48 4.19v-.01z\"/>","height":"16","width":"16"},"issue-opened":{"keywords":["new"],"path":"<path fill-rule=\"evenodd\" d=\"M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z\"/>","height":"16","width":"14"},"issue-reopened":{"keywords":["regression"],"path":"<path fill-rule=\"evenodd\" d=\"M8 9H6V4h2v5zm-2 3h2v-2H6v2zm6.33-2H10l1.5 1.5c-1.05 1.33-2.67 2.2-4.5 2.2A5.71 5.71 0 0 1 1.3 8c0-.34.03-.67.09-1H.08C.03 7.33 0 7.66 0 8c0 3.86 3.14 7 7 7 2.19 0 4.13-1.02 5.41-2.59L14 14v-4h-1.67zM1.67 6H4L2.5 4.5C3.55 3.17 5.17 2.3 7 2.3c3.14 0 5.7 2.56 5.7 5.7 0 .34-.03.67-.09 1h1.31c.05-.33.08-.66.08-1 0-3.86-3.14-7-7-7-2.19 0-4.13 1.02-5.41 2.59L0 2v4h1.67z\"/>","height":"16","width":"14"},"italic":{"keywords":["font","italic","style"],"path":"<path fill-rule=\"evenodd\" d=\"M2.81 5h1.98L3 14H1l1.81-9zm.36-2.7c0-.7.58-1.3 1.33-1.3.56 0 1.13.38 1.13 1.03 0 .75-.59 1.3-1.33 1.3-.58 0-1.13-.38-1.13-1.03z\"/>","height":"16","width":"6"},"jersey":{"keywords":["team","game","basketball"],"path":"<path fill-rule=\"evenodd\" d=\"M4.5 6l-.5.5v5l.5.5h2l.5-.5v-5L6.5 6h-2zM6 11H5V7h1v4zm6.27-7.25C12.05 2.37 11.96 1.12 12 0H9.02c0 .27-.13.48-.39.69-.25.2-.63.3-1.13.3-.5 0-.88-.09-1.13-.3-.23-.2-.36-.42-.36-.69H3c.05 1.13-.03 2.38-.25 3.75C2.55 5.13 1.95 5.88 1 6v9c.02.27.11.48.31.69.2.21.42.3.69.31h11c.27-.02.48-.11.69-.31.21-.2.3-.42.31-.69V6c-.95-.13-1.53-.88-1.75-2.25h.02zM13 15H2V7c.89-.5 1.48-1.25 1.72-2.25S4.03 2.5 4 1h1c-.02.78.16 1.47.52 2.06.36.58 1.02.89 2 .94.98-.02 1.64-.33 2-.94.36-.59.5-1.28.48-2.06h1c.02 1.42.13 2.55.33 3.38.2.81.69 2 1.67 2.63v8V15zM8.5 6l-.5.5v5l.5.5h2l.5-.5v-5l-.5-.5h-2zm1.5 5H9V7h1v4z\"/>","height":"16","width":"14"},"kebab-horizontal":{"keywords":["kebab","dot","menu","more"],"path":"<path fill-rule=\"evenodd\" d=\"M1.5 9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z\"/>","height":"16","width":"13"},"kebab-vertical":{"keywords":["kebab","dot","menu","more"],"path":"<path fill-rule=\"evenodd\" d=\"M0 2.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0zm0 5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0zm0 5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0z\"/>","height":"16","width":"3"},"key":{"keywords":["key","lock","secure","safe"],"path":"<path fill-rule=\"evenodd\" d=\"M12.83 2.17C12.08 1.42 11.14 1.03 10 1c-1.13.03-2.08.42-2.83 1.17S6.04 3.86 6.01 5c0 .3.03.59.09.89L0 12v1l1 1h2l1-1v-1h1v-1h1v-1h2l1.09-1.11c.3.08.59.11.91.11 1.14-.03 2.08-.42 2.83-1.17S13.97 6.14 14 5c-.03-1.14-.42-2.08-1.17-2.83zM11 5.38c-.77 0-1.38-.61-1.38-1.38 0-.77.61-1.38 1.38-1.38.77 0 1.38.61 1.38 1.38 0 .77-.61 1.38-1.38 1.38z\"/>","height":"16","width":"14"},"keyboard":{"keywords":["type","keys","write","shortcuts"],"path":"<path fill-rule=\"evenodd\" d=\"M10 5H9V4h1v1zM3 6H2v1h1V6zm5-2H7v1h1V4zM4 4H2v1h2V4zm8 7h2v-1h-2v1zM8 7h1V6H8v1zm-4 3H2v1h2v-1zm8-6h-1v1h1V4zm2 0h-1v1h1V4zm-2 5h2V6h-2v3zm4-6v9c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h14c.55 0 1 .45 1 1zm-1 0H1v9h14V3zM6 7h1V6H6v1zm0-3H5v1h1V4zM4 7h1V6H4v1zm1 4h6v-1H5v1zm5-4h1V6h-1v1zM3 8H2v1h1V8zm5 0v1h1V8H8zM6 8v1h1V8H6zM5 8H4v1h1V8zm5 1h1V8h-1v1z\"/>","height":"16","width":"16"},"law":{"keywords":["legal","bill"],"path":"<path fill-rule=\"evenodd\" d=\"M7 4c-.83 0-1.5-.67-1.5-1.5S6.17 1 7 1s1.5.67 1.5 1.5S7.83 4 7 4zm7 6c0 1.11-.89 2-2 2h-1c-1.11 0-2-.89-2-2l2-4h-1c-.55 0-1-.45-1-1H8v8c.42 0 1 .45 1 1h1c.42 0 1 .45 1 1H3c0-.55.58-1 1-1h1c0-.55.58-1 1-1h.03L6 5H5c0 .55-.45 1-1 1H3l2 4c0 1.11-.89 2-2 2H2c-1.11 0-2-.89-2-2l2-4H1V5h3c0-.55.45-1 1-1h4c.55 0 1 .45 1 1h3v1h-1l2 4zM2.5 7L1 10h3L2.5 7zM13 10l-1.5-3-1.5 3h3z\"/>","height":"16","width":"14"},"light-bulb":{"keywords":["idea"],"path":"<path fill-rule=\"evenodd\" d=\"M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z\"/>","height":"16","width":"12"},"link":{"keywords":["connect","hyperlink"],"path":"<path fill-rule=\"evenodd\" d=\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\"/>","height":"16","width":"16"},"link-external":{"keywords":["out","see","more","go","to"],"path":"<path fill-rule=\"evenodd\" d=\"M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z\"/>","height":"16","width":"12"},"list-ordered":{"keywords":["numbers","tasks","todo","items"],"path":"<path fill-rule=\"evenodd\" d=\"M12 13c0 .59 0 1-.59 1H4.59C4 14 4 13.59 4 13c0-.59 0-1 .59-1h6.81c.59 0 .59.41.59 1H12zM4.59 4h6.81c.59 0 .59-.41.59-1 0-.59 0-1-.59-1H4.59C4 2 4 2.41 4 3c0 .59 0 1 .59 1zm6.81 3H4.59C4 7 4 7.41 4 8c0 .59 0 1 .59 1h6.81c.59 0 .59-.41.59-1 0-.59 0-1-.59-1zM2 1h-.72c-.3.19-.58.25-1.03.34V2H1v2.14H.16V5H3v-.86H2V1zm.25 8.13c-.17 0-.45.03-.66.06.53-.56 1.14-1.25 1.14-1.89C2.71 6.52 2.17 6 1.37 6c-.59 0-.97.2-1.38.64l.58.58c.19-.19.38-.38.64-.38.28 0 .48.16.48.52 0 .53-.77 1.2-1.7 2.06V10h3l-.09-.88h-.66l.01.01zm-.08 3.78v-.03c.44-.19.64-.47.64-.86 0-.7-.56-1.11-1.44-1.11-.48 0-.89.19-1.28.52l.55.64c.25-.2.44-.31.69-.31.27 0 .42.13.42.36 0 .27-.2.44-.86.44v.75c.83 0 .98.17.98.47 0 .25-.23.38-.58.38-.28 0-.56-.14-.81-.38l-.48.66c.3.36.77.56 1.41.56.83 0 1.53-.41 1.53-1.16 0-.5-.31-.81-.77-.94v.01z\"/>","height":"16","width":"12"},"list-unordered":{"keywords":["bullet","point","tasks","todo","items"],"path":"<path fill-rule=\"evenodd\" d=\"M2 13c0 .59 0 1-.59 1H.59C0 14 0 13.59 0 13c0-.59 0-1 .59-1h.81c.59 0 .59.41.59 1H2zm2.59-9h6.81c.59 0 .59-.41.59-1 0-.59 0-1-.59-1H4.59C4 2 4 2.41 4 3c0 .59 0 1 .59 1zM1.41 7H.59C0 7 0 7.41 0 8c0 .59 0 1 .59 1h.81c.59 0 .59-.41.59-1 0-.59 0-1-.59-1h.01zm0-5H.59C0 2 0 2.41 0 3c0 .59 0 1 .59 1h.81c.59 0 .59-.41.59-1 0-.59 0-1-.59-1h.01zm10 5H4.59C4 7 4 7.41 4 8c0 .59 0 1 .59 1h6.81c.59 0 .59-.41.59-1 0-.59 0-1-.59-1h.01zm0 5H4.59C4 12 4 12.41 4 13c0 .59 0 1 .59 1h6.81c.59 0 .59-.41.59-1 0-.59 0-1-.59-1h.01z\"/>","height":"16","width":"12"},"location":{"keywords":["here","marker"],"path":"<path fill-rule=\"evenodd\" d=\"M6 0C2.69 0 0 2.5 0 5.5 0 10.02 6 16 6 16s6-5.98 6-10.5C12 2.5 9.31 0 6 0zm0 14.55C4.14 12.52 1 8.44 1 5.5 1 3.02 3.25 1 6 1c1.34 0 2.61.48 3.56 1.36.92.86 1.44 1.97 1.44 3.14 0 2.94-3.14 7.02-5 9.05zM8 5.5c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z\"/>","height":"16","width":"12"},"lock":{"keywords":["secure","safe","protected"],"path":"<path fill-rule=\"evenodd\" d=\"M4 13H3v-1h1v1zm8-6v7c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1h1V4c0-2.2 1.8-4 4-4s4 1.8 4 4v2h1c.55 0 1 .45 1 1zM3.8 6h4.41V4c0-1.22-.98-2.2-2.2-2.2-1.22 0-2.2.98-2.2 2.2v2H3.8zM11 7H2v7h9V7zM4 8H3v1h1V8zm0 2H3v1h1v-1z\"/>","height":"16","width":"12"},"logo-gist":{"keywords":["logo","gist"],"path":"<path fill-rule=\"evenodd\" d=\"M4.7 8.73h2.45v4.02c-.55.27-1.64.34-2.53.34-2.56 0-3.47-2.2-3.47-5.05 0-2.85.91-5.06 3.48-5.06 1.28 0 2.06.23 3.28.73V2.66C7.27 2.33 6.25 2 4.63 2 1.13 2 0 4.69 0 8.03c0 3.34 1.11 6.03 4.63 6.03 1.64 0 2.81-.27 3.59-.64V7.73H4.7v1zm6.39 3.72V6.06h-1.05v6.28c0 1.25.58 1.72 1.72 1.72v-.89c-.48 0-.67-.16-.67-.7v-.02zm.25-8.72c0-.44-.33-.78-.78-.78s-.77.34-.77.78.33.78.77.78.78-.34.78-.78zm4.34 5.69c-1.5-.13-1.78-.48-1.78-1.17 0-.77.33-1.34 1.88-1.34 1.05 0 1.66.16 2.27.36v-.94c-.69-.3-1.52-.39-2.25-.39-2.2 0-2.92 1.2-2.92 2.31 0 1.08.47 1.88 2.73 2.08 1.55.13 1.77.63 1.77 1.34 0 .73-.44 1.42-2.06 1.42-1.11 0-1.86-.19-2.33-.36v.94c.5.2 1.58.39 2.33.39 2.38 0 3.14-1.2 3.14-2.41 0-1.28-.53-2.03-2.75-2.23h-.03zm8.58-2.47v-.86h-2.42v-2.5l-1.08.31v2.11l-1.56.44v.48h1.56v5c0 1.53 1.19 2.13 2.5 2.13.19 0 .52-.02.69-.05v-.89c-.19.03-.41.03-.61.03-.97 0-1.5-.39-1.5-1.34V6.94h2.42v.02-.01z\"/>","height":"16","width":"25"},"logo-github":{"keywords":["brand"],"path":"<path fill-rule=\"evenodd\" d=\"M18.53 12.03h-.02c.009 0 .015.01.024.011h.006l-.01-.01zm.004.011c-.093.001-.327.05-.574.05-.78 0-1.05-.36-1.05-.83V8.13h1.59c.09 0 .16-.08.16-.19v-1.7c0-.09-.08-.17-.16-.17h-1.59V3.96c0-.08-.05-.13-.14-.13h-2.16c-.09 0-.14.05-.14.13v2.17s-1.09.27-1.16.28c-.08.02-.13.09-.13.17v1.36c0 .11.08.19.17.19h1.11v3.28c0 2.44 1.7 2.69 2.86 2.69.53 0 1.17-.17 1.27-.22.06-.02.09-.09.09-.16v-1.5a.177.177 0 0 0-.146-.18zm23.696-2.2c0-1.81-.73-2.05-1.5-1.97-.6.04-1.08.34-1.08.34v3.52s.49.34 1.22.36c1.03.03 1.36-.34 1.36-2.25zm2.43-.16c0 3.43-1.11 4.41-3.05 4.41-1.64 0-2.52-.83-2.52-.83s-.04.46-.09.52c-.03.06-.08.08-.14.08h-1.48c-.1 0-.19-.08-.19-.17l.02-11.11c0-.09.08-.17.17-.17h2.13c.09 0 .17.08.17.17v3.77s.82-.53 2.02-.53l-.01-.02c1.2 0 2.97.45 2.97 3.88zm-8.72-3.61H33.84c-.11 0-.17.08-.17.19v5.44s-.55.39-1.3.39-.97-.34-.97-1.09V6.25c0-.09-.08-.17-.17-.17h-2.14c-.09 0-.17.08-.17.17v5.11c0 2.2 1.23 2.75 2.92 2.75 1.39 0 2.52-.77 2.52-.77s.05.39.08.45c.02.05.09.09.16.09h1.34c.11 0 .17-.08.17-.17l.02-7.47c0-.09-.08-.17-.19-.17zm-23.7-.01h-2.13c-.09 0-.17.09-.17.2v7.34c0 .2.13.27.3.27h1.92c.2 0 .25-.09.25-.27V6.23c0-.09-.08-.17-.17-.17zm-1.05-3.38c-.77 0-1.38.61-1.38 1.38 0 .77.61 1.38 1.38 1.38.75 0 1.36-.61 1.36-1.38 0-.77-.61-1.38-1.36-1.38zm16.49-.25h-2.11c-.09 0-.17.08-.17.17v4.09h-3.31V2.6c0-.09-.08-.17-.17-.17h-2.13c-.09 0-.17.08-.17.17v11.11c0 .09.09.17.17.17h2.13c.09 0 .17-.08.17-.17V8.96h3.31l-.02 4.75c0 .09.08.17.17.17h2.13c.09 0 .17-.08.17-.17V2.6c0-.09-.08-.17-.17-.17zM8.81 7.35v5.74c0 .04-.01.11-.06.13 0 0-1.25.89-3.31.89-2.49 0-5.44-.78-5.44-5.92S2.58 1.99 5.1 2c2.18 0 3.06.49 3.2.58.04.05.06.09.06.14L7.94 4.5c0 .09-.09.2-.2.17-.36-.11-.9-.33-2.17-.33-1.47 0-3.05.42-3.05 3.73s1.5 3.7 2.58 3.7c.92 0 1.25-.11 1.25-.11v-2.3H4.88c-.11 0-.19-.08-.19-.17V7.35c0-.09.08-.17.19-.17h3.74c.11 0 .19.08.19.17z\"/>","height":"16","width":"45"},"mail":{"keywords":["email","unread"],"path":"<path fill-rule=\"evenodd\" d=\"M0 4v8c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1H1c-.55 0-1 .45-1 1zm13 0L7 9 1 4h12zM1 5.5l4 3-4 3v-6zM2 12l3.5-3L7 10.5 8.5 9l3.5 3H2zm11-.5l-4-3 4-3v6z\"/>","height":"16","width":"14"},"mail-read":{"keywords":["email","open"],"path":"<path fill-rule=\"evenodd\" d=\"M6 5H4V4h2v1zm3 1H4v1h5V6zm5-.48V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V5.52c0-.33.16-.63.42-.81L2 3.58V3c0-.55.45-1 1-1h1.2L7 0l2.8 2H11c.55 0 1 .45 1 1v.58l1.58 1.13c.27.19.42.48.42.81zM3 7.5L7 10l4-2.5V3H3v4.5zm-2 6l4.5-3-4.5-3v6zm11 .5l-5-3-5 3h10zm1-6.5l-4.5 3 4.5 3v-6z\"/>","height":"16","width":"14"},"mail-reply":{"keywords":["email"],"path":"<path fill-rule=\"evenodd\" d=\"M6 2.5L0 7l6 4.5v-3c1.73 0 5.14.95 6 4.38 0-4.55-3.06-7.05-6-7.38v-3z\"/>","height":"16","width":"12"},"mark-github":{"keywords":["octocat"],"path":"<path fill-rule=\"evenodd\" d=\"M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z\"/>","height":"16","width":"16"},"markdown":{"keywords":["markup","style"],"path":"<path fill-rule=\"evenodd\" d=\"M14.85 3H1.15C.52 3 0 3.52 0 4.15v7.69C0 12.48.52 13 1.15 13h13.69c.64 0 1.15-.52 1.15-1.15v-7.7C16 3.52 15.48 3 14.85 3zM9 11H7V8L5.5 9.92 4 8v3H2V5h2l1.5 2L7 5h2v6zm2.99.5L9.5 8H11V5h2v3h1.5l-2.51 3.5z\"/>","height":"16","width":"16"},"megaphone":{"keywords":["bullhorn","loud","shout","broadcast"],"path":"<path fill-rule=\"evenodd\" d=\"M10 1c-.17 0-.36.05-.52.14C8.04 2.02 4.5 4.58 3 5c-1.38 0-3 .67-3 2.5S1.63 10 3 10c.3.08.64.23 1 .41V15h2v-3.45c1.34.86 2.69 1.83 3.48 2.31.16.09.34.14.52.14.52 0 1-.42 1-1V2c0-.58-.48-1-1-1zm0 12c-.38-.23-.89-.58-1.5-1-.16-.11-.33-.22-.5-.34V3.31c.16-.11.31-.2.47-.31.61-.41 1.16-.77 1.53-1v11zm2-6h4v1h-4V7zm0 2l4 2v1l-4-2V9zm4-6v1l-4 2V5l4-2z\"/>","height":"16","width":"16"},"mention":{"keywords":["at","ping"],"path":"<path fill-rule=\"evenodd\" d=\"M6.58 15c1.25 0 2.52-.31 3.56-.94l-.42-.94c-.84.52-1.89.83-3.03.83-3.23 0-5.64-2.08-5.64-5.72 0-4.37 3.23-7.18 6.58-7.18 3.45 0 5.22 2.19 5.22 5.2 0 2.39-1.34 3.86-2.5 3.86-1.05 0-1.36-.73-1.05-2.19l.73-3.75H8.98l-.11.72c-.41-.63-.94-.83-1.56-.83-2.19 0-3.66 2.39-3.66 4.38 0 1.67.94 2.61 2.3 2.61.84 0 1.67-.53 2.3-1.25.11.94.94 1.45 1.98 1.45 1.67 0 3.77-1.67 3.77-5C14 2.61 11.59 0 7.83 0 3.66 0 0 3.33 0 8.33 0 12.71 2.92 15 6.58 15zm-.31-5c-.73 0-1.36-.52-1.36-1.67 0-1.45.94-3.22 2.41-3.22.52 0 .84.2 1.25.83l-.52 3.02c-.63.73-1.25 1.05-1.78 1.05V10z\"/>","height":"16","width":"14"},"milestone":{"keywords":["marker"],"path":"<path fill-rule=\"evenodd\" d=\"M8 2H6V0h2v2zm4 5H2c-.55 0-1-.45-1-1V4c0-.55.45-1 1-1h10l2 2-2 2zM8 4H6v2h2V4zM6 16h2V8H6v8z\"/>","height":"16","width":"14"},"mirror":{"keywords":["reflect"],"path":"<path fill-rule=\"evenodd\" d=\"M15.5 4.7L8.5 0l-7 4.7c-.3.19-.5.45-.5.8V16l7.5-4 7.5 4V5.5c0-.34-.2-.61-.5-.8zm-.5 9.8l-6-3.25V10H8v1.25L2 14.5v-9l6-4V6h1V1.5l6 4v9zM6 7h5V5l3 3-3 3V9H6v2L3 8l3-3v2z\"/>","height":"16","width":"16"},"mortar-board":{"keywords":["education","learn","teach"],"path":"<path fill-rule=\"evenodd\" d=\"M7.83 9.19L4 8c-4-8 0 1.5 0 2.5S5.8 12 8 12s4-.5 4-1.5V8L8.17 9.19a.73.73 0 0 1-.36 0h.02zm.28-6.39a.34.34 0 0 0-.2 0L.27 5.18a.35.35 0 0 0 0 .67L2 6.4v1.77c-.3.17-.5.5-.5.86 0 .19.05.36.14.5-.08.14-.14.31-.14.5v2.58c0 .55 2 .55 2 0v-2.58c0-.19-.05-.36-.14-.5.08-.14.14-.31.14-.5 0-.38-.2-.69-.5-.86V6.72l4.89 1.53c.06.02.14.02.2 0l7.64-2.38a.35.35 0 0 0 0-.67L8.1 2.81l.01-.01zM8.02 6c-.55 0-1-.22-1-.5s.45-.5 1-.5 1 .22 1 .5-.45.5-1 .5z\"/>","height":"16","width":"16"},"mute":{"keywords":["quiet","sound","audio","turn","off"],"path":"<path fill-rule=\"evenodd\" d=\"M8 2.81v10.38c0 .67-.81 1-1.28.53L3 10H1c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1h2l3.72-3.72C7.19 1.81 8 2.14 8 2.81zm7.53 3.22l-1.06-1.06-1.97 1.97-1.97-1.97-1.06 1.06L11.44 8 9.47 9.97l1.06 1.06 1.97-1.97 1.97 1.97 1.06-1.06L13.56 8l1.97-1.97z\"/>","height":"16","width":"16"},"no-newline":{"keywords":["return"],"path":"<path fill-rule=\"evenodd\" d=\"M16 5v3c0 .55-.45 1-1 1h-3v2L9 8l3-3v2h2V5h2zM8 8c0 2.2-1.8 4-4 4s-4-1.8-4-4 1.8-4 4-4 4 1.8 4 4zM1.5 9.66L5.66 5.5C5.18 5.19 4.61 5 4 5 2.34 5 1 6.34 1 8c0 .61.19 1.17.5 1.66zM7 8c0-.61-.19-1.17-.5-1.66L2.34 10.5c.48.31 1.05.5 1.66.5 1.66 0 3-1.34 3-3z\"/>","height":"16","width":"16"},"note":{"keywords":["card","paper","ticket"],"path":"<path fill-rule=\"evenodd\" d=\"M3 10h4V9H3v1zm0-2h6V7H3v1zm0-2h8V5H3v1zm10 6H1V3h12v9zM1 2c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1H1z\"/>","height":"16","width":"14"},"octoface":{"keywords":["octocat"],"path":"<path fill-rule=\"evenodd\" d=\"M14.7 5.34c.13-.32.55-1.59-.13-3.31 0 0-1.05-.33-3.44 1.3-1-.28-2.07-.32-3.13-.32s-2.13.04-3.13.32c-2.39-1.64-3.44-1.3-3.44-1.3-.68 1.72-.26 2.99-.13 3.31C.49 6.21 0 7.33 0 8.69 0 13.84 3.33 15 7.98 15S16 13.84 16 8.69c0-1.36-.49-2.48-1.3-3.35zM8 14.02c-3.3 0-5.98-.15-5.98-3.35 0-.76.38-1.48 1.02-2.07 1.07-.98 2.9-.46 4.96-.46 2.07 0 3.88-.52 4.96.46.65.59 1.02 1.3 1.02 2.07 0 3.19-2.68 3.35-5.98 3.35zM5.49 9.01c-.66 0-1.2.8-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.54-1.78-1.2-1.78zm5.02 0c-.66 0-1.2.79-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.53-1.78-1.2-1.78z\"/>","height":"16","width":"16"},"organization":{"keywords":["people","group","team"],"path":"<path fill-rule=\"evenodd\" d=\"M16 12.999c0 .439-.45 1-1 1H7.995c-.539 0-.994-.447-.995-.999H1c-.54 0-1-.561-1-1 0-2.634 3-4 3-4s.229-.409 0-1c-.841-.621-1.058-.59-1-3 .058-2.419 1.367-3 2.5-3s2.442.58 2.5 3c.058 2.41-.159 2.379-1 3-.229.59 0 1 0 1s1.549.711 2.42 2.088C9.196 9.369 10 8.999 10 8.999s.229-.409 0-1c-.841-.62-1.058-.59-1-3 .058-2.419 1.367-3 2.5-3s2.437.581 2.495 3c.059 2.41-.158 2.38-1 3-.229.59 0 1 0 1s3.005 1.366 3.005 4\"/>","height":"16","width":"16"},"package":{"keywords":["box","ship"],"path":"<path fill-rule=\"evenodd\" d=\"M1 4.27v7.47c0 .45.3.84.75.97l6.5 1.73c.16.05.34.05.5 0l6.5-1.73c.45-.13.75-.52.75-.97V4.27c0-.45-.3-.84-.75-.97l-6.5-1.74a1.4 1.4 0 0 0-.5 0L1.75 3.3c-.45.13-.75.52-.75.97zm7 9.09l-6-1.59V5l6 1.61v6.75zM2 4l2.5-.67L11 5.06l-2.5.67L2 4zm13 7.77l-6 1.59V6.61l2-.55V8.5l2-.53V5.53L15 5v6.77zm-2-7.24L6.5 2.8l2-.53L15 4l-2 .53z\"/>","height":"16","width":"16"},"paintcan":{"keywords":["style","theme","art","color"],"path":"<path fill-rule=\"evenodd\" d=\"M6 0C2.69 0 0 2.69 0 6v1c0 .55.45 1 1 1v5c0 1.1 2.24 2 5 2s5-.9 5-2V8c.55 0 1-.45 1-1V6c0-3.31-2.69-6-6-6zm3 10v.5c0 .28-.22.5-.5.5s-.5-.22-.5-.5V10c0-.28-.22-.5-.5-.5s-.5.22-.5.5v2.5c0 .28-.22.5-.5.5s-.5-.22-.5-.5v-2c0-.28-.22-.5-.5-.5s-.5.22-.5.5v.5c0 .55-.45 1-1 1s-1-.45-1-1v-1c-.55 0-1-.45-1-1V7.2c.91.49 2.36.8 4 .8 1.64 0 3.09-.31 4-.8V9c0 .55-.45 1-1 1zM6 7c-1.68 0-3.12-.41-3.71-1C2.88 5.41 4.32 5 6 5c1.68 0 3.12.41 3.71 1-.59.59-2.03 1-3.71 1zm0-3c-2.76 0-5 .89-5 2 0-2.76 2.24-5 5-5s5 2.24 5 5c0-1.1-2.24-2-5-2z\"/>","height":"16","width":"12"},"pencil":{"keywords":["edit","change","update","write"],"path":"<path fill-rule=\"evenodd\" d=\"M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z\"/>","height":"16","width":"14"},"person":{"keywords":["people","man","woman","human"],"path":"<path fill-rule=\"evenodd\" d=\"M12 14.002a.998.998 0 0 1-.998.998H1.001A1 1 0 0 1 0 13.999V13c0-2.633 4-4 4-4s.229-.409 0-1c-.841-.62-.944-1.59-1-4 .173-2.413 1.867-3 3-3s2.827.586 3 3c-.056 2.41-.159 3.38-1 4-.229.59 0 1 0 1s4 1.367 4 4v1.002z\"/>","height":"16","width":"12"},"pin":{"keywords":["people","save","star","bookmark"],"path":"<path fill-rule=\"evenodd\" d=\"M10 1.2V2l.5 1L6 6H2.2c-.44 0-.67.53-.34.86L5 10l-4 5 5-4 3.14 3.14a.5.5 0 0 0 .86-.34V10l3-4.5 1 .5h.8c.44 0 .67-.53.34-.86L10.86.86a.5.5 0 0 0-.86.34z\"/>","height":"16","width":"16"},"plug":{"keywords":["hook","webhook"],"path":"<path fill-rule=\"evenodd\" d=\"M14 6V5h-4V3H8v1H6c-1.03 0-1.77.81-2 2L3 7c-1.66 0-3 1.34-3 3v2h1v-2c0-1.11.89-2 2-2l1 1c.25 1.16.98 2 2 2h2v1h2v-2h4V9h-4V6h4z\"/>","height":"16","width":"14"},"plus":{"keywords":["add","new","more"],"path":"<path fill-rule=\"evenodd\" d=\"M12 9H7v5H5V9H0V7h5V2h2v5h5z\"/>","height":"16","width":"12"},"plus-small":{"keywords":["add","new","more","small"],"path":"<path fill-rule=\"evenodd\" d=\"M4 7V4H3v3H0v1h3v3h1V8h3V7H4z\"/>","height":"16","width":"7"},"primitive-dot":{"keywords":["circle"],"path":"<path fill-rule=\"evenodd\" d=\"M0 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z\"/>","height":"16","width":"8"},"primitive-square":{"keywords":["box"],"path":"<path fill-rule=\"evenodd\" d=\"M8 12H0V4h8z\"/>","height":"16","width":"8"},"project":{"keywords":["board","kanban","columns","scrum"],"path":"<path fill-rule=\"evenodd\" d=\"M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z\"/>","height":"16","width":"15"},"pulse":{"keywords":["graph","trend","line"],"path":"<path fill-rule=\"evenodd\" d=\"M11.5 8L8.8 5.4 6.6 8.5 5.5 1.6 2.38 8H0v2h3.6l.9-1.8.9 5.4L9 8.5l1.6 1.5H14V8z\"/>","height":"16","width":"14"},"question":{"keywords":["help","explain"],"path":"<path fill-rule=\"evenodd\" d=\"M6 10h2v2H6v-2zm4-3.5C10 8.64 8 9 8 9H6c0-.55.45-1 1-1h.5c.28 0 .5-.22.5-.5v-1c0-.28-.22-.5-.5-.5h-1c-.28 0-.5.22-.5.5V7H4c0-1.5 1.5-3 3-3s3 1 3 2.5zM7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7z\"/>","height":"16","width":"14"},"quote":{"keywords":["quotation"],"path":"<path fill-rule=\"evenodd\" d=\"M6.16 3.5C3.73 5.06 2.55 6.67 2.55 9.36c.16-.05.3-.05.44-.05 1.27 0 2.5.86 2.5 2.41 0 1.61-1.03 2.61-2.5 2.61-1.9 0-2.99-1.52-2.99-4.25 0-3.8 1.75-6.53 5.02-8.42L6.16 3.5zm7 0c-2.43 1.56-3.61 3.17-3.61 5.86.16-.05.3-.05.44-.05 1.27 0 2.5.86 2.5 2.41 0 1.61-1.03 2.61-2.5 2.61-1.89 0-2.98-1.52-2.98-4.25 0-3.8 1.75-6.53 5.02-8.42l1.14 1.84h-.01z\"/>","height":"16","width":"14"},"radio-tower":{"keywords":["broadcast"],"path":"<path fill-rule=\"evenodd\" d=\"M4.79 6.11c.25-.25.25-.67 0-.92-.32-.33-.48-.76-.48-1.19 0-.43.16-.86.48-1.19.25-.26.25-.67 0-.92a.613.613 0 0 0-.45-.19c-.16 0-.33.06-.45.19-.57.58-.85 1.35-.85 2.11 0 .76.29 1.53.85 2.11.25.25.66.25.9 0zM2.33.52a.651.651 0 0 0-.92 0C.48 1.48.01 2.74.01 3.99c0 1.26.47 2.52 1.4 3.48.25.26.66.26.91 0s.25-.68 0-.94c-.68-.7-1.02-1.62-1.02-2.54 0-.92.34-1.84 1.02-2.54a.66.66 0 0 0 .01-.93zm5.69 5.1A1.62 1.62 0 1 0 6.4 4c-.01.89.72 1.62 1.62 1.62zM14.59.53a.628.628 0 0 0-.91 0c-.25.26-.25.68 0 .94.68.7 1.02 1.62 1.02 2.54 0 .92-.34 1.83-1.02 2.54-.25.26-.25.68 0 .94a.651.651 0 0 0 .92 0c.93-.96 1.4-2.22 1.4-3.48A5.048 5.048 0 0 0 14.59.53zM8.02 6.92c-.41 0-.83-.1-1.2-.3l-3.15 8.37h1.49l.86-1h4l.84 1h1.49L9.21 6.62c-.38.2-.78.3-1.19.3zm-.01.48L9.02 11h-2l.99-3.6zm-1.99 5.59l1-1h2l1 1h-4zm5.19-11.1c-.25.25-.25.67 0 .92.32.33.48.76.48 1.19 0 .43-.16.86-.48 1.19-.25.26-.25.67 0 .92a.63.63 0 0 0 .9 0c.57-.58.85-1.35.85-2.11 0-.76-.28-1.53-.85-2.11a.634.634 0 0 0-.9 0z\"/>","height":"16","width":"16"},"reply":{"keywords":["reply all","back"],"path":"<path fill-rule=\"evenodd\" d=\"M6 3.5c3.92.44 8 3.125 8 10-2.312-5.062-4.75-6-8-6V11L.5 5.5 6 0v3.5z\"/>","height":"16","width":"14"},"repo":{"keywords":["book","journal"],"path":"<path fill-rule=\"evenodd\" d=\"M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z\"/>","height":"16","width":"12"},"repo-clone":{"keywords":["book","journal"],"path":"<path fill-rule=\"evenodd\" d=\"M15 0H9v7c0 .55.45 1 1 1h1v1h1V8h3c.55 0 1-.45 1-1V1c0-.55-.45-1-1-1zm-4 7h-1V6h1v1zm4 0h-3V6h3v1zm0-2h-4V1h4v4zM4 5H3V4h1v1zm0-2H3V2h1v1zM2 1h6V0H1C.45 0 0 .45 0 1v12c0 .55.45 1 1 1h2v2l1.5-1.5L6 16v-2h5c.55 0 1-.45 1-1v-3H2V1zm9 10v2H6v-1H3v1H1v-2h10zM3 8h1v1H3V8zm1-1H3V6h1v1z\"/>","height":"16","width":"16"},"repo-force-push":{"keywords":["book","journal","put"],"path":"<path fill-rule=\"evenodd\" d=\"M10 9H8v7H6V9H4l2.25-3H4l3-4 3 4H7.75L10 9zm1-9H1C.45 0 0 .45 0 1v12c0 .55.45 1 1 1h4v-1H1v-2h4v-1H2V1h9v9H9v1h2v2H9v1h2c.55 0 1-.45 1-1V1c0-.55-.45-1-1-1z\"/>","height":"16","width":"12"},"repo-forked":{"keywords":["book","journal","copy"],"path":"<path fill-rule=\"evenodd\" d=\"M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z\"/>","height":"16","width":"10"},"repo-pull":{"keywords":["book","journal","get"],"path":"<path fill-rule=\"evenodd\" d=\"M13 8V6H7V4h6V2l3 3-3 3zM4 2H3v1h1V2zm7 5h1v6c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1v2h-1V1H2v9h9V7zm0 4H1v2h2v-1h3v1h5v-2zM4 6H3v1h1V6zm0-2H3v1h1V4zM3 9h1V8H3v1z\"/>","height":"16","width":"16"},"repo-push":{"keywords":["book","journal","put"],"path":"<path fill-rule=\"evenodd\" d=\"M4 3H3V2h1v1zM3 5h1V4H3v1zm4 0L4 9h2v7h2V9h2L7 5zm4-5H1C.45 0 0 .45 0 1v12c0 .55.45 1 1 1h4v-1H1v-2h4v-1H2V1h9.02L11 10H9v1h2v2H9v1h2c.55 0 1-.45 1-1V1c0-.55-.45-1-1-1z\"/>","height":"16","width":"12"},"rocket":{"keywords":["staff","stafftools","blast","off","space"],"path":"<path fill-rule=\"evenodd\" d=\"M12.17 3.83c-.27-.27-.47-.55-.63-.88-.16-.31-.27-.66-.34-1.02-.58.33-1.16.7-1.73 1.13-.58.44-1.14.94-1.69 1.48-.7.7-1.33 1.81-1.78 2.45H3L0 10h3l2-2c-.34.77-1.02 2.98-1 3l1 1c.02.02 2.23-.64 3-1l-2 2v3l3-3v-3c.64-.45 1.75-1.09 2.45-1.78.55-.55 1.05-1.13 1.47-1.7.44-.58.81-1.16 1.14-1.72-.36-.08-.7-.19-1.03-.34a3.39 3.39 0 0 1-.86-.63M16 0s-.09.38-.3 1.06c-.2.7-.55 1.58-1.06 2.66-.7-.08-1.27-.33-1.66-.72-.39-.39-.63-.94-.7-1.64C13.36.84 14.23.48 14.92.28 15.62.08 16 0 16 0\"/>","height":"16","width":"16"},"rss":{"keywords":["broadcast","feed"],"path":"<path fill-rule=\"evenodd\" d=\"M2 13H0v-2c1.11 0 2 .89 2 2zM0 3v1a9 9 0 0 1 9 9h1C10 7.48 5.52 3 0 3zm0 4v1c2.75 0 5 2.25 5 5h1c0-3.31-2.69-6-6-6z\"/>","height":"16","width":"10"},"ruby":{"keywords":["code"],"path":"<path fill-rule=\"evenodd\" d=\"M13 6l-5 5V4h3l2 2zm3 0l-8 8-8-8 4-4h8l4 4zm-8 6.5L14.5 6l-3-3h-7l-3 3L8 12.5z\"/>","height":"16","width":"16"},"screen-full":{"keywords":["fullscreen","expand"],"path":"<path fill-rule=\"evenodd\" d=\"M13 10h1v3c0 .547-.453 1-1 1h-3v-1h3v-3zM1 10H0v3c0 .547.453 1 1 1h3v-1H1v-3zm0-7h3V2H1c-.547 0-1 .453-1 1v3h1V3zm1 1h10v8H2V4zm2 6h6V6H4v4zm6-8v1h3v3h1V3c0-.547-.453-1-1-1h-3z\"/>","height":"16","width":"14"},"screen-normal":{"keywords":["fullscreen","expand","exit"],"path":"<path fill-rule=\"evenodd\" d=\"M2 4H0V3h2V1h1v2c0 .547-.453 1-1 1zm0 8H0v1h2v2h1v-2c0-.547-.453-1-1-1zm9-2c0 .547-.453 1-1 1H4c-.547 0-1-.453-1-1V6c0-.547.453-1 1-1h6c.547 0 1 .453 1 1v4zM9 7H5v2h4V7zm2 6v2h1v-2h2v-1h-2c-.547 0-1 .453-1 1zm1-10V1h-1v2c0 .547.453 1 1 1h2V3h-2z\"/>","height":"16","width":"14"},"search":{"keywords":["magnifying","glass"],"path":"<path fill-rule=\"evenodd\" d=\"M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z\"/>","height":"16","width":"16"},"server":{"keywords":["computers","racks","ops"],"path":"<path fill-rule=\"evenodd\" d=\"M11 6H1c-.55 0-1 .45-1 1v2c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V7c0-.55-.45-1-1-1zM2 9H1V7h1v2zm2 0H3V7h1v2zm2 0H5V7h1v2zm2 0H7V7h1v2zm3-8H1c-.55 0-1 .45-1 1v2c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V2c0-.55-.45-1-1-1zM2 4H1V2h1v2zm2 0H3V2h1v2zm2 0H5V2h1v2zm2 0H7V2h1v2zm3-1h-1V2h1v1zm0 8H1c-.55 0-1 .45-1 1v2c0 .55.45 1 1 1h10c.55 0 1-.45 1-1v-2c0-.55-.45-1-1-1zm-9 3H1v-2h1v2zm2 0H3v-2h1v2zm2 0H5v-2h1v2zm2 0H7v-2h1v2z\"/>","height":"16","width":"12"},"settings":{"keywords":["sliders","filters"],"path":"<path fill-rule=\"evenodd\" d=\"M4 7H3V2h1v5zm-1 7h1v-3H3v3zm5 0h1V8H8v6zm5 0h1v-2h-1v2zm1-12h-1v6h1V2zM9 2H8v2h1V2zM5 8H2c-.55 0-1 .45-1 1s.45 1 1 1h3c.55 0 1-.45 1-1s-.45-1-1-1zm5-3H7c-.55 0-1 .45-1 1s.45 1 1 1h3c.55 0 1-.45 1-1s-.45-1-1-1zm5 4h-3c-.55 0-1 .45-1 1s.45 1 1 1h3c.55 0 1-.45 1-1s-.45-1-1-1z\"/>","height":"16","width":"16"},"shield":{"keywords":["protect","shield","lock"],"path":"<path fill-rule=\"evenodd\" d=\"M7 0L0 2v6.02C0 12.69 5.31 16 7 16c1.69 0 7-3.31 7-7.98V2L7 0zM5 11l1.14-2.8a.568.568 0 0 0-.25-.59C5.33 7.25 5 6.66 5 6c0-1.09.89-2 1.98-2C8.06 4 9 4.91 9 6c0 .66-.33 1.25-.89 1.61-.19.13-.3.36-.25.59L9 11H5z\"/>","height":"16","width":"14"},"sign-in":{"keywords":["door","arrow","direction","enter"],"path":"<path fill-rule=\"evenodd\" d=\"M7 6.75V12h4V8h1v4c0 .55-.45 1-1 1H7v3l-5.45-2.72c-.33-.17-.55-.52-.55-.91V1c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v3h-1V1H3l4 2v2.25L10 3v2h4v2h-4v2L7 6.75z\"/>","height":"16","width":"14"},"sign-out":{"keywords":["door","arrow","direction","leave"],"path":"<path fill-rule=\"evenodd\" d=\"M12 9V7H8V5h4V3l4 3-4 3zm-2 3H6V3L2 1h8v3h1V1c0-.55-.45-1-1-1H1C.45 0 0 .45 0 1v11.38c0 .39.22.73.55.91L6 16.01V13h4c.55 0 1-.45 1-1V8h-1v4z\"/>","height":"16","width":"16"},"smiley":{"keywords":["emoji","smile","mood","emotion"],"path":"<path fill-rule=\"evenodd\" d=\"M8 0C3.58 0 0 3.58 0 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm4.81 12.81a6.72 6.72 0 0 1-2.17 1.45c-.83.36-1.72.53-2.64.53-.92 0-1.81-.17-2.64-.53-.81-.34-1.55-.83-2.17-1.45a6.773 6.773 0 0 1-1.45-2.17A6.59 6.59 0 0 1 1.21 8c0-.92.17-1.81.53-2.64.34-.81.83-1.55 1.45-2.17.62-.62 1.36-1.11 2.17-1.45A6.59 6.59 0 0 1 8 1.21c.92 0 1.81.17 2.64.53.81.34 1.55.83 2.17 1.45.62.62 1.11 1.36 1.45 2.17.36.83.53 1.72.53 2.64 0 .92-.17 1.81-.53 2.64-.34.81-.83 1.55-1.45 2.17zM4 6.8v-.59c0-.66.53-1.19 1.2-1.19h.59c.66 0 1.19.53 1.19 1.19v.59c0 .67-.53 1.2-1.19 1.2H5.2C4.53 8 4 7.47 4 6.8zm5 0v-.59c0-.66.53-1.19 1.2-1.19h.59c.66 0 1.19.53 1.19 1.19v.59c0 .67-.53 1.2-1.19 1.2h-.59C9.53 8 9 7.47 9 6.8zm4 3.2c-.72 1.88-2.91 3-5 3s-4.28-1.13-5-3c-.14-.39.23-1 .66-1h8.59c.41 0 .89.61.75 1z\"/>","height":"16","width":"16"},"squirrel":{"keywords":["ship","shipit"],"path":"<path fill-rule=\"evenodd\" d=\"M12 1C9.79 1 8 2.31 8 3.92c0 1.94.5 3.03 0 6.08 0-4.5-2.77-6.34-4-6.34.05-.5-.48-.66-.48-.66s-.22.11-.3.34c-.27-.31-.56-.27-.56-.27l-.13.58S.7 4.29.68 6.87c.2.33 1.53.6 2.47.43.89.05.67.79.47.99C2.78 9.13 2 8 1 8S0 9 1 9s1 1 3 1c-3.09 1.2 0 4 0 4H3c-1 0-1 1-1 1h6c3 0 5-1 5-3.47 0-.85-.43-1.79-1-2.53-1.11-1.46.23-2.68 1-2 .77.68 3 1 3-2 0-2.21-1.79-4-4-4zM2.5 6c-.28 0-.5-.22-.5-.5s.22-.5.5-.5.5.22.5.5-.22.5-.5.5z\"/>","height":"16","width":"16"},"star":{"keywords":["save","remember","like"],"path":"<path fill-rule=\"evenodd\" d=\"M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z\"/>","height":"16","width":"14"},"stop":{"keywords":["block","spam"],"path":"<path fill-rule=\"evenodd\" d=\"M10 1H4L0 5v6l4 4h6l4-4V5l-4-4zm3 9.5L9.5 14h-5L1 10.5v-5L4.5 2h5L13 5.5v5zM6 4h2v5H6V4zm0 6h2v2H6v-2z\"/>","height":"16","width":"14"},"sync":{"keywords":["cycle","refresh","loop"],"path":"<path fill-rule=\"evenodd\" d=\"M10.24 7.4a4.15 4.15 0 0 1-1.2 3.6 4.346 4.346 0 0 1-5.41.54L4.8 10.4.5 9.8l.6 4.2 1.31-1.26c2.36 1.74 5.7 1.57 7.84-.54a5.876 5.876 0 0 0 1.74-4.46l-1.75-.34zM2.96 5a4.346 4.346 0 0 1 5.41-.54L7.2 5.6l4.3.6-.6-4.2-1.31 1.26c-2.36-1.74-5.7-1.57-7.85.54C.5 5.03-.06 6.65.01 8.26l1.75.35A4.17 4.17 0 0 1 2.96 5z\"/>","height":"16","width":"12"},"tag":{"keywords":["release"],"path":"<path fill-rule=\"evenodd\" d=\"M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z\"/>","height":"16","width":"14"},"tasklist":{"keywords":["todo"],"path":"<path fill-rule=\"evenodd\" d=\"M15.41 9H7.59C7 9 7 8.59 7 8c0-.59 0-1 .59-1h7.81c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zM9.59 4C9 4 9 3.59 9 3c0-.59 0-1 .59-1h5.81c.59 0 .59.41.59 1 0 .59 0 1-.59 1H9.59zM0 3.91l1.41-1.3L3 4.2 7.09 0 8.5 1.41 3 6.91l-3-3zM7.59 12h7.81c.59 0 .59.41.59 1 0 .59 0 1-.59 1H7.59C7 14 7 13.59 7 13c0-.59 0-1 .59-1z\"/>","height":"16","width":"16"},"telescope":{"keywords":["science","space","look","view","explore"],"path":"<path fill-rule=\"evenodd\" d=\"M8 9l3 6h-1l-2-4v5H7v-6l-2 5H4l2-5 2-1zM7 0H6v1h1V0zM5 3H4v1h1V3zM2 1H1v1h1V1zM.63 9a.52.52 0 0 0-.16.67l.55.92c.13.23.41.31.64.2l1.39-.66-1.16-2-1.27.86.01.01zm7.89-5.39l-5.8 3.95L3.95 9.7l6.33-3.03-1.77-3.06h.01zm4.22 1.28l-1.47-2.52a.51.51 0 0 0-.72-.17l-1.2.83 1.84 3.2 1.33-.64c.27-.13.36-.44.22-.7z\"/>","height":"16","width":"14"},"terminal":{"keywords":["code","ops","shell"],"path":"<path fill-rule=\"evenodd\" d=\"M7 10h4v1H7v-1zm-3 1l3-3-3-3-.75.75L5.5 8l-2.25 2.25L4 11zm10-8v10c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h12c.55 0 1 .45 1 1zm-1 0H1v10h12V3z\"/>","height":"16","width":"14"},"text-size":{"keywords":["font","size","text"],"path":"<path fill-rule=\"evenodd\" d=\"M13.62 9.08L12.1 3.66h-.06l-1.5 5.42h3.08zM5.7 10.13S4.68 6.52 4.53 6.02h-.08l-1.13 4.11H5.7zM17.31 14h-2.25l-.95-3.25h-4.07L9.09 14H6.84l-.69-2.33H2.87L2.17 14H0l3.3-9.59h2.5l2.17 6.34L10.86 2h2.52l3.94 12h-.01z\"/>","height":"16","width":"18"},"three-bars":{"keywords":["hamburger"],"path":"<path fill-rule=\"evenodd\" d=\"M11.41 9H.59C0 9 0 8.59 0 8c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zm0-4H.59C0 5 0 4.59 0 4c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zM.59 11H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1H.59C0 13 0 12.59 0 12c0-.59 0-1 .59-1z\"/>","height":"16","width":"12"},"thumbsdown":{"keywords":["thumb","thumbsdown","rejected"],"path":"<path fill-rule=\"evenodd\" d=\"M15.98 7.83l-.97-5.95C14.84.5 13.13 0 12 0H5.69c-.2 0-.38.05-.53.14L3.72 1H2C.94 1 0 1.94 0 3v4c0 1.06.94 2.02 2 2h2c.91 0 1.39.45 2.39 1.55.91 1 .88 1.8.63 3.27-.08.5.06 1 .42 1.42.39.47.98.77 1.56.77 1.83 0 3-3.72 3-5.02l-.02-.98h2.04c1.16 0 1.95-.8 1.98-1.97 0-.06.02-.13-.02-.2v-.01zm-1.97 1.19h-1.99c-.7 0-1.03.28-1.03.97l.03 1.03c0 1.27-1.17 4-2 4-.5 0-1.08-.5-1-1 .25-1.58.34-2.78-.89-4.14C6.11 8.75 5.36 8 4 8V2l1.67-1H12c.73 0 1.95.31 2 1l.02.02 1 6c-.03.64-.38 1-1 1h-.01z\"/>","height":"16","width":"16"},"thumbsup":{"keywords":["thumb","thumbsup","prop","ship"],"path":"<path fill-rule=\"evenodd\" d=\"M14 14c-.05.69-1.27 1-2 1H5.67L4 14V8c1.36 0 2.11-.75 3.13-1.88 1.23-1.36 1.14-2.56.88-4.13-.08-.5.5-1 1-1 .83 0 2 2.73 2 4l-.02 1.03c0 .69.33.97 1.02.97h2c.63 0 .98.36 1 1l-1 6L14 14zm0-8h-2.02l.02-.98C12 3.72 10.83 0 9 0c-.58 0-1.17.3-1.56.77-.36.41-.5.91-.42 1.41.25 1.48.28 2.28-.63 3.28-1 1.09-1.48 1.55-2.39 1.55H2C.94 7 0 7.94 0 9v4c0 1.06.94 2 2 2h1.72l1.44.86c.16.09.33.14.52.14h6.33c1.13 0 2.84-.5 3-1.88l.98-5.95c.02-.08.02-.14.02-.2-.03-1.17-.84-1.97-2-1.97H14z\"/>","height":"16","width":"16"},"tools":{"keywords":["screwdriver","wrench","settings"],"path":"<path fill-rule=\"evenodd\" d=\"M4.48 7.27c.26.26 1.28 1.33 1.28 1.33l.56-.58-.88-.91 1.69-1.8s-.76-.74-.43-.45c.32-1.19.03-2.51-.87-3.44C4.93.5 3.66.2 2.52.51l1.93 2-.51 1.96-1.89.52-1.93-2C-.19 4.17.1 5.48 1 6.4c.94.98 2.29 1.26 3.48.87zm6.44 1.94l-2.33 2.3 3.84 3.98c.31.33.73.49 1.14.49.41 0 .82-.16 1.14-.49.63-.65.63-1.7 0-2.35l-3.79-3.93zM16 2.53L13.55 0 6.33 7.46l.88.91-4.31 4.46-.99.53-1.39 2.27.35.37 2.2-1.44.51-1.02L7.9 9.08l.88.91L16 2.53z\"/>","height":"16","width":"16"},"trashcan":{"keywords":["garbage","rubbish","recycle","delete"],"path":"<path fill-rule=\"evenodd\" d=\"M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z\"/>","height":"16","width":"12"},"triangle-down":{"keywords":["arrow","point","direction"],"path":"<path fill-rule=\"evenodd\" d=\"M0 5l6 6 6-6z\"/>","height":"16","width":"12"},"triangle-left":{"keywords":["arrow","point","direction"],"path":"<path fill-rule=\"evenodd\" d=\"M6 2L0 8l6 6z\"/>","height":"16","width":"6"},"triangle-right":{"keywords":["arrow","point","direction"],"path":"<path fill-rule=\"evenodd\" d=\"M0 14l6-6-6-6z\"/>","height":"16","width":"6"},"triangle-up":{"keywords":["arrow","point","direction"],"path":"<path fill-rule=\"evenodd\" d=\"M12 11L6 5l-6 6z\"/>","height":"16","width":"12"},"unfold":{"keywords":["expand","open","reveal"],"path":"<path fill-rule=\"evenodd\" d=\"M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z\"/>","height":"16","width":"14"},"unmute":{"keywords":["loud","volume","audio","sound","play"],"path":"<path fill-rule=\"evenodd\" d=\"M12 8.02c0 1.09-.45 2.09-1.17 2.83l-.67-.67c.55-.56.89-1.31.89-2.16 0-.85-.34-1.61-.89-2.16l.67-.67A3.99 3.99 0 0 1 12 8.02zM7.72 2.28L4 6H2c-.55 0-1 .45-1 1v2c0 .55.45 1 1 1h2l3.72 3.72c.47.47 1.28.14 1.28-.53V2.81c0-.67-.81-1-1.28-.53zm5.94.08l-.67.67a6.996 6.996 0 0 1 2.06 4.98c0 1.94-.78 3.7-2.06 4.98l.67.67A7.973 7.973 0 0 0 16 8c0-2.22-.89-4.22-2.34-5.66v.02zm-1.41 1.41l-.69.67a5.05 5.05 0 0 1 1.48 3.58c0 1.39-.56 2.66-1.48 3.56l.69.67A5.971 5.971 0 0 0 14 8.02c0-1.65-.67-3.16-1.75-4.25z\"/>","height":"16","width":"16"},"unverified":{"keywords":["insecure","untrusted"],"path":"<path fill-rule=\"evenodd\" d=\"M15.67 7.06l-1.08-1.34c-.17-.22-.28-.48-.31-.77l-.19-1.7a1.51 1.51 0 0 0-1.33-1.33l-1.7-.19c-.3-.03-.56-.16-.78-.33L8.94.32c-.55-.44-1.33-.44-1.88 0L5.72 1.4c-.22.17-.48.28-.77.31l-1.7.19c-.7.08-1.25.63-1.33 1.33l-.19 1.7c-.03.3-.16.56-.33.78L.32 7.05c-.44.55-.44 1.33 0 1.88l1.08 1.34c.17.22.28.48.31.77l.19 1.7c.08.7.63 1.25 1.33 1.33l1.7.19c.3.03.56.16.78.33l1.34 1.08c.55.44 1.33.44 1.88 0l1.34-1.08c.22-.17.48-.28.77-.31l1.7-.19c.7-.08 1.25-.63 1.33-1.33l.19-1.7c.03-.3.16-.56.33-.78l1.08-1.34c.44-.55.44-1.33 0-1.88zM9 11.5c0 .28-.22.5-.5.5h-1c-.27 0-.5-.22-.5-.5v-1c0-.28.23-.5.5-.5h1c.28 0 .5.22.5.5v1zm1.56-4.89c-.06.17-.17.33-.3.47-.13.16-.14.19-.33.38-.16.17-.31.3-.52.45-.11.09-.2.19-.28.27-.08.08-.14.17-.19.27-.05.1-.08.19-.11.3-.03.11-.03.13-.03.25H7.13c0-.22 0-.31.03-.48.03-.19.08-.36.14-.52.06-.14.14-.28.25-.42.11-.13.23-.25.41-.38.27-.19.36-.3.48-.52.12-.22.2-.38.2-.59 0-.27-.06-.45-.2-.58-.13-.13-.31-.19-.58-.19-.09 0-.19.02-.3.05-.11.03-.17.09-.25.16-.08.07-.14.11-.2.2a.41.41 0 0 0-.09.28h-2c0-.38.13-.56.27-.83.16-.27.36-.5.61-.67.25-.17.55-.3.88-.38.33-.08.7-.13 1.09-.13.44 0 .83.05 1.17.13.34.09.63.22.88.39.23.17.41.38.55.63.13.25.19.55.19.88 0 .22 0 .42-.08.59l-.02-.01z\"/>","height":"16","width":"16"},"verified":{"keywords":["trusted","secure","trustworthy"],"path":"<path fill-rule=\"evenodd\" d=\"M15.67 7.06l-1.08-1.34c-.17-.22-.28-.48-.31-.77l-.19-1.7a1.51 1.51 0 0 0-1.33-1.33l-1.7-.19c-.3-.03-.56-.16-.78-.33L8.94.32c-.55-.44-1.33-.44-1.88 0L5.72 1.4c-.22.17-.48.28-.77.31l-1.7.19c-.7.08-1.25.63-1.33 1.33l-.19 1.7c-.03.3-.16.56-.33.78L.32 7.05c-.44.55-.44 1.33 0 1.88l1.08 1.34c.17.22.28.48.31.77l.19 1.7c.08.7.63 1.25 1.33 1.33l1.7.19c.3.03.56.16.78.33l1.34 1.08c.55.44 1.33.44 1.88 0l1.34-1.08c.22-.17.48-.28.77-.31l1.7-.19c.7-.08 1.25-.63 1.33-1.33l.19-1.7c.03-.3.16-.56.33-.78l1.08-1.34c.44-.55.44-1.33 0-1.88zM6.5 12L3 8.5 4.5 7l2 2 5-5L13 5.55 6.5 12z\"/>","height":"16","width":"16"},"versions":{"keywords":["history"],"path":"<path fill-rule=\"evenodd\" d=\"M13 3H7c-.55 0-1 .45-1 1v8c0 .55.45 1 1 1h6c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1zm-1 8H8V5h4v6zM4 4h1v1H4v6h1v1H4c-.55 0-1-.45-1-1V5c0-.55.45-1 1-1zM1 5h1v1H1v4h1v1H1c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1z\"/>","height":"16","width":"14"},"watch":{"keywords":["wait","hourglass"],"path":"<path fill-rule=\"evenodd\" d=\"M6 8h2v1H5V5h1v3zm6 0c0 2.22-1.2 4.16-3 5.19V15c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1v-1.81C1.2 12.16 0 10.22 0 8s1.2-4.16 3-5.19V1c0-.55.45-1 1-1h4c.55 0 1 .45 1 1v1.81c1.8 1.03 3 2.97 3 5.19zm-1 0c0-2.77-2.23-5-5-5S1 5.23 1 8s2.23 5 5 5 5-2.23 5-5z\"/>","height":"16","width":"12"},"x":{"keywords":["remove","close","delete"],"path":"<path fill-rule=\"evenodd\" d=\"M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z\"/>","height":"16","width":"12"},"zap":{"keywords":["electricity","lightning","props","like","star","save"],"path":"<path fill-rule=\"evenodd\" d=\"M10 7H6l3-7-9 9h4l-3 7z\"/>","height":"16","width":"10"}}
+
+/***/ }),
+/* 1102 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./README.md": 1103,
+	"primer-support/README.md": 64,
+	"primer-support/docs/breakpoints.md": 65,
+	"primer-support/docs/spacing.md": 66,
+	"primer-support/docs/typography.md": 67
+};
+function webpackContext(req) {
+	return __webpack_require__(webpackContextResolve(req));
+};
+function webpackContextResolve(req) {
+	var id = map[req];
+	if(!(id + 1)) // check for number or string
+		throw new Error("Cannot find module '" + req + "'.");
+	return id;
+};
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 1102;
+
+/***/ }),
+/* 1103 */
+/***/ (function(module, exports) {
+
+module.exports = "# Primer / Branch Name\n\n[![npm version](https://img.shields.io/npm/v/primer-branch-name.svg)](https://www.npmjs.org/package/primer-branch-name)\n[![Build Status](https://travis-ci.org/primer/primer.svg?branch=master)](https://travis-ci.org/primer/primer)\n\n> A nice, consistent way to display branch names.\n\nThis repository is a module of the full [primer][primer] repository.\n\n## Install\n\nThis repository is distributed with [npm]. After [installing npm][install-npm], you can install `primer-branch-name` with this command.\n\n```\n$ npm install --save primer-branch-name\n```\n\n## Usage\n\nThe source files included are written in [Sass][sass] (SCSS) You can simply point your sass `include-path` at your `node_modules` directory and import it like this.\n\n```scss\n@import \"primer-branch-name/index.scss\";\n```\n\nYou can also import specific portions of the module by importing those partials from the `/lib/` folder. _Make sure you import any requirements along with the modules._\n\n## Build\n\nFor a compiled **CSS** version of this module, an npm script is included that will output a css version to `build/build.css` The built css file is also included in the npm package:\n\n```\n$ npm run build\n```\n\n## Documentation\n\n<!-- %docs\ntitle: Branch name\nstatus: Stable\n-->\n\nBranch names can be a link name or not:\n\n```html title=\"Branch name\"\n<span class=\"branch-name\">a_new_feature_branch</span>\n```\n\n```html title=\"Branch name with link\"\n<a href=\"#url\" class=\"branch-name\">a_new_feature_branch</a>\n```\n\nYou may also include an octicon before the branch name text:\n\n```html title=\"Branch name with icon\"\n<span class=\"branch-name\">\n  <%= octicon(\"git-branch\", width:16, height:16) %>\n  a_new_feature_branch\n</span>\n```\n\n<!-- %enddocs -->\n\n## License\n\n[MIT](./LICENSE) &copy; [GitHub](https://github.com/)\n\n[primer]: https://github.com/primer/primer\n[docs]: http://primer.github.io/\n[npm]: https://www.npmjs.com/\n[install-npm]: https://docs.npmjs.com/getting-started/installing-node\n[sass]: http://sass-lang.com/\n"
 
 /***/ }),
 /* 1104 */
@@ -61911,7 +61940,7 @@ webpackContext.id = 1104;
 /* 1105 */
 /***/ (function(module, exports) {
 
-module.exports = "# Primer / Branch Name\n\n[![npm version](https://img.shields.io/npm/v/primer-branch-name.svg)](https://www.npmjs.org/package/primer-branch-name)\n[![Build Status](https://travis-ci.org/primer/primer.svg?branch=master)](https://travis-ci.org/primer/primer)\n\n> A nice, consistent way to display branch names.\n\nThis repository is a module of the full [primer][primer] repository.\n\n## Install\n\nThis repository is distributed with [npm]. After [installing npm][install-npm], you can install `primer-branch-name` with this command.\n\n```\n$ npm install --save primer-branch-name\n```\n\n## Usage\n\nThe source files included are written in [Sass][sass] (SCSS) You can simply point your sass `include-path` at your `node_modules` directory and import it like this.\n\n```scss\n@import \"primer-branch-name/index.scss\";\n```\n\nYou can also import specific portions of the module by importing those partials from the `/lib/` folder. _Make sure you import any requirements along with the modules._\n\n## Build\n\nFor a compiled **CSS** version of this module, an npm script is included that will output a css version to `build/build.css` The built css file is also included in the npm package:\n\n```\n$ npm run build\n```\n\n## Documentation\n\n<!-- %docs\ntitle: Branch name\nstatus: Stable\n-->\n\nBranch names can be a link name or not:\n\n```html title=\"Branch name\"\n<span class=\"branch-name\">a_new_feature_branch</span>\n```\n\n```html title=\"Branch name with link\"\n<a href=\"#url\" class=\"branch-name\">a_new_feature_branch</a>\n```\n\nYou may also include an octicon before the branch name text:\n\n```html title=\"Branch name with icon\"\n<span class=\"branch-name\">\n  <%= octicon(\"git-branch\", width:16, height:16) %>\n  a_new_feature_branch\n</span>\n```\n\n<!-- %enddocs -->\n\n## License\n\n[MIT](./LICENSE) &copy; [GitHub](https://github.com/)\n\n[primer]: https://github.com/primer/primer\n[docs]: http://primer.github.io/\n[npm]: https://www.npmjs.com/\n[install-npm]: https://docs.npmjs.com/getting-started/installing-node\n[sass]: http://sass-lang.com/\n"
+module.exports = "# Primer Breadcrumb Navigation\n\n[![npm version](https://img.shields.io/npm/v/primer-breadcrumb.svg)](https://www.npmjs.org/package/primer-breadcrumb)\n[![Build Status](https://travis-ci.org/primer/primer.svg?branch=master)](https://travis-ci.org/primer/primer)\n\n> Breadcrumb navigation for GitHub's pages with parents / grandparents.\n\nThis repository is a module of the full [primer][primer] repository.\n\n## Documentation\n\n<!-- %docs\ntitle: Breadcrumbs\nstatus: Stable\n-->\n\nBreadcrumbs are used to show taxonomical context on pages that are many levels deep in a site’s hierarchy. Breadcrumbs show and link to parent, grandparent, and sometimes great-grandparent pages. Breadcrumbs are most appropriate on pages that:\n\n- Are many levels deep on a site\n- Do not have a section-level navigation\n- May need the ability to quickly go back to the previous (parent) page\n\n#### Usage\n\n```html title=\"Breadcrumb\"\n<nav aria-label=\"Breadcrumb\">\n  <ol>\n    <li class=\"breadcrumb-item text-small\"><a href=\"/business\">Business</a></li>\n    <li class=\"breadcrumb-item text-small\"><a href=\"/business/customers\">Customers</a></li>\n    <li class=\"breadcrumb-item breadcrumb-item-selected text-small text-gray\" aria-current=\"page\">MailChimp</li>\n  </ol>\n</nav>\n```\n\n<!-- %enddocs -->\n\n## License\n\nMIT &copy; [GitHub](https://github.com/)\n\n[primer]: https://github.com/primer/primer\n[primer-support]: https://github.com/primer/primer-support\n[support]: https://github.com/primer/primer-support\n[docs]: http://primer.github.io/\n[npm]: https://www.npmjs.com/\n[install-npm]: https://docs.npmjs.com/getting-started/installing-node\n[sass]: http://sass-lang.com/\n"
 
 /***/ }),
 /* 1106 */
@@ -61919,6 +61948,7 @@ module.exports = "# Primer / Branch Name\n\n[![npm version](https://img.shields.
 
 var map = {
 	"./README.md": 1107,
+	"./docs/grid.md": 1108,
 	"primer-support/README.md": 64,
 	"primer-support/docs/breakpoints.md": 65,
 	"primer-support/docs/spacing.md": 66,
@@ -61944,15 +61974,20 @@ webpackContext.id = 1106;
 /* 1107 */
 /***/ (function(module, exports) {
 
-module.exports = "# Primer Breadcrumb Navigation\n\n[![npm version](https://img.shields.io/npm/v/primer-breadcrumb.svg)](https://www.npmjs.org/package/primer-breadcrumb)\n[![Build Status](https://travis-ci.org/primer/primer.svg?branch=master)](https://travis-ci.org/primer/primer)\n\n> Breadcrumb navigation for GitHub's pages with parents / grandparents.\n\nThis repository is a module of the full [primer][primer] repository.\n\n## Documentation\n\n<!-- %docs\ntitle: Breadcrumbs\nstatus: Stable\n-->\n\nBreadcrumbs are used to show taxonomical context on pages that are many levels deep in a site’s hierarchy. Breadcrumbs show and link to parent, grandparent, and sometimes great-grandparent pages. Breadcrumbs are most appropriate on pages that:\n\n- Are many levels deep on a site\n- Do not have a section-level navigation\n- May need the ability to quickly go back to the previous (parent) page\n\n#### Usage\n\n```html title=\"Breadcrumb\"\n<nav aria-label=\"Breadcrumb\">\n  <ol>\n    <li class=\"breadcrumb-item text-small\"><a href=\"/business\">Business</a></li>\n    <li class=\"breadcrumb-item text-small\"><a href=\"/business/customers\">Customers</a></li>\n    <li class=\"breadcrumb-item breadcrumb-item-selected text-small text-gray\" aria-current=\"page\">MailChimp</li>\n  </ol>\n</nav>\n```\n\n<!-- %enddocs -->\n\n## License\n\nMIT &copy; [GitHub](https://github.com/)\n\n[primer]: https://github.com/primer/primer\n[primer-support]: https://github.com/primer/primer-support\n[support]: https://github.com/primer/primer-support\n[docs]: http://primer.github.io/\n[npm]: https://www.npmjs.com/\n[install-npm]: https://docs.npmjs.com/getting-started/installing-node\n[sass]: http://sass-lang.com/\n"
+module.exports = "# Primer Layout\n\n[![npm version](https://img.shields.io/npm/v/primer-layout.svg)](https://www.npmjs.org/package/primer-layout)\n[![Build Status](https://travis-ci.org/primer/primer.svg?branch=master)](https://travis-ci.org/primer/primer)\n\n> Primer’s layout includes basic page containers and a single-tiered, fraction-based grid system. That sounds more complicated than it really is though—it’s just containers, rows, and columns.\n\nThis repository is a module of the full [primer][primer] repository.\n\n## Install\n\nThis repository is distributed with [npm][npm]. After [installing npm][install-npm], you can install `primer-layout` with this command.\n\n```\n$ npm install --save primer-layout\n```\n\n## Usage\n\nThe source files included are written in [Sass][sass] (`scss`) You can simply point your sass `include-path` at your `node_modules` directory and import it like this.\n\n```scss\n@import \"primer-layout/index.scss\";\n```\n\nYou can also import specific portions of the module by importing those partials from the `/lib/` folder. _Make sure you import any requirements along with the modules._\n\n## Build\n\nFor a compiled **css** version of this module, a npm script is included that will output a css version to `build/build.css` The built css file is also included in the npm package.\n\n```\n$ npm run build\n```\n\n## Documentation\n\n<!-- %docs\ntitle: Layout\nstatus: Deprecated\nstatus_issue: https://github.com/github/design-systems/issues/59\nkey: /css/styles/core/objects/layout\n-->\n\nPrimer's layout includes basic page containers and a single-tiered, fraction-based grid system. That sounds more complicated than it really is though—it's just containers, rows, and columns.\n\nYou can find all the below styles in `_layout.scss`.\n\n#### Container\n\nCenter your page's contents with a `.container`.\n\n```html title=\"Container\"\n<div class=\"container border\">\n  Container\n</div>\n```\n\nThe container applies `width: 980px;` and uses horizontal `margin`s to center it.\n\n#### Grid\n\n##### How it works\n\nThe grid is pretty standard—you create rows with `.columns` and individual columns with a column class and fraction class. Here's how it works:\n\n- Add a `.container` to encapsulate everything and provide ample horizontal gutter space.\n- Create your outer row to clear the floated columns with `<div class=\"columns\">`.\n- Add your columns with individual `<div class=\"column\">`s.\n- Add your fractional width classes to set the width of the columns (e.g., `.one-fourth`).\n\n##### Demo\n\nIn practice, your columns will look like the example below.\n\n```html title=\"Grid columns\"\n<div class=\"container\">\n  <div class=\"columns mb-1\">\n    <div class=\"one-fifth column block-blue p-3 border\">\n      .one-fifth\n    </div>\n    <div class=\"four-fifths column block-blue p-3 border\">\n      .four-fifths\n    </div>\n  </div>\n\n  <div class=\"columns mb-1\">\n    <div class=\"one-fourth column block-blue p-3 border\">\n      .one-fourth\n    </div>\n    <div class=\"three-fourths column block-blue p-3 border\">\n      .three-fourths\n    </div>\n  </div>\n\n  <div class=\"columns mb-1\">\n    <div class=\"one-third column block-blue p-3 border\">\n      .one-third\n    </div>\n    <div class=\"two-thirds column block-blue p-3 border\">\n      .two-thirds\n    </div>\n  </div>\n\n  <div class=\"columns\">\n    <div class=\"one-half column block-blue p-3 border\">\n      .one-half\n    </div>\n    <div class=\"one-half column block-blue p-3 border\">\n      .one-half\n    </div>\n  </div>\n</div>\n```\n\n##### Centered\n\nColumns can be centered by adding `.centered` to the `.column` class.\n\n```html title=\"Grid centered\"\n<div class=\"columns\">\n  <div class=\"one-half column centered block-blue border p-3\">\n    .one-half\n  </div>\n</div>\n```\n<!-- %enddocs -->\n\n## License\n\n[MIT](./LICENSE) &copy; [GitHub](https://github.com/)\n\n[primer]: https://github.com/primer/primer\n[docs]: http://primer.github.io/\n[npm]: https://www.npmjs.com/\n[install-npm]: https://docs.npmjs.com/getting-started/installing-node\n[sass]: http://sass-lang.com/\n"
 
 /***/ }),
 /* 1108 */
+/***/ (function(module, exports) {
+
+module.exports = "---\ntitle: Grid\nstatus: New release\nstatus_issue: https://github.com/github/design-systems/issues/88\nsource: https://github.com/primer/primer/blob/master/modules/primer-layout/lib/grid.scss\n---\n\nThe grid is 12 columns and percentage-based. The number of columns a container spans can be adjusted across breakpoints for responsive layouts. The grid system works with a variety of layout utilities to achieve different results.\n\n{:toc}\n\n## Float based grid\n\nUse `.clearfix` on the container and float utilities with columns for a floated grid layout.\n\n```html title=\"Float based grid\"\n<div class=\"container-lg clearfix\">\n  <div class=\"col-4 float-left border p-4\">\n    My column\n  </div>\n  <div class=\"col-4 float-left border p-4\">\n    Looks better\n  </div>\n  <div class=\"col-4 float-left border p-4\">\n    Than your column\n  </div>\n</div>\n```\n\n### Reversed grid\n\nTo reverse the order of columns, use `float-right` to float columns to the right.\n\n```html title=\"Float grid reversed\"\n<div class=\"container-lg clearfix\">\n  <div class=\"col-4 float-right border p-4\">\n    One\n  </div>\n  <div class=\"col-4 float-right border p-4\">\n    Two\n  </div>\n  <div class=\"col-4 float-right border p-4\">\n    Three\n  </div>\n</div>\n```\n\n## Nesting\nYou can infinitely nest grid layouts within other columns since the column widths are percentage based. With great flexibility comes great responsibility - be sensible with how far you nest!\n\n```html title=\"Nesting grids\"\n<div class=\"clearfix\">\n  <div class=\"col-6 float-left px-1\">\n    <div class=\"border p-1\">Unnested</div>\n  </div>\n  <div class=\"col-6 float-left\">\n    <div class=\"clearfix\">\n      <div class=\"col-6 float-left px-1\">\n        <div class=\"border p-1\">1 x Nested</div>\n      </div>\n      <div class=\"col-6 float-left\">\n        <div class=\"col-6 float-left px-1\">\n          <div class=\"border p-1\">2 x Nested</div>\n        </div>\n        <div class=\"col-6 float-left px-1\">\n          <div class=\"border p-1\">2 x Nested</div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n```\n\n## Centering a column\n\nUse `.mx-auto` to center columns within a container.\n\n```html title=\"Centering a column\"\n<div class=\"border\">\n  <div class=\"col-6 p-2 mx-auto border\">\n    This column is the center of my world.\n  </div>\n</div>\n```\n\n\n## Column widths\nColumn widths can be used with any other block or inline-block elements to add percentage-based widths.\n\n```html title=\"Column widths\"\n<div>\n  <div class=\"col-4 float-right p-2 border text-red\">\n    <%= octicon \"heart\" %> Don't go bacon my heart.\n  </div>\n  <p>T-bone drumstick alcatra ribeye. Strip steak chuck andouille tenderloin bacon tri-tip ball tip beef capicola rump. Meatloaf bresaola drumstick ball tip salami. Drumstick ham bacon alcatra pig porchetta, spare ribs leberkas pork belly.</p>\n</div>\n```\n\n## Offset columns\n\nUsing column offset classes can push a div over X number of columns. They work responsively using the [breakpoints outlined below](../grid#responsive-grids).\n\n```html title=\"Offset columns\"\n<div class=\"clearfix\">\n  <div class=\"offset-1 col-3 border p-3\">.offset-1</div>\n  <div class=\"offset-2 col-3 border p-3\">.offset-2</div>\n</div>\n```\n\n## Gutters\nUse gutter styles or padding utilities to create gutters. You can use the default gutter style, `gutter`, or either of its modifiers, `gutter-condensed` or `gutter-spacious`. Gutter styles also support responsive breakpoint modifiers. Gutter styles add padding to the left and right side of each column and apply a negative margin to the container to ensure content inside each column lines up with content outside of the grid.\n\n```html title=\"Gutters\"\n<div class=\"clearfix gutter-md-spacious border\">\n  <div class=\"col-3 float-left\">\n    <div class=\"border p-3\">.col-md-3</div>\n  </div>\n  <div class=\"col-3 float-left\">\n    <div class=\"border p-3\">.col-md-3</div>\n  </div>\n  <div class=\"col-3 float-left\">\n    <div class=\"border p-3\">.col-md-3</div>\n  </div>\n  <div class=\"col-3 float-left\">\n    <div class=\"border p-3\">.col-md-3</div>\n  </div>\n</div>\n```\n\nUse padding utilities to create gutters for more customized layouts.\n\n```html title=\"Gutters with padding\"\n<div class=\"container-lg clearfix\">\n  <div class=\"col-3 float-left pr-2 mb-3\">\n    <div class=\"border bg-gray-light\">.pr-2</div>\n  </div>\n  <div class=\"col-3 float-left px-2 mb-3\">\n    <div class=\"border bg-gray-light\">.px-2</div>\n  </div>\n  <div class=\"col-3 float-left px-2 mb-3\">\n    <div class=\"border bg-gray-light\">.px-2</div>\n  </div>\n  <div class=\"col-3 float-left pl-2 mb-3\">\n    <div class=\"border bg-gray-light\">.pl-2</div>\n  </div>\n</div>\n<div class=\"container-lg clearfix\">\n  <div class=\"col-3 float-left pr-2\">\n    <div class=\"border bg-gray-light\">.pr-2</div>\n  </div>\n  <div class=\"col-9 float-left pl-2\">\n    <div class=\"border bg-gray-light\">.pl-2</div>\n  </div>\n</div>\n```\n\n\n## Inline-block grids\nUse column widths with `d-inline-block` as an alternative to floated grids.\n\n```html title=\"Inline-block grid\"\n<div>\n  <div class=\"col-4 d-inline-block border\">\n    .col-4 .d-inline-block\n  </div><!--\n  --><div class=\"col-4 d-inline-block border\">\n    .col-4 .d-inline-block\n  </div><!--\n  --><div class=\"col-4 d-inline-block border\">\n    .col-4 .d-inline-block\n  </div>\n</div>\n```\n\nYou can use column widths and other utilities on elements such as lists to create the layout you need while keeping the markup semantically correct.\n```html title=\"Inline-block grid list\"\n<ul class=\"list-style-none\">\n  <li class=\"d-inline-block col-2 p-2\"><img class=\"width-full avatar\" src=\"/broccolini.png\" alt=\"broccolini\" /></li><!--\n  --><li class=\"d-inline-block col-2 p-2\"><img class=\"width-full avatar\" src=\"/jonrohan.png\" alt=\"jonrohan\" /></li><!--\n  --><li class=\"d-inline-block col-2 p-2\"><img class=\"width-full avatar\" src=\"/muan.png\" alt=\"muan\" /></li><!--\n  --><li class=\"d-inline-block col-2 p-2\"><img class=\"width-full avatar\" src=\"/pmarsceill.png\" alt=\"pmarsceill\" /></li><!--\n  --><li class=\"d-inline-block col-2 p-2\"><img class=\"width-full avatar\" src=\"/sophshep.png\" alt=\"sophshep\" /></li><!--\n  --><li class=\"d-inline-block col-2 p-2\"><img class=\"width-full avatar\" src=\"/cmwinters.png\" alt=\"cmwinters\" /></li><!--\n  --><li class=\"d-inline-block col-2 p-2\"><img class=\"width-full avatar\" src=\"/jeejkang.png\" alt=\"jeejkang\" /></li><!--\n  --><li class=\"d-inline-block col-2 p-2\"><img class=\"width-full avatar\" src=\"/mdo.png\" alt=\"mdo\" /></li>\n</ul>\n```\n\n\n## Display table grids\nUsing [display table utilities](../../utilities/layout#display) with columns gives you some alternative layout options.\n\nA useful example is being able to keep the height of the container equal across a row when the length of content may differ.\n\n```html title=\"Table grid\"\n<div class=\"d-table col-12\">\n  <div class=\"col-4 d-table-cell border p-2\">\n    Bacon ipsum dolor amet leberkas pork pig kielbasa shankle ribeye meatball, salami alcatra venison.\n  </div><!--\n  --><div class=\"col-4 d-table-cell border p-2\">\n    Pork chop cupim cow turkey frankfurter, landjaeger fatback hamburger meatball salami spare ribs. Rump tenderloin salami, hamburger frankfurter landjaeger andouille.\n  </div><!--\n  --><div class=\"col-4 d-table-cell border p-2\">\n    Brisket tongue frankfurter cupim strip steak rump picanha pancetta pork pig kevin pastrami biltong. Shankle venison meatball swine sausage ground round. Tail pork loin ribeye kielbasa short ribs pork chop.\n  </div>\n</div>\n```\nYou can also create an alternative [media object](../../utilities/layout#the-media-object) layout with `.display-table` and column widths.\n\n```html title=\"Table grid alternative\"\n<div class=\"d-table col-12\">\n  <div class=\"col-2 d-table-cell v-align-middle\">\n    <img class=\"width-full avatar\" src=\"/github.png\" alt=\"github\" />\n  </div>\n  <div class=\"col-10 d-table-cell v-align-middle pl-4\">\n    <h1 class=\"text-normal lh-condensed\">GitHub</h1>\n    <p class=\"h4 text-gray text-normal mb-2\">How people build software.</p>\n    <a class=\"text-gray text-small\" href=\"#url\">https://github.com/about</a>\n  </div>\n</div>\n```\n\nNote that table cells will fill the width of their container even when the total columns doesn't add up to 12.\n\n```html title=\"Table grid cells\"\n<div class=\"d-table col-12\">\n  <div class=\"col-4 d-table-cell border\">\n    .col-4 .d-table-cell\n  </div><!--\n  --><div class=\"col-4 d-table-cell border\">\n    .col-4 .d-table-cell\n  </div><!--\n  --><div class=\"col-2 d-table-cell border\">\n    .col-2 .d-table-cell\n  </div>\n</div>\n```\n\n## Flexbox grids\n\nYou can use [flex utilities](../../utilities/flexbox) on the container and columns to create a flexbox grid.\n\nThis can be useful for keeping columns the same height, justifying content and vertically aligning items. The flexbox grid is also great for working with responsive layouts.\n\n```html title=\"Flexbox grid\"\n<div class=\"d-flex flex-column flex-md-row flex-items-center flex-md-items-center\">\n  <div class=\"col-2 d-flex flex-items-center flex-items-center flex-md-items-start\">\n    <img class=\"width-full avatar mb-2 mb-md-0\" src=\"/github.png\" alt=\"github\" />\n  </div>\n  <div class=\"col-12 col-md-10 d-flex flex-column flex-justify-center flex-items-center flex-md-items-start pl-md-4\">\n    <h1 class=\"text-normal lh-condensed\">GitHub</h1>\n    <p class=\"h4 text-gray text-normal mb-2\">How people build software.</p>\n    <a class=\"text-gray text-small\" href=\"#url\">https://github.com/about</a>\n  </div>\n</div>\n```\n\n\n## Responsive grids\nAll the column width classes can be set per breakpoint to create responsive grid layouts. Each responsive style is applied to the specified breakpoint and up.\n\n### Breakpoints\nWe use abbreviations for each breakpoint to keep the class names concise.\n\n| Shorthand | Description |\n| --- | --- |\n| sm | min-width: 544px |\n| md | min-width: 768px |\n| lg | min-width: 1004px |\n| xl | min-width: 1280px |\n\n**Note:** The `lg` breakpoint matches our current page width of `980px` including left and right padding of `12px`. This is so that content doesn't touch the edges of the window when resized.\n\n<hr />\n\nIn this example at the `sm` breakpoint 2 columns will show, at the `md` breakpoint 4 columns will show, and at the `lg` breakpoint 6 columns will show.\n\n```html title=\"Responsive grid\"\n<div class=\"container-lg clearfix\">\n  <div class=\"col-sm-6 col-md-3 col-lg-2 float-left p-2 border\">\n    .col-sm-6 .col-md-3 .col-lg-2\n  </div>\n  <div class=\"col-sm-6 col-md-3 col-lg-2 float-left p-2 border\">\n    .col-sm-6 .col-md-3 .col-lg-2\n  </div>\n  <div class=\"col-sm-6 col-md-3 col-lg-2 float-left p-2 border\">\n    .col-sm-6 .col-md-3 .col-lg-2\n  </div>\n  <div class=\"col-sm-6 col-md-3 col-lg-2 float-left p-2 border\">\n    .col-sm-6 .col-md-3 .col-lg-2\n  </div>\n  <div class=\"col-sm-6 col-md-3 col-lg-2 float-left p-2 border\">\n    .col-sm-6 .col-md-3 .col-lg-2\n  </div>\n  <div class=\"col-sm-6 col-md-3 col-lg-2 float-left p-2 border\">\n    .col-sm-6 .col-md-3 .col-lg-2\n  </div>\n</div>\n```\n\nFor demonstration, this is how the above example would look at the `sm` breakpoint.\n\n```html title=\"Responsive grid small\"\n<div class=\"container-lg clearfix\">\n  <div class=\"col-sm-6 float-left p-2 border\">\n    .col-sm-6\n  </div>\n  <div class=\"col-sm-6 float-left p-2 border\">\n    .col-sm-6\n  </div>\n  <div class=\"col-sm-6 float-left p-2 border\">\n    .col-sm-6\n  </div>\n  <div class=\"col-sm-6 float-left p-2 border\">\n    .col-sm-6\n  </div>\n  <div class=\"col-sm-6 float-left p-2 border\">\n    .col-sm-6\n  </div>\n  <div class=\"col-sm-6 float-left p-2 border\">\n    .col-sm-6\n  </div>\n</div>\n```\nThis is how that same example would look at the `md` breakpoint.\n\n```html title=\"Responsive grid medium\"\n<div class=\"container-lg clearfix\">\n  <div class=\"col-md-3 float-left p-2 border\">\n    .col-md-3\n  </div>\n  <div class=\"col-md-3 float-left p-2 border\">\n    .col-md-3\n  </div>\n  <div class=\"col-md-3 float-left p-2 border\">\n    .col-md-3\n  </div>\n  <div class=\"col-md-3 float-left p-2 border\">\n    .col-md-3\n  </div>\n  <div class=\"col-md-3 float-left p-2 border\">\n    .col-md-3\n  </div>\n  <div class=\"col-md-3 float-left p-2 border\">\n    .col-md-3\n  </div>\n</div>\n```\n\nThis is how that example would look at the `lg` breakpoint.\n\n```html title=\"Responsive grid large\"\n<div class=\"container-lg clearfix\">\n  <div class=\"col-lg-2 float-left p-2 border\">\n    .col-lg-2\n  </div>\n  <div class=\"col-lg-2 float-left p-2 border\">\n    .col-lg-2\n  </div>\n  <div class=\"col-lg-2 float-left p-2 border\">\n    .col-lg-2\n  </div>\n  <div class=\"col-lg-2 float-left p-2 border\">\n    .col-lg-2\n  </div>\n  <div class=\"col-lg-2 float-left p-2 border\">\n    .col-lg-2\n  </div>\n  <div class=\"col-lg-2 float-left p-2 border\">\n    .col-lg-2\n  </div>\n</div>\n```\n\n## Containers\nContainer widths match our breakpoints and are available at a `md`, `lg`, and `xl` size. Containers apply a max-width rather than a fixed width for responsive layouts, and they center the container.\n\n```html title=\"Containers sized\"\n<div class=\"container-md border\">\n  .container-md, max-width 768px\n</div>\n\n<div class=\"container-lg border\">\n  .container-lg, max-width 1012px\n</div>\n\n<div class=\"container-xl border\">\n  .container-xl, max-width 1280px\n</div>\n```\n\n**Note:** `.container` is being replaced with `.container-lg`. To match the current fixed page width use `.container-lg` with `px-3`. This gives the container padding on smaller screens which works better for responsive layouts.\n"
+
+/***/ }),
+/* 1109 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./README.md": 1109,
-	"./docs/grid.md": 1110,
+	"./README.md": 1110,
 	"primer-support/README.md": 64,
 	"primer-support/docs/breakpoints.md": 65,
 	"primer-support/docs/spacing.md": 66,
@@ -61972,19 +62007,13 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 1108;
-
-/***/ }),
-/* 1109 */
-/***/ (function(module, exports) {
-
-module.exports = "# Primer Layout\n\n[![npm version](https://img.shields.io/npm/v/primer-layout.svg)](https://www.npmjs.org/package/primer-layout)\n[![Build Status](https://travis-ci.org/primer/primer.svg?branch=master)](https://travis-ci.org/primer/primer)\n\n> Primer’s layout includes basic page containers and a single-tiered, fraction-based grid system. That sounds more complicated than it really is though—it’s just containers, rows, and columns.\n\nThis repository is a module of the full [primer][primer] repository.\n\n## Install\n\nThis repository is distributed with [npm][npm]. After [installing npm][install-npm], you can install `primer-layout` with this command.\n\n```\n$ npm install --save primer-layout\n```\n\n## Usage\n\nThe source files included are written in [Sass][sass] (`scss`) You can simply point your sass `include-path` at your `node_modules` directory and import it like this.\n\n```scss\n@import \"primer-layout/index.scss\";\n```\n\nYou can also import specific portions of the module by importing those partials from the `/lib/` folder. _Make sure you import any requirements along with the modules._\n\n## Build\n\nFor a compiled **css** version of this module, a npm script is included that will output a css version to `build/build.css` The built css file is also included in the npm package.\n\n```\n$ npm run build\n```\n\n## Documentation\n\n<!-- %docs\ntitle: Layout\nstatus: Deprecated\nstatus_issue: https://github.com/github/design-systems/issues/59\nkey: /css/styles/core/objects/layout\n-->\n\nPrimer's layout includes basic page containers and a single-tiered, fraction-based grid system. That sounds more complicated than it really is though—it's just containers, rows, and columns.\n\nYou can find all the below styles in `_layout.scss`.\n\n#### Container\n\nCenter your page's contents with a `.container`.\n\n```html title=\"Container\"\n<div class=\"container border\">\n  Container\n</div>\n```\n\nThe container applies `width: 980px;` and uses horizontal `margin`s to center it.\n\n#### Grid\n\n##### How it works\n\nThe grid is pretty standard—you create rows with `.columns` and individual columns with a column class and fraction class. Here's how it works:\n\n- Add a `.container` to encapsulate everything and provide ample horizontal gutter space.\n- Create your outer row to clear the floated columns with `<div class=\"columns\">`.\n- Add your columns with individual `<div class=\"column\">`s.\n- Add your fractional width classes to set the width of the columns (e.g., `.one-fourth`).\n\n##### Demo\n\nIn practice, your columns will look like the example below.\n\n```html title=\"Grid columns\"\n<div class=\"container\">\n  <div class=\"columns mb-1\">\n    <div class=\"one-fifth column block-blue p-3 border\">\n      .one-fifth\n    </div>\n    <div class=\"four-fifths column block-blue p-3 border\">\n      .four-fifths\n    </div>\n  </div>\n\n  <div class=\"columns mb-1\">\n    <div class=\"one-fourth column block-blue p-3 border\">\n      .one-fourth\n    </div>\n    <div class=\"three-fourths column block-blue p-3 border\">\n      .three-fourths\n    </div>\n  </div>\n\n  <div class=\"columns mb-1\">\n    <div class=\"one-third column block-blue p-3 border\">\n      .one-third\n    </div>\n    <div class=\"two-thirds column block-blue p-3 border\">\n      .two-thirds\n    </div>\n  </div>\n\n  <div class=\"columns\">\n    <div class=\"one-half column block-blue p-3 border\">\n      .one-half\n    </div>\n    <div class=\"one-half column block-blue p-3 border\">\n      .one-half\n    </div>\n  </div>\n</div>\n```\n\n##### Centered\n\nColumns can be centered by adding `.centered` to the `.column` class.\n\n```html title=\"Grid centered\"\n<div class=\"columns\">\n  <div class=\"one-half column centered block-blue border p-3\">\n    .one-half\n  </div>\n</div>\n```\n<!-- %enddocs -->\n\n## License\n\n[MIT](./LICENSE) &copy; [GitHub](https://github.com/)\n\n[primer]: https://github.com/primer/primer\n[docs]: http://primer.github.io/\n[npm]: https://www.npmjs.com/\n[install-npm]: https://docs.npmjs.com/getting-started/installing-node\n[sass]: http://sass-lang.com/\n"
+webpackContext.id = 1109;
 
 /***/ }),
 /* 1110 */
 /***/ (function(module, exports) {
 
-module.exports = "---\ntitle: Grid\nstatus: New release\nstatus_issue: https://github.com/github/design-systems/issues/88\nsource: https://github.com/primer/primer/blob/master/modules/primer-layout/lib/grid.scss\n---\n\nThe grid is 12 columns and percentage-based. The number of columns a container spans can be adjusted across breakpoints for responsive layouts. The grid system works with a variety of layout utilities to achieve different results.\n\n{:toc}\n\n## Float based grid\n\nUse `.clearfix` on the container and float utilities with columns for a floated grid layout.\n\n```html title=\"Float based grid\"\n<div class=\"container-lg clearfix\">\n  <div class=\"col-4 float-left border p-4\">\n    My column\n  </div>\n  <div class=\"col-4 float-left border p-4\">\n    Looks better\n  </div>\n  <div class=\"col-4 float-left border p-4\">\n    Than your column\n  </div>\n</div>\n```\n\n### Reversed grid\n\nTo reverse the order of columns, use `float-right` to float columns to the right.\n\n```html title=\"Float grid reversed\"\n<div class=\"container-lg clearfix\">\n  <div class=\"col-4 float-right border p-4\">\n    One\n  </div>\n  <div class=\"col-4 float-right border p-4\">\n    Two\n  </div>\n  <div class=\"col-4 float-right border p-4\">\n    Three\n  </div>\n</div>\n```\n\n## Nesting\nYou can infinitely nest grid layouts within other columns since the column widths are percentage based. With great flexibility comes great responsibility - be sensible with how far you nest!\n\n```html title=\"Nesting grids\"\n<div class=\"clearfix\">\n  <div class=\"col-6 float-left px-1\">\n    <div class=\"border p-1\">Unnested</div>\n  </div>\n  <div class=\"col-6 float-left\">\n    <div class=\"clearfix\">\n      <div class=\"col-6 float-left px-1\">\n        <div class=\"border p-1\">1 x Nested</div>\n      </div>\n      <div class=\"col-6 float-left\">\n        <div class=\"col-6 float-left px-1\">\n          <div class=\"border p-1\">2 x Nested</div>\n        </div>\n        <div class=\"col-6 float-left px-1\">\n          <div class=\"border p-1\">2 x Nested</div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n```\n\n## Centering a column\n\nUse `.mx-auto` to center columns within a container.\n\n```html title=\"Centering a column\"\n<div class=\"border\">\n  <div class=\"col-6 p-2 mx-auto border\">\n    This column is the center of my world.\n  </div>\n</div>\n```\n\n\n## Column widths\nColumn widths can be used with any other block or inline-block elements to add percentage-based widths.\n\n```html title=\"Column widths\"\n<div>\n  <div class=\"col-4 float-right p-2 border text-red\">\n    <%= octicon \"heart\" %> Don't go bacon my heart.\n  </div>\n  <p>T-bone drumstick alcatra ribeye. Strip steak chuck andouille tenderloin bacon tri-tip ball tip beef capicola rump. Meatloaf bresaola drumstick ball tip salami. Drumstick ham bacon alcatra pig porchetta, spare ribs leberkas pork belly.</p>\n</div>\n```\n\n## Offset columns\n\nUsing column offset classes can push a div over X number of columns. They work responsively using the [breakpoints outlined below](../grid#responsive-grids).\n\n```html title=\"Offset columns\"\n<div class=\"clearfix\">\n  <div class=\"offset-1 col-3 border p-3\">.offset-1</div>\n  <div class=\"offset-2 col-3 border p-3\">.offset-2</div>\n</div>\n```\n\n## Gutters\nUse gutter styles or padding utilities to create gutters. You can use the default gutter style, `gutter`, or either of its modifiers, `gutter-condensed` or `gutter-spacious`. Gutter styles also support responsive breakpoint modifiers. Gutter styles add padding to the left and right side of each column and apply a negative margin to the container to ensure content inside each column lines up with content outside of the grid.\n\n```html title=\"Gutters\"\n<div class=\"clearfix gutter-md-spacious border\">\n  <div class=\"col-3 float-left\">\n    <div class=\"border p-3\">.col-md-3</div>\n  </div>\n  <div class=\"col-3 float-left\">\n    <div class=\"border p-3\">.col-md-3</div>\n  </div>\n  <div class=\"col-3 float-left\">\n    <div class=\"border p-3\">.col-md-3</div>\n  </div>\n  <div class=\"col-3 float-left\">\n    <div class=\"border p-3\">.col-md-3</div>\n  </div>\n</div>\n```\n\nUse padding utilities to create gutters for more customized layouts.\n\n```html title=\"Gutters with padding\"\n<div class=\"container-lg clearfix\">\n  <div class=\"col-3 float-left pr-2 mb-3\">\n    <div class=\"border bg-gray-light\">.pr-2</div>\n  </div>\n  <div class=\"col-3 float-left px-2 mb-3\">\n    <div class=\"border bg-gray-light\">.px-2</div>\n  </div>\n  <div class=\"col-3 float-left px-2 mb-3\">\n    <div class=\"border bg-gray-light\">.px-2</div>\n  </div>\n  <div class=\"col-3 float-left pl-2 mb-3\">\n    <div class=\"border bg-gray-light\">.pl-2</div>\n  </div>\n</div>\n<div class=\"container-lg clearfix\">\n  <div class=\"col-3 float-left pr-2\">\n    <div class=\"border bg-gray-light\">.pr-2</div>\n  </div>\n  <div class=\"col-9 float-left pl-2\">\n    <div class=\"border bg-gray-light\">.pl-2</div>\n  </div>\n</div>\n```\n\n\n## Inline-block grids\nUse column widths with `d-inline-block` as an alternative to floated grids.\n\n```html title=\"Inline-block grid\"\n<div>\n  <div class=\"col-4 d-inline-block border\">\n    .col-4 .d-inline-block\n  </div><!--\n  --><div class=\"col-4 d-inline-block border\">\n    .col-4 .d-inline-block\n  </div><!--\n  --><div class=\"col-4 d-inline-block border\">\n    .col-4 .d-inline-block\n  </div>\n</div>\n```\n\nYou can use column widths and other utilities on elements such as lists to create the layout you need while keeping the markup semantically correct.\n```html title=\"Inline-block grid list\"\n<ul class=\"list-style-none\">\n  <li class=\"d-inline-block col-2 p-2\"><img class=\"width-full avatar\" src=\"/broccolini.png\" alt=\"broccolini\" /></li><!--\n  --><li class=\"d-inline-block col-2 p-2\"><img class=\"width-full avatar\" src=\"/jonrohan.png\" alt=\"jonrohan\" /></li><!--\n  --><li class=\"d-inline-block col-2 p-2\"><img class=\"width-full avatar\" src=\"/muan.png\" alt=\"muan\" /></li><!--\n  --><li class=\"d-inline-block col-2 p-2\"><img class=\"width-full avatar\" src=\"/pmarsceill.png\" alt=\"pmarsceill\" /></li><!--\n  --><li class=\"d-inline-block col-2 p-2\"><img class=\"width-full avatar\" src=\"/sophshep.png\" alt=\"sophshep\" /></li><!--\n  --><li class=\"d-inline-block col-2 p-2\"><img class=\"width-full avatar\" src=\"/cmwinters.png\" alt=\"cmwinters\" /></li><!--\n  --><li class=\"d-inline-block col-2 p-2\"><img class=\"width-full avatar\" src=\"/jeejkang.png\" alt=\"jeejkang\" /></li><!--\n  --><li class=\"d-inline-block col-2 p-2\"><img class=\"width-full avatar\" src=\"/mdo.png\" alt=\"mdo\" /></li>\n</ul>\n```\n\n\n## Display table grids\nUsing [display table utilities](../../utilities/layout#display) with columns gives you some alternative layout options.\n\nA useful example is being able to keep the height of the container equal across a row when the length of content may differ.\n\n```html title=\"Table grid\"\n<div class=\"d-table col-12\">\n  <div class=\"col-4 d-table-cell border p-2\">\n    Bacon ipsum dolor amet leberkas pork pig kielbasa shankle ribeye meatball, salami alcatra venison.\n  </div><!--\n  --><div class=\"col-4 d-table-cell border p-2\">\n    Pork chop cupim cow turkey frankfurter, landjaeger fatback hamburger meatball salami spare ribs. Rump tenderloin salami, hamburger frankfurter landjaeger andouille.\n  </div><!--\n  --><div class=\"col-4 d-table-cell border p-2\">\n    Brisket tongue frankfurter cupim strip steak rump picanha pancetta pork pig kevin pastrami biltong. Shankle venison meatball swine sausage ground round. Tail pork loin ribeye kielbasa short ribs pork chop.\n  </div>\n</div>\n```\nYou can also create an alternative [media object](../../utilities/layout#the-media-object) layout with `.display-table` and column widths.\n\n```html title=\"Table grid alternative\"\n<div class=\"d-table col-12\">\n  <div class=\"col-2 d-table-cell v-align-middle\">\n    <img class=\"width-full avatar\" src=\"/github.png\" alt=\"github\" />\n  </div>\n  <div class=\"col-10 d-table-cell v-align-middle pl-4\">\n    <h1 class=\"text-normal lh-condensed\">GitHub</h1>\n    <p class=\"h4 text-gray text-normal mb-2\">How people build software.</p>\n    <a class=\"text-gray text-small\" href=\"#url\">https://github.com/about</a>\n  </div>\n</div>\n```\n\nNote that table cells will fill the width of their container even when the total columns doesn't add up to 12.\n\n```html title=\"Table grid cells\"\n<div class=\"d-table col-12\">\n  <div class=\"col-4 d-table-cell border\">\n    .col-4 .d-table-cell\n  </div><!--\n  --><div class=\"col-4 d-table-cell border\">\n    .col-4 .d-table-cell\n  </div><!--\n  --><div class=\"col-2 d-table-cell border\">\n    .col-2 .d-table-cell\n  </div>\n</div>\n```\n\n## Flexbox grids\n\nYou can use [flex utilities](../../utilities/flexbox) on the container and columns to create a flexbox grid.\n\nThis can be useful for keeping columns the same height, justifying content and vertically aligning items. The flexbox grid is also great for working with responsive layouts.\n\n```html title=\"Flexbox grid\"\n<div class=\"d-flex flex-column flex-md-row flex-items-center flex-md-items-center\">\n  <div class=\"col-2 d-flex flex-items-center flex-items-center flex-md-items-start\">\n    <img class=\"width-full avatar mb-2 mb-md-0\" src=\"/github.png\" alt=\"github\" />\n  </div>\n  <div class=\"col-12 col-md-10 d-flex flex-column flex-justify-center flex-items-center flex-md-items-start pl-md-4\">\n    <h1 class=\"text-normal lh-condensed\">GitHub</h1>\n    <p class=\"h4 text-gray text-normal mb-2\">How people build software.</p>\n    <a class=\"text-gray text-small\" href=\"#url\">https://github.com/about</a>\n  </div>\n</div>\n```\n\n\n## Responsive grids\nAll the column width classes can be set per breakpoint to create responsive grid layouts. Each responsive style is applied to the specified breakpoint and up.\n\n### Breakpoints\nWe use abbreviations for each breakpoint to keep the class names concise.\n\n| Shorthand | Description |\n| --- | --- |\n| sm | min-width: 544px |\n| md | min-width: 768px |\n| lg | min-width: 1004px |\n| xl | min-width: 1280px |\n\n**Note:** The `lg` breakpoint matches our current page width of `980px` including left and right padding of `12px`. This is so that content doesn't touch the edges of the window when resized.\n\n<hr />\n\nIn this example at the `sm` breakpoint 2 columns will show, at the `md` breakpoint 4 columns will show, and at the `lg` breakpoint 6 columns will show.\n\n```html title=\"Responsive grid\"\n<div class=\"container-lg clearfix\">\n  <div class=\"col-sm-6 col-md-3 col-lg-2 float-left p-2 border\">\n    .col-sm-6 .col-md-3 .col-lg-2\n  </div>\n  <div class=\"col-sm-6 col-md-3 col-lg-2 float-left p-2 border\">\n    .col-sm-6 .col-md-3 .col-lg-2\n  </div>\n  <div class=\"col-sm-6 col-md-3 col-lg-2 float-left p-2 border\">\n    .col-sm-6 .col-md-3 .col-lg-2\n  </div>\n  <div class=\"col-sm-6 col-md-3 col-lg-2 float-left p-2 border\">\n    .col-sm-6 .col-md-3 .col-lg-2\n  </div>\n  <div class=\"col-sm-6 col-md-3 col-lg-2 float-left p-2 border\">\n    .col-sm-6 .col-md-3 .col-lg-2\n  </div>\n  <div class=\"col-sm-6 col-md-3 col-lg-2 float-left p-2 border\">\n    .col-sm-6 .col-md-3 .col-lg-2\n  </div>\n</div>\n```\n\nFor demonstration, this is how the above example would look at the `sm` breakpoint.\n\n```html title=\"Responsive grid small\"\n<div class=\"container-lg clearfix\">\n  <div class=\"col-sm-6 float-left p-2 border\">\n    .col-sm-6\n  </div>\n  <div class=\"col-sm-6 float-left p-2 border\">\n    .col-sm-6\n  </div>\n  <div class=\"col-sm-6 float-left p-2 border\">\n    .col-sm-6\n  </div>\n  <div class=\"col-sm-6 float-left p-2 border\">\n    .col-sm-6\n  </div>\n  <div class=\"col-sm-6 float-left p-2 border\">\n    .col-sm-6\n  </div>\n  <div class=\"col-sm-6 float-left p-2 border\">\n    .col-sm-6\n  </div>\n</div>\n```\nThis is how that same example would look at the `md` breakpoint.\n\n```html title=\"Responsive grid medium\"\n<div class=\"container-lg clearfix\">\n  <div class=\"col-md-3 float-left p-2 border\">\n    .col-md-3\n  </div>\n  <div class=\"col-md-3 float-left p-2 border\">\n    .col-md-3\n  </div>\n  <div class=\"col-md-3 float-left p-2 border\">\n    .col-md-3\n  </div>\n  <div class=\"col-md-3 float-left p-2 border\">\n    .col-md-3\n  </div>\n  <div class=\"col-md-3 float-left p-2 border\">\n    .col-md-3\n  </div>\n  <div class=\"col-md-3 float-left p-2 border\">\n    .col-md-3\n  </div>\n</div>\n```\n\nThis is how that example would look at the `lg` breakpoint.\n\n```html title=\"Responsive grid large\"\n<div class=\"container-lg clearfix\">\n  <div class=\"col-lg-2 float-left p-2 border\">\n    .col-lg-2\n  </div>\n  <div class=\"col-lg-2 float-left p-2 border\">\n    .col-lg-2\n  </div>\n  <div class=\"col-lg-2 float-left p-2 border\">\n    .col-lg-2\n  </div>\n  <div class=\"col-lg-2 float-left p-2 border\">\n    .col-lg-2\n  </div>\n  <div class=\"col-lg-2 float-left p-2 border\">\n    .col-lg-2\n  </div>\n  <div class=\"col-lg-2 float-left p-2 border\">\n    .col-lg-2\n  </div>\n</div>\n```\n\n## Containers\nContainer widths match our breakpoints and are available at a `md`, `lg`, and `xl` size. Containers apply a max-width rather than a fixed width for responsive layouts, and they center the container.\n\n```html title=\"Containers sized\"\n<div class=\"container-md border\">\n  .container-md, max-width 768px\n</div>\n\n<div class=\"container-lg border\">\n  .container-lg, max-width 1012px\n</div>\n\n<div class=\"container-xl border\">\n  .container-xl, max-width 1280px\n</div>\n```\n\n**Note:** `.container` is being replaced with `.container-lg`. To match the current fixed page width use `.container-lg` with `px-3`. This gives the container padding on smaller screens which works better for responsive layouts.\n"
+module.exports = "# Primer Navigation\n\n[![npm version](https://img.shields.io/npm/v/primer-navigation.svg)](https://www.npmjs.org/package/primer-navigation)\n[![Build Status](https://travis-ci.org/primer/primer.svg?branch=master)](https://travis-ci.org/primer/primer)\n\n> Primer comes with several navigation components. Some were designed with singular purposes, while others were design to be more flexible and appear quite frequently.\n\nThis repository is a module of the full [primer][primer] repository.\n\n## Install\n\nThis repository is distributed with [npm][npm]. After [installing npm][install-npm], you can install `primer-navigation` with this command.\n\n```\n$ npm install --save primer-navigation\n```\n\n## Usage\n\nThe source files included are written in [Sass][sass] (`scss`) You can simply point your sass `include-path` at your `node_modules` directory and import it like this.\n\n```scss\n@import \"primer-navigation/index.scss\";\n```\n\nYou can also import specific portions of the module by importing those partials from the `/lib/` folder. _Make sure you import any requirements along with the modules._\n\n## Build\n\nFor a compiled **css** version of this module, a npm script is included that will output a css version to `build/build.css` The built css file is also included in the npm package.\n\n```\n$ npm run build\n```\n\n## Documentation\n\n<!-- %docs\ntitle: Navigation\nstatus: Stable\n-->\n\nPrimer comes with several navigation components. Some were designed with singular purposes, while others were design to be more flexible and appear quite frequently.\n\n{:toc}\n\n## Menu\n\nThe menu is a vertical list of navigational links. **A menu's width and placement must be set by you.** If you like, just use our grid columns as a parent. Otherwise, apply a custom `width`.\n\n```html title=\"Menu\"\n<nav class=\"menu\" aria-label=\"Person settings\">\n  <a class=\"menu-item selected\" href=\"#url\" aria-current=\"page\">Account</a>\n  <a class=\"menu-item\" href=\"#url\">Profile</a>\n  <a class=\"menu-item\" href=\"#url\">Emails</a>\n  <a class=\"menu-item\" href=\"#url\">Notifications</a>\n</nav>\n```\n\nThere are a few subcomponents and add-ons that work well with the menu, including avatars, counters, and Octicons.\n\n```html title=\"Menu with octicons, avatars and counters\"\n<nav class=\"menu\" aria-label=\"Person settings\">\n  <a class=\"menu-item selected\" href=\"#url\" aria-current=\"page\">\n    <%= octicon \"tools\" %>\n    Account\n  </a>\n  <a class=\"menu-item\" href=\"#url\">\n    <%= octicon \"person\" %>\n    Profile\n  </a>\n  <a class=\"menu-item\" href=\"#url\">\n    <%= octicon \"mail\" %>\n    Emails\n  </a>\n  <a class=\"menu-item\" href=\"#url\">\n    <%= octicon \"radio-tower\" %>\n    <span class=\"Counter\">3</span>\n    Notifications\n  </a>\n</nav>\n```\n\nYou can also add optional headings to a menu. Feel free to use nearly any semantic element with the `.menu-heading` class, including inline elements, headings, and more.\n\n```html title=\"Menu with heading\"\n<nav class=\"menu\" aria-labelledby=\"menu-heading\">\n  <span class=\"menu-heading\" id=\"menu-heading\">Menu heading</span>\n  <a class=\"menu-item selected\" href=\"#url\" aria-current=\"page\">Account</a>\n  <a class=\"menu-item\" href=\"#url\">Profile</a>\n  <a class=\"menu-item\" href=\"#url\">Emails</a>\n  <a class=\"menu-item\" href=\"#url\">Notifications</a>\n</nav>\n```\n\n## Underline nav\n\nUse `.UnderlineNav` to style navigation with a minimal underlined selected state, typically used for navigation placed at the top of the page. This component comes with variations to accommodate icons, containers and other content.\n\n```html title=\"UnderlineNav\"\n<nav class=\"UnderlineNav\">\n  <div class=\"UnderlineNav-body\">\n    <a href=\"#url\" role=\"tab\" title=\"Item 1\" class=\"UnderlineNav-item selected\">Item 1</a>\n    <a href=\"#url\" role=\"tab\" title=\"Item 2\" class=\"UnderlineNav-item\">Item 2</a>\n    <a href=\"#url\" role=\"tab\" title=\"Item 3\" class=\"UnderlineNav-item\">Item 3</a>\n    <a href=\"#url\" role=\"tab\" title=\"Item 4\" class=\"UnderlineNav-item\">Item 4</a>\n  </div>\n</nav>\n```\n\nUse `.UnderlineNav-actions` to place another element, such as a button, to the opposite side of the navigation items.\n\n```html title=\"UnderlineNav-actions\"\n<nav class=\"UnderlineNav\" aria-label=\"Foo bar\">\n  <div class=\"UnderlineNav-body\">\n    <a href=\"#url\" class=\"UnderlineNav-item selected\">Item 1</a>\n    <a href=\"#url\" class=\"UnderlineNav-item\">Item 2</a>\n    <a href=\"#url\" class=\"UnderlineNav-item\">Item 3</a>\n    <a href=\"#url\" class=\"UnderlineNav-item\">Item 4</a>\n  </div>\n  <div class=\"UnderlineNav-actions\">\n    <a class=\"btn\">Button</a>\n  </div>\n</nav>\n```\n\nUse `.UnderlineNav--right` to right align the navigation.\n\n```html title=\"UnderlineNav--right\"\n<nav class=\"UnderlineNav UnderlineNav--right\">\n  <div class=\"UnderlineNav-body\">\n    <a href=\"#url\" role=\"tab\" title=\"Item 1\" class=\"UnderlineNav-item selected\">Item 1</a>\n    <a href=\"#url\" role=\"tab\" title=\"Item 2\" class=\"UnderlineNav-item\">Item 2</a>\n    <a href=\"#url\" role=\"tab\" title=\"Item 3\" class=\"UnderlineNav-item\">Item 3</a>\n    <a href=\"#url\" role=\"tab\" title=\"Item 4\" class=\"UnderlineNav-item\">Item 4</a>\n  </div>\n</nav>\n```\n\n`.UnderlineNav--right` also works with when used with `.UnderlineNav-actions`.\n\n```html title=\"UnderlineNav--right with actions\"\n<nav class=\"UnderlineNav UnderlineNav--right\" aria-label=\"Foo bar\">\n  <div class=\"UnderlineNav-actions\">\n    <a class=\"btn\">Button</a>\n  </div>\n  <div class=\"UnderlineNav-body\">\n    <a href=\"#url\" class=\"UnderlineNav-item selected\">Item 1</a>\n    <a href=\"#url\" class=\"UnderlineNav-item\">Item 2</a>\n    <a href=\"#url\" class=\"UnderlineNav-item\">Item 3</a>\n    <a href=\"#url\" class=\"UnderlineNav-item\">Item 4</a>\n  </div>\n</nav>\n```\n\n<!-- Update wording here -->\n`.Counters` and `.octicons` can be used with navigation items. Use `.UnderlineNav-octicon` to add color and hover styles.\n\n```html title=\"UnderlineNav with Counter\"\n<nav class=\"UnderlineNav\" aria-label=\"Foo bar\">\n  <div class=\"UnderlineNav-body\">\n    <a href=\"#url\" class=\"UnderlineNav-item selected\">\n      <%= octicon \"tools\", :class => \"UnderlineNav-octicon\" %>\n      Item 1\n    </a>\n    <a href=\"#url\" class=\"UnderlineNav-item\">\n      <%= octicon \"tools\", :class => \"UnderlineNav-octicon\" %>\n      Item 2\n      <span class=\"Counter\">10</span>\n     </a>\n     <a href=\"#url\" class=\"UnderlineNav-item\">\n       <%= octicon \"tools\", :class => \"UnderlineNav-octicon\" %>\n       Item 3\n    </a>\n    <a href=\"#url\" class=\"UnderlineNav-item\">\n      <%= octicon \"tools\", :class => \"UnderlineNav-octicon\" %>\n      Item 4\n     </a>\n  </div>\n</nav>\n```\n\nUse `.UnderlineNav--full` in combination with container styles and `.UnderlineNav-container` to make navigation fill the width of the container.\n\n```html title=\"UnderlineNav--full\"\n<nav class=\"UnderlineNav UnderlineNav--full\" aria-label=\"Foo bar\">\n  <div class=\"container-lg UnderlineNav-container\">\n    <div class=\"UnderlineNav-body\">\n      <a href=\"#url\" class=\"UnderlineNav-item selected\">Item 1</a>\n      <a href=\"#url\" class=\"UnderlineNav-item\">Item 2\n        <span class=\"Counter\">10</span>\n       </a>\n      <a href=\"#url\" class=\"UnderlineNav-item\">Item 3</a>\n      <a href=\"#url\" class=\"UnderlineNav-item\">Item 4</a>\n    </div>\n    <div class=\"UnderlineNav-actions\">\n      <a class=\"btn\">Button</a>\n    </div>\n  </div>\n</nav>\n```\n\n## Tabnav\n\nWhen you need to toggle between different views, consider using a tabnav. It'll given you a left-aligned horizontal row of... tabs!\n\n```html title=\"tabnav\"\n<div class=\"tabnav\">\n  <nav class=\"tabnav-tabs\" aria-label=\"Foo bar\">\n    <a href=\"#url\" class=\"tabnav-tab selected\" aria-current=\"page\">Foo tab</a>\n    <a href=\"#url\" class=\"tabnav-tab\">Bar tab</a>\n  </nav>\n</div>\n```\n\nUse `.float-right` to align additional elements in the `.tabnav`:\n\n```html title=\"tabnav with buttons\"\n<div class=\"tabnav\">\n  <a class=\"btn btn-sm float-right\" href=\"#url\" role=\"button\">Button</a>\n  <nav class=\"tabnav-tabs\" aria-label=\"Foo bar\">\n    <a href=\"#url\" class=\"tabnav-tab selected\" aria-current=\"page\">Foo Tab</a>\n    <a href=\"#url\" class=\"tabnav-tab\">Bar Tab</a>\n  </nav>\n</div>\n```\n\nAdditional bits of text and links can be styled for optimal placement with `.tabnav-extra`:\n\n```html title=\"tabnav-extra\"\n<div class=\"tabnav\">\n  <div class=\"tabnav-extra float-right\">\n    Tabnav widget text here.\n  </div>\n  <nav class=\"tabnav-tabs\" aria-label=\"Foo bar\">\n    <a href=\"#url\" class=\"tabnav-tab selected\" aria-current=\"page\">Foo Tab</a>\n    <a href=\"#url\" class=\"tabnav-tab\">Bar Tab</a>\n  </nav>\n</div>\n```\n\n```html title=\"tabnav with everything\"\n<div class=\"tabnav\">\n  <div class=\"float-right\">\n    <a class=\"tabnav-extra\" href=\"#url\">\n      Tabnav extra link\n    </a>\n    <a class=\"tabnav-extra\" href=\"#url\">\n      Tabnav extra link\n    </a>\n  </div>\n  <nav class=\"tabnav-tabs\" aria-label=\"Foo bar\">\n    <a href=\"#url\" class=\"tabnav-tab selected\" aria-current=\"page\">Foo Tab</a>\n    <a href=\"#url\" class=\"tabnav-tab\">Bar Tab</a>\n  </nav>\n</div>\n```\n\n## Filter list\n\nA vertical list of filters. Grey text on white background. Selecting a filter from the list will fill its background with blue and make the text white.\n\n```html title=\"filter-list\"\n<ul class=\"filter-list\">\n  <li>\n    <a href=\"#url\" class=\"filter-item selected\" aria-current=\"page\">\n      <span class=\"count\" title=\"results\">21</span>\n      First filter\n    </a>\n  </li>\n  <li>\n    <a href=\"#url\" class=\"filter-item\">\n      <span class=\"count\" title=\"results\">3</span>\n      Second filter\n    </a>\n  </li>\n  <li>\n    <a href=\"#url\" class=\"filter-item\">\n      Third filter\n    </a>\n  </li>\n</ul>\n```\n\n## Sub navigation\n\n`.subnav` is navigation that is typically used when on a dashboard type interface with another set of navigation above it. This helps distinguish navigation hierarchy.\n\n```html title=\"subnav\"\n<nav class=\"subnav\" aria-label=\"Respository\">\n  <a href=\"#url\" class=\"subnav-item selected\" aria-current=\"page\">Item 1</a>\n  <a href=\"#url\" class=\"subnav-item\">Item 2</a>\n  <a href=\"#url\" class=\"subnav-item\">Item 3</a>\n</nav>\n```\n\nYou can have `subnav-search` in the subnav bar.\n\n```html title=\"subnav-search\"\n<div class=\"subnav\">\n  <nav class=\"subnav-links\" aria-label=\"Repository\">\n    <a href=\"#url\" class=\"subnav-item selected\" aria-current=\"page\">Item 1</a>\n    <a href=\"#url\" class=\"subnav-item\">Item 2</a>\n    <a href=\"#url\" class=\"subnav-item\">Item 3</a>\n  </nav>\n  <div class=\"subnav-search float-left\">\n    <input type=\"search\" name=\"name\" class=\"form-control subnav-search-input\" value=\"\" aria-label=\"Search site\">\n    <%= octicon \"search\", :class => \"subnav-search-icon\" %>\n  </div>\n</div>\n```\n\n\nYou can also use a `subnav-search-context` to display search help in a select menu.\n\n```html title=\"subnav-search-context\"\n<div class=\"subnav\">\n  <nav class=\"subnav-links\">\n    <a href=\"#url\" class=\"subnav-item selected\">Item 1</a>\n    <a href=\"#url\" class=\"subnav-item\">Item 2</a>\n    <a href=\"#url\" class=\"subnav-item\">Item 3</a>\n  </nav>\n  <div class=\"float-left ml-3 select-menu js-menu-container js-select-menu subnav-search-context\">\n    <button type=\"button\" name=\"button\" class=\"btn select-menu-button js-menu-target\" aria-expanded=\"false\" aria-haspopup=\"true\">Filters </button>\n    <div class=\"select-menu-modal-holder js-menu-content js-navigation-container\" aria-hidden=\"true\">\n      <div class=\"select-menu-modal\">\n        <div class=\"select-menu-list\">\n          <a href=\"#url\" class=\"select-menu-item js-navigation-item\">\n            <div class=\"select-menu-item-text\">\n              Search filter 1\n            </div>\n          </a>\n          <a href=\"#url\" class=\"select-menu-item js-navigation-item\">\n            <div class=\"select-menu-item-text\">\n              Search filter 2\n            </div>\n          </a>\n          <a href=\"#url\" class=\"select-menu-item js-navigation-item\">\n            <div class=\"select-menu-item-text\">\n              Search filter 3\n            </div>\n          </a>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"subnav-search float-left\">\n    <input type=\"search\" name=\"name\" class=\"form-control subnav-search-input\" value=\"\" aria-label=\"Search site\">\n    <%= octicon \"search\", :class => \"subnav-search-icon\" %>\n  </div>\n</div>\n```\n\n\n<!-- %enddocs -->\n\n## License\n\n[MIT](./LICENSE) &copy; [GitHub](https://github.com/)\n\n[primer]: https://github.com/primer/primer\n[docs]: http://primer.github.io/\n[npm]: https://www.npmjs.com/\n[install-npm]: https://docs.npmjs.com/getting-started/installing-node\n[sass]: http://sass-lang.com/\n"
 
 /***/ }),
 /* 1111 */
@@ -62017,7 +62046,7 @@ webpackContext.id = 1111;
 /* 1112 */
 /***/ (function(module, exports) {
 
-module.exports = "# Primer Navigation\n\n[![npm version](https://img.shields.io/npm/v/primer-navigation.svg)](https://www.npmjs.org/package/primer-navigation)\n[![Build Status](https://travis-ci.org/primer/primer.svg?branch=master)](https://travis-ci.org/primer/primer)\n\n> Primer comes with several navigation components. Some were designed with singular purposes, while others were design to be more flexible and appear quite frequently.\n\nThis repository is a module of the full [primer][primer] repository.\n\n## Install\n\nThis repository is distributed with [npm][npm]. After [installing npm][install-npm], you can install `primer-navigation` with this command.\n\n```\n$ npm install --save primer-navigation\n```\n\n## Usage\n\nThe source files included are written in [Sass][sass] (`scss`) You can simply point your sass `include-path` at your `node_modules` directory and import it like this.\n\n```scss\n@import \"primer-navigation/index.scss\";\n```\n\nYou can also import specific portions of the module by importing those partials from the `/lib/` folder. _Make sure you import any requirements along with the modules._\n\n## Build\n\nFor a compiled **css** version of this module, a npm script is included that will output a css version to `build/build.css` The built css file is also included in the npm package.\n\n```\n$ npm run build\n```\n\n## Documentation\n\n<!-- %docs\ntitle: Navigation\nstatus: Stable\n-->\n\nPrimer comes with several navigation components. Some were designed with singular purposes, while others were design to be more flexible and appear quite frequently.\n\n{:toc}\n\n## Menu\n\nThe menu is a vertical list of navigational links. **A menu's width and placement must be set by you.** If you like, just use our grid columns as a parent. Otherwise, apply a custom `width`.\n\n```html title=\"Menu\"\n<nav class=\"menu\" aria-label=\"Person settings\">\n  <a class=\"menu-item selected\" href=\"#url\" aria-current=\"page\">Account</a>\n  <a class=\"menu-item\" href=\"#url\">Profile</a>\n  <a class=\"menu-item\" href=\"#url\">Emails</a>\n  <a class=\"menu-item\" href=\"#url\">Notifications</a>\n</nav>\n```\n\nThere are a few subcomponents and add-ons that work well with the menu, including avatars, counters, and Octicons.\n\n```html title=\"Menu with octicons, avatars and counters\"\n<nav class=\"menu\" aria-label=\"Person settings\">\n  <a class=\"menu-item selected\" href=\"#url\" aria-current=\"page\">\n    <%= octicon \"tools\" %>\n    Account\n  </a>\n  <a class=\"menu-item\" href=\"#url\">\n    <%= octicon \"person\" %>\n    Profile\n  </a>\n  <a class=\"menu-item\" href=\"#url\">\n    <%= octicon \"mail\" %>\n    Emails\n  </a>\n  <a class=\"menu-item\" href=\"#url\">\n    <%= octicon \"radio-tower\" %>\n    <span class=\"Counter\">3</span>\n    Notifications\n  </a>\n</nav>\n```\n\nYou can also add optional headings to a menu. Feel free to use nearly any semantic element with the `.menu-heading` class, including inline elements, headings, and more.\n\n```html title=\"Menu with heading\"\n<nav class=\"menu\" aria-labelledby=\"menu-heading\">\n  <span class=\"menu-heading\" id=\"menu-heading\">Menu heading</span>\n  <a class=\"menu-item selected\" href=\"#url\" aria-current=\"page\">Account</a>\n  <a class=\"menu-item\" href=\"#url\">Profile</a>\n  <a class=\"menu-item\" href=\"#url\">Emails</a>\n  <a class=\"menu-item\" href=\"#url\">Notifications</a>\n</nav>\n```\n\n## Underline nav\n\nUse `.UnderlineNav` to style navigation with a minimal underlined selected state, typically used for navigation placed at the top of the page. This component comes with variations to accommodate icons, containers and other content.\n\n```html title=\"UnderlineNav\"\n<nav class=\"UnderlineNav\">\n  <div class=\"UnderlineNav-body\">\n    <a href=\"#url\" role=\"tab\" title=\"Item 1\" class=\"UnderlineNav-item selected\">Item 1</a>\n    <a href=\"#url\" role=\"tab\" title=\"Item 2\" class=\"UnderlineNav-item\">Item 2</a>\n    <a href=\"#url\" role=\"tab\" title=\"Item 3\" class=\"UnderlineNav-item\">Item 3</a>\n    <a href=\"#url\" role=\"tab\" title=\"Item 4\" class=\"UnderlineNav-item\">Item 4</a>\n  </div>\n</nav>\n```\n\nUse `.UnderlineNav-actions` to place another element, such as a button, to the opposite side of the navigation items.\n\n```html title=\"UnderlineNav-actions\"\n<nav class=\"UnderlineNav\" aria-label=\"Foo bar\">\n  <div class=\"UnderlineNav-body\">\n    <a href=\"#url\" class=\"UnderlineNav-item selected\">Item 1</a>\n    <a href=\"#url\" class=\"UnderlineNav-item\">Item 2</a>\n    <a href=\"#url\" class=\"UnderlineNav-item\">Item 3</a>\n    <a href=\"#url\" class=\"UnderlineNav-item\">Item 4</a>\n  </div>\n  <div class=\"UnderlineNav-actions\">\n    <a class=\"btn\">Button</a>\n  </div>\n</nav>\n```\n\nUse `.UnderlineNav--right` to right align the navigation.\n\n```html title=\"UnderlineNav--right\"\n<nav class=\"UnderlineNav UnderlineNav--right\">\n  <div class=\"UnderlineNav-body\">\n    <a href=\"#url\" role=\"tab\" title=\"Item 1\" class=\"UnderlineNav-item selected\">Item 1</a>\n    <a href=\"#url\" role=\"tab\" title=\"Item 2\" class=\"UnderlineNav-item\">Item 2</a>\n    <a href=\"#url\" role=\"tab\" title=\"Item 3\" class=\"UnderlineNav-item\">Item 3</a>\n    <a href=\"#url\" role=\"tab\" title=\"Item 4\" class=\"UnderlineNav-item\">Item 4</a>\n  </div>\n</nav>\n```\n\n`.UnderlineNav--right` also works with when used with `.UnderlineNav-actions`.\n\n```html title=\"UnderlineNav--right with actions\"\n<nav class=\"UnderlineNav UnderlineNav--right\" aria-label=\"Foo bar\">\n  <div class=\"UnderlineNav-actions\">\n    <a class=\"btn\">Button</a>\n  </div>\n  <div class=\"UnderlineNav-body\">\n    <a href=\"#url\" class=\"UnderlineNav-item selected\">Item 1</a>\n    <a href=\"#url\" class=\"UnderlineNav-item\">Item 2</a>\n    <a href=\"#url\" class=\"UnderlineNav-item\">Item 3</a>\n    <a href=\"#url\" class=\"UnderlineNav-item\">Item 4</a>\n  </div>\n</nav>\n```\n\n<!-- Update wording here -->\n`.Counters` and `.octicons` can be used with navigation items. Use `.UnderlineNav-octicon` to add color and hover styles.\n\n```html title=\"UnderlineNav with Counter\"\n<nav class=\"UnderlineNav\" aria-label=\"Foo bar\">\n  <div class=\"UnderlineNav-body\">\n    <a href=\"#url\" class=\"UnderlineNav-item selected\">\n      <%= octicon \"tools\", :class => \"UnderlineNav-octicon\" %>\n      Item 1\n    </a>\n    <a href=\"#url\" class=\"UnderlineNav-item\">\n      <%= octicon \"tools\", :class => \"UnderlineNav-octicon\" %>\n      Item 2\n      <span class=\"Counter\">10</span>\n     </a>\n     <a href=\"#url\" class=\"UnderlineNav-item\">\n       <%= octicon \"tools\", :class => \"UnderlineNav-octicon\" %>\n       Item 3\n    </a>\n    <a href=\"#url\" class=\"UnderlineNav-item\">\n      <%= octicon \"tools\", :class => \"UnderlineNav-octicon\" %>\n      Item 4\n     </a>\n  </div>\n</nav>\n```\n\nUse `.UnderlineNav--full` in combination with container styles and `.UnderlineNav-container` to make navigation fill the width of the container.\n\n```html title=\"UnderlineNav--full\"\n<nav class=\"UnderlineNav UnderlineNav--full\" aria-label=\"Foo bar\">\n  <div class=\"container-lg UnderlineNav-container\">\n    <div class=\"UnderlineNav-body\">\n      <a href=\"#url\" class=\"UnderlineNav-item selected\">Item 1</a>\n      <a href=\"#url\" class=\"UnderlineNav-item\">Item 2\n        <span class=\"Counter\">10</span>\n       </a>\n      <a href=\"#url\" class=\"UnderlineNav-item\">Item 3</a>\n      <a href=\"#url\" class=\"UnderlineNav-item\">Item 4</a>\n    </div>\n    <div class=\"UnderlineNav-actions\">\n      <a class=\"btn\">Button</a>\n    </div>\n  </div>\n</nav>\n```\n\n## Tabnav\n\nWhen you need to toggle between different views, consider using a tabnav. It'll given you a left-aligned horizontal row of... tabs!\n\n```html title=\"tabnav\"\n<div class=\"tabnav\">\n  <nav class=\"tabnav-tabs\" aria-label=\"Foo bar\">\n    <a href=\"#url\" class=\"tabnav-tab selected\" aria-current=\"page\">Foo tab</a>\n    <a href=\"#url\" class=\"tabnav-tab\">Bar tab</a>\n  </nav>\n</div>\n```\n\nUse `.float-right` to align additional elements in the `.tabnav`:\n\n```html title=\"tabnav with buttons\"\n<div class=\"tabnav\">\n  <a class=\"btn btn-sm float-right\" href=\"#url\" role=\"button\">Button</a>\n  <nav class=\"tabnav-tabs\" aria-label=\"Foo bar\">\n    <a href=\"#url\" class=\"tabnav-tab selected\" aria-current=\"page\">Foo Tab</a>\n    <a href=\"#url\" class=\"tabnav-tab\">Bar Tab</a>\n  </nav>\n</div>\n```\n\nAdditional bits of text and links can be styled for optimal placement with `.tabnav-extra`:\n\n```html title=\"tabnav-extra\"\n<div class=\"tabnav\">\n  <div class=\"tabnav-extra float-right\">\n    Tabnav widget text here.\n  </div>\n  <nav class=\"tabnav-tabs\" aria-label=\"Foo bar\">\n    <a href=\"#url\" class=\"tabnav-tab selected\" aria-current=\"page\">Foo Tab</a>\n    <a href=\"#url\" class=\"tabnav-tab\">Bar Tab</a>\n  </nav>\n</div>\n```\n\n```html title=\"tabnav with everything\"\n<div class=\"tabnav\">\n  <div class=\"float-right\">\n    <a class=\"tabnav-extra\" href=\"#url\">\n      Tabnav extra link\n    </a>\n    <a class=\"tabnav-extra\" href=\"#url\">\n      Tabnav extra link\n    </a>\n  </div>\n  <nav class=\"tabnav-tabs\" aria-label=\"Foo bar\">\n    <a href=\"#url\" class=\"tabnav-tab selected\" aria-current=\"page\">Foo Tab</a>\n    <a href=\"#url\" class=\"tabnav-tab\">Bar Tab</a>\n  </nav>\n</div>\n```\n\n## Filter list\n\nA vertical list of filters. Grey text on white background. Selecting a filter from the list will fill its background with blue and make the text white.\n\n```html title=\"filter-list\"\n<ul class=\"filter-list\">\n  <li>\n    <a href=\"#url\" class=\"filter-item selected\" aria-current=\"page\">\n      <span class=\"count\" title=\"results\">21</span>\n      First filter\n    </a>\n  </li>\n  <li>\n    <a href=\"#url\" class=\"filter-item\">\n      <span class=\"count\" title=\"results\">3</span>\n      Second filter\n    </a>\n  </li>\n  <li>\n    <a href=\"#url\" class=\"filter-item\">\n      Third filter\n    </a>\n  </li>\n</ul>\n```\n\n## Sub navigation\n\n`.subnav` is navigation that is typically used when on a dashboard type interface with another set of navigation above it. This helps distinguish navigation hierarchy.\n\n```html title=\"subnav\"\n<nav class=\"subnav\" aria-label=\"Respository\">\n  <a href=\"#url\" class=\"subnav-item selected\" aria-current=\"page\">Item 1</a>\n  <a href=\"#url\" class=\"subnav-item\">Item 2</a>\n  <a href=\"#url\" class=\"subnav-item\">Item 3</a>\n</nav>\n```\n\nYou can have `subnav-search` in the subnav bar.\n\n```html title=\"subnav-search\"\n<div class=\"subnav\">\n  <nav class=\"subnav-links\" aria-label=\"Repository\">\n    <a href=\"#url\" class=\"subnav-item selected\" aria-current=\"page\">Item 1</a>\n    <a href=\"#url\" class=\"subnav-item\">Item 2</a>\n    <a href=\"#url\" class=\"subnav-item\">Item 3</a>\n  </nav>\n  <div class=\"subnav-search float-left\">\n    <input type=\"search\" name=\"name\" class=\"form-control subnav-search-input\" value=\"\" aria-label=\"Search site\">\n    <%= octicon \"search\", :class => \"subnav-search-icon\" %>\n  </div>\n</div>\n```\n\n\nYou can also use a `subnav-search-context` to display search help in a select menu.\n\n```html title=\"subnav-search-context\"\n<div class=\"subnav\">\n  <nav class=\"subnav-links\">\n    <a href=\"#url\" class=\"subnav-item selected\">Item 1</a>\n    <a href=\"#url\" class=\"subnav-item\">Item 2</a>\n    <a href=\"#url\" class=\"subnav-item\">Item 3</a>\n  </nav>\n  <div class=\"float-left ml-3 select-menu js-menu-container js-select-menu subnav-search-context\">\n    <button type=\"button\" name=\"button\" class=\"btn select-menu-button js-menu-target\" aria-expanded=\"false\" aria-haspopup=\"true\">Filters </button>\n    <div class=\"select-menu-modal-holder js-menu-content js-navigation-container\" aria-hidden=\"true\">\n      <div class=\"select-menu-modal\">\n        <div class=\"select-menu-list\">\n          <a href=\"#url\" class=\"select-menu-item js-navigation-item\">\n            <div class=\"select-menu-item-text\">\n              Search filter 1\n            </div>\n          </a>\n          <a href=\"#url\" class=\"select-menu-item js-navigation-item\">\n            <div class=\"select-menu-item-text\">\n              Search filter 2\n            </div>\n          </a>\n          <a href=\"#url\" class=\"select-menu-item js-navigation-item\">\n            <div class=\"select-menu-item-text\">\n              Search filter 3\n            </div>\n          </a>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"subnav-search float-left\">\n    <input type=\"search\" name=\"name\" class=\"form-control subnav-search-input\" value=\"\" aria-label=\"Search site\">\n    <%= octicon \"search\", :class => \"subnav-search-icon\" %>\n  </div>\n</div>\n```\n\n\n<!-- %enddocs -->\n\n## License\n\n[MIT](./LICENSE) &copy; [GitHub](https://github.com/)\n\n[primer]: https://github.com/primer/primer\n[docs]: http://primer.github.io/\n[npm]: https://www.npmjs.com/\n[install-npm]: https://docs.npmjs.com/getting-started/installing-node\n[sass]: http://sass-lang.com/\n"
+module.exports = "# Primer Pagination\n\n[![npm version](https://img.shields.io/npm/v/primer-pagination.svg)](https://www.npmjs.org/package/primer-pagination)\n[![Build Status](https://travis-ci.org/primer/primer.svg?branch=master)](https://travis-ci.org/primer/primer)\n\n> Pagination component for applying button styles to a connected set of links that go to related pages\n\nThis repository is a module of the full [primer][primer] repository.\n\n## Install\n\nThis repository is distributed with [npm]. After [installing npm][install-npm], you can install `primer-pagination` with this command.\n\n```\n$ npm install --save primer-pagination\n```\n\n## Usage\n\nThe source files included are written in [Sass][sass] (SCSS) You can simply point your sass `include-path` at your `node_modules` directory and import it like this.\n\n```scss\n@import \"primer-pagination/index.scss\";\n```\n\nYou can also import specific portions of the module by importing those partials from the `/lib/` folder. _Make sure you import any requirements along with the modules._\n\n## Build\n\nFor a compiled **CSS** version of this module, an npm script is included that will output a css version to `build/build.css` The built css file is also included in the npm package:\n\n```\n$ npm run build\n```\n\n## Documentation\n\n<!-- %docs\ntitle: Pagination\nstatus: New Release\n-->\n\nUse the pagination component to apply button styles to a connected set of links that go to related pages (for example, previous, next, or page numbers).\n\n{:toc}\n\n## Previous/next pagination\n\nYou can make a very simple pagination container with just the Previous and Next buttons. Add the class `disabled` to the `Previous` button if there isn't a preceding page, or to the `Next` button if there isn't a succeeding page.\n\n```html\n<nav class=\"paginate-container\" aria-label=\"Pagination\">\n  <div class=\"pagination\">\n    <span class=\"previous_page disabled\">Previous</span>\n    <a class=\"next_page\" rel=\"next\" href=\"#url\" aria-label=\"Next Page\">Next</a>\n  </div>\n</nav>\n```\n\n## Numbered pagination\n\nFor pagination across multiple pages, make sure it's clear to the user where they are in a set of pages.\n\nTo do this, add anchor links to the `pagination` element. Previous and Next buttons should always be present. Add the class `disabled` to the Previous button if you're on the first page. Apply the class `current` to the current numbered page.\n\nAs always, make sure to include the appropriate `aria` attributes to make the element accessible.\n\n- Add `aria-label=\"Pagination\"` to the the `paginate-container` element.\n- Add `aria-current=\"true\"` to the current page marker.\n- Add `aria-label=\"Page X\"` to each anchor link.\n\n```html\n<nav class=\"paginate-container\" aria-label=\"Pagination\">\n  <div class=\"pagination\">\n    <span class=\"previous_page disabled\">Previous</span>\n    <em class=\"current selected\" aria-current=\"true\">1</em>\n    <a href=\"#url\" aria-label=\"Page 2\">2</a>\n    <a href=\"#url\" aria-label=\"Page 3\">3</a>\n    <span class=\"gap\">…</span>\n    <a href=\"#url\" aria-label=\"Page 8\">8</a>\n    <a href=\"#url\" aria-label=\"Page 9\">9</a>\n    <a href=\"#url\" aria-label=\"Page 10\">10</a>\n    <a class=\"next_page\" rel=\"next\" href=\"#url\" aria-label=\"Next Page\">Next</a>\n  </div>\n</nav>\n```\n\n<!-- %enddocs -->\n"
 
 /***/ }),
 /* 1113 */
@@ -62050,7 +62079,7 @@ webpackContext.id = 1113;
 /* 1114 */
 /***/ (function(module, exports) {
 
-module.exports = "# Primer Pagination\n\n[![npm version](https://img.shields.io/npm/v/primer-pagination.svg)](https://www.npmjs.org/package/primer-pagination)\n[![Build Status](https://travis-ci.org/primer/primer.svg?branch=master)](https://travis-ci.org/primer/primer)\n\n> Pagination component for applying button styles to a connected set of links that go to related pages\n\nThis repository is a module of the full [primer][primer] repository.\n\n## Install\n\nThis repository is distributed with [npm]. After [installing npm][install-npm], you can install `primer-pagination` with this command.\n\n```\n$ npm install --save primer-pagination\n```\n\n## Usage\n\nThe source files included are written in [Sass][sass] (SCSS) You can simply point your sass `include-path` at your `node_modules` directory and import it like this.\n\n```scss\n@import \"primer-pagination/index.scss\";\n```\n\nYou can also import specific portions of the module by importing those partials from the `/lib/` folder. _Make sure you import any requirements along with the modules._\n\n## Build\n\nFor a compiled **CSS** version of this module, an npm script is included that will output a css version to `build/build.css` The built css file is also included in the npm package:\n\n```\n$ npm run build\n```\n\n## Documentation\n\n<!-- %docs\ntitle: Pagination\nstatus: New Release\n-->\n\nUse the pagination component to apply button styles to a connected set of links that go to related pages (for example, previous, next, or page numbers).\n\n{:toc}\n\n## Previous/next pagination\n\nYou can make a very simple pagination container with just the Previous and Next buttons. Add the class `disabled` to the `Previous` button if there isn't a preceding page, or to the `Next` button if there isn't a succeeding page.\n\n```html\n<nav class=\"paginate-container\" aria-label=\"Pagination\">\n  <div class=\"pagination\">\n    <span class=\"previous_page disabled\">Previous</span>\n    <a class=\"next_page\" rel=\"next\" href=\"#url\" aria-label=\"Next Page\">Next</a>\n  </div>\n</nav>\n```\n\n## Numbered pagination\n\nFor pagination across multiple pages, make sure it's clear to the user where they are in a set of pages.\n\nTo do this, add anchor links to the `pagination` element. Previous and Next buttons should always be present. Add the class `disabled` to the Previous button if you're on the first page. Apply the class `current` to the current numbered page.\n\nAs always, make sure to include the appropriate `aria` attributes to make the element accessible.\n\n- Add `aria-label=\"Pagination\"` to the the `paginate-container` element.\n- Add `aria-current=\"true\"` to the current page marker.\n- Add `aria-label=\"Page X\"` to each anchor link.\n\n```html\n<nav class=\"paginate-container\" aria-label=\"Pagination\">\n  <div class=\"pagination\">\n    <span class=\"previous_page disabled\">Previous</span>\n    <em class=\"current selected\" aria-current=\"true\">1</em>\n    <a href=\"#url\" aria-label=\"Page 2\">2</a>\n    <a href=\"#url\" aria-label=\"Page 3\">3</a>\n    <span class=\"gap\">…</span>\n    <a href=\"#url\" aria-label=\"Page 8\">8</a>\n    <a href=\"#url\" aria-label=\"Page 9\">9</a>\n    <a href=\"#url\" aria-label=\"Page 10\">10</a>\n    <a class=\"next_page\" rel=\"next\" href=\"#url\" aria-label=\"Next Page\">Next</a>\n  </div>\n</nav>\n```\n\n<!-- %enddocs -->\n"
+module.exports = "# Primer table object\n\n[![npm version](https://img.shields.io/npm/v/primer-table-object.svg)](https://www.npmjs.org/package/primer-table-object)\n[![Build Status](https://travis-ci.org/primer/primer.svg?branch=master)](https://travis-ci.org/primer/primer)\n\n> Table object is a module for creating dynamically resizable elements that always sit on the same horizontal line (e.g., they never break to a new line). Using table styles in our CSS means it’s cross browser friendly back to at least IE9.\n\nThis repository is a module of the full [primer][primer] repository.\n\n## Install\n\nThis repository is distributed with [npm][npm]. After [installing npm][install-npm], you can install `primer-table-object` with this command.\n\n```\n$ npm install --save primer-table-object\n```\n\n## Usage\n\nThe source files included are written in [Sass][sass] (`scss`) You can simply point your sass `include-path` at your `node_modules` directory and import it like this.\n\n```scss\n@import \"primer-table-object/index.scss\";\n```\n\nYou can also import specific portions of the module by importing those partials from the `/lib/` folder. _Make sure you import any requirements along with the modules._\n\n## Build\n\nFor a compiled **css** version of this module, a npm script is included that will output a css version to `build/build.css` The built css file is also included in the npm package.\n\n```\n$ npm run build\n```\n\n## Documentation\n\n<!-- %docs\ntitle: Table object\nstatus: Stable\nkey: /css/styles/core/objects/table-object\n-->\n\nThe table object is a module for creating dynamically resizable elements that always sit on the same horizontal line (e.g., they never break to a new line). Using table styles in our CSS means it's cross browser friendly back to at least IE9.\n\nAdditional `margin` or `padding` may be required to properly space content.\n\n```html title=\"Table object\"\n<div class=\"TableObject\">\n  <div class=\"TableObject-item TableObject-item--primary\">\n    <input class=\"input-block form-control\" type=\"text\" placeholder=\"Long elastic input form\" aria-label=\"Long elastic input form\">\n  </div>\n  <div class=\"TableObject-item\">\n    <button class=\"btn ml-2\" type=\"button\">Button</button>\n  </div>\n</div>\n```\n\n<!-- %enddocs -->\n\n## License\n\n[MIT](./LICENSE) &copy; [GitHub](https://github.com/)\n\n[primer]: https://github.com/primer/primer\n[docs]: http://primer.github.io/\n[npm]: https://www.npmjs.com/\n[install-npm]: https://docs.npmjs.com/getting-started/installing-node\n[sass]: http://sass-lang.com/\n"
 
 /***/ }),
 /* 1115 */
@@ -62083,7 +62112,7 @@ webpackContext.id = 1115;
 /* 1116 */
 /***/ (function(module, exports) {
 
-module.exports = "# Primer table object\n\n[![npm version](https://img.shields.io/npm/v/primer-table-object.svg)](https://www.npmjs.org/package/primer-table-object)\n[![Build Status](https://travis-ci.org/primer/primer.svg?branch=master)](https://travis-ci.org/primer/primer)\n\n> Table object is a module for creating dynamically resizable elements that always sit on the same horizontal line (e.g., they never break to a new line). Using table styles in our CSS means it’s cross browser friendly back to at least IE9.\n\nThis repository is a module of the full [primer][primer] repository.\n\n## Install\n\nThis repository is distributed with [npm][npm]. After [installing npm][install-npm], you can install `primer-table-object` with this command.\n\n```\n$ npm install --save primer-table-object\n```\n\n## Usage\n\nThe source files included are written in [Sass][sass] (`scss`) You can simply point your sass `include-path` at your `node_modules` directory and import it like this.\n\n```scss\n@import \"primer-table-object/index.scss\";\n```\n\nYou can also import specific portions of the module by importing those partials from the `/lib/` folder. _Make sure you import any requirements along with the modules._\n\n## Build\n\nFor a compiled **css** version of this module, a npm script is included that will output a css version to `build/build.css` The built css file is also included in the npm package.\n\n```\n$ npm run build\n```\n\n## Documentation\n\n<!-- %docs\ntitle: Table object\nstatus: Stable\nkey: /css/styles/core/objects/table-object\n-->\n\nThe table object is a module for creating dynamically resizable elements that always sit on the same horizontal line (e.g., they never break to a new line). Using table styles in our CSS means it's cross browser friendly back to at least IE9.\n\nAdditional `margin` or `padding` may be required to properly space content.\n\n```html title=\"Table object\"\n<div class=\"TableObject\">\n  <div class=\"TableObject-item TableObject-item--primary\">\n    <input class=\"input-block form-control\" type=\"text\" placeholder=\"Long elastic input form\" aria-label=\"Long elastic input form\">\n  </div>\n  <div class=\"TableObject-item\">\n    <button class=\"btn ml-2\" type=\"button\">Button</button>\n  </div>\n</div>\n```\n\n<!-- %enddocs -->\n\n## License\n\n[MIT](./LICENSE) &copy; [GitHub](https://github.com/)\n\n[primer]: https://github.com/primer/primer\n[docs]: http://primer.github.io/\n[npm]: https://www.npmjs.com/\n[install-npm]: https://docs.npmjs.com/getting-started/installing-node\n[sass]: http://sass-lang.com/\n"
+module.exports = "# Primer Truncate\n\n[![npm version](https://img.shields.io/npm/v/primer-truncate.svg)](https://www.npmjs.org/package/primer-truncate)\n[![Build Status](https://travis-ci.org/primer/primer.svg?branch=master)](https://travis-ci.org/primer/primer)\n\n> .css-truncate will shorten text with an ellipsis. The maximum width of the truncated text can be changed by overriding the max-width of the .css-truncate-target.\n\nThis repository is a module of the full [primer][primer] repository.\n\n## Install\n\nThis repository is distributed with [npm][npm]. After [installing npm][install-npm], you can install `primer-truncate` with this command.\n\n```\n$ npm install --save primer-truncate\n```\n\n## Usage\n\nThe source files included are written in [Sass][sass] (`scss`) You can simply point your sass `include-path` at your `node_modules` directory and import it like this.\n\n```scss\n@import \"primer-truncate/index.scss\";\n```\n\nYou can also import specific portions of the module by importing those partials from the `/lib/` folder. _Make sure you import any requirements along with the modules._\n\n## Build\n\nFor a compiled **css** version of this module, a npm script is included that will output a css version to `build/build.css` The built css file is also included in the npm package.\n\n```\n$ npm run build\n```\n\n## Documentation\n\n<!-- %docs\ntitle: Truncate\nstatus: Stable\n-->\n\n`.css-truncate` will shorten text with an ellipsis. The maximum width of the truncated text can be changed by overriding the max-width of `.css-truncate-target`. Unless the full text is so long that it affects performace, always add `title` to the truncated element so the full text can still be seen.\n\n```html title=\"Truncate\"\n<span class=\"branch-ref css-truncate css-truncate-target\" title=\"really-long-branch-name\">\n  really-long-branch-name\n</span>\n```\n\nYou can reveal the entire string on hover with the addition of `.expandable`.\n\n```html title=\"Truncate Expandable\"\n<span class=\"css-truncate expandable\">\n  <span class=\"branch-ref css-truncate-target\">this-is-a-really-long-branch-name</span>\n</span>\n```\n<!-- %enddocs -->\n\n## License\n\n[MIT](./LICENSE) &copy; [GitHub](https://github.com/)\n\n[primer]: https://github.com/primer/primer\n[docs]: http://primer.github.io/\n[npm]: https://www.npmjs.com/\n[install-npm]: https://docs.npmjs.com/getting-started/installing-node\n[sass]: http://sass-lang.com/\n"
 
 /***/ }),
 /* 1117 */
@@ -62116,7 +62145,7 @@ webpackContext.id = 1117;
 /* 1118 */
 /***/ (function(module, exports) {
 
-module.exports = "# Primer Truncate\n\n[![npm version](https://img.shields.io/npm/v/primer-truncate.svg)](https://www.npmjs.org/package/primer-truncate)\n[![Build Status](https://travis-ci.org/primer/primer.svg?branch=master)](https://travis-ci.org/primer/primer)\n\n> .css-truncate will shorten text with an ellipsis. The maximum width of the truncated text can be changed by overriding the max-width of the .css-truncate-target.\n\nThis repository is a module of the full [primer][primer] repository.\n\n## Install\n\nThis repository is distributed with [npm][npm]. After [installing npm][install-npm], you can install `primer-truncate` with this command.\n\n```\n$ npm install --save primer-truncate\n```\n\n## Usage\n\nThe source files included are written in [Sass][sass] (`scss`) You can simply point your sass `include-path` at your `node_modules` directory and import it like this.\n\n```scss\n@import \"primer-truncate/index.scss\";\n```\n\nYou can also import specific portions of the module by importing those partials from the `/lib/` folder. _Make sure you import any requirements along with the modules._\n\n## Build\n\nFor a compiled **css** version of this module, a npm script is included that will output a css version to `build/build.css` The built css file is also included in the npm package.\n\n```\n$ npm run build\n```\n\n## Documentation\n\n<!-- %docs\ntitle: Truncate\nstatus: Stable\n-->\n\n`.css-truncate` will shorten text with an ellipsis. The maximum width of the truncated text can be changed by overriding the max-width of `.css-truncate-target`. Unless the full text is so long that it affects performace, always add `title` to the truncated element so the full text can still be seen.\n\n```html title=\"Truncate\"\n<span class=\"branch-ref css-truncate css-truncate-target\" title=\"really-long-branch-name\">\n  really-long-branch-name\n</span>\n```\n\nYou can reveal the entire string on hover with the addition of `.expandable`.\n\n```html title=\"Truncate Expandable\"\n<span class=\"css-truncate expandable\">\n  <span class=\"branch-ref css-truncate-target\">this-is-a-really-long-branch-name</span>\n</span>\n```\n<!-- %enddocs -->\n\n## License\n\n[MIT](./LICENSE) &copy; [GitHub](https://github.com/)\n\n[primer]: https://github.com/primer/primer\n[docs]: http://primer.github.io/\n[npm]: https://www.npmjs.com/\n[install-npm]: https://docs.npmjs.com/getting-started/installing-node\n[sass]: http://sass-lang.com/\n"
+module.exports = "# Primer Labels\n\n[![npm version](https://img.shields.io/npm/v/primer-labels.svg)](https://www.npmjs.org/package/primer-labels)\n[![Build Status](https://travis-ci.org/primer/primer.svg?branch=master)](https://travis-ci.org/primer/primer)\n\n> Labels add metadata or indicate status of items and navigational elements.\n\nThis repository is a module of the full [primer][primer] repository.\n\n## Install\n\nThis repository is distributed with [npm][npm]. After [installing npm][install-npm], you can install `primer-labels` with this command.\n\n```\n$ npm install --save primer-labels\n```\n\n## Usage\n\nThe source files included are written in [Sass][sass] (`scss`) You can simply point your sass `include-path` at your `node_modules` directory and import it like this.\n\n```scss\n@import \"primer-labels/index.scss\";\n```\n\nYou can also import specific portions of the module by importing those partials from the `/lib/` folder. _Make sure you import any requirements along with the modules._\n\n## Build\n\nFor a compiled **css** version of this module, a npm script is included that will output a css version to `build/build.css` The built css file is also included in the npm package.\n\n```\n$ npm run build\n```\n\n## Documentation\n\n<!-- %docs\ntitle: Labels\nstatus_issue: https://github.com/github/design-systems/issues/332\nstatus: New release\n-->\n\nLabels add metatdata or indicate status of items and navigational elements. Three different types of labels are available: [Labels](#default-label-styles) for adding metadata, [States](#states) for indicating status, and [Counters](#counters) for showing the count for a number of items.\n\n\n{:toc}\n\n## Labels\n\nThe base label component styles the text, adds padding and rounded corners, and an inset box shadow. Labels come in various themes which apply colors and different border styles.\n\nGitHub also programmatically generates and applies a background color for labels on items such as issues and pull requests. Users are able to select any background color and the text color will adjust to work with light and dark background colors.\n\nThe base `Label` style does not apply a background color, here's an example using the `bg-blue` utility to apply a blue background:\n\n```html title=\"Label\"\n<span title=\"Label: default label\" class=\"Label bg-blue\">default label</span>\n```\n\n**Note:** Be sure to include a title attribute on labels, it's helpful for people using screen-readers to differentiate a label from other text. I.e. without the title attribute, the following example would read as _\"New select component design\"_, rather than identifying `design` as a label.\n\n```html title=\"Label without title\"\n<!-- Don't do this -->\n<a href=\"#url\">New select component</a><span class=\"Label bg-blue ml-1\">design</span>\n```\n\n### Label themes\n\nLabels come in a few different themes. Use a theme that helps communicate the content of the label, and ensure it's used consistently.\n\nUse `Label--gray` to create a label with a light gray background and gray text. This label is neutral in color and can be used in contexts where all you need to communicate is metadata, or whe you want a label to feel less prominent compared with labels with stronger colors.\n\n```html title=\"Label theme gray\"\n<span title=\"Label: gray label\" class=\"Label Label--gray\">gray label</span>\n```\n\nUse `Label--gray-darker` to create a label with a dark-gray background color. This label is also neutral in color, however, since it's background is darker it can stand out more compared to `Label--gray`.\n\n```html title=\"Label theme dark gray\"\n<span title=\"Label: dark gray label\" class=\"Label Label--gray-darker\">dark gray label</span>\n```\n\nUse `Label--orange` to communicate \"warning\". The orange background color is very close to red, so avoid using next to labels with a red background color since most people will find it hard to tell the difference.\n\n```html title=\"Label theme orange\"\n<span title=\"Label: orange label\" class=\"Label Label--orange\">orange label</span>\n```\n\nUse `Label--outline` to create a label with gray text, a gray border, and a transparent background. The outline reduces the contrast of this label in combination with filled labels. Use this in contexts where you need it to stand out less than other labels and communicate a neutral message.\n\n```html title=\"Label outline\"\n<span title=\"Label: outline label\" class=\"Label Label--outline\">outlined label</span>\n```\n\nUse `Label--outline-green` in combination with `Label--outline` to communicate a positive message.\n\n```html title=\"Label outline green\"\n<span title=\"Label: green outline label\" class=\"Label Label--outline Label--outline-green\">green outlined label</span>\n```\n\n\n## States\n\nUse state labels to inform users of an items status. States are large labels with bolded text. The default state has a gray background.\n\n```html title=\"State\"\n<span class=\"State\">Default</span>\n```\n\n### State themes\nStates come in a few variations that apply different colors. Use the state that best communicates the status or function.\n\n```html title=\"State themes\"\n<span title=\"Status: open\" class=\"State State--green\"><%= octicon \"git-pull-request\" %> Open</span>\n<span title=\"Status: closed\" class=\"State State--red\"><%= octicon \"git-pull-request\" %> Closed</span>\n<span title=\"Status: merged\" class=\"State State--purple\"><%= octicon \"git-merge\" %> Merged</span>\n```\n\n**Note:** Similar to [labels](#labels), you should include the title attribute on states to differentiate them from other content.\n\n### Small states\nUse `State--small` for a state label with reduced padding a smaller font size. This is useful in denser areas of content.\n\n```html title=\"Small states\"\n<span title=\"Status: open\" class=\"State State--green State--small\"><%= octicon \"issue-opened\" %> Open</span>\n<span title=\"Status: closed\" class=\"State State--red State--small\"><%= octicon \"issue-closed\" %> Closed</span>\n```\n\n## Counters\n\nUse the `Counter` component to add a count to navigational elements and buttons. Counters come in 3 variations: the default `Counter` with a light gray background, `Counter--gray` with a dark-gray background and inverse white text, and `Counter--gray-light` with a light-gray background and dark gray text.\n\n```html title=\"Counter\"\n<span class=\"Counter\">16</span>\n<span class=\"Counter Counter--gray\">32</span>\n<span class=\"Counter Counter--gray-light\">64</span>\n```\n\nUse the `Counter` in navigation to indicate the number of items without the user having to click through or count the items, such as open issues in a GitHub repo. See more options in [navigation](../navigation).\n\n```html title=\"Counter in tabs\"\n<div class=\"tabnav\">\n  <nav class=\"tabnav-tabs\" aria-label=\"Foo bar\">\n    <a href=\"#url\" class=\"tabnav-tab selected\" aria-current=\"page\">Foo tab <span class=\"Counter\">23</a>\n    <a href=\"#url\" class=\"tabnav-tab\">Bar tab</a>\n  </nav>\n</div>\n```\n\nCounters can also be used in `Box` headers to indicate the number of items in a list. See more on the [box component](../box).\n\n```html title=\"Counter in Box headers\"\n<div class=\"Box\">\n  <div class=\"Box-header\">\n    <h3 class=\"Box-title\">\n      Box title\n      <span class=\"Counter Counter--gray\">3</span>\n    </h3>\n  </div>\n  <ul>\n    <li class=\"Box-row\">\n      Box row one\n    </li>\n    <li class=\"Box-row\">\n      Box row two\n    </li>\n    <li class=\"Box-row\">\n      Box row three\n    </li>\n  </ul>\n</div>\n```\n\n\n<!-- %enddocs -->\n\n## License\n\n[MIT](./LICENSE) &copy; [GitHub](https://github.com/)\n\n[primer]: https://github.com/primer/primer\n[docs]: http://primer.github.io/\n[npm]: https://www.npmjs.com/\n[install-npm]: https://docs.npmjs.com/getting-started/installing-node\n[sass]: http://sass-lang.com/\n"
 
 /***/ }),
 /* 1119 */
@@ -62124,6 +62153,7 @@ module.exports = "# Primer Truncate\n\n[![npm version](https://img.shields.io/np
 
 var map = {
 	"./README.md": 1120,
+	"primer-marketing-support/README.md": 674,
 	"primer-support/README.md": 64,
 	"primer-support/docs/breakpoints.md": 65,
 	"primer-support/docs/spacing.md": 66,
@@ -62149,7 +62179,7 @@ webpackContext.id = 1119;
 /* 1120 */
 /***/ (function(module, exports) {
 
-module.exports = "# Primer Labels\n\n[![npm version](https://img.shields.io/npm/v/primer-labels.svg)](https://www.npmjs.org/package/primer-labels)\n[![Build Status](https://travis-ci.org/primer/primer.svg?branch=master)](https://travis-ci.org/primer/primer)\n\n> Labels add metadata or indicate status of items and navigational elements.\n\nThis repository is a module of the full [primer][primer] repository.\n\n## Install\n\nThis repository is distributed with [npm][npm]. After [installing npm][install-npm], you can install `primer-labels` with this command.\n\n```\n$ npm install --save primer-labels\n```\n\n## Usage\n\nThe source files included are written in [Sass][sass] (`scss`) You can simply point your sass `include-path` at your `node_modules` directory and import it like this.\n\n```scss\n@import \"primer-labels/index.scss\";\n```\n\nYou can also import specific portions of the module by importing those partials from the `/lib/` folder. _Make sure you import any requirements along with the modules._\n\n## Build\n\nFor a compiled **css** version of this module, a npm script is included that will output a css version to `build/build.css` The built css file is also included in the npm package.\n\n```\n$ npm run build\n```\n\n## Documentation\n\n<!-- %docs\ntitle: Labels\nstatus_issue: https://github.com/github/design-systems/issues/332\nstatus: New release\n-->\n\nLabels add metatdata or indicate status of items and navigational elements. Three different types of labels are available: [Labels](#default-label-styles) for adding metadata, [States](#states) for indicating status, and [Counters](#counters) for showing the count for a number of items.\n\n\n{:toc}\n\n## Labels\n\nThe base label component styles the text, adds padding and rounded corners, and an inset box shadow. Labels come in various themes which apply colors and different border styles.\n\nGitHub also programmatically generates and applies a background color for labels on items such as issues and pull requests. Users are able to select any background color and the text color will adjust to work with light and dark background colors.\n\nThe base `Label` style does not apply a background color, here's an example using the `bg-blue` utility to apply a blue background:\n\n```html title=\"Label\"\n<span title=\"Label: default label\" class=\"Label bg-blue\">default label</span>\n```\n\n**Note:** Be sure to include a title attribute on labels, it's helpful for people using screen-readers to differentiate a label from other text. I.e. without the title attribute, the following example would read as _\"New select component design\"_, rather than identifying `design` as a label.\n\n```html title=\"Label without title\"\n<!-- Don't do this -->\n<a href=\"#url\">New select component</a><span class=\"Label bg-blue ml-1\">design</span>\n```\n\n### Label themes\n\nLabels come in a few different themes. Use a theme that helps communicate the content of the label, and ensure it's used consistently.\n\nUse `Label--gray` to create a label with a light gray background and gray text. This label is neutral in color and can be used in contexts where all you need to communicate is metadata, or whe you want a label to feel less prominent compared with labels with stronger colors.\n\n```html title=\"Label theme gray\"\n<span title=\"Label: gray label\" class=\"Label Label--gray\">gray label</span>\n```\n\nUse `Label--gray-darker` to create a label with a dark-gray background color. This label is also neutral in color, however, since it's background is darker it can stand out more compared to `Label--gray`.\n\n```html title=\"Label theme dark gray\"\n<span title=\"Label: dark gray label\" class=\"Label Label--gray-darker\">dark gray label</span>\n```\n\nUse `Label--orange` to communicate \"warning\". The orange background color is very close to red, so avoid using next to labels with a red background color since most people will find it hard to tell the difference.\n\n```html title=\"Label theme orange\"\n<span title=\"Label: orange label\" class=\"Label Label--orange\">orange label</span>\n```\n\nUse `Label--outline` to create a label with gray text, a gray border, and a transparent background. The outline reduces the contrast of this label in combination with filled labels. Use this in contexts where you need it to stand out less than other labels and communicate a neutral message.\n\n```html title=\"Label outline\"\n<span title=\"Label: outline label\" class=\"Label Label--outline\">outlined label</span>\n```\n\nUse `Label--outline-green` in combination with `Label--outline` to communicate a positive message.\n\n```html title=\"Label outline green\"\n<span title=\"Label: green outline label\" class=\"Label Label--outline Label--outline-green\">green outlined label</span>\n```\n\n\n## States\n\nUse state labels to inform users of an items status. States are large labels with bolded text. The default state has a gray background.\n\n```html title=\"State\"\n<span class=\"State\">Default</span>\n```\n\n### State themes\nStates come in a few variations that apply different colors. Use the state that best communicates the status or function.\n\n```html title=\"State themes\"\n<span title=\"Status: open\" class=\"State State--green\"><%= octicon \"git-pull-request\" %> Open</span>\n<span title=\"Status: closed\" class=\"State State--red\"><%= octicon \"git-pull-request\" %> Closed</span>\n<span title=\"Status: merged\" class=\"State State--purple\"><%= octicon \"git-merge\" %> Merged</span>\n```\n\n**Note:** Similar to [labels](#labels), you should include the title attribute on states to differentiate them from other content.\n\n### Small states\nUse `State--small` for a state label with reduced padding a smaller font size. This is useful in denser areas of content.\n\n```html title=\"Small states\"\n<span title=\"Status: open\" class=\"State State--green State--small\"><%= octicon \"issue-opened\" %> Open</span>\n<span title=\"Status: closed\" class=\"State State--red State--small\"><%= octicon \"issue-closed\" %> Closed</span>\n```\n\n## Counters\n\nUse the `Counter` component to add a count to navigational elements and buttons. Counters come in 3 variations: the default `Counter` with a light gray background, `Counter--gray` with a dark-gray background and inverse white text, and `Counter--gray-light` with a light-gray background and dark gray text.\n\n```html title=\"Counter\"\n<span class=\"Counter\">16</span>\n<span class=\"Counter Counter--gray\">32</span>\n<span class=\"Counter Counter--gray-light\">64</span>\n```\n\nUse the `Counter` in navigation to indicate the number of items without the user having to click through or count the items, such as open issues in a GitHub repo. See more options in [navigation](../navigation).\n\n```html title=\"Counter in tabs\"\n<div class=\"tabnav\">\n  <nav class=\"tabnav-tabs\" aria-label=\"Foo bar\">\n    <a href=\"#url\" class=\"tabnav-tab selected\" aria-current=\"page\">Foo tab <span class=\"Counter\">23</a>\n    <a href=\"#url\" class=\"tabnav-tab\">Bar tab</a>\n  </nav>\n</div>\n```\n\nCounters can also be used in `Box` headers to indicate the number of items in a list. See more on the [box component](../box).\n\n```html title=\"Counter in Box headers\"\n<div class=\"Box\">\n  <div class=\"Box-header\">\n    <h3 class=\"Box-title\">\n      Box title\n      <span class=\"Counter Counter--gray\">3</span>\n    </h3>\n  </div>\n  <ul>\n    <li class=\"Box-row\">\n      Box row one\n    </li>\n    <li class=\"Box-row\">\n      Box row two\n    </li>\n    <li class=\"Box-row\">\n      Box row three\n    </li>\n  </ul>\n</div>\n```\n\n\n<!-- %enddocs -->\n\n## License\n\n[MIT](./LICENSE) &copy; [GitHub](https://github.com/)\n\n[primer]: https://github.com/primer/primer\n[docs]: http://primer.github.io/\n[npm]: https://www.npmjs.com/\n[install-npm]: https://docs.npmjs.com/getting-started/installing-node\n[sass]: http://sass-lang.com/\n"
+module.exports = "# Primer Marketing CSS Typography\n\n[![npm version](https://img.shields.io/npm/v/primer-marketing-type.svg)](https://www.npmjs.org/package/primer-marketing-type)\n[![Build Status](https://travis-ci.org/primer/primer.svg?branch=master)](https://travis-ci.org/primer/primer)\n\n> Flash messages, or alerts, inform users of successful or pending actions. Use them sparingly. Don’t show more than one at a time.\n\nThis repository is a module of the full [primer][primer] repository.\n\n## Documentation\n\n<!-- %docs\ntitle: Typography\nstatus: New Release\n-->\n\nThe typography for our marketing pages differs slightly from what is in Primer's core--it is responsive, on a slightly different scale, and headlines are in a different font (Roboto).\n\n\n## Heading Utilities\n\nUse `.alt-h1` – `.alt-h6` to change an element's font, size, and weight on marketing pages.\n\n```html title=\"Heading Utilities\"\n\n<p class=\"alt-h1\">Pizza 1</p>\n<p class=\"alt-h2\">Pizza 2</p>\n<p class=\"alt-h3\">Pizza 3</p>\n<p class=\"alt-h4\">Pizza 4</p>\n<p class=\"alt-h5\">Pizza 5</p>\n<p class=\"alt-h6\">Pizza 6</p>\n\n```\n\n## Typographic Utilities\n\nThese utilities are meant to be used in addition to Primer's core utilities.\n\n```html title=\"Typographic Utilities\"\n\n<p class=\"alt-lead text-gray\">I'm a lead paragraph. Bacon ipsum dolor amet tri-tip chicken kielbasa, cow swine beef corned beef ground round prosciutto hamburger porchetta sausage alcatra tail.</p>\n\n<p class=\"text-gray\">I'm a regular paragraph, except I'm gray. Bacon ipsum dolor amet tri-tip chicken kielbasa, cow swine beef corned beef ground round prosciutto hamburger porchetta sausage alcatra tail.</p>\n\n<p class=\"text-gray alt-text-small\">And I'm a tiny lil' baby paragraph. Bacon ipsum dolor amet tri-tip chicken kielbasa, cow swine beef corned beef ground round prosciutto hamburger porchetta sausage alcatra tail.</p>\n\n<p class=\"alt-mono-font text-gray\">Occasionally we want to use a mono font, there is a utility class for that.</p>\n\n<p class=\"pullquote\">I'm a pullquote. Someone said these words in real life, and now they're on the internet</p>\n\n```\n\n<!-- %enddocs -->\n\n## Install\n\nThis repository is distributed with [npm][npm]. After [installing npm][install-npm], you can install `primer-marketing-typography` with this command.\n\n```\n$ npm install --save primer-marketing-typography\n```\n\n## Usage\n\nThe source files included are written in [Sass][sass] (`scss`) You can simply point your sass `include-path` at your `node_modules` directory and import it like this.\n\n```scss\n@import \"primer-marketing-typography/index.scss\";\n```\n\nYou can also import specific portions of the module by importing those partials from the `/lib/` folder. _Make sure you import any requirements along with the modules._\n\n## Build\n\nFor a compiled **css** version of this module, a npm script is included that will output a css version to `build/build.css`\n\n```\n$ npm run build\n```\n\n## License\n\nMIT &copy; [GitHub](https://github.com/)\n\n[primer]: https://github.com/primer/primer\n[primer-support]: https://github.com/primer/primer-support\n[support]: https://github.com/primer/primer-support\n[docs]: http://primer.github.io/\n[npm]: https://www.npmjs.com/\n[install-npm]: https://docs.npmjs.com/getting-started/installing-node\n[sass]: http://sass-lang.com/\n"
 
 /***/ }),
 /* 1121 */
@@ -62157,7 +62187,7 @@ module.exports = "# Primer Labels\n\n[![npm version](https://img.shields.io/npm/
 
 var map = {
 	"./README.md": 1122,
-	"primer-marketing-support/README.md": 676,
+	"primer-marketing-support/README.md": 674,
 	"primer-support/README.md": 64,
 	"primer-support/docs/breakpoints.md": 65,
 	"primer-support/docs/spacing.md": 66,
@@ -62183,7 +62213,7 @@ webpackContext.id = 1121;
 /* 1122 */
 /***/ (function(module, exports) {
 
-module.exports = "# Primer Marketing CSS Typography\n\n[![npm version](https://img.shields.io/npm/v/primer-marketing-type.svg)](https://www.npmjs.org/package/primer-marketing-type)\n[![Build Status](https://travis-ci.org/primer/primer.svg?branch=master)](https://travis-ci.org/primer/primer)\n\n> Flash messages, or alerts, inform users of successful or pending actions. Use them sparingly. Don’t show more than one at a time.\n\nThis repository is a module of the full [primer][primer] repository.\n\n## Documentation\n\n<!-- %docs\ntitle: Typography\nstatus: New Release\n-->\n\nThe typography for our marketing pages differs slightly from what is in Primer's core--it is responsive, on a slightly different scale, and headlines are in a different font (Roboto).\n\n\n## Heading Utilities\n\nUse `.alt-h1` – `.alt-h6` to change an element's font, size, and weight on marketing pages.\n\n```html title=\"Heading Utilities\"\n\n<p class=\"alt-h1\">Pizza 1</p>\n<p class=\"alt-h2\">Pizza 2</p>\n<p class=\"alt-h3\">Pizza 3</p>\n<p class=\"alt-h4\">Pizza 4</p>\n<p class=\"alt-h5\">Pizza 5</p>\n<p class=\"alt-h6\">Pizza 6</p>\n\n```\n\n## Typographic Utilities\n\nThese utilities are meant to be used in addition to Primer's core utilities.\n\n```html title=\"Typographic Utilities\"\n\n<p class=\"alt-lead text-gray\">I'm a lead paragraph. Bacon ipsum dolor amet tri-tip chicken kielbasa, cow swine beef corned beef ground round prosciutto hamburger porchetta sausage alcatra tail.</p>\n\n<p class=\"text-gray\">I'm a regular paragraph, except I'm gray. Bacon ipsum dolor amet tri-tip chicken kielbasa, cow swine beef corned beef ground round prosciutto hamburger porchetta sausage alcatra tail.</p>\n\n<p class=\"text-gray alt-text-small\">And I'm a tiny lil' baby paragraph. Bacon ipsum dolor amet tri-tip chicken kielbasa, cow swine beef corned beef ground round prosciutto hamburger porchetta sausage alcatra tail.</p>\n\n<p class=\"alt-mono-font text-gray\">Occasionally we want to use a mono font, there is a utility class for that.</p>\n\n<p class=\"pullquote\">I'm a pullquote. Someone said these words in real life, and now they're on the internet</p>\n\n```\n\n<!-- %enddocs -->\n\n## Install\n\nThis repository is distributed with [npm][npm]. After [installing npm][install-npm], you can install `primer-marketing-typography` with this command.\n\n```\n$ npm install --save primer-marketing-typography\n```\n\n## Usage\n\nThe source files included are written in [Sass][sass] (`scss`) You can simply point your sass `include-path` at your `node_modules` directory and import it like this.\n\n```scss\n@import \"primer-marketing-typography/index.scss\";\n```\n\nYou can also import specific portions of the module by importing those partials from the `/lib/` folder. _Make sure you import any requirements along with the modules._\n\n## Build\n\nFor a compiled **css** version of this module, a npm script is included that will output a css version to `build/build.css`\n\n```\n$ npm run build\n```\n\n## License\n\nMIT &copy; [GitHub](https://github.com/)\n\n[primer]: https://github.com/primer/primer\n[primer-support]: https://github.com/primer/primer-support\n[support]: https://github.com/primer/primer-support\n[docs]: http://primer.github.io/\n[npm]: https://www.npmjs.com/\n[install-npm]: https://docs.npmjs.com/getting-started/installing-node\n[sass]: http://sass-lang.com/\n"
+module.exports = "# Primer Marketing CSS Tables\n\n[![npm version](https://img.shields.io/npm/v/primer-tables.svg)](https://www.npmjs.org/package/primer-tables)\n[![Build Status](https://travis-ci.org/primer/primer.svg?branch=master)](https://travis-ci.org/primer/primer)\n\n> Styles to display tabular data for marketing websites at GitHub.\n\nThis repository is a module of the full [primer][primer] repository.\n\n## Documentation\n\n<!-- %docs\ntitle: Tables\nstatus: In review\n-->\n\nDocumentation & refactor coming very soon\n\n<!-- %enddocs -->\n\n## Install\n\nThis repository is distributed with [npm][npm]. After [installing npm][install-npm], you can install `primer-tables` with this command.\n\n```\n$ npm install --save primer-tables\n```\n\n## Usage\n\nThe source files included are written in [Sass][sass] (`scss`) You can simply point your sass `include-path` at your `node_modules` directory and import it like this.\n\n```scss\n@import \"primer-tables/index.scss\";\n```\n\nYou can also import specific portions of the module by importing those partials from the `/lib/` folder. _Make sure you import any requirements along with the modules._\n\n## Build\n\nFor a compiled **css** version of this module, a npm script is included that will output a css version to `build/build.css`\n\n```\n$ npm run build\n```\n\n## License\n\nMIT &copy; [GitHub](https://github.com/)\n\n[primer]: https://github.com/primer/primer\n[primer-support]: https://github.com/primer/primer-support\n[support]: https://github.com/primer/primer-support\n[docs]: http://primer.github.io/\n[npm]: https://www.npmjs.com/\n[install-npm]: https://docs.npmjs.com/getting-started/installing-node\n[sass]: http://sass-lang.com/\n"
 
 /***/ }),
 /* 1123 */
@@ -62191,7 +62221,6 @@ module.exports = "# Primer Marketing CSS Typography\n\n[![npm version](https://i
 
 var map = {
 	"./README.md": 1124,
-	"primer-marketing-support/README.md": 676,
 	"primer-support/README.md": 64,
 	"primer-support/docs/breakpoints.md": 65,
 	"primer-support/docs/spacing.md": 66,
@@ -62217,7 +62246,7 @@ webpackContext.id = 1123;
 /* 1124 */
 /***/ (function(module, exports) {
 
-module.exports = "# Primer Marketing CSS Tables\n\n[![npm version](https://img.shields.io/npm/v/primer-tables.svg)](https://www.npmjs.org/package/primer-tables)\n[![Build Status](https://travis-ci.org/primer/primer.svg?branch=master)](https://travis-ci.org/primer/primer)\n\n> Styles to display tabular data for marketing websites at GitHub.\n\nThis repository is a module of the full [primer][primer] repository.\n\n## Documentation\n\n<!-- %docs\ntitle: Tables\nstatus: In review\n-->\n\nDocumentation & refactor coming very soon\n\n<!-- %enddocs -->\n\n## Install\n\nThis repository is distributed with [npm][npm]. After [installing npm][install-npm], you can install `primer-tables` with this command.\n\n```\n$ npm install --save primer-tables\n```\n\n## Usage\n\nThe source files included are written in [Sass][sass] (`scss`) You can simply point your sass `include-path` at your `node_modules` directory and import it like this.\n\n```scss\n@import \"primer-tables/index.scss\";\n```\n\nYou can also import specific portions of the module by importing those partials from the `/lib/` folder. _Make sure you import any requirements along with the modules._\n\n## Build\n\nFor a compiled **css** version of this module, a npm script is included that will output a css version to `build/build.css`\n\n```\n$ npm run build\n```\n\n## License\n\nMIT &copy; [GitHub](https://github.com/)\n\n[primer]: https://github.com/primer/primer\n[primer-support]: https://github.com/primer/primer-support\n[support]: https://github.com/primer/primer-support\n[docs]: http://primer.github.io/\n[npm]: https://www.npmjs.com/\n[install-npm]: https://docs.npmjs.com/getting-started/installing-node\n[sass]: http://sass-lang.com/\n"
+module.exports = "# Primer Popover\n\n[![npm version](https://img.shields.io/npm/v/primer-popover.svg)](https://www.npmjs.org/package/primer-popover)\n[![Build Status](https://travis-ci.org/primer/primer.svg?branch=master)](https://travis-ci.org/primer/primer)\n\n> Popover for suggesting, guiding, and bringing attention to specific UI elements on a page.\n\nThis repository is a module of the full [primer][primer] repository.\n\n## Install\n\nThis repository is distributed with [npm]. After [installing npm][install-npm], you can install `primer-popover` with this command.\n\n```\n$ npm install --save primer-popover\n```\n\n## Usage\n\nThe source files included are written in [Sass][sass] (SCSS) You can simply point your sass `include-path` at your `node_modules` directory and import it like this.\n\n```scss\n@import \"primer-popover/index.scss\";\n```\n\nYou can also import specific portions of the module by importing those partials from the `/lib/` folder. _Make sure you import any requirements along with the modules._\n\n## Build\n\nFor a compiled **CSS** version of this module, an npm script is included that will output a css version to `build/build.css` The built css file is also included in the npm package:\n\n```\n$ npm run build\n```\n\n## Documentation\n\n<!-- %docs\ntitle: Popover\nstatus: Experimental\n-->\n\nPopovers are used to bring attention to specific user interface elements, typically to suggest an action or to guide users through a new experience.\n\n{:toc}\n\nA popover consist of:\n\n- The block element, `.Popover`, which simply positions its content absolutely atop other body content.\n- The child element, `.Popover-message`, which contains the markup for the intended messaging and the visual \"caret.\"\n\nIn the examples below, `Popover-message`, in particular, uses a handful of utility classes to style it appropriately. And these are intended to demonstrate the default, go-to presentation for the popover's message. By default, the message's caret is centered on the top edge of the message.\n\nThe `Popover-message` element also supports several modifiers, most of which position the caret differently:\n\n- [`.Popover-message--top`](#default-top-center) (default): Places the caret on the top edge of the message, horizontally centered.\n- [`.Popover-message--bottom`](#bottom) Places the caret on the bottom edge of the message, horizontally centered.\n- [`.Popover-message--right`](#right): Places the caret on the right edge of the message, vertically centered.\n- [`.Popover-message--left`](#left): Places the caret on the left edge of the message, vertically centered.\n\nEach of these modifiers also support a syntax for adjusting the positioning the caret to the right, left, top, or bottom of its respective edge. That syntax looks like:\n\n- [`.Popover-message--bottom-left`](#bottom-left)\n- [`.Popover-message--bottom-right`](#bottom-right)\n- [`.Popover-message--left-bottom`](#left-bottom)\n- [`.Popover-message--left-top`](#left-top)\n- [`.Popover-message--right-bottom`](#right-bottom)\n- [`.Popover-message--right-top`](#right-top)\n- [`.Popover-message--top-left`](#top-left)\n- [`.Popover-message--top-right`](#top-right)\n\nLastly, there is an added [`.Popover-message--large`](#large) modifier, which assumes a slightly wider popover message on screens wider than 544px.\n\n### Notes\n\nThe samples below include optional markup, like:\n- An outermost container that establishes stacking context (e.g. `position-relative`).\n- A choice piece of user interface (a button, in this case) to relate the popover to.\n- Use of the `Details` and `js-details` family of class names, which interact with JavaScript to demonstrate dismissal of the popover by clicking the nested \"Got it!\" button.\n\n### Basic example\nDefaults to caret oriented top-center.\n\n```html title=\"Default (top-center)\"\n<div class=\"position-relative text-center\">\n  <button class=\"btn btn-primary\">UI</button>\n  <div class=\"Popover right-0 left-0\">\n    <div class=\"Popover-message text-left p-4 mt-2 mx-auto Box box-shadow-large\">\n      <h4 class=\"mb-2\">Popover heading</h4>\n      <p>Message about this particular piece of UI.</p>\n      <button type=\"submit\" class=\"btn btn-outline mt-2 text-bold\">Got it!</button>\n    </div>\n  </div>\n</div>\n```\n\n### Large example\n\n```html title=\"Large\"\n<div class=\"position-relative text-center\">\n  <button class=\"btn btn-primary\">UI</button>\n  <div class=\"Popover right-0 left-0\">\n    <div class=\"Popover-message Popover-message--large text-left p-4 mt-2 Box box-shadow-large\">\n      <h4 class=\"mb-2\">Popover heading</h4>\n      <p>Message about this particular piece of UI.</p>\n      <button type=\"submit\" class=\"btn btn-outline mt-2 text-bold\">Got it!</button>\n    </div>\n  </div>\n</div>\n```\n\n### Bottom\n\n```html title=\"Bottom\"\n<div class=\"position-relative text-center\">\n  <div class=\"Popover position-relative\">\n    <div class=\"Popover-message Popover-message--bottom p-4 mx-auto mb-2 text-left Box box-shadow-large\">\n      <h4 class=\"mb-2\">Popover heading</h4>\n      <p>Message about this particular piece of UI.</p>\n      <button type=\"submit\" class=\"btn btn-outline mt-2 text-bold\">Got it!</button>\n    </div>\n  </div>\n  <button class=\"btn btn-primary\">UI</button>\n</div>\n```\n\n### Bottom-right\n\n```html title=\"Bottom-right\"\n<div class=\"position-relative text-right\">\n  <div class=\"Popover position-relative\">\n    <div class=\"Popover-message Popover-message--bottom-right p-4 mb-2 text-left Box box-shadow-large\">\n      <h4 class=\"mb-2\">Popover heading</h4>\n      <p>Message about this particular piece of UI.</p>\n      <button type=\"submit\" class=\"btn btn-outline mt-2 text-bold\">Got it!</button>\n    </div>\n  </div>\n  <button class=\"btn btn-primary\">UI</button>\n</div>\n```\n\n### Bottom-left\n\n```html title=\"Bottom-left\"\n<div class=\"Popover position-relative\">\n  <div class=\"Popover-message Popover-message--bottom-left p-4 mb-2 Box box-shadow-large\">\n    <h4 class=\"mb-2\">Popover heading</h4>\n    <p>Message about this particular piece of UI.</p>\n    <button type=\"submit\" class=\"btn btn-outline mt-2 text-bold\">Got it!</button>\n  </div>\n</div>\n<button class=\"btn btn-primary\">UI</button>\n```\n\n### Left\n\n```html title=\"Left\"\n<div class=\"d-flex flex-justify-center flex-items-center\">\n  <button class=\"btn btn-primary\">UI</button>\n  <div class=\"Popover position-relative\">\n    <div class=\"Popover-message Popover-message--left p-4 ml-2 Box box-shadow-large\">\n      <h4 class=\"mb-2\">Popover heading</h4>\n      <p>Message about this particular piece of UI.</p>\n      <button type=\"submit\" class=\"btn btn-outline mt-2 text-bold\">Got it!</button>\n    </div>\n  </div>\n</div>\n```\n\n### Left-bottom\n\n```html title=\"Left-bottom\"\n<div class=\"d-flex flex-justify-center flex-items-end\">\n  <button class=\"btn btn-primary\">UI</button>\n  <div class=\"Popover position-relative\">\n    <div class=\"Popover-message Popover-message--left-bottom p-4 ml-2 Box box-shadow-large\">\n      <h4 class=\"mb-2\">Popover heading</h4>\n      <p>Message about this particular piece of UI.</p>\n      <button type=\"submit\" class=\"btn btn-outline mt-2 text-bold\">Got it!</button>\n    </div>\n  </div>\n</div>\n```\n\n### Left-top\n\n```html title=\"Left-top\"\n<div class=\"d-flex flex-justify-center flex-items-start\">\n  <button class=\"btn btn-primary\">UI</button>\n  <div class=\"Popover position-relative\">\n    <div class=\"Popover-message Popover-message--left-top p-4 ml-2 Box box-shadow-large\">\n      <h4 class=\"mb-2\">Popover heading</h4>\n      <p>Message about this particular piece of UI.</p>\n      <button type=\"submit\" class=\"btn btn-outline mt-2 text-bold\">Got it!</button>\n    </div>\n  </div>\n</div>\n```\n\n### Right\n\n```html title=\"Right\"\n<div class=\"d-flex flex-justify-center flex-items-center\">\n  <div class=\"Popover position-relative\">\n    <div class=\"Popover-message Popover-message--right p-4 mr-2 Box box-shadow-large\">\n      <h4 class=\"mb-2\">Popover heading</h4>\n      <p>Message about this particular piece of UI.</p>\n      <button type=\"submit\" class=\"btn btn-outline mt-2 text-bold\">Got it!</button>\n    </div>\n  </div>\n  <button class=\"btn btn-primary\">UI</button>\n</div>\n```\n\n### Right-bottom\n\n```html title=\"Right-bottom\"\n<div class=\"d-flex flex-justify-center flex-items-end\">\n  <div class=\"Popover position-relative\">\n    <div class=\"Popover-message Popover-message--right-bottom p-4 mr-2 Box box-shadow-large\">\n      <h4 class=\"mb-2\">Popover heading</h4>\n      <p>Message about this particular piece of UI.</p>\n      <button type=\"submit\" class=\"btn btn-outline mt-2 text-bold\">Got it!</button>\n    </div>\n  </div>\n  <button class=\"btn btn-primary\">UI</button>\n</div>\n```\n\n### Right-top\n\n```html title=\"Right-top\"\n<div class=\"d-flex flex-justify-center flex-items-start\">\n  <div class=\"Popover position-relative\">\n    <div class=\"Popover-message Popover-message--right-top p-4 mr-2 Box box-shadow-large\">\n      <h4 class=\"mb-2\">Popover heading</h4>\n      <p>Message about this particular piece of UI.</p>\n      <button type=\"submit\" class=\"btn btn-outline mt-2 text-bold\">Got it!</button>\n    </div>\n  </div>\n  <button class=\"btn btn-primary\">UI</button>\n</div>\n```\n\n### Top-left\n\n```html title=\"Top-left\"\n<div class=\"position-relative\">\n  <button class=\"btn btn-primary\">UI</button>\n  <div class=\"Popover\">\n    <div class=\"Popover-message Popover-message--top-left p-4 mt-2 Box box-shadow-large\">\n      <h4 class=\"mb-2\">Popover heading</h4>\n      <p>Message about this particular piece of UI.</p>\n      <button type=\"submit\" class=\"btn btn-outline mt-2 text-bold\">Got it!</button>\n    </div>\n  </div>\n</div>\n```\n\n### Top-right\n\n```html title=\"Top-right\"\n<div class=\"position-relative text-right\">\n  <button class=\"btn btn-primary\">UI</button>\n  <div class=\"Popover right-0\">\n    <div class=\"Popover-message Popover-message--top-right text-left p-4 mt-2 Box box-shadow-large\">\n      <h4 class=\"mb-2\">Popover heading</h4>\n      <p>Message about this particular piece of UI.</p>\n      <button type=\"submit\" class=\"btn btn-outline mt-2 text-bold\">Got it!</button>\n    </div>\n  </div>\n</div>\n```\n\n<!-- %enddocs -->\n\n## License\n\n[MIT](./LICENSE) &copy; [GitHub](https://github.com/)\n\n[primer]: https://github.com/primer/primer\n[docs]: http://primer.github.io/\n[npm]: https://www.npmjs.com/\n[install-npm]: https://docs.npmjs.com/getting-started/installing-node\n[sass]: http://sass-lang.com/\n"
 
 /***/ }),
 /* 1125 */
@@ -62250,41 +62279,8 @@ webpackContext.id = 1125;
 /* 1126 */
 /***/ (function(module, exports) {
 
-module.exports = "# Primer Popover\n\n[![npm version](https://img.shields.io/npm/v/primer-popover.svg)](https://www.npmjs.org/package/primer-popover)\n[![Build Status](https://travis-ci.org/primer/primer.svg?branch=master)](https://travis-ci.org/primer/primer)\n\n> Popover for suggesting, guiding, and bringing attention to specific UI elements on a page.\n\nThis repository is a module of the full [primer][primer] repository.\n\n## Install\n\nThis repository is distributed with [npm]. After [installing npm][install-npm], you can install `primer-popover` with this command.\n\n```\n$ npm install --save primer-popover\n```\n\n## Usage\n\nThe source files included are written in [Sass][sass] (SCSS) You can simply point your sass `include-path` at your `node_modules` directory and import it like this.\n\n```scss\n@import \"primer-popover/index.scss\";\n```\n\nYou can also import specific portions of the module by importing those partials from the `/lib/` folder. _Make sure you import any requirements along with the modules._\n\n## Build\n\nFor a compiled **CSS** version of this module, an npm script is included that will output a css version to `build/build.css` The built css file is also included in the npm package:\n\n```\n$ npm run build\n```\n\n## Documentation\n\n<!-- %docs\ntitle: Popover\nstatus: Experimental\n-->\n\nPopovers are used to bring attention to specific user interface elements, typically to suggest an action or to guide users through a new experience.\n\n{:toc}\n\nA popover consist of:\n\n- The block element, `.Popover`, which simply positions its content absolutely atop other body content.\n- The child element, `.Popover-message`, which contains the markup for the intended messaging and the visual \"caret.\"\n\nIn the examples below, `Popover-message`, in particular, uses a handful of utility classes to style it appropriately. And these are intended to demonstrate the default, go-to presentation for the popover's message. By default, the message's caret is centered on the top edge of the message.\n\nThe `Popover-message` element also supports several modifiers, most of which position the caret differently:\n\n- [`.Popover-message--top`](#default-top-center) (default): Places the caret on the top edge of the message, horizontally centered.\n- [`.Popover-message--bottom`](#bottom) Places the caret on the bottom edge of the message, horizontally centered.\n- [`.Popover-message--right`](#right): Places the caret on the right edge of the message, vertically centered.\n- [`.Popover-message--left`](#left): Places the caret on the left edge of the message, vertically centered.\n\nEach of these modifiers also support a syntax for adjusting the positioning the caret to the right, left, top, or bottom of its respective edge. That syntax looks like:\n\n- [`.Popover-message--bottom-left`](#bottom-left)\n- [`.Popover-message--bottom-right`](#bottom-right)\n- [`.Popover-message--left-bottom`](#left-bottom)\n- [`.Popover-message--left-top`](#left-top)\n- [`.Popover-message--right-bottom`](#right-bottom)\n- [`.Popover-message--right-top`](#right-top)\n- [`.Popover-message--top-left`](#top-left)\n- [`.Popover-message--top-right`](#top-right)\n\nLastly, there is an added [`.Popover-message--large`](#large) modifier, which assumes a slightly wider popover message on screens wider than 544px.\n\n### Notes\n\nThe samples below include optional markup, like:\n- An outermost container that establishes stacking context (e.g. `position-relative`).\n- A choice piece of user interface (a button, in this case) to relate the popover to.\n- Use of the `Details` and `js-details` family of class names, which interact with JavaScript to demonstrate dismissal of the popover by clicking the nested \"Got it!\" button.\n\n### Basic example\nDefaults to caret oriented top-center.\n\n```html title=\"Default (top-center)\"\n<div class=\"position-relative text-center\">\n  <button class=\"btn btn-primary\">UI</button>\n  <div class=\"Popover right-0 left-0\">\n    <div class=\"Popover-message text-left p-4 mt-2 mx-auto Box box-shadow-large\">\n      <h4 class=\"mb-2\">Popover heading</h4>\n      <p>Message about this particular piece of UI.</p>\n      <button type=\"submit\" class=\"btn btn-outline mt-2 text-bold\">Got it!</button>\n    </div>\n  </div>\n</div>\n```\n\n### Large example\n\n```html title=\"Large\"\n<div class=\"position-relative text-center\">\n  <button class=\"btn btn-primary\">UI</button>\n  <div class=\"Popover right-0 left-0\">\n    <div class=\"Popover-message Popover-message--large text-left p-4 mt-2 Box box-shadow-large\">\n      <h4 class=\"mb-2\">Popover heading</h4>\n      <p>Message about this particular piece of UI.</p>\n      <button type=\"submit\" class=\"btn btn-outline mt-2 text-bold\">Got it!</button>\n    </div>\n  </div>\n</div>\n```\n\n### Bottom\n\n```html title=\"Bottom\"\n<div class=\"position-relative text-center\">\n  <div class=\"Popover position-relative\">\n    <div class=\"Popover-message Popover-message--bottom p-4 mx-auto mb-2 text-left Box box-shadow-large\">\n      <h4 class=\"mb-2\">Popover heading</h4>\n      <p>Message about this particular piece of UI.</p>\n      <button type=\"submit\" class=\"btn btn-outline mt-2 text-bold\">Got it!</button>\n    </div>\n  </div>\n  <button class=\"btn btn-primary\">UI</button>\n</div>\n```\n\n### Bottom-right\n\n```html title=\"Bottom-right\"\n<div class=\"position-relative text-right\">\n  <div class=\"Popover position-relative\">\n    <div class=\"Popover-message Popover-message--bottom-right p-4 mb-2 text-left Box box-shadow-large\">\n      <h4 class=\"mb-2\">Popover heading</h4>\n      <p>Message about this particular piece of UI.</p>\n      <button type=\"submit\" class=\"btn btn-outline mt-2 text-bold\">Got it!</button>\n    </div>\n  </div>\n  <button class=\"btn btn-primary\">UI</button>\n</div>\n```\n\n### Bottom-left\n\n```html title=\"Bottom-left\"\n<div class=\"Popover position-relative\">\n  <div class=\"Popover-message Popover-message--bottom-left p-4 mb-2 Box box-shadow-large\">\n    <h4 class=\"mb-2\">Popover heading</h4>\n    <p>Message about this particular piece of UI.</p>\n    <button type=\"submit\" class=\"btn btn-outline mt-2 text-bold\">Got it!</button>\n  </div>\n</div>\n<button class=\"btn btn-primary\">UI</button>\n```\n\n### Left\n\n```html title=\"Left\"\n<div class=\"d-flex flex-justify-center flex-items-center\">\n  <button class=\"btn btn-primary\">UI</button>\n  <div class=\"Popover position-relative\">\n    <div class=\"Popover-message Popover-message--left p-4 ml-2 Box box-shadow-large\">\n      <h4 class=\"mb-2\">Popover heading</h4>\n      <p>Message about this particular piece of UI.</p>\n      <button type=\"submit\" class=\"btn btn-outline mt-2 text-bold\">Got it!</button>\n    </div>\n  </div>\n</div>\n```\n\n### Left-bottom\n\n```html title=\"Left-bottom\"\n<div class=\"d-flex flex-justify-center flex-items-end\">\n  <button class=\"btn btn-primary\">UI</button>\n  <div class=\"Popover position-relative\">\n    <div class=\"Popover-message Popover-message--left-bottom p-4 ml-2 Box box-shadow-large\">\n      <h4 class=\"mb-2\">Popover heading</h4>\n      <p>Message about this particular piece of UI.</p>\n      <button type=\"submit\" class=\"btn btn-outline mt-2 text-bold\">Got it!</button>\n    </div>\n  </div>\n</div>\n```\n\n### Left-top\n\n```html title=\"Left-top\"\n<div class=\"d-flex flex-justify-center flex-items-start\">\n  <button class=\"btn btn-primary\">UI</button>\n  <div class=\"Popover position-relative\">\n    <div class=\"Popover-message Popover-message--left-top p-4 ml-2 Box box-shadow-large\">\n      <h4 class=\"mb-2\">Popover heading</h4>\n      <p>Message about this particular piece of UI.</p>\n      <button type=\"submit\" class=\"btn btn-outline mt-2 text-bold\">Got it!</button>\n    </div>\n  </div>\n</div>\n```\n\n### Right\n\n```html title=\"Right\"\n<div class=\"d-flex flex-justify-center flex-items-center\">\n  <div class=\"Popover position-relative\">\n    <div class=\"Popover-message Popover-message--right p-4 mr-2 Box box-shadow-large\">\n      <h4 class=\"mb-2\">Popover heading</h4>\n      <p>Message about this particular piece of UI.</p>\n      <button type=\"submit\" class=\"btn btn-outline mt-2 text-bold\">Got it!</button>\n    </div>\n  </div>\n  <button class=\"btn btn-primary\">UI</button>\n</div>\n```\n\n### Right-bottom\n\n```html title=\"Right-bottom\"\n<div class=\"d-flex flex-justify-center flex-items-end\">\n  <div class=\"Popover position-relative\">\n    <div class=\"Popover-message Popover-message--right-bottom p-4 mr-2 Box box-shadow-large\">\n      <h4 class=\"mb-2\">Popover heading</h4>\n      <p>Message about this particular piece of UI.</p>\n      <button type=\"submit\" class=\"btn btn-outline mt-2 text-bold\">Got it!</button>\n    </div>\n  </div>\n  <button class=\"btn btn-primary\">UI</button>\n</div>\n```\n\n### Right-top\n\n```html title=\"Right-top\"\n<div class=\"d-flex flex-justify-center flex-items-start\">\n  <div class=\"Popover position-relative\">\n    <div class=\"Popover-message Popover-message--right-top p-4 mr-2 Box box-shadow-large\">\n      <h4 class=\"mb-2\">Popover heading</h4>\n      <p>Message about this particular piece of UI.</p>\n      <button type=\"submit\" class=\"btn btn-outline mt-2 text-bold\">Got it!</button>\n    </div>\n  </div>\n  <button class=\"btn btn-primary\">UI</button>\n</div>\n```\n\n### Top-left\n\n```html title=\"Top-left\"\n<div class=\"position-relative\">\n  <button class=\"btn btn-primary\">UI</button>\n  <div class=\"Popover\">\n    <div class=\"Popover-message Popover-message--top-left p-4 mt-2 Box box-shadow-large\">\n      <h4 class=\"mb-2\">Popover heading</h4>\n      <p>Message about this particular piece of UI.</p>\n      <button type=\"submit\" class=\"btn btn-outline mt-2 text-bold\">Got it!</button>\n    </div>\n  </div>\n</div>\n```\n\n### Top-right\n\n```html title=\"Top-right\"\n<div class=\"position-relative text-right\">\n  <button class=\"btn btn-primary\">UI</button>\n  <div class=\"Popover right-0\">\n    <div class=\"Popover-message Popover-message--top-right text-left p-4 mt-2 Box box-shadow-large\">\n      <h4 class=\"mb-2\">Popover heading</h4>\n      <p>Message about this particular piece of UI.</p>\n      <button type=\"submit\" class=\"btn btn-outline mt-2 text-bold\">Got it!</button>\n    </div>\n  </div>\n</div>\n```\n\n<!-- %enddocs -->\n\n## License\n\n[MIT](./LICENSE) &copy; [GitHub](https://github.com/)\n\n[primer]: https://github.com/primer/primer\n[docs]: http://primer.github.io/\n[npm]: https://www.npmjs.com/\n[install-npm]: https://docs.npmjs.com/getting-started/installing-node\n[sass]: http://sass-lang.com/\n"
-
-/***/ }),
-/* 1127 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var map = {
-	"./README.md": 1128,
-	"primer-support/README.md": 64,
-	"primer-support/docs/breakpoints.md": 65,
-	"primer-support/docs/spacing.md": 66,
-	"primer-support/docs/typography.md": 67
-};
-function webpackContext(req) {
-	return __webpack_require__(webpackContextResolve(req));
-};
-function webpackContextResolve(req) {
-	var id = map[req];
-	if(!(id + 1)) // check for number or string
-		throw new Error("Cannot find module '" + req + "'.");
-	return id;
-};
-webpackContext.keys = function webpackContextKeys() {
-	return Object.keys(map);
-};
-webpackContext.resolve = webpackContextResolve;
-module.exports = webpackContext;
-webpackContext.id = 1127;
-
-/***/ }),
-/* 1128 */
-/***/ (function(module, exports) {
-
 module.exports = "# Primer / Subhead\n\n[![npm version](https://img.shields.io/npm/v/primer-subhead.svg)](https://www.npmjs.org/package/primer-subhead)\n[![Build Status](https://travis-ci.org/primer/primer.svg?branch=master)](https://travis-ci.org/primer/primer)\n\n> The Subhead is a simple header with a bottom border. It&#39;s designed to be used on settings and configuration pages.\n\nThis repository is a module of the full [primer][primer] repository.\n\n## Install\n\nThis repository is distributed with [npm]. After [installing npm][install-npm], you can install `primer-subhead` with this command.\n\n```\n$ npm install --save primer-subhead\n```\n\n## Usage\n\nThe source files included are written in [Sass][sass] (SCSS) You can simply point your sass `include-path` at your `node_modules` directory and import it like this.\n\n```scss\n@import \"primer-subhead/index.scss\";\n```\n\nYou can also import specific portions of the module by importing those partials from the `/lib/` folder. _Make sure you import any requirements along with the modules._\n\n## Build\n\nFor a compiled **CSS** version of this module, an npm script is included that will output a css version to `build/build.css` The built css file is also included in the npm package:\n\n```\n$ npm run build\n```\n\n## Documentation\n\n<!-- %docs\ntitle: Subhead\nstatus: New release\nstatus_issue: https://github.com/github/design-systems/issues/101\n-->\n\nThe basic Subhead consists of a `.Subhead` container, which has a light gray bottom border. Use `.Subhead-heading` for the heading itself. It's an `<h2>` sized heading with normal font-weight.\n\nUse a heading element whenever possible as they can be used as navigation for assistive technologies, and avoid skipping levels.\n\n```html title=\"Subhead\"\n<div class=\"Subhead\">\n  <div class=\"Subhead-heading\">Plain subhead</div>\n</div>\n```\n\nTo add a top margin to the Subhead, use `.Subhead--spacious`. This is useful for separating sections on a settings page.\n\n```html title=\"Spacious Subhead\"\n<div class=\"Subhead Subhead--spacious\">\n  <div class=\"Subhead-heading\">Spacious subhead</div>\n</div>\n```\n\nYou can add a one line description to the subhead with `.Subhead-description`.\n\n```html title=\"Subhead with description\"\n<div class=\"Subhead\">\n  <div class=\"Subhead-heading\">Subhead with description</div>\n  <div class=\"Subhead-description\">The subhead is a subdued header style with a light bottom border.</div>\n</div>\n```\n\nFor longer descriptions, it is recommended that you use a paragraph below the Subhead.\n\n```html  title=\"Subhead with longer description\"\n<div class=\"Subhead\">\n  <div class=\"Subhead-heading\">Plain subhead</div>\n</div>\n<p>\n  This is a longer description that is sitting below the Subheader. It's much longer than a description that could sit comfortably in the Subhead. It might even have <strong>bold</strong> text. <a href=\"#\">Click to learn more.</a>\n</p>\n```\n\nYou can add a button or something to the right of `.Subhead-heading` with the `.Subhead-actions` element.\n\n```html title=\"Subhead with actions\"\n<div class=\"Subhead\">\n  <div class=\"Subhead-heading\">Subhead with button</div>\n  <div class=\"Subhead-actions\"><a href=\"#url\" class=\"btn btn-sm btn-primary\" role=\"button\">Action</a></div>\n</div>\n\n<div class=\"Subhead Subhead--spacious\">\n  <div class=\"Subhead-heading\">Subhead with link</div>\n  <div class=\"Subhead-actions\"><a href=\"#url\">Learn more</a></div>\n</div>\n```\n\nUse all the elements together to create a Subhead with actions and a description.\n\n```html title=\"Subhead with actions and description\"\n<div class=\"Subhead\">\n  <div class=\"Subhead-heading\">Subhead with actions and description</div>\n  <div class=\"Subhead-actions\"><a href=\"#url\" class=\"btn btn-sm btn-primary\" role=\"button\">Action</a></div>\n  <div class=\"Subhead-description\">The subhead is a subdued header style with a light bottom border.</div>\n</div>\n```\n\nUse the `.Subhead-heading--danger` modifier to make the text bold and red. This is useful for warning users.\n\n```html title=\"Subhead danger\"\n<div class=\"Subhead\">\n  <div class=\"Subhead-heading Subhead-heading--danger\">Danger zone</div>\n</div>\n```\n\n<!-- %enddocs -->\n\n## License\n\n[MIT](./LICENSE) &copy; [GitHub](https://github.com/)\n\n[primer]: https://github.com/primer/primer\n[docs]: http://primer.github.io/\n[npm]: https://www.npmjs.com/\n[install-npm]: https://docs.npmjs.com/getting-started/installing-node\n[sass]: http://sass-lang.com/\n"
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=preview.d5fdbb1dfb8ecb6f4df4.bundle.js.map
+//# sourceMappingURL=preview.1358f26968cd81b22ef5.bundle.js.map
