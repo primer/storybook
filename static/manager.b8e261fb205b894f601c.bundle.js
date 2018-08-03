@@ -67107,7 +67107,7 @@ module.exports = shortOut;
 /* 1307 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*! VelocityJS.org (1.5.0). (C) 2014 Julian Shapiro. MIT @license: en.wikipedia.org/wiki/MIT_License */
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*! VelocityJS.org (1.5.2). (C) 2014 Julian Shapiro. MIT @license: en.wikipedia.org/wiki/MIT_License */
 
 /*************************
  Velocity jQuery Shim
@@ -67890,7 +67890,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*! VelocityJS
 			hook: null, /* Defined below. */
 			/* Velocity-wide animation time remapping for testing purposes. */
 			mock: false,
-			version: {major: 1, minor: 5, patch: 1},
+			version: {major: 1, minor: 5, patch: 2},
 			/* Set to 1 or 2 (most verbose) to output debug info to console. */
 			debug: false,
 			/* Use rAF high resolution timestamp when available */
@@ -69948,10 +69948,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*! VelocityJS
 										if (propertiesMap === "stop") {
 											/* Since "reverse" uses cached start values (the previous call's endValues), these values must be
 											 changed to reflect the final value that the elements were actually tweened to. */
-											/* Note: If only queue:false animations are currently running on an element, it won't have a tweensContainer
-											 object. Also, queue:false animations can't be reversed. */
+											/* Note: If only queue:false/queue:"custom" animations are currently running on an element, it won't have a tweensContainer
+											 object. Also, queue:false/queue:"custom" animations can't be reversed. */
 											var data = Data(element);
-											if (data && data.tweensContainer && queueName !== false) {
+											if (data && data.tweensContainer && (queueName === true || queueName === "")) {
 												$.each(data.tweensContainer, function(m, activeTween) {
 													activeTween.endValue = activeTween.currentValue;
 												});
@@ -82815,4 +82815,4 @@ exports.default = Preview;
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=manager.81248e542f5c4d93dcb4.bundle.js.map
+//# sourceMappingURL=manager.b8e261fb205b894f601c.bundle.js.map
